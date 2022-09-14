@@ -1,0 +1,16 @@
+{
+  "name": "pulsar-site",
+  "version": "0.1",
+  "description": "Website for the Pulsar editor, a fully-customizable editor.",
+  "main": "index.js",
+  "repository": "https://github.com/pulsar-edit/pulsar-edit.github.io",
+  "author": "Joshua Miller",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.51"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}

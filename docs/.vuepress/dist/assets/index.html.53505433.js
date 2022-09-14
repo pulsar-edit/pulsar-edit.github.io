@@ -1,0 +1,1 @@
+const e=JSON.parse(`{"key":"v-147825fb","path":"/docs/","title":"Documentation Home","lang":"en-us","frontmatter":{"lang":"en-us","title":"Documentation Home","description":"Home for Pulsar's Documentation"},"excerpt":"","headers":[],"git":{},"filePathRelative":"docs/README.md"}`);export{e as data};

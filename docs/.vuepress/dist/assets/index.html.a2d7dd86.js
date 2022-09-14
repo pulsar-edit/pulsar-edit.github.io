@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"Home","lang":"en-us","frontmatter":{"lang":"en-us","title":"Home","description":"Home page for the Pulsar Editor"},"excerpt":"","headers":[],"git":{},"filePathRelative":"index.md"}');export{e as data};
