@@ -22,20 +22,20 @@ type Texts = {
 
 export const navbar_en = define_navbar({
   flight_manual: {
-    text: "Pulsar User Guide",
-    link: "/flight"
+    text: "User Guide",
+    link: "/user_guide/index.md"
   },
   our_packages: {
-    text: "Pulsar Packages Wiki",
-    link: ""
+    text: "Packages Wiki",
+    link: "/packages_wiki/index.md"
   },
   packages_repo: {
     text: "Community Packages",
-    link: ""
+    link: "/community_packages/index.md"
   },
   about: {
     text: "About Us",
-    link: ""
+    link: "/about/index.md"
   }
 });
 
