@@ -1,6 +1,7 @@
 const navbar_en = [
   {
     text: "Docs",
+    link: "/docs/"
     children: [
       '/user_guide/index.md',
       '/packages_wiki/index.md',
