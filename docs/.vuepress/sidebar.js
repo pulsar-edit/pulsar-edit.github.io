@@ -29,6 +29,13 @@ const sidebar_en = {
       children: [
         '/packages_wiki/github/june-2017.md'
       ]
+    },
+    {
+      text: 'IDE-Java',
+      link: '/packages_wiki/ide-java/index.md',
+      children: [
+        '/packages_wiki/ide-java/incomplete-classpath-warning.md'
+      ]
     }
   ],
   '/community_packages/': [
