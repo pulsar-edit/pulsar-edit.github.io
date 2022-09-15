@@ -1,12 +1,12 @@
-export const sidebar_en = {
+const sidebar_en = {
   '/': [
-
+    
   ],
   '/user_guide/': [
     
   ],
   '/packages_wiki/': [
-
+    
   ],
   '/community_packages/': [
     
@@ -14,4 +14,8 @@ export const sidebar_en = {
   '/about/': [
     
   ]
+};
+
+module.exports = {
+  sidebar_en,
 };

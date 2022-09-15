@@ -1,6 +1,6 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
-import { navbar_en } from "./navbar";
-import { sidebar_en } from "./sidebar";
+import { navbar_en } from "./navbar.js";
+import { sidebar_en } from "./sidebar.js";
 
 export default defineUserConfig({
   lang: 'en-US',
