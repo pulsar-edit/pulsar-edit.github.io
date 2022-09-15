@@ -22,6 +22,13 @@ const sidebar_en = {
         '/packages_wiki/autocomplete-plus/provider-api.md',
         '/packages_wiki/autocomplete-plus/symbolprovider-config-api.md'
       ]
+    },
+    {
+      text: 'GitHub',
+      link: '/packages_wiki/github/index.md',
+      children: [
+        '/packages_wiki/github/june-2017.md'
+      ]
     }
   ],
   '/community_packages/': [
