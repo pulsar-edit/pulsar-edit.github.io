@@ -8,7 +8,8 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.51"
+    "remark-lint": "^9.1.1",
+    "vuepress": "2.0.0-beta.51"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
