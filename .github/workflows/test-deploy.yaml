@@ -1,0 +1,22 @@
+# Workflow intended to be run only on PRs, that attempts to build locally to catch any errors 
+
+name: Test Deployment 
+
+on: 
+  pull_request:
+    types: [opened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest 
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+        - name: Install Dependencies 
+          run: yarn install 
+        - name: Test Build 
+          run: yarn docs:build
