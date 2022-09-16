@@ -17,3 +17,4 @@ jobs:
           quiet: true # Dont output anything if the file contains no spelling mistakes 
           files: "docs/**/**/*.md !docs/.vuepress"
           language: "en-US"
+          dictionaries: "./tools/spell-checker-dictionary.txt"
