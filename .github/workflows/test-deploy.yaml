@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest 
     
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-        - name: Install Dependencies 
-          run: yarn install 
-        - name: Test Build 
-          run: yarn docs:build
+       - uses: actions/checkout@v3
+       - name: Setup Node.js
+         uses: actions/setup-node@v3
+         with:
+           node-version: '14'
+         - name: Install Dependencies 
+           run: yarn install 
+         - name: Test Build 
+           run: yarn docs:build
