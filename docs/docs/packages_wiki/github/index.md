@@ -19,4 +19,4 @@ Please note that its possible this is outdated, as its original version was publ
 
 ## Monthly Planning 
 
-* [June 2017](/packages_wiki/github/june-2017.md)
+* [June 2017](/docs/packages_wiki/github/june-2017.md)
