@@ -5,7 +5,7 @@ This is the website repo for Pulsar Edit. It contains our documentation and othe
 
 ## Guide
 
-### Tools Needed:
+### Recommended Tools:
 - Toolbox: We recommend using this as a development tool. It helps with containerization of development.
   - This can be setup in most distributions of linux using your package manager or with brew. Brew can also be used on Mac but if that's not ideal we recommend getting directly from the [official website](https://containertoolbx.org/).
   - Yarn (don't set this up just yet, follow the guide below)
