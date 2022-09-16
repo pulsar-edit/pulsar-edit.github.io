@@ -7,10 +7,13 @@
   "author": "Joshua Miller",
   "license": "MIT",
   "devDependencies": {
+    "remark-lint": "^9.1.1",
     "vuepress": "^2.0.0-beta.51"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  }
+    "docs:build": "vuepress build docs",
+    "lint": "yarn remark docs/ --use remark-preset-lint-recommended -- use remark-preset-link-markdown-style-guide"
+  },
+  "dependencies": {}
 }
