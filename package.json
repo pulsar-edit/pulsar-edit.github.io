@@ -6,6 +6,7 @@
   "repository": "https://github.com/pulsar-edit/pulsar-edit.github.io",
   "author": "Joshua Miller",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "vuepress": "^2.0.0-beta.51"
   },
