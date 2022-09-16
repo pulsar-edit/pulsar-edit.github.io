@@ -16,6 +16,4 @@ const sidebar_en = {
   ]
 };
 
-module.exports = {
-  sidebar_en,
-};
+export { sidebar_en as sidebar_en };

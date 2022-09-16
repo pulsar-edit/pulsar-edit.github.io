@@ -18,7 +18,4 @@ const navbar_en = [
   }
 ];
 
-
-module.exports = {
-  navbar_en,
-};
+export { navbar_en as navbar_en };
