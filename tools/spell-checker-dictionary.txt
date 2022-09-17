@@ -1,3 +1,6 @@
 vuepress
+Vuepress
 atom-languageclient
+Atom-LanguageClient
 autocomplete-plus
+Autocomplete-Plus
