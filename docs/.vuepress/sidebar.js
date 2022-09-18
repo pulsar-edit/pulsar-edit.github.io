@@ -1,48 +1,31 @@
 const sidebar_en = {
   '/': [
-    
+
   ],
   '/docs/user_guide/': [
-    
+
   ],
-  '/docs/packages_wiki/': [
+  '/docs/packages/': [
     {
-      text: 'Atom-LanguageClient',
-      link: '/docs/packages_wiki/atom-languageclient/index.md',
-      children: [ 
-        '/docs/packages_wiki/atom-languageclient/list.md', 
-        '/docs/packages_wiki/atom-languageclient/release-process.md' 
-      ]
-    },
-    {
-      text: 'Autocomplete-Plus',
-      link: '/docs/packages_wiki/autocomplete-plus/index.md',
+      title: 'Packages',
+      path: '/docs/packages/',
       children: [
-        '/docs/packages_wiki/autocomplete-plus/autocomplete-providers.md',
-        '/docs/packages_wiki/autocomplete-plus/provider-api.md',
-        '/docs/packages_wiki/autocomplete-plus/symbolprovider-config-api.md'
-      ]
-    },
-    {
-      text: 'GitHub',
-      link: '/docs/packages_wiki/github/index.md',
-      children: [
-        '/docs/packages_wiki/github/june-2017.md'
-      ]
-    },
-    {
-      text: 'IDE-Java',
-      link: '/docs/packages_wiki/ide-java/index.md',
-      children: [
-        '/docs/packages_wiki/ide-java/incomplete-classpath-warning.md'
+        '/docs/packages/core/',
+        '/docs/packages/community/'
       ]
     }
   ],
-  '/community_packages/': [
-    
+  '/docs/packages/core/': [
+    {
+      title: 'Core Packages',
+      path: '/docs/packages/core/',
+      children: [
+        '/docs/packages/core/atom-languageclient'
+      ]
+    }
   ],
   '/about/': [
-    
+
   ]
 };
 
