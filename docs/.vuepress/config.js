@@ -5,7 +5,8 @@ import { sidebar_en } from "./sidebar.js";
 export default defineUserConfig({
   lang: 'en-US',
   title: 'Pulsar Edit',
-  description: 'Just playing around',
+  description: 'Next generation hackable editor for the future',
+  editLinks: true,
   theme: defaultTheme({
     locales: {
       "/": {

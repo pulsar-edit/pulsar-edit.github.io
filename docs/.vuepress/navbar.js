@@ -4,8 +4,8 @@ const navbar_en = [
     link: "/docs/",
     children: [
       '/docs/user_guide/',
-      '/docs/packages_wiki/',
-      '/docs/community_packages/'
+      '/docs/packages/core',
+      '/docs/packages/community'
     ]
   },
   {
