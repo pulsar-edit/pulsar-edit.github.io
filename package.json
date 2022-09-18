@@ -19,7 +19,6 @@
     "lint": "yarn remark docs/ --use remark-preset-lint-recommended -- use remark-preset-link-markdown-style-guide"
   },
   "dependencies": {
-    "fs": "0.0.1-security",
     "path": "^0.12.7",
     "vuepress-bar": "^0.4.4"
   }
