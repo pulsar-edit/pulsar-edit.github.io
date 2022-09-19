@@ -12,6 +12,16 @@ const sidebar_en = {
         '/docs/packages/'
       ]
     },
+
+    {
+      title: "User Guide",
+      text: "User Guide",
+      link: "/docs/user_guide/"
+    },
+    {
+      title: "Hacking the Core (name not finalized)",
+      text: "Hacking the Core"
+    },
     {
       title: 'Core Packages',
       text: 'Core Packages',
@@ -22,15 +32,6 @@ const sidebar_en = {
         '/docs/packages/core/github/',
         '/docs/packages/core/ide-java/'
       ]
-    },
-    {
-      title: "User Guide",
-      text: "User Guide",
-      link: "/docs/user_guide/"
-    },
-    {
-      title: "Hacking the Core (name not finalized)",
-      text: "Hacking the Core"
     },
     {
       title: 'Community Packages',
