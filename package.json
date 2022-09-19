@@ -4,9 +4,10 @@
   "description": "Website for the Pulsar editor, a fully-customizable editor.",
   "main": "index.js",
   "repository": "https://github.com/pulsar-edit/pulsar-edit.github.io",
-  "author": "Joshua Miller",
+  "author": "Josh",
   "license": "MIT",
   "type": "module",
+  "packageManager": "pnpm",
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.51",
     "remark-lint": "^9.1.1",

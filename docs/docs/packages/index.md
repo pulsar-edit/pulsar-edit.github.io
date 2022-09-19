@@ -1,20 +1,16 @@
 ---
 lang: en-us
-title: Packages Documentation
+title: Packages
 description: Documentation Resource for Packages
 ---
 
 # Packages Documentation
 
-This aims to be a collection of information about the packages published for the Pulsar Editor.
+This aims to be a collection of information about the packages published for the Pulsar Editor. Currently, anything in [Core Packages](#core-packages) is an archive of every Wiki that was published from the upstream Atom Organization.
 
-Secondly, and currently, anything in [Core Packages](/docs/packages/core/) is an archive of every Wiki that was published from the upstream Atom Organization.
+This means some of this information may be old, or no longer relevant. If it is, it has been marked as so at the top of the file under a warning. None-the-less the information can still be helpful, and may prove to be valuable. Which is why it has been archived here.
 
-This means some of this information may be old, or no longer relevant. If it is, it has been marked as so at the top of the file under a warning.
-
-None-the-less the information can still be helpful, and may prove to be valuable. Which is why it has been archived here.
-
-Lastly, we're keeping a record of [community packages](/docs/packages/community-packages) as well. This is meant to be a record of these. This section should be updated as we get more community contributions of these. The process for adding this will be added at a later date.
+As well, we have a record of [community packages](#community-packages) as well. This is meant to be a record of these. This section should be updated as we get more community contributions of these. The process for adding this will be added at a later date.
 
 
 ## Core Packages
@@ -31,5 +27,4 @@ Lastly, we're keeping a record of [community packages](/docs/packages/community-
 
 
 ## Community Packages
-
-* TODO: Add Documentation for Community packages, these can be straight grabs of the readmes for these packages. With possibilty of overrides
+* TODO: Add Documentation for Community packages, these can be straight grabs of the read-mes for these packages. With possibility of overrides

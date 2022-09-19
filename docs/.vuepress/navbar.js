@@ -1,12 +1,15 @@
 const navbar_en = [
   {
-    text: "Docs",
-    link: "/docs/",
+    text: "Start Here",
     children: [
       '/docs/user_guide/',
       '/docs/packages/core',
       '/docs/packages/community'
     ]
+  },
+  {
+    text: 'Docs',
+    link: '/docs/'
   },
   {
     text: "About Us",
