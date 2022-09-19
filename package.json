@@ -20,6 +20,12 @@
     "lint": "yarn remark docs/ --use remark-preset-lint-recommended -- use remark-preset-link-markdown-style-guide"
   },
   "dependencies": {
+<<<<<<< Updated upstream
+=======
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "pnpm": "^7.11.0",
+>>>>>>> Stashed changes
     "vuepress-bar": "^0.4.4"
   }
 }

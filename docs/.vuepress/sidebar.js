@@ -2,26 +2,32 @@ const sidebar_en = {
   '/': [
 
   ],
-  '/docs/user_guide/': [
-
-  ],
-  '/docs/packages/': [
+  [
     {
-      title: 'Packages',
-      path: '/docs/packages/',
+      title: 'Documentation Home',
+      text: 'Documentation Home',
+      link: '/docs/',
       children: [
-        '/docs/packages/core/',
-        '/docs/packages/community/'
+        '/docs/user_guide/',
+        '/docs/packages/'
       ]
-    }
-  ],
-  '/docs/packages/core/': [
+    },
     {
       title: 'Core Packages',
-      path: '/docs/packages/core/',
+      text: 'Core Packages',
+      link: '/docs/packages/core/',
+      initialOpenGroupIndex: 2,
       children: [
-        '/docs/packages/core/atom-languageclient'
+        '/docs/packages/core/atom-languageclient/',
+        '/docs/packages/core/autocomplete-plus/',
+        '/docs/packages/core/github/',
+        '/docs/packages/core/ide-java/'
       ]
+    },
+    {
+      title: 'Community Packages',
+      text: 'Community Packages',
+      link: '/docs/packages/community'
     }
   ],
   '/about/': [
