@@ -8,13 +8,14 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
+    "@vuepress/client": "^2.0.0-beta.50",
     "remark-lint": "^9.1.1",
+    "vue": "^3.2.37",
     "vuepress": "2.0.0-beta.51"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "lint": "yarn remark docs/ --use remark-preset-lint-recommended -- use remark-preset-link-markdown-style-guide"
-  },
-  "dependencies": {}
+  }
 }
