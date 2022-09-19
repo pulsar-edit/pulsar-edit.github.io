@@ -2,26 +2,49 @@ const sidebar_en = {
   '/': [
 
   ],
-  '/docs/user_guide/': [
-
-  ],
-  '/docs/packages/': [
+  '/docs/': [
     {
-      title: 'Packages',
-      path: '/docs/packages/',
+      title: 'Documentation Home',
+      text: 'Documentation Home',
+      link: '/docs/',
       children: [
-        '/docs/packages/core/',
-        '/docs/packages/community/'
+        '/docs/user_guide/',
+        '/docs/packages/'
       ]
-    }
-  ],
-  '/docs/packages/core/': [
+    },
     {
       title: 'Core Packages',
-      path: '/docs/packages/core/',
+      text: 'Core Packages',
+      link: '/docs/packages/core/',
       children: [
-        '/docs/packages/core/atom-languageclient'
+        '/docs/packages/core/atom-languageclient/',
+        '/docs/packages/core/autocomplete-plus/',
+        '/docs/packages/core/github/',
+        '/docs/packages/core/ide-java/'
       ]
+    },
+    {
+      title: "User Guide",
+      text: "User Guide",
+      link: "/docs/user_guide/"
+    },
+    {
+      title: "Hacking the Core (name not finalized)",
+      text: "Hacking the Core"
+    },
+    {
+      title: 'Community Packages',
+      text: 'Community Packages',
+      link: '/docs/packages/community'
+    },
+    {
+      title: 'API',
+      text: 'Pulsar API'
+    },
+    {
+      title: 'Atom Archive',
+      text: 'Atom Archive',
+      link: '/docs/atom-archive/'
     }
   ],
   '/about/': [

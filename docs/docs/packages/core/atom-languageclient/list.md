@@ -1,5 +1,7 @@
 ---
-title: List of Pulsar Packages using Pulsar LanguageClient 
+lang: en-us
+title: List of Pulsar Packages using Pulsar LanguageClient
+prev: /docs/packages/core/atom-languageclient/
 ---
 
 # List of Pulsar Packages using `atom-languageclient`
@@ -10,7 +12,7 @@ Please note that its possible this list is outdated, as its original version was
 
 Here are the known Pulsar packages that are using `atom-languageclient` today:
 
-## Official Packages 
+## Official Packages
 
 * [C#](https://github.com/pulsar-edit/ide-csharp) based on Omnisharp.
 * [Flow](https://github.com/flowtype/ide-flowtype) from Facebook.
@@ -18,7 +20,7 @@ Here are the known Pulsar packages that are using `atom-languageclient` today:
 * [JSON](https://github.com/pulsar-edit/ide-json) based on VSCode JSON language server.
 * [TypeScript](https://github.com/pulsar-edit/ide-typescript) based on TypeScript server.
 
-## Community Packages 
+## Community Packages
 
 * [Bash](https://github.com/mads-hartmann/ide-bash) provides Bash language support using [Bash Language Server](https://github.com/mads-hartmann/bash-language-server).
 * [Docker](https://atom.io/packages/ide-docker) provides Dockerfile language support using the [Dockerfile Language Server](https://github.com/rcjsuen/dockerfile-language-server-nodejs).
