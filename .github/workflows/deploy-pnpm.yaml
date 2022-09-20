@@ -28,9 +28,9 @@ jobs:
         with:
           version: 7
           run_install: |
-          - recursive: true
-            args: [--frozen-lockfile, --strict-peer-dependencies]
-          - args: [--global, prettier, gulp]
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - args: [--global, prettier, gulp]
 
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -48,7 +48,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build VuePress Site
-        run: pnpm run docs:build
+        run: pnpm run build
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
