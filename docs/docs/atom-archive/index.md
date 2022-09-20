@@ -13,7 +13,7 @@ appeared with the original Atom documentation. Use at your own risk.
 
 # Atom Documentation Archive
 
-This is a archive of the old Atom documentation as it appeared on their
+This is an archive of the old Atom documentation as it appeared on their
 (Flight Manual)[flight-manual.atom.io]. Anything here is just a historical
 reference of our past, when Atom existed as a GitHub supported project.
 
