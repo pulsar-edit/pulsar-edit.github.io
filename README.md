@@ -8,7 +8,7 @@ The package manifest provides several scripts to help during development:
 
 ### `dev`
 
-Starts a watch task that will rebuild VuePress whenever a change has been made to the included Markdown and JavaScript fikes. Additionally, it launches the development server to test the results in the browser.
+Starts a watch task that will rebuild VuePress whenever a change has been made to the included Markdown and JavaScript files. Additionally, it launches the development server to test the results in the browser.
 
 ### `build`
 
