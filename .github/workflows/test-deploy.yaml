@@ -23,4 +23,4 @@ jobs:
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
        - name: Test Build
-         run: pnpm docs:build
+         run: pnpm build
