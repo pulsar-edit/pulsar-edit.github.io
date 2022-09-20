@@ -24,7 +24,7 @@
   },
   "scripts": {
     "dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
+    "build": "vuepress build docs",
     "format": "prettier ./**/*.md --write --ignore-path .gitignore",
     "lint": "remark . --ignore-path .gitignore",
     "prepare": "husky install"
