@@ -6,7 +6,7 @@ This is the website repo for Pulsar Edit. It contains our documenation and other
 
 The package manifest provides several scripts to help during development:
 
-### `docs:dev`
+### `dev`
 
 Starts a watch task that will rebuild VuePress whenever a change has been made to the included Markdown and JavaScript fikes. Additionally, it launches the development server to test the results in the browser.
 
