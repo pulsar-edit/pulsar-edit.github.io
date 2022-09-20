@@ -1,48 +1,55 @@
 const sidebar_en = {
   '/': [
-    
+
   ],
-  '/docs/user_guide/': [
-    
-  ],
-  '/docs/packages_wiki/': [
+  '/docs/': [
     {
-      text: 'Atom-LanguageClient',
-      link: '/docs/packages_wiki/atom-languageclient/index.md',
-      children: [ 
-        '/docs/packages_wiki/atom-languageclient/list.md', 
-        '/docs/packages_wiki/atom-languageclient/release-process.md' 
+      title: 'Documentation Home',
+      text: 'Documentation Home',
+      link: '/docs/',
+      children: [
+        '/docs/user_guide/',
+        '/docs/packages/'
+      ]
+    },
+
+    {
+      title: "User Guide",
+      text: "User Guide",
+      link: "/docs/user_guide/"
+    },
+    {
+      title: "Hacking the Core (name not finalized)",
+      text: "Hacking the Core"
+    },
+    {
+      title: 'Core Packages',
+      text: 'Core Packages',
+      link: '/docs/packages/core/',
+      children: [
+        '/docs/packages/core/atom-languageclient/',
+        '/docs/packages/core/autocomplete-plus/',
+        '/docs/packages/core/github/',
+        '/docs/packages/core/ide-java/'
       ]
     },
     {
-      text: 'Autocomplete-Plus',
-      link: '/docs/packages_wiki/autocomplete-plus/index.md',
-      children: [
-        '/docs/packages_wiki/autocomplete-plus/autocomplete-providers.md',
-        '/docs/packages_wiki/autocomplete-plus/provider-api.md',
-        '/docs/packages_wiki/autocomplete-plus/symbolprovider-config-api.md'
-      ]
+      title: 'Community Packages',
+      text: 'Community Packages',
+      link: '/docs/packages/community'
     },
     {
-      text: 'GitHub',
-      link: '/docs/packages_wiki/github/index.md',
-      children: [
-        '/docs/packages_wiki/github/june-2017.md'
-      ]
+      title: 'API',
+      text: 'Pulsar API'
     },
     {
-      text: 'IDE-Java',
-      link: '/docs/packages_wiki/ide-java/index.md',
-      children: [
-        '/docs/packages_wiki/ide-java/incomplete-classpath-warning.md'
-      ]
+      title: 'Atom Archive',
+      text: 'Atom Archive',
+      link: '/docs/atom-archive/'
     }
   ],
-  '/community_packages/': [
-    
-  ],
   '/about/': [
-    
+
   ]
 };
 

@@ -1,24 +1,24 @@
 # Workflow intended to be run only on PRs, that attempts to build locally to catch any errors, using pnpm.
 
-name: Test Deployment - PNPM 
+name: Test Deployment - PNPM
 
-on: 
+on:
   pull_request:
-    # Not specifying a type, lets it run on a PR update 
-    
+    # Not specifying a type, lets it run on a PR update
+
 jobs:
   test:
-    runs-on: ubuntu-latest 
-    
+    runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - name: Setup PNPM 
-        run: npm install -g pnpm@v7.0.0
-      - name: Install Dependencies 
-        run: pnpm install 
-      - name: Test Build 
-        run: pnpm run docs:build 
+          node-version: '16'
+      - name: Setup PNPM
+        run: npm install -g pnpm@latest
+      - name: Install Dependencies
+        run: pnpm install
+      - name: Test Build
+        run: pnpm run docs:build

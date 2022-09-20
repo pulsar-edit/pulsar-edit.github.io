@@ -1,9 +1,11 @@
 ---
 lang: en-us
-title: Atom-LanguageClient 
+title: Atom-LanguageClient
+prev: /docs/packages/core/
+next: /docs/packages/core/list.html
 ---
 
-# Atom-LanguageClient 
+# Atom-LanguageClient
 
 Welcome to the `atom-languageclient` wiki!
 

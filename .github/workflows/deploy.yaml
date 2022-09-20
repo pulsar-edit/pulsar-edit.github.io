@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           # choose node.js version to use
-          node-version: '14'
+          node-version: '16'
 
       # cache node_modules
       - name: Cache dependencies

@@ -1,14 +1,15 @@
 ---
 title: Release Process
+prev: /docs/packages/core/list.html
 ---
 
-# Release Process 
+# Release Process
 
 ::: warning
 Please note that its possible this is outdated, as its original version was published by @'David Wilson' on Jan 22, 2018.
 :::
 
-## Steps 
+## Steps
 
 1. Pull down the latest changes from `master`.
 2. Edit [CHANGELOG.md](https://github.com/pulsar-edit/atom-languageclient/blob/master/CHANGELOG.md) to add relevant release notes for changes wince the previous release with a corresponding `## N.N.N` section header.

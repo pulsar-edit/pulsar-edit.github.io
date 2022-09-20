@@ -1,10 +1,10 @@
 ---
 lang: en-us
-title: Packages Wiki 
-description: Wiki Resource for many First Party Packages 
+title: Core Packages Documentation
+description: Wiki Resource for many First Party Packages
 ---
 
-# Packages Wiki 
+# Core Pulsar Packages Documentation
 
 This aims to be a collection of information about the first-party packages published for Pulsar.
 
@@ -14,7 +14,7 @@ This means some of this information may be old, or no longer relevant. If it is,
 
 None-the-less the information can still be helpful, and may prove to be valuable. Which is why it has been archived here.
 
-## Archived Wikis 
+## Archived Wikis
 
 * [Atom-LanguageClient](/docs/packages_wiki/atom-languageclient/index.md)
 * [Autocomplete-Plus](/docs/packages_wiki/autocomplete-plus/index.md)
