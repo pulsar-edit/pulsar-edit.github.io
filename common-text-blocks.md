@@ -11,9 +11,8 @@ Use the first two as sparingly as possible unless ***ABSOLUTELY*** necessary.
 
 ``` ::: warning Under Construction
 
-The documentation here is under heavy construction. Updates are coming, and
-likely in the works. If not, please report a issue in our repository for this
-site. You can find on the page linked in our header.
+This document is under construction, please check back soon for updates.
+Please see [our socials](link/to/socials/list) and feel free to ask for assistance or enquire as to the status of this document.
 
 :::
 ```
