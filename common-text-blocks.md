@@ -25,11 +25,8 @@ site. You can find on the page linked in our header.
 
 ::: danger STOP
 
-This is an archive of the atom documentation. This is only here for historical
-purposes. This is solely a functional reference of how things used to work.
-Processes in this section may have changed in both functionality and
-presentation since these were originally written. Our updated documentation can
-be found at: <insert link here>
+This is being kept for archival purposes only from the original Atom documentation. As this may no longer be relevant to Pulsar you use this at your own risk.
+Current Pulsar documentation is found at [Generic Link](link/to/main/docs/section).
 
 :::
 ```
