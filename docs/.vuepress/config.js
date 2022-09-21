@@ -12,7 +12,7 @@ export default defineUserConfig({
   description: 'Next generation hackable editor for the future',
   editLinks: true,
   alias: {
-    '@images': path.resolve(__dirname, 'https://github.com/pulsar-edit/.github'),
+    '@images': 'https:\/\/github.com\/pulsar-edit\/.github',
   },
   theme: defaultTheme({
     locales: {
