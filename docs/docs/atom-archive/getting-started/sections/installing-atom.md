@@ -10,52 +10,65 @@ To get started with Atom, we'll need to get it on your system. This section will
 Installing Atom should be fairly simple. Generally, you can go to
 https://atom.io and you should see a download button as shown here:
 
-{{#mac}}
+<CodeGroup>
+  <CodeGroupItem title="Linux">
 
-![Download buttons on https://atom.io](@images/atom/mac-downloads.png "Download buttons on https://atom.io")
+  ![Download buttons on https://atom.io](@images/atom/linux-downloads.png "Download buttons on https://atom.io")
 
-{{/mac}}
+  </CodeGroupItem>
 
-{{#windows}}
+  <CodeGroupItem title="Mac">
 
-![Download buttons on https://atom.io](@images/atom/windows-downloads.png "Download buttons on https://atom.io")
+    ![Download buttons on https://atom.io](@images/atom/mac-downloads.png "Download buttons on https://atom.io")
 
-{{/windows}}
+  </CodeGroupItem>
 
-{{#linux}}
+  <CodeGroupItem title="Windows">
 
-![Download buttons on https://atom.io](@images/atom/linux-downloads.png "Download buttons on https://atom.io")
+    ![Download buttons on https://atom.io](@images/atom/windows-downloads.png "Download buttons on https://atom.io")
 
-{{/linux}}
+    </CodeGroupItem>
+</CodeGroup>
 
 The button or buttons should be specific to your platform and the download
  package should be easily installable. However, let's go over them here in a
  bit of detail.
 
-{{#mac}}
+<CodeGroup>
 
-#### Installing Atom on Mac
+  <CodeGroupItem title="Linux">
 
-Atom follows the standard Mac zip installation process. You can either press the download button from the https://atom.io site or you can go to the [Atom releases page](https://github.com/atom/atom/releases/latest) to download the `atom-mac.zip` file explicitly. Once you have that file, you can click on it to extract the application and then drag the new `Atom` application into your "Applications" folder.
+  </CodeGroupItem>
 
-When you first open Atom, it will try to install the `atom` and `apm` commands for use in the terminal. In some cases, Atom might not be able to install these commands because it needs an administrator password. To check if Atom was able to install the `atom` command, for example, open a terminal window and type `which atom`. If the `atom` command has been installed, you'll see something like this:
+  <CodeGroupItem title="Mac">
 
-``` command-line
-$ which atom
-> /usr/local/bin/atom
-$
-```
+  #### Installing Atom on Mac
 
-If the `atom` command wasn't installed, the `which` command won't return anything:
+  Atom follows the standard Mac zip installation process. You can either press the download button from the https://atom.io site or you can go to the [Atom releases page](https://github.com/atom/atom/releases/latest) to download the `atom-mac.zip` file explicitly. Once you have that file, you can click on it to extract the application and then drag the new `Atom` application into your "Applications" folder.
 
-``` command-line
-$ which atom
-$
-```
+  When you first open Atom, it will try to install the `atom` and `apm` commands for use in the terminal. In some cases, Atom might not be able to install these commands because it needs an administrator password. To check if Atom was able to install the `atom` command, for example, open a terminal window and type `which atom`. If the `atom` command has been installed, you'll see something like this:
 
-To install the `atom` and `apm` commands, run "Window: Install Shell Commands" from the [Command Palette](/getting-started/sections/atom-basics#command-palette), which will prompt you for an administrator password.
+  ``` command-line
+  $ which atom
+  > /usr/local/bin/atom
+  $
+  ```
 
-{{/mac}}
+  If the `atom` command wasn't installed, the `which` command won't return anything:
+
+  ``` command-line
+  $ which atom
+  $
+  ```
+
+  To install the `atom` and `apm` commands, run "Window: Install Shell Commands" from the [Command Palette](/getting-started/sections/atom-basics#command-palette), which will prompt you for an administrator password.
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="Windows">
+
+  </CodeGroupItem>
+</CodeGroup>
 
 {{#windows}}
 
