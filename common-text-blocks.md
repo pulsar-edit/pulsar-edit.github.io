@@ -24,7 +24,7 @@ Please see [our socials](link/to/socials/list) and feel free to ask for assistan
 
 ::: danger STOP
 
-This is being kept for archival purposes only from the original Atom documentation. As this may no longer be relevant to Pulsar you use this at your own risk.
+This is being kept for archival purposes only from the original Atom documentation. As this may no longer be relevant to Pulsar, use this at your own risk.
 Current Pulsar documentation is found at [Generic Link](link/to/main/docs/section).
 
 :::
