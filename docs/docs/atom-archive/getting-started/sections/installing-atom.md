@@ -9,19 +9,19 @@ Installing Atom should be fairly simple. Generally, you can go to https://atom.i
 
 {{#mac}}
 
-![Download buttons on https://atom.io](../../images/mac-downloads.png "Download buttons on https://atom.io")
+![Download buttons on https://atom.io](@images/atom/mac-downloads.png "Download buttons on https://atom.io")
 
 {{/mac}}
 
 {{#windows}}
 
-![Download buttons on https://atom.io](../../images/windows-downloads.png "Download buttons on https://atom.io")
+![Download buttons on https://atom.io](@images/atom/windows-downloads.png "Download buttons on https://atom.io")
 
 {{/windows}}
 
 {{#linux}}
 
-![Download buttons on https://atom.io](../../images/linux-downloads.png "Download buttons on https://atom.io")
+![Download buttons on https://atom.io](@images/atom/linux-downloads.png "Download buttons on https://atom.io")
 
 {{/linux}}
 
@@ -58,7 +58,7 @@ To install the `atom` and `apm` commands, run "Window: Install Shell Commands" f
 
 Atom is available with Windows installers that can be downloaded from https://atom.io or from the [Atom releases page](https://github.com/atom/atom/releases/latest).  Use `AtomSetup.exe` for 32-bit systems and `AtomSetup-x64.exe` for 64-bit systems. This setup program will install Atom, add the `atom` and `apm` commands to your `PATH`, and create shortcuts on the desktop and in the start menu.
 
-![Atom on Windows](../../images/windows-system-settings.png)
+![Atom on Windows](@images/atom/windows-system-settings.png)
 
 The context menu `Open with Atom` in File Explorer, and the option to make Atom available for file association using `Open with...`, is controlled by the System Settings panel as seen above.
 

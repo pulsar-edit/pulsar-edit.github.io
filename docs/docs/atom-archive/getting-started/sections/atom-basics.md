@@ -3,11 +3,8 @@ title: Atom Basics
 ---
 
 ::: danger STOP
-This is being kept for archival purposes only from the original Atom
-documentation. As this may no longer be relevant to Pulsar you use this at your
-own risk.
-Current Pulsar documentation is found at:
-[Generic Link](link/to/main/docs/section).
+This is being kept for archival purposes only from the original Atom documentation. As this may no longer be relevant to Pulsar, you use this at your own risk.
+Current Pulsar documentation is found at [Generic Link](link/to/main/docs/section).
 :::
 
 #### Atom Basics
@@ -244,7 +241,7 @@ paths to the `atom` command line tool. For example, you could run the command
 When you open Atom with one or more directories, you will automatically get a
 Tree View on the side of your window.
 
-![Tree View in an open project](../../images/project-view.png "Tree View in an open project")
+![Tree View in an open project](@images/atom/project-view.png "Tree View in an open project")
 
 The Tree View allows you to explore and modify the file and directory structure
 of your project. You can open, rename, delete and create new files from this
@@ -293,7 +290,7 @@ If you press <kbd class="platform-mac">Cmd+T</kbd>
  pop up. This will let you quickly search for any file in your project by typing
   parts of the path.
 
-![Opening files with the Fuzzy Finder](../../images/finder.png "Opening files with the Fuzzy Finder")
+![Opening files with the Fuzzy Finder](@images/atom/finder.png "Opening files with the Fuzzy Finder")
 
 You can also search through only the files currently opened (rather than every
   file in your project) with <kbd class="platform-mac">Cmd+B</kbd>
