@@ -33,6 +33,7 @@
     "*.md": "prettier --write"
   },
   "dependencies": {
+    "@vuepress/utils": "2.0.0-beta.51",
     "pulsar-media": "github:pulsar-edit/.github",
     "vue-router": "^4.1.5"
   }
