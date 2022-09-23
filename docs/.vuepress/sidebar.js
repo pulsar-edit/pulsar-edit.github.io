@@ -4,48 +4,31 @@ const sidebar_en = {
   ],
   '/docs/': [
     {
-      title: 'Documentation Home',
-      text: 'Documentation Home',
-      link: '/docs/',
+      title: "Documentation Home",
+      text: "Documentation Home",
+      link: "/docs/",
+      collapsible: true
+    },
+    {
+      title: "Launch Manual",
+      text: "Launch Manual",
+      link: '/docs/launch-manual',
+      collapsible: true,
       children: [
-        '/docs/user_guide/',
-        '/docs/packages/'
-      ]
-    },
-
-    {
-      title: "User Guide",
-      text: "User Guide",
-      link: "/docs/user_guide/"
-    },
-    {
-      title: "Hacking the Core (name not finalized)",
-      text: "Hacking the Core"
-    },
-    {
-      title: 'Core Packages',
-      text: 'Core Packages',
-      link: '/docs/packages/core/',
-      children: [
-        '/docs/packages/core/atom-languageclient/',
-        '/docs/packages/core/autocomplete-plus/',
-        '/docs/packages/core/github/',
-        '/docs/packages/core/ide-java/'
+        '/docs/launch-manual/sections/getting-started',
+        '/docs/launch-manual/sections/core-hacking',
+        '/docs/launch-manual/sections/packages'
       ]
     },
     {
-      title: 'Community Packages',
-      text: 'Community Packages',
-      link: '/docs/packages/community'
-    },
-    {
-      title: 'API',
-      text: 'Pulsar API'
-    },
-    {
-      title: 'Atom Archive',
-      text: 'Atom Archive',
-      link: '/docs/atom-archive/'
+      title: 'Resources',
+      text: 'Resources',
+      link: '/docs/resources',
+      collapsible: false,
+      children: [
+        '/docs/resources/glossary',
+        '/docs/resources/pulsar-api'
+      ]
     }
   ],
   '/about/': [

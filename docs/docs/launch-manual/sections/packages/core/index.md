@@ -16,7 +16,7 @@ None-the-less the information can still be helpful, and may prove to be valuable
 
 ## Archived Wikis
 
-- [Atom-LanguageClient](/docs/packages/core/atom-languageclient/index.md)
-- [Autocomplete-Plus](/docs/packages/core/autocomplete-plus/index.md)
-- [GitHub](/docs/packages/core/github/index.md)
-- [IDE-Java](/docs/packages/core/ide-java/index.md)
+- [Atom-LanguageClient](/docs/packages_wiki/atom-languageclient/index.md)
+- [Autocomplete-Plus](/docs/packages_wiki/autocomplete-plus/index.md)
+- [GitHub](/docs/packages_wiki/github/index.md)
+- [IDE-Java](/docs/packages_wiki/ide-java/index.md)
