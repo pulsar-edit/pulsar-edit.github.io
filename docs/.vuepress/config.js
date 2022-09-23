@@ -5,7 +5,6 @@ import { getDirname, path } from '@vuepress/utils'
 
 const __dirname = getDirname(import.meta.url)
 
-console.log(__dirname)
 
 import { navbar_en } from "./navbar.js";
 import { sidebar_en } from "./sidebar.js";
