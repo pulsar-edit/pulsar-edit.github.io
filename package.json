@@ -2,13 +2,13 @@
   "name": "pulsar-site",
   "version": "0.1",
   "description": "Website for the Pulsar editor, a fully-customizable editor.",
-  "main": "index.js",
   "repository": "https://github.com/pulsar-edit/pulsar-edit.github.io",
   "author": "Josh",
   "license": "MIT",
   "type": "module",
   "packageManager": "pnpm",
   "devDependencies": {
+    "@pulsar-media": "pulsar-edit/.github",
     "@vuepress/client": "2.0.0-beta.51",
     "@vuepress/utils": "2.0.0-beta.51",
     "husky": "^8.0.1",
@@ -23,6 +23,9 @@
     "vue": "^3.2.39",
     "vuepress": "2.0.0-beta.51",
     "vuepress-plugin-md-enhance": "2.0.0-beta.103"
+  },
+  "dependencies": {
+
   },
   "scripts": {
     "build": "vuepress build docs",

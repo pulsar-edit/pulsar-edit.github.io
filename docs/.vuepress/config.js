@@ -1,11 +1,12 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
-import { getDirname, path } from '@vuepress/utils';
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+
+import { getDirname, path } from '@vuepress/utils'
+
+const __dirname = getDirname(import.meta.url)
 
 import { navbar_en } from "./navbar.js";
 import { sidebar_en } from "./sidebar.js";
-
-const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   lang: 'en-US',
