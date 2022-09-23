@@ -5,6 +5,8 @@ import { getDirname, path } from '@vuepress/utils'
 
 const __dirname = getDirname(import.meta.url)
 
+console.log(__dirname)
+
 import { navbar_en } from "./navbar.js";
 import { sidebar_en } from "./sidebar.js";
 
@@ -13,7 +15,7 @@ export default defineUserConfig({
   title: 'Pulsar Edit',
   description: 'Next generation hackable editor for the future',
   alias: {
-    '@images': path.resolve(__dirname, '../../node_modules/pulsar-media/images')
+    '@images': path.resolve(__dirname, '../../node_modules/@pulsar-media/images')
   },
   devServer: {
     https: true
