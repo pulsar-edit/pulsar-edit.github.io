@@ -83,10 +83,10 @@ variable
 
 Typename objects support the following properties:
 
-* `selector`: The selector that matches your symbol types. e.g. `'.variable.name'`. You can also have several selectors separated by commas, just like in CSS `'.variable.name, .storage.variable'`
-* `typePriority`: The priority this Typename object has over others. e.g. in our CoffeeScript example above, if a symbol is tagged with the `function` type in one part of the code, but `class` in another part of the code, it will be displayed to the user as a `class` because `class` has a higher `typePriority`
-* `suggestions`: This allows you to specify explicit completions for some scope. A good use is builtins: e.g. `['Math', 'Array', ...]` in JavaScript
-  * Items in the `suggestions` list can also objects using any of the [properties](/docs/packages_wiki/autocomplete-plus/provider-api.md#suggestions) from the provider API.
+- `selector`: The selector that matches your symbol types. e.g. `'.variable.name'`. You can also have several selectors separated by commas, just like in CSS `'.variable.name, .storage.variable'`
+- `typePriority`: The priority this Typename object has over others. e.g. in our CoffeeScript example above, if a symbol is tagged with the `function` type in one part of the code, but `class` in another part of the code, it will be displayed to the user as a `class` because `class` has a higher `typePriority`
+- `suggestions`: This allows you to specify explicit completions for some scope. A good use is builtins: e.g. `['Math', 'Array', ...]` in JavaScript
+  - Items in the `suggestions` list can also objects using any of the [properties](/docs/packages/core/autocomplete-plus/provider-api.md#suggestions) from the provider API.
 
 ## Finding Scope Selectors
 

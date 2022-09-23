@@ -1,9 +1,9 @@
 ---
 lang: en-us
-title: GitHub 
+title: GitHub
 ---
 
-# GitHub 
+# GitHub
 
 Welcome to the `github` wiki!
 
@@ -17,6 +17,6 @@ Please note that its possible this is outdated, as its original version was publ
 
 [Short Term Roadmap](https://github.com/atom/github/projects/8)
 
-## Monthly Planning 
+## Monthly Planning
 
-* [June 2017](/docs/packages_wiki/github/june-2017.md)
+- [June 2017](/docs/packages/core/github/june-2017.md)

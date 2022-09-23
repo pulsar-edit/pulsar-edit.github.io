@@ -126,7 +126,7 @@ Please note that its possible this is outdated, as its original version was publ
 
 ## Providers Requested By The Community
 
-If you'd like to contribute and are interested in learning how to write an `autocomplete-plus` [`Provider`](/packages_wiki/autocomplete-plus/provider-api.md), start here:
+If you'd like to contribute and are interested in learning how to write an `autocomplete-plus` [`Provider`](/docs/packages/core/autocomplete-plus/provider-api.md), start here:
 
 - Emmet: https://github.com/atom-community/autocomplete-plus/issues/156
 - LESS: https://github.com/atom-community/autocomplete-plus/issues/151
