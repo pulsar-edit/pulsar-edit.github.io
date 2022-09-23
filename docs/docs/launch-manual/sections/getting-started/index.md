@@ -7,6 +7,12 @@ inquire as to the status of this document.
 :::
 
 @include(why-pulsar.md)
-@include(installing-pulsar.md)
+
+## Installing Pulsar
+
+Coming soon
+
+<!-- @include(installing-pulsar.md) -->
+
 @include(pulsar-basics.md)
 @include(summary.md)
