@@ -1,0 +1,45 @@
+## Using ppm (Pulsar Package Manager)
+
+`ppm` is used for installing and managing Pulsar's packages in much the same way
+that `apm` did on Atom. However at this point in the project there are a few
+hoops you have to jump through to get it to work correctly.
+
+After following the build instructions you will find the `ppm` binary at
+`pulsar/ppm/bin/apm` but by default Pulsar will be looking in the wrong place.
+To solve this a couple of environmental variables need to be exported.
+
+::: tabs
+
+@tab Linux
+
+```sh
+export ATOM_HOME=/home/<user>/.pulsar
+export APM_PATH=/ppm/bin/apm
+```
+
+@tab macOS
+
+```sh
+TODO
+```
+
+@tab Windows
+
+```sh
+TODO
+```
+
+:::
+
+You can now use the binary to link or install packages.
+
+For example to install the `ide-java` package from source:
+
+```sh
+# clone the repository and cd into it
+git clone https://github.com/pulsar-edit/ide-java
+cd ide-java
+
+# from the directory where you are running pulsar source code
+<pulsar source>/ppm/bin/apm link
+```
