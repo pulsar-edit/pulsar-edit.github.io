@@ -2,17 +2,17 @@
 title: Creating a Fork of a Core Package in atom/atom
 ---
 
-### Creating a Fork of a Core Package in atom/atom
+## Creating a Fork of a Core Package in atom/atom
 
 Several of Atom's core packages are maintained in the [`packages` directory of the atom/atom repository](https://github.com/atom/atom/tree/master/packages). If you would like to use one of these packages as a starting point for your own package, please follow the steps below.
 
-{{#tip}}
+::: tip
 
 **Tip:** In most cases, we recommend [generating a brand new package](../package-word-count/#package-generator) or a [brand new theme](../creating-a-theme/#creating-a-syntax-theme) as the starting point for your creation. The guide below applies only to situations where you want to create a package that closely resembles a core Atom package.
 
-{{/tip}}
+:::
 
-#### Creating Your New Package
+### Creating Your New Package
 
 For the sake of this guide, let's assume that you want to start with the current code in the [one-light-ui](https://github.com/atom/atom/tree/master/packages/one-light-ui) package, make some customizations to it, and publish your new package under the name "one-light-ui-plus".
 
@@ -48,8 +48,8 @@ For the sake of this guide, let's assume that you want to start with the current
 
 9. Follow the instructions in the github.com UI to push your code to your new online repository
 
-10. Follow the steps in the [Publishing guide](../publishing/) to publish your new package
+10. Follow the steps in the [Publishing guide](./publishing/) to publish your new package
 
-#### Merging Upstream Changes into Your Package
+### Merging Upstream Changes into Your Package
 
-The code in the original package will continue to evolve over time, either to fix bugs or to add new enhancements. You may want to incorporate some or all of those updates into your package. To do so, you can follow [these steps](../maintaining-a-fork-of-a-core-package-in-atom-atom/#step-by-step-guide) for merging upstream changes into your package.
+The code in the original package will continue to evolve over time, either to fix bugs or to add new enhancements. You may want to incorporate some or all of those updates into your package. To do so, you can follow [these steps](./maintaining-a-fork-of-a-core-package-in-atom-atom/#step-by-step-guide) for merging upstream changes into your package.

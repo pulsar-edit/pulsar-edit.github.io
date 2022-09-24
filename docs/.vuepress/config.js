@@ -1,7 +1,7 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
-
-import { getDirname, path } from '@vuepress/utils'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+import { getDirname, path } from '@vuepress/utils';
 
 const __dirname = getDirname(import.meta.url)
 
@@ -23,7 +23,8 @@ export default defineUserConfig({
     mdEnhancePlugin({
       align: true,
       include:true,
-      tabs: true
+      tabs: true,
+      container: true
     })
   ],
   theme: defaultTheme({
