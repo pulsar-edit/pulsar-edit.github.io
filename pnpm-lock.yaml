@@ -1,41 +1,44 @@
 lockfileVersion: 5.4
 
-importers:
+specifiers:
+  '@mdit-vue/plugin-toc': ^0.11.1
+  '@pulsar-media': github:pulsar-edit/.github
+  '@vuepress/client': 2.0.0-beta.51
+  '@vuepress/plugin-toc': ^2.0.0-beta.51
+  '@vuepress/utils': 2.0.0-beta.51
+  husky: ^8.0.1
+  lint-staged: ^13.0.3
+  prettier: ^2.7.1
+  remark-cli: ^11.0.0
+  remark-lint: ^9.1.1
+  remark-preset-lint-consistent: ^5.1.1
+  remark-preset-lint-markdown-style-guide: ^5.1.2
+  remark-preset-lint-recommended: ^6.1.2
+  remark-preset-prettier: ^2.0.1
+  vue: ^3.2.39
+  vuepress: 2.0.0-beta.51
+  vuepress-plugin-md-enhance: ^2.0.0-beta.103
 
-  .:
-    specifiers:
-      '@pulsar-media': github:pulsar-edit/.github
-      '@vuepress/client': 2.0.0-beta.51
-      '@vuepress/utils': 2.0.0-beta.51
-      husky: ^8.0.1
-      lint-staged: ^13.0.3
-      prettier: ^2.7.1
-      remark-cli: ^11.0.0
-      remark-lint: ^9.1.1
-      remark-preset-lint-consistent: ^5.1.1
-      remark-preset-lint-markdown-style-guide: ^5.1.2
-      remark-preset-lint-recommended: ^6.1.2
-      remark-preset-prettier: ^2.0.1
-      vue: ^3.2.39
-      vuepress: 2.0.0-beta.51
-      vuepress-plugin-md-enhance: ^2.0.0-beta.103
-    dependencies:
-      '@pulsar-media': github.com/pulsar-edit/.github/e2744fd7a2eaa7e8297f781ec1744cc17e33b88a
-      vuepress-plugin-md-enhance: 2.0.0-beta.103
-    devDependencies:
-      '@vuepress/client': 2.0.0-beta.51
-      '@vuepress/utils': 2.0.0-beta.51
-      husky: 8.0.1
-      lint-staged: 13.0.3
-      prettier: 2.7.1
-      remark-cli: 11.0.0
-      remark-lint: 9.1.1
-      remark-preset-lint-consistent: 5.1.1
-      remark-preset-lint-markdown-style-guide: 5.1.2
-      remark-preset-lint-recommended: 6.1.2
-      remark-preset-prettier: 2.0.1_prettier@2.7.1
-      vue: 3.2.39
-      vuepress: 2.0.0-beta.51_7i62w7p625cuklq36af6cl57wi
+dependencies:
+  '@pulsar-media': github.com/pulsar-edit/.github/e2744fd7a2eaa7e8297f781ec1744cc17e33b88a
+  vuepress-plugin-md-enhance: 2.0.0-beta.103
+
+devDependencies:
+  '@mdit-vue/plugin-toc': 0.11.1
+  '@vuepress/client': 2.0.0-beta.51
+  '@vuepress/plugin-toc': 2.0.0-beta.51
+  '@vuepress/utils': 2.0.0-beta.51
+  husky: 8.0.1
+  lint-staged: 13.0.3
+  prettier: 2.7.1
+  remark-cli: 11.0.0
+  remark-lint: 9.1.1
+  remark-preset-lint-consistent: 5.1.1
+  remark-preset-lint-markdown-style-guide: 5.1.2
+  remark-preset-lint-recommended: 6.1.2
+  remark-preset-prettier: 2.0.1_prettier@2.7.1
+  vue: 3.2.39
+  vuepress: 2.0.0-beta.51_7i62w7p625cuklq36af6cl57wi
 
 packages:
 
@@ -348,6 +351,15 @@ packages:
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
 
+  /@mdit-vue/plugin-toc/0.11.1:
+    resolution: {integrity: sha512-1tkGb1092ZgLhoSmE5hkC6U0IRGG5bWhUY4p14npV4cwqntciXEoXRqPA1jGEDh5hnofZC0bHbeS3uKxsmAEew==}
+    dependencies:
+      '@mdit-vue/shared': 0.11.0
+      '@mdit-vue/types': 0.11.0
+      '@types/markdown-it': 12.2.3
+      markdown-it: 13.0.1
+    dev: true
+
   /@mdit-vue/shared/0.10.0:
     resolution: {integrity: sha512-rUyu0NVNbaEg4DUiQenh/fam1MLdkItdzEVScN7vP0UzDWOwmGaKwkhlMmkSTW80H63ZlKst0fPe9LaGHImSZg==}
     dependencies:
@@ -355,8 +367,20 @@ packages:
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
 
+  /@mdit-vue/shared/0.11.0:
+    resolution: {integrity: sha512-eiGe42y7UYpjO6/8Lg6OpAtzZrRU9k8dhpX1e/kJMTcL+tn+XkqRMJJ8I2pdrOQMSkgvIva5FNAriykqFzkdGg==}
+    dependencies:
+      '@mdit-vue/types': 0.11.0
+      '@types/markdown-it': 12.2.3
+      markdown-it: 13.0.1
+    dev: true
+
   /@mdit-vue/types/0.10.0:
     resolution: {integrity: sha512-ROz5zVKt3COpuWUYFnpJh5kIXit9SQeMtimGBlwKJL1xEBNPG3QKD3VZzez5Ng/dBCApianCQhNVZGCza82Myw==}
+
+  /@mdit-vue/types/0.11.0:
+    resolution: {integrity: sha512-ygCGP7vFpqS02hpZwEe1uz8cfImWX06+zRs08J+tCZRKb6k+easIaIHFtY9ZSxt7j9L/gAPLDo/5RmOT6z0DPQ==}
+    dev: true
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -782,6 +806,18 @@ packages:
       '@vuepress/shared': 2.0.0-beta.51
       '@vuepress/utils': 2.0.0-beta.51
       vue: 3.2.39
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@vuepress/plugin-toc/2.0.0-beta.51:
+    resolution: {integrity: sha512-qpAVyCbjuFQlR3A8vsApgVxNuRrEoZovdf96q0e/L77KY85yqP2h5+Tv1z7R8CowsaDZBaABt6BFM+8THMHClA==}
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.51
+      '@vuepress/core': 2.0.0-beta.51
+      '@vuepress/utils': 2.0.0-beta.51
+      vue: 3.2.39
+      vue-router: 4.1.5_vue@3.2.39
     transitivePeerDependencies:
       - supports-color
     dev: true

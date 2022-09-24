@@ -18,6 +18,8 @@
     "vuepress-plugin-md-enhance": "^2.0.0-beta.103"
   },
   "devDependencies": {
+    "@mdit-vue/plugin-toc":"^0.11.1",
+    "@vuepress/plugin-toc": "^2.0.0-beta.51",
     "@vuepress/client": "2.0.0-beta.51",
     "@vuepress/utils": "2.0.0-beta.51",
     "husky": "^8.0.1",

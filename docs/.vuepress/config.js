@@ -24,7 +24,7 @@ export default defineUserConfig({
       align: true,
       include:true,
       tabs: true
-    }),
+    })
   ],
   theme: defaultTheme({
     displayAllHeaders: true,
