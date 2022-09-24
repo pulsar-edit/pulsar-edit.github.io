@@ -1,5 +1,5 @@
 ---
-title: Chapter 2 - Using Atom
+title: Chapter 2 &#58; Using Atom
 ---
 
 ## Using Atom
