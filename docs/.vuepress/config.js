@@ -1,6 +1,10 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+<<<<<<< HEAD
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+=======
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+>>>>>>> acb39aa (Fixing stuff?)
 import { getDirname, path } from '@vuepress/utils';
 
 const __dirname = getDirname(import.meta.url)
@@ -24,6 +28,7 @@ export default defineUserConfig({
       align: true,
       include:true,
 <<<<<<< HEAD
+<<<<<<< HEAD
       tabs: true,
       container: true
     }),
@@ -32,6 +37,10 @@ export default defineUserConfig({
     }), */
 =======
       tabs: true
+=======
+      tabs: true,
+      container: true
+>>>>>>> acb39aa (Fixing stuff?)
     })
 >>>>>>> ca0ce9d (Add vuepress toc plugin)
   ],

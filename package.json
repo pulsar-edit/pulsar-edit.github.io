@@ -20,10 +20,14 @@
   "devDependencies": {
     "@mdit-vue/plugin-toc":"^0.11.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
 =======
     "@vuepress/plugin-toc": "^2.0.0-beta.51",
 >>>>>>> ca0ce9d (Add vuepress toc plugin)
+=======
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
+>>>>>>> acb39aa (Fixing stuff?)
     "@vuepress/client": "2.0.0-beta.51",
     "@vuepress/utils": "2.0.0-beta.51",
     "husky": "^8.0.1",
