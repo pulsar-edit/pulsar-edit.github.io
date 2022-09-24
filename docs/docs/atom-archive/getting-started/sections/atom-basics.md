@@ -4,7 +4,7 @@ title: Atom Basics
 
 ::: danger STOP
 This is being kept for archival purposes only from the original Atom documentation. As this may no longer be relevant to Pulsar, you use this at your own risk.
-Current Pulsar documentation is found at [Generic Link](link/to/main/docs/section).
+Current Pulsar documentation is found at at the [documentation home](/docs/).
 :::
 
 #### Atom Basics
