@@ -28,11 +28,11 @@ $ git remote add upstream https://github.com/atom/atom.git
 
 ##### Get the Latest Changes for the Core Package
 
-{{#tip}}
+::: tip Tip
 
 **Tip:** Follow these steps each time you want to merge upstream changes into your fork.
 
-{{/tip}}
+:::
 
 Fetch the latest changes from the atom/atom repository:
 

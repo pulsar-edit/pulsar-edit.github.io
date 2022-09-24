@@ -104,13 +104,13 @@ When finished, the file should look like this:
 
 Now reload the window and verify that the key binding works.
 
-{{#warning}}
+::: warning WARNING
 
 **Warning:** The Atom keymap system is _case-sensitive_. This means that there is a distinction between `a` and `A` when creating keybindings. `a` means that you want to trigger the keybinding when you press <kbd class="platform-all">A</kbd>. But `A` means that you want to trigger the keybinding when you press <kbd class="platform-all">Shift+A</kbd>. You can also write `shift-a` when you want to trigger the keybinding when you press <kbd class="platform-all">Shift+A</kbd>.
 
 We **strongly** recommend always using lowercase and explicitly spelling out when you want to include <kbd class="platform-all">Shift</kbd> in your keybindings.
 
-{{/warning}}
+:::
 
 #### Add the ASCII Art
 

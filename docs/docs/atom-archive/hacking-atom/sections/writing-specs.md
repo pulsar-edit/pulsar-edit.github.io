@@ -204,11 +204,11 @@ atom --test --timeout 60 ./test/test-1.js ./test/test-2.js
 
 #### Customizing your test runner
 
-{{#warning}}
+::: warning WARNING
 
 **Warning:** This API is available as of 1.2.0-beta0, and it is experimental and subject to change. Test runner authors should be prepared to test their code against future beta releases until it stabilizes.
 
-{{/warning}}
+:::
 
 By default, package tests are run with Jasmine 1.3, which is outdated but can't be changed for compatibility reasons. You can specify your own custom test runner by including an `atomTestRunner` field in your `package.json`. Atom will require whatever module you specify in this field, so you can use a relative path or the name of a module in your package's dependencies.
 

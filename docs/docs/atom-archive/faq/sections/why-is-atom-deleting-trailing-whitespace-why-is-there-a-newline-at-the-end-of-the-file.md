@@ -8,7 +8,7 @@ Atom ships with the [`whitespace` package][1], which by default strips trailing 
 
 You can disable this feature by going to the Packages list in the Settings View and finding the whitespace package:
 
-![Whitespace package settings](../../images/whitespace-settings.png "Whitespace package settings")
+![Whitespace package settings](@images/atom/whitespace-settings.png "Whitespace package settings")
 
 Take a look at [the Whitespace section][3] for more information.
 

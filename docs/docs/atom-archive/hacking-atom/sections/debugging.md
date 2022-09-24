@@ -22,23 +22,21 @@ $ atom --version
 
 Then check for the [latest Stable version](https://github.com/atom/atom/releases/latest).
 
-{{#mac}}
+::: tabs#Updating
 
-If there is a more recent release available, you can update to the most recent release with the auto-update functionality built in to Atom and the [about package](https://github.com/atom/about). You can open the About View by using the _Atom > About_ menu option to see whether Atom is up-to-date, downloading a new update or click the button to "Restart and Install Update".
-
-{{/mac}}
-
-{{#windows}}
-
-If there is a more recent release available, you can update to the most recent release with the auto-update functionality built in to Atom and the [about package](https://github.com/atom/about). You can open the About View by using the _Help > About_ menu option to see whether Atom is up-to-date, downloading a new update or click the button to "Restart and Install Update".
-
-{{/windows}}
-
-{{#linux}}
+@tab Linux
 
 To update to the latest version, you can download it from [the atom.io website](https://atom.io) or [the latest release on GitHub](https://github.com/atom/atom/releases/latest) and follow the [Installation instructions for Atom on Linux](/getting-started/sections/installing-atom/#installing-atom-on-linux).
 
-{{/linux}}
+@tab Mac
+
+If there is a more recent release available, you can update to the most recent release with the auto-update functionality built in to Atom and the [about package](https://github.com/atom/about). You can open the About View by using the _Atom > About_ menu option to see whether Atom is up-to-date, downloading a new update or click the button to "Restart and Install Update".
+
+@tab Windows
+
+If there is a more recent release available, you can update to the most recent release with the auto-update functionality built in to Atom and the [about package](https://github.com/atom/about). You can open the About View by using the _Help > About_ menu option to see whether Atom is up-to-date, downloading a new update or click the button to "Restart and Install Update".
+
+:::
 
 If you're building Atom from source, pull down the latest version of master and [re-build](https://github.com/atom/atom#building).
 
@@ -62,11 +60,11 @@ When you find the problematic package, you can disable or uninstall the package.
 
 Atom saves a number of things about your environment when you exit in order to restore Atom to the same configuration when you next launch the program. In some cases the state that gets saved can be something undesirable that prevents Atom from working properly. In these cases, you may want to clear the state that Atom has saved.
 
-{{#danger}}
+::: danger DANGER
 
-:rotating_light: **Danger:** Clearing the saved state permanently destroys any state that Atom has saved _across all projects_. This includes unsaved changes to files you may have been editing in all projects. This is a destructive action.
+:rotating*light: **Danger:** Clearing the saved state permanently destroys any state that Atom has saved \_across all projects*. This includes unsaved changes to files you may have been editing in all projects. This is a destructive action.
 
-{{/danger}}
+:::
 
 Clearing the saved state can be done by opening a terminal and executing:
 
@@ -78,37 +76,35 @@ $ atom --clear-window-state
 
 In some cases, you may want to reset Atom to "factory defaults", in other words clear all of your configuration and remove all packages. This can easily be done by opening a terminal and executing:
 
-{{#mac}}
+::: tabs#Debugging
+
+@tab Linux
 
 ```command-line
 $ mv ~/.atom ~/.atom-backup
 ```
 
-{{/mac}}
-
-{{#linux}}
+@tab Mac
 
 ```command-line
 $ mv ~/.atom ~/.atom-backup
 ```
 
-{{/linux}}
-
-{{#windows}}
+@tab Windows
 
 ```command-line
 $ rename %USERPROFILE%\.atom .atom-backup
 ```
 
-{{/windows}}
+:::
 
 Once that is complete, you can launch Atom as normal. Everything will be just as if you first installed Atom.
 
-{{#tip}}
+::: tip Tip
 
 **Tip:** The command given above doesn't delete the old configuration, just puts it somewhere that Atom can't find it. If there are pieces of the old configuration you want to retrieve, you can find them in the <span class="platform-mac platform-linux">`~/.atom-backup`</span><span class="platform-windows">`%USERPROFILE%\.atom-backup`</span> directory.
 
-{{/tip}}
+:::
 
 #### Check for Linked Packages
 
@@ -131,17 +127,17 @@ $ apm unlink color-picker
 
 See `apm links --help` and `apm unlink --help` for more information on these commands.
 
-{{#tip}}
+::: tip Tip
 
 **Tip:** You can also use `apm unlink --all` to easily unlink all packages and themes.
 
-{{/tip}}
+:::
 
 #### Check for Incompatible Packages
 
 If you have packages installed that use native Node modules, when you upgrade to a new version of Atom, they might need to be rebuilt. Atom detects this and through the [incompatible-packages package](https://github.com/atom/incompatible-packages) displays an indicator in the status bar when this happens.
 
-![Incompatible Packages Status Bar Indicator](../../images/incompatible-packages-indicator.png "Incompatible Packages Status Bar Indicator")
+![Incompatible Packages Status Bar Indicator](@images/atom/incompatible-packages-indicator.png "Incompatible Packages Status Bar Indicator")
 
 If you see this indicator, click it and follow the instructions.
 
@@ -151,7 +147,7 @@ In some cases, unexpected behavior might be caused by settings in Atom or in one
 
 Open Atom's [Settings View](https://github.com/atom/settings-view) with <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd>, the <span class="platform-mac">_Atom > Preferences_</span><span class="platform-windows">_File > Preferences_</span><span class="platform-linux">_Edit > Preferences_</span> menu option, or the "Settings View: Open" command from the [Command Palette](https://github.com/atom/command-palette).
 
-![Settings View](../../images/settings-view.png)
+![Settings View](@images/atom/settings-view.png)
 
 Check Atom's settings in the Settings View, there's a description of most configuration options in the [Basic Customization section](/using-atom/sections/basic-customization/#configuration-key-reference). For example, if you want Atom to hide the invisible symbols representing whitespace characters, disable the "Show Invisibles" option.
 
@@ -159,7 +155,7 @@ Some of these options are also available on a per-language basis which means tha
 
 Since Atom ships with a set of packages and you can also install additional packages yourself, check the list of packages and their settings. For instance, if you'd like to get rid of the vertical line in the middle of the editor, disable the [Wrap Guide package](https://atom.io/packages/wrap-guide). And if you don't like it when Atom strips trailing whitespace or ensures that there's a single trailing newline in the file, you can configure that in the [whitespace package's](https://atom.io/packages/whitespace) settings.
 
-![Package Settings](../../images/package-settings.png)
+![Package Settings](@images/atom/package-settings.png)
 
 #### Check Your Configuration
 
@@ -171,7 +167,7 @@ If a command is not executing when you press a key combination or the wrong comm
 
 Show the keybinding resolver with <kbd class="platform-mac">Cmd+.</kbd><kbd class="platform-windows platform-linux">Ctrl+.</kbd> or with "Keybinding Resolver: Show" from the Command palette. With the Keybinding Resolver shown, press a key combination:
 
-![Keybinding Resolver](../../images/keybinding-resolver.png)
+![Keybinding Resolver](@images/atom/keybinding-resolver.png)
 
 The Keybinding Resolver shows you a list of keybindings that exist for the key combination, where each item in the list has the following:
 
@@ -199,29 +195,35 @@ If you notice that a package's keybindings are taking precedence over core Atom 
 
 You can determine which fonts are being used to render a specific piece of text by using the Developer Tools. To open the Developer Tools press <kbd class="platform-mac">Alt+Cmd+I</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+I</kbd>. Once the Developer Tools are open, click the "Elements" tab. Use the [standard tools for finding the element](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/) containing the text you want to check. Once you have selected the element, you can click the "Computed" tab in the styles pane and scroll to the bottom. The list of fonts being used will be shown there:
 
-![Fonts In Use](../../images/fonts-in-use.png "Fonts In Use")
+![Fonts In Use](@images/atom/fonts-in-use.png "Fonts In Use")
 
 #### Check for Errors in the Developer Tools
 
 When an unexpected error occurs in Atom, you will normally see a red notification which provides details about the error and allows you to create an issue on the right repository:
 
-![Exception Notification](../../images/exception-notification.png)
+![Exception Notification](@images/atom/exception-notification.png)
 
 Not all errors are logged with a notification so if you suspect you're experiencing an error but there's no notification, you can also look for errors in the developer tools Console tab. To access the Console tab, press <kbd class="platform-mac">Alt-Cmd-I</kbd><kbd class="platform-windows platform-linux">Ctrl-Shift-I</kbd> to open developer tools and then click the Console tab:
 
-![DevTools Error](../../images/devtools-error.png)
+![DevTools Error](@images/atom/devtools-error.png)
 
 If there are multiple errors, you can scroll down to the bottom of the panel to see the most recent error. Or while reproducing an error, you can right click in the Console tab panel, select `Clear console` to remove all Console output, and then reproduce the error to see what errors are logged to the Console tab.
 
-{{#note}}
+::: note Note
 
 **Note:** When running in Dev Mode, the developer tools are automatically shown with the error logged in the Console tab.
 
-{{/note}}
+:::
 
 #### Find Crash Logs
 
-{{#mac}}
+::: tabs#Debugging
+
+@tab Linux
+
+When Atom crashes, it should write a core dump if system settings permit. In order to find whether the core dump is written and to where, consult the documentation for your distribution of Linux. Once you have the core dump, you can save it to send in later if it is needed for debugging.
+
+@tab Mac
 
 When Atom crashes, you will find a crash dump in Console.app. You can launch Console.app using Spotlight or you can find it in `/Applications/Utilities/Console.app`. Once you have launched the program, you can find the latest crash dump by following these instructions:
 
@@ -230,25 +232,17 @@ When Atom crashes, you will find a crash dump in Console.app. You can launch Con
 
 Once you have the crash dump, you can save it to send in later if it is needed for debugging.
 
-{{/mac}}
-
-{{#windows}}
+@tab Windows
 
 When Atom crashes, you will find a crash dump inside your `%TEMP%\Atom Crashes` directory. It will be the newest file with the `.dmp` extension. Once you have the crash dump, you can save it to send in later if it is needed for debugging.
 
-{{/windows}}
-
-{{#linux}}
-
-When Atom crashes, it should write a core dump if system settings permit. In order to find whether the core dump is written and to where, consult the documentation for your distribution of Linux. Once you have the core dump, you can save it to send in later if it is needed for debugging.
-
-{{/linux}}
+:::
 
 #### Diagnose Startup Performance
 
 If Atom is taking a long time to start, you can use the [Timecop package](https://github.com/atom/timecop) to get insight into where Atom spends time while loading.
 
-![Timecop](../../images/timecop.png)
+![Timecop](@images/atom/timecop.png)
 
 Timecop displays the following information:
 
@@ -269,11 +263,11 @@ To run a profile, open the Developer Tools with <kbd class="platform-mac">Alt+Cm
 1. Select "Collect JavaScript CPU Profile"
 1. Click "Start"
 
-![DevTools Profiler](../../images/cpu-profile-start.png)
+![DevTools Profiler](@images/atom/cpu-profile-start.png)
 
 Once that is done, then perform the slow action to capture a recording. When finished, click "Stop". Switch to the "Chart" view, and a graph of the recorded actions will appear. You can save and post the profile data by clicking "Save" next to the profile's name in the left panel.
 
-![DevTools Profiler](../../images/cpu-profile-done.png)
+![DevTools Profiler](@images/atom/cpu-profile-done.png)
 
 To learn more, check out the [Chrome documentation on CPU profiling](https://developer.chrome.com/devtools/docs/cpu-profiling).
 

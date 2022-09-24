@@ -12,13 +12,13 @@ The simplest way to start a package is to use the built-in package generator tha
 
 You can run the generator by invoking the command palette and searching for "Generate Package". A dialog will appear asking you to name your new project. Name it `your-name-word-count`. Atom will then create that directory and fill it out with a skeleton project and link it into your <span class="platform-mac platform-linux">`~/.atom/packages`</span><span class="platform-windows">`%USERPROFILE%\.atom\packages`</span> directory so it's loaded when you launch your editor next time.
 
-{{#note}}
+::: note Note
 
 **Note:** You may encounter a situation where your package is not loaded. That is because a new package using the same name as an actual package hosted on [atom.io](https://atom.io/packages) (e.g. "wordcount" and "word-count") is not being loaded as you expected. If you follow our suggestion above of using the `your-name-word-count` package name, you _should_ be safe :grinning:
 
-{{/note}}
+:::
 
-![Basic generated Atom package](../../images/package.png)
+![Basic generated Atom package](@images/atom/package.png)
 
 You can see that Atom has created about a dozen files that make up the package. Let's take a look at each of them to get an idea of how a package is structured, then we can modify them to get our word count functionality.
 
@@ -101,11 +101,11 @@ If you wanted to use activationHooks, you might have:
 
 One of the first things you should do is ensure that this information is filled out. The name, description, repository URL the project will be at, and the license can all be filled out immediately. The other information we'll get into more detail on as we go.
 
-{{#warning}}
+::: warning WARNING
 
 **Warning:** Do not forget to update the repository URL. The one generated for you is invalid by design and will prevent you from publishing your package until updated.
 
-{{/warning}}
+:::
 
 ##### Source Code
 
@@ -184,7 +184,7 @@ It's recommended that you create an application menu item under the _Packages_ m
 
 This section puts a "Toggle" menu item under a menu group named "Your Name Word Count" in the "Packages" menu.
 
-![Application Menu Item](../../images/menu.png)
+![Application Menu Item](@images/atom/menu.png)
 
 When you select that menu item, it will run the `your-name-word-count:toggle` command, which we'll look at in a bit.
 
@@ -207,7 +207,7 @@ It's recommended to specify a context menu item for commands that are linked to 
 
 This adds a "Toggle Word Count" menu option to the menu that pops up when you right-click in an Atom text editor pane.
 
-![Context Menu Entry](../../images/context-menu.png)
+![Context Menu Entry](@images/atom/context-menu.png)
 
 When you click that it will again run the `your-name-word-count:toggle` method in your code.
 
@@ -251,7 +251,7 @@ You can also add separators and submenus to your context menus. To add a submenu
 
 Currently with the generated package we have, if we run that `your-name-word-count:toggle` command through the menu or the command palette, we'll get a dialog that says "The YourNameWordCount package is Alive! It's ALIVE!".
 
-![Wordcount Package is Alive Dialog](../../images/toggle.png)
+![Wordcount Package is Alive Dialog](@images/atom/toggle.png)
 
 ##### Understanding the Generated Code
 
@@ -410,11 +410,11 @@ So, let's review the actual flow in this package.
 1. Atom executes the command which hides the modal view
 1. Eventually, Atom is shut down which can trigger any serializations that your package has defined
 
-{{#tip}}
+::: tip Tip
 
 **Tip:** Keep in mind that the flow will be slightly different if you choose not to use `activationCommands` in your package.
 
-{{/tip}}
+:::
 
 ##### Counting the Words
 
@@ -452,13 +452,13 @@ setCount(count) {
 
 Pretty simple! We take the count number that was passed in and place it into a string that we then stick into the element that our view is controlling.
 
-{{#note}}
+::: note Note
 
 **Note:** To see your changes, you'll need to reload the code. You can do this by reloading the window (The `window:reload` command in the Command Palette). A common practice is to have two Atom windows, one for developing your package, and one for testing and reloading.
 
-{{/note}}
+:::
 
-![Word Count Working](../../images/wordcount.png)
+![Word Count Working](@images/atom/wordcount.png)
 
 #### Basic Debugging
 
@@ -466,7 +466,7 @@ You'll notice a few `console.log` statements in the code. One of the cool things
 
 To open up the Developer Console, press <kbd class="platform-mac">Alt+Cmd+I</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+I</kbd>, or choose the menu option _View > Developer > Toggle Developer Tools_.
 
-![Developer Tools Debugging](../../images/dev-tools.png)
+![Developer Tools Debugging](@images/atom/dev-tools.png)
 
 From here you can inspect objects, run code and view console output just as though you were debugging a web site.
 
@@ -480,7 +480,7 @@ Under the hood, [Jasmine v1.3](https://jasmine.github.io/archives/1.3/introducti
 
 Once you've got your test suite written, you can run it by pressing <kbd class="platform-mac">Alt+Cmd+Ctrl+P</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+P</kbd> or via the _View > Developer > Run Package Specs_ menu. Our generated package comes with an example test suite, so you can run this right now to see what happens.
 
-![Spec Suite Results](../../images/spec-suite.png)
+![Spec Suite Results](@images/atom/spec-suite.png)
 
 You can also use the `atom --test spec` command to run them from the command line. It prints the test output and results to the console and returns the proper status code depending on whether the tests passed or failed.
 

@@ -6,7 +6,7 @@ title: I am unable to update to the latest version of Atom on macOS. How do I fi
 
 Atom shows there is a new version available but the version fails to install. You might have an error message showing a permissions error for example:
 
-![Updating Atom on macOS](../../images/update-atom-macos.jpeg)
+![Updating Atom on macOS](@images/atom/update-atom-macos.jpeg)
 
 or it will say downloading but forever loops without restarting or updating.
 

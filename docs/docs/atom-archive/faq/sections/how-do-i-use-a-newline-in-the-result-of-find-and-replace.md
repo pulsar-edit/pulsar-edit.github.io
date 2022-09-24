@@ -20,6 +20,6 @@ goodbye
 
 In the find and replace settings, enable `Use Regex`, enter ", " as the find text, and enter "\n" as the replace text:
 
-![Find and replace with newline replace](../../images/find-and-replace-newline.png)
+![Find and replace with newline replace](@images/atom/find-and-replace-newline.png)
 
 Then click `Find All` and finally, click `Replace All`.

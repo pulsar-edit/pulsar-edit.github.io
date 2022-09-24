@@ -8,7 +8,7 @@ This means that there is a proxy between you and our servers where someone (typi
 
 If you decide that unsecured connections to our servers is acceptable to you, you can use the following instructions.
 
-{{#danger}}
+::: danger DANGER
 
 :rotating_light: **Danger:** If you decide that **unsecured** connections to our servers is acceptable to you, you can use the following command:
 
@@ -16,4 +16,4 @@ If you decide that unsecured connections to our servers is acceptable to you, yo
 apm config set strict-ssl false
 ```
 
-{{/danger}}
+:::

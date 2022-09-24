@@ -8,7 +8,7 @@ Atom's interface is rendered using HTML, and it's styled via [Less](http://lessc
 
 Atom supports two types of themes: _UI_ and _Syntax_. UI themes style elements such as the tree view, the tabs, drop-down lists, and the status bar. Syntax themes style the code, gutter and other elements inside the editor view.
 
-![Theme boundary](../../images/theme-boundary.png)
+![Theme boundary](@images/atom/theme-boundary.png)
 
 Themes can be installed and changed from the Settings View which you can open by selecting the <span class="platform-mac">_Atom > Preferences_</span><span class="platform-windows">_File > Preferences_</span><span class="platform-linux">_Edit > Preferences_</span> menu, and clicking the "Install" or "Themes" tab on the left hand navigation.
 
@@ -27,11 +27,11 @@ Let's create your first theme.
 
 To get started, press <kbd class="platform-mac">Cmd+Shift+P</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+P</kbd> and start typing "Generate Syntax Theme" to generate a new theme package. Select "Generate Syntax Theme," and you'll be asked for the path where your theme will be created. Let's call ours `motif-syntax`.
 
-{{#tip}}
+::: tip Tip
 
 **Tip:** Syntax themes should end with _-syntax_ and UI themes should end with _-ui_.
 
-{{/tip}}
+:::
 
 Atom will display a new window, showing the motif-syntax theme, with a default set of folders and files created for us. If you open the Settings View with <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd> and click the "Themes" tab on the left, you'll see the "Motif" theme listed in the "Syntax Theme" drop-down. Select it from the menu to activate it, now when you open an editor you should see your new motif-syntax theme in action.
 
@@ -43,17 +43,17 @@ As an example, let's make the `.gutter` `background-color` into `@red`.
 
 Reload Atom by pressing <kbd class="platform-mac">Alt+Cmd+Ctrl+L</kbd><kbd class="platform-windows platform-linux">Alt+Ctrl+R</kbd> to see the changes you made reflected in your Atom window. Pretty neat!
 
-{{#tip}}
+::: tip Tip
 
 **Tip:** You can avoid reloading to see changes you make by opening an Atom window in Dev Mode. To open a Dev Mode Atom window run `atom --dev .` in the terminal, or use the _View > Developer > Open in Dev Mode_ menu. When you edit your theme, changes will instantly be reflected!
 
-{{/tip}}
+:::
 
-{{#note}}
+::: note Note
 
 **Note:** It's advised to _not_ specify a `font-family` in your syntax theme because it will override the Font Family field in Atom's settings. If you still like to recommend a font that goes well with your theme, we suggest you do so in your README.
 
-{{/note}}
+:::
 
 #### Creating a UI Theme
 
@@ -70,11 +70,11 @@ To create a UI theme, do the following:
 9. Enable the theme via the "UI Theme" drop-down in the "Themes" tab of the Settings View
 10. Make changes! Since you opened the theme in a Dev Mode window, changes will be instantly reflected in the editor without having to reload.
 
-{{#tip}}
+::: tip Tip
 
 **Tip:** Because we used `apm link --dev` in the above instructions, if you break anything you can always close Atom and launch Atom normally to force Atom to the default theme. This allows you to continue working on your theme even if something goes catastrophically wrong.
 
-{{/tip}}
+:::
 
 #### Theme Variables
 
@@ -133,7 +133,7 @@ Atom is based on the Chrome browser, and supports Chrome's Developer Tools. You 
 
 The dev tools allow you to inspect elements and take a look at their CSS properties.
 
-![Developer Tools](../../images/dev-tools.png)
+![Developer Tools](@images/atom/dev-tools.png)
 
 Check out Google's [extensive tutorial](https://developer.chrome.com/devtools/docs/dom-and-styles) for a short introduction.
 
@@ -143,13 +143,13 @@ If you are creating an UI theme, you'll want a way to see how your theme changes
 
 To open the Styleguide, open the command palette with <kbd class="platform-mac">Cmd+Shift+P</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+P</kbd> and search for "styleguide", or use the shortcut <kbd class="platform-mac">Cmd+Ctrl+Shift+G</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+G</kbd>.
 
-![Style Guide](../../images/styleguide.png)
+![Style Guide](@images/atom/styleguide.png)
 
 ##### Side by side
 
 Sometimes when creating a theme (or package) things can go wrong and the editor becomes un-usable. E.g. if the text and background have the same color or something gets pushed out of sight. To avoid having to open Atom in "normal" mode to fix the issue, it's advised to open **two** Atom windows. One for making changes and one in Dev Mode to see the changes getting applied.
 
-![Side by side screenshot](../../images/theme-side-by-side.png)
+![Side by side screenshot](@images/atom/theme-side-by-side.png)
 
 > Make changes on the **left**, see the changes getting applied in "Dev Mode" on the **right**.
 

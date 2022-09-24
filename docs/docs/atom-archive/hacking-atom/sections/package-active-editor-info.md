@@ -90,11 +90,11 @@ Atom uses the same view abstractions everywhere, so we can almost use the genera
 
 Now reload the window and run the "Active Editor Info: Toggle" command from the command palette! Our view will appear in a new tab in the center of the workspace. If you want, you can drag it into one of the docks. Toggling it again will then hide that dock. If you close the tab and run the toggle command again, it will appear in the last place you had it.
 
-{{#note}}
+::: note Note
 
 We've repeated the same URI three times now. That's okay, but it's probably a good idea to define the URL in one place and then import it from that module wherever you need it.
 
-{{/note}}
+:::
 
 #### Constraining Our Item's Locations
 
@@ -141,11 +141,11 @@ this.subscriptions = atom.workspace
 
 Now whenever you open a text editor in the center, the view will update with some information about it.
 
-{{#warning}}
+::: warning WARNING
 
 We use a template string here because it's simple and we have a lot of control over what's going into it, but this could easily result in the insertion of unwanted HTML if you're not careful. Sanitize your input and use the DOM API or a templating system when doing this for real.
 
-{{/warning}}
+:::
 
 Also, don't forget to clean up the subscription in the `destroy()` method:
 
@@ -172,11 +172,11 @@ The first step is to implement a `serialize()` method on our ActiveEditorInfoVie
   }
 ```
 
-{{#note}}
+::: note Note
 
 All of our view's state is derived from the active text editor so we only need the `deserializer` field. If we had other state that we wanted to preserve across reloads, we would just add things to the object we're returning. Just make sure that they're JSON serializable!
 
-{{/note}}
+:::
 
 Next we need to register a deserializer function that Atom can use to recreate the real object when it starts up. The best way to do that is to add a "deserializers" object to our `package.json` file:
 
