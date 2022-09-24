@@ -1,7 +1,3 @@
----
-title: Converting from TextMate
----
-
 ### Converting from TextMate
 
 It's possible that you have themes or grammars from [TextMate](https://macromates.com) that you like and use and would like to convert to Atom. If so, you're in luck because there are tools to help with the conversion.

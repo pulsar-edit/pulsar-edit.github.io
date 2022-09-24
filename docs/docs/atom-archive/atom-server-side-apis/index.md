@@ -1,5 +1,5 @@
 ---
-title: Atom server-side APIs
+title: Appendix E - Atom server-side APIs
 ---
 
 ## Atom server-side APIs

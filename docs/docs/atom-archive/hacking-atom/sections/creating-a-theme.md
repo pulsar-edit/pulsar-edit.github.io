@@ -1,7 +1,3 @@
----
-title: Creating a Theme
----
-
 ### Creating a Theme
 
 Atom's interface is rendered using HTML, and it's styled via [Less](http://lesscss.org/) which is a superset of CSS. Don't worry if you haven't heard of Less before; it's just like CSS, but with a few handy extensions.

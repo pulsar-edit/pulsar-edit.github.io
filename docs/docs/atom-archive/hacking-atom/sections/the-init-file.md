@@ -1,7 +1,3 @@
----
-title: The Init File
----
-
 ### The Init File
 
 When Atom finishes loading, it will evaluate `init.coffee` in your <span class="platform-mac platform-linux">`~/.atom`</span><span class="platform-windows">`%USERPROFILE%\.atom`</span> directory, giving you a chance to run CoffeeScript code to make customizations. Code in this file has full access to [Atom's API](https://atom.io/docs/api/latest). If customizations become extensive, consider creating a package, which we will cover in [Package: Word Count](../package-word-count).

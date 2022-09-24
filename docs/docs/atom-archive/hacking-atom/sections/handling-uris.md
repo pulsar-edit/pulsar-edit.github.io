@@ -1,7 +1,3 @@
----
-title: Handling URIs
----
-
 ### Handling URIs
 
 Beginning in Atom 1.23, packages have the ability to handle special URIs triggered from the system; for example, a package named `my-package` can register itself to handle any URI starting with `atom://my-package/`.

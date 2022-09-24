@@ -1,7 +1,3 @@
----
-title: Maintaining a Fork of a Core Package in atom/atom
----
-
 ### Maintaining a Fork of a Core Package in atom/atom
 
 Originally, each of Atom's core packages resided in a separate repository. In 2018, in an effort to streamline the development of Atom by reducing overhead, the Atom team [consolidated many core Atom packages][consolidation] into the [atom/atom repository][atom-repo]. For example, the one-light-ui package was originally maintained in the [atom/one-light-ui][one-light-ui-repo] repository, but it is now maintained in the [`packages/one-light-ui` directory in the atom/atom repository][one-light-ui-dir].

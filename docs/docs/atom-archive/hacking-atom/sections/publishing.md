@@ -1,7 +1,3 @@
----
-title: "Publishing"
----
-
 ### Publishing
 
 Atom bundles a command line utility called `apm` which we first used back in [Command Line](/using-atom/sections/atom-packages/#command-line) to search for and install packages via the command line. The `apm` command can also be used to publish Atom packages to the public registry and update them.

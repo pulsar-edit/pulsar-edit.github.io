@@ -1,7 +1,3 @@
----
-title: Writing specs
----
-
 ### Writing Specs
 
 We've looked at and written a few specs through the examples already. Now it's time to take a closer look at the spec framework itself. How exactly do you write tests in Atom?

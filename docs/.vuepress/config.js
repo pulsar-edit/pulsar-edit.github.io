@@ -40,6 +40,6 @@ export default defineUserConfig({
       }
     },
     sidebar: sidebar_en,
-    sidebarDepth: 1
+    sidebarDepth: 3
   })
 });

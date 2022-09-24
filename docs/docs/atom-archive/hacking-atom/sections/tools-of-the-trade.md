@@ -1,7 +1,3 @@
----
-title: Tools of the Trade
----
-
 ### Tools of the Trade
 
 To begin, there are a few things we'll assume you know, at least to some degree. Since all of Atom is implemented using web technologies, we have to assume you know web technologies such as JavaScript and CSS. Specifically, we'll be using Less, which is a preprocessor for CSS.

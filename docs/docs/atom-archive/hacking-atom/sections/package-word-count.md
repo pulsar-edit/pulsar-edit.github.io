@@ -1,7 +1,3 @@
----
-title: "Package: Word Count"
----
-
 ### Package: Word Count
 
 Let's get started by writing a very simple package and looking at some of the tools needed to develop one effectively. We'll start by writing a package that tells you how many words are in the current buffer and display it in a small modal window.

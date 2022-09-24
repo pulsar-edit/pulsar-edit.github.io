@@ -1,7 +1,3 @@
----
-title: Iconography
----
-
 ### Iconography
 
 Atom comes bundled with the [Octicons 4.4.0](https://github.com/github/octicons/tree/v4.4.0) icon set. Use them to add icons to your packages.

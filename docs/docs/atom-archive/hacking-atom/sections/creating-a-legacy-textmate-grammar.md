@@ -1,7 +1,3 @@
----
-title: Creating a Legacy TextMate Grammar
----
-
 ### Creating a Legacy TextMate Grammar
 
 Atom's syntax highlighting can be powered by two types of grammars. If you're adding support for a new language, the preferred way is to [create a Tree-sitter grammar](../creating-a-grammar). Tree-sitter grammars have better performance and provide support for more editor features, such as the `Select Larger Syntax Node` command.

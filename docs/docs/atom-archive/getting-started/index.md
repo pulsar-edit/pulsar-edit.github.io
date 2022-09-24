@@ -1,5 +1,5 @@
 ---
-title: Chapter 1
+title: Chapter 1 - Getting started
 ---
 
 ## Getting Started

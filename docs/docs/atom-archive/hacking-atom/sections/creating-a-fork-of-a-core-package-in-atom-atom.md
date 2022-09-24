@@ -1,7 +1,3 @@
----
-title: Creating a Fork of a Core Package in atom/atom
----
-
 ## Creating a Fork of a Core Package in atom/atom
 
 Several of Atom's core packages are maintained in the [`packages` directory of the atom/atom repository](https://github.com/atom/atom/tree/master/packages). If you would like to use one of these packages as a starting point for your own package, please follow the steps below.
