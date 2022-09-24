@@ -25,7 +25,10 @@ export default defineUserConfig({
       include:true,
       tabs: true,
       container: true
-    })
+    }),
+    docsearchPlugin({
+      // options
+    }),
   ],
   theme: defaultTheme({
     displayAllHeaders: true,
