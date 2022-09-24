@@ -1,5 +1,5 @@
 ---
-title: Chapter 1 - Getting started
+title: Chapter 1 &#58; Getting started
 ---
 
 ## Getting Started
