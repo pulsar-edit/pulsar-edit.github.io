@@ -23,12 +23,17 @@ export default defineUserConfig({
     mdEnhancePlugin({
       align: true,
       include:true,
+<<<<<<< HEAD
       tabs: true,
       container: true
     }),
     /* docsearchPlugin({
       // options
     }), */
+=======
+      tabs: true
+    })
+>>>>>>> ca0ce9d (Add vuepress toc plugin)
   ],
   theme: defaultTheme({
     displayAllHeaders: true,

@@ -4,7 +4,11 @@ specifiers:
   '@mdit-vue/plugin-toc': ^0.11.1
   '@pulsar-media': github:pulsar-edit/.github
   '@vuepress/client': 2.0.0-beta.51
+<<<<<<< HEAD
   '@vuepress/plugin-docsearch': ^2.0.0-beta.51
+=======
+  '@vuepress/plugin-toc': ^2.0.0-beta.51
+>>>>>>> ca0ce9d (Add vuepress toc plugin)
   '@vuepress/utils': 2.0.0-beta.51
   husky: ^8.0.1
   lint-staged: ^13.0.3
@@ -19,14 +23,60 @@ specifiers:
   vuepress: 2.0.0-beta.51
   vuepress-plugin-md-enhance: ^2.0.0-beta.103
 
+<<<<<<< HEAD
 dependencies:
   '@pulsar-media': github.com/pulsar-edit/.github/e2744fd7a2eaa7e8297f781ec1744cc17e33b88a
   vuepress-plugin-md-enhance: 2.0.0-beta.104
+=======
+<<<<<<< HEAD
+  .:
+    specifiers:
+      '@vuepress/client': 2.0.0-beta.51
+      '@vuepress/utils': 2.0.0-beta.51
+      husky: ^8.0.1
+      lint-staged: ^13.0.3
+      prettier: ^2.7.1
+      pulsar-assets: github:pulsar-edit/pulsar-assets
+      remark-cli: ^11.0.0
+      remark-lint: ^9.1.1
+      remark-preset-lint-consistent: ^5.1.1
+      remark-preset-lint-markdown-style-guide: ^5.1.2
+      remark-preset-lint-recommended: ^6.1.2
+      remark-preset-prettier: ^2.0.1
+      vue: ^3.2.39
+      vuepress: 2.0.0-beta.51
+      vuepress-plugin-md-enhance: ^2.0.0-beta.103
+    dependencies:
+      pulsar-assets: github.com/pulsar-edit/pulsar-assets/7e0d12ca1a7e47b26f497757bf07fe9a03f6e10b
+      vuepress-plugin-md-enhance: 2.0.0-beta.104
+    devDependencies:
+      '@vuepress/client': 2.0.0-beta.51
+      '@vuepress/utils': 2.0.0-beta.51
+      husky: 8.0.1
+      lint-staged: 13.0.3
+      prettier: 2.7.1
+      remark-cli: 11.0.0
+      remark-lint: 9.1.1
+      remark-preset-lint-consistent: 5.1.1
+      remark-preset-lint-markdown-style-guide: 5.1.2
+      remark-preset-lint-recommended: 6.1.2
+      remark-preset-prettier: 2.0.1_prettier@2.7.1
+      vue: 3.2.39
+      vuepress: 2.0.0-beta.51_7i62w7p625cuklq36af6cl57wi
+=======
+dependencies:
+  '@pulsar-media': github.com/pulsar-edit/.github/e2744fd7a2eaa7e8297f781ec1744cc17e33b88a
+  vuepress-plugin-md-enhance: 2.0.0-beta.103
+>>>>>>> ca0ce9d (Add vuepress toc plugin)
 
 devDependencies:
   '@mdit-vue/plugin-toc': 0.11.1
   '@vuepress/client': 2.0.0-beta.51
+<<<<<<< HEAD
   '@vuepress/plugin-docsearch': 2.0.0-beta.51_tbpndr44ulefs3hehwpi2mkf2y
+=======
+  '@vuepress/plugin-toc': 2.0.0-beta.51
+>>>>>>> ca0ce9d (Add vuepress toc plugin)
   '@vuepress/utils': 2.0.0-beta.51
   husky: 8.0.1
   lint-staged: 13.0.3
@@ -39,6 +89,10 @@ devDependencies:
   remark-preset-prettier: 2.0.1_prettier@2.7.1
   vue: 3.2.39
   vuepress: 2.0.0-beta.51_7i62w7p625cuklq36af6cl57wi
+<<<<<<< HEAD
+=======
+>>>>>>> bc9c70c (Add vuepress toc plugin)
+>>>>>>> ca0ce9d (Add vuepress toc plugin)
 
 packages:
 
@@ -976,6 +1030,18 @@ packages:
       '@vuepress/shared': 2.0.0-beta.51
       '@vuepress/utils': 2.0.0-beta.51
       vue: 3.2.39
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@vuepress/plugin-toc/2.0.0-beta.51:
+    resolution: {integrity: sha512-qpAVyCbjuFQlR3A8vsApgVxNuRrEoZovdf96q0e/L77KY85yqP2h5+Tv1z7R8CowsaDZBaABt6BFM+8THMHClA==}
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.51
+      '@vuepress/core': 2.0.0-beta.51
+      '@vuepress/utils': 2.0.0-beta.51
+      vue: 3.2.39
+      vue-router: 4.1.5_vue@3.2.39
     transitivePeerDependencies:
       - supports-color
     dev: true
