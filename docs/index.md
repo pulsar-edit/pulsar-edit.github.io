@@ -6,4 +6,4 @@ sidebar: false
 home: true
 ---
 
-# Hello World
+# Welcome!
