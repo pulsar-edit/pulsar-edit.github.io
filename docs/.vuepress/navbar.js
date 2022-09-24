@@ -2,7 +2,7 @@ const navbar_en = [
   {
     text: "Start Here",
     children: [
-      '/docs/user_guide/',
+      '/docs/launch-manual',
       '/docs/packages/core',
       '/docs/packages/community'
     ]
