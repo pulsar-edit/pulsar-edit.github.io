@@ -1,6 +1,6 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
-import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+// import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { getDirname, path } from '@vuepress/utils';
 
 const __dirname = getDirname(import.meta.url)
@@ -26,9 +26,9 @@ export default defineUserConfig({
       tabs: true,
       container: true
     }),
-    docsearchPlugin({
+    /* docsearchPlugin({
       // options
-    }),
+    }), */
   ],
   theme: defaultTheme({
     displayAllHeaders: true,
