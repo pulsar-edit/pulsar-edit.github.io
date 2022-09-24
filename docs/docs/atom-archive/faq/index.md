@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: Appendix B &#58; FAQ
 ---
 
 ## FAQ
