@@ -24,7 +24,7 @@ export default defineUserConfig({
   },
   plugins: [
      docsearchPlugin({
-      apiKey: secrets.docsearchapikey,
+      apiKey: docsearchapikey,
       indexName: "dev_pulsaredit",
       appId: "NR3CRBCBZ1",
       disableUserPersonalization: true,
