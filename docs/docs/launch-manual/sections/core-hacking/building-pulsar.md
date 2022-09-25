@@ -71,9 +71,15 @@ TODO
 
 @tab Windows
 
-```
-TODO
-```
+Firstly install [Visual Studio](https://visualstudio.microsoft.com/downloads/) from Microsoft.
+
+```sh
+# Install Node16 (using `nvm` - see above) and enable corepack (for `yarn`)
+
+nvm install 16
+corepack enable
+```sh
+
 
 :::
 
