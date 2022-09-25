@@ -17,7 +17,8 @@ const sidebar_en = {
       children: [
         '/docs/launch-manual/sections/getting-started',
         '/docs/launch-manual/sections/core-hacking',
-        '/docs/launch-manual/sections/packages'
+        '/docs/launch-manual/sections/packages',
+        '/docs/launch-manual/sections/faq'
       ]
     },
     {
