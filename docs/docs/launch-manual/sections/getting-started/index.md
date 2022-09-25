@@ -1,3 +1,7 @@
+---
+{ "title": "Getting Started", "lang": "en-us" }
+---
+
 # Getting Started
 
 ::: warning Under Construction
