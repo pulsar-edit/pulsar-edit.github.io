@@ -15,11 +15,10 @@
   "license": "MIT",
   "dependencies": {
     "pulsar-assets": "github:pulsar-edit/pulsar-assets",
-    "vuepress-plugin-md-enhance": "^2.0.0-beta.103",
-    "vuepress-theme-hope": "2.0.0-beta.104",
+    "vuepress-plugin-md-enhance": "^2.0.0-beta.104",
+    "vuepress-theme-hope": "2.0.0-beta.104"
   },
   "devDependencies": {
-    "@mdit-vue/plugin-toc": "^0.11.1",
     "@vuepress/client": "2.0.0-beta.51",
     "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
     "@vuepress/utils": "2.0.0-beta.51",
