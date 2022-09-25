@@ -15,20 +15,13 @@
   "license": "MIT",
   "dependencies": {
     "pulsar-assets": "github:pulsar-edit/pulsar-assets",
-    "vuepress-plugin-md-enhance": "^2.0.0-beta.103"
+    "vuepress-plugin-md-enhance": "^2.0.0-beta.103",
+    "vuepress-theme-hope": "2.0.0-beta.104"
   },
   "devDependencies": {
-    "@mdit-vue/plugin-toc":"^0.11.1",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
-=======
-    "@vuepress/plugin-toc": "^2.0.0-beta.51",
->>>>>>> ca0ce9d (Add vuepress toc plugin)
-=======
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
->>>>>>> acb39aa (Fixing stuff?)
+    "@mdit-vue/plugin-toc": "^0.11.1",
     "@vuepress/client": "2.0.0-beta.51",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
     "@vuepress/utils": "2.0.0-beta.51",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",

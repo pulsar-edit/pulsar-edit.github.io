@@ -7,26 +7,31 @@ to build it from source.
 Installing Atom should be fairly simple. Generally, you can go to
 https://atom.io and you should see a download button as shown here:
 
-<CodeGroup>
-  <CodeGroupItem title="Linux">
-  ![Download buttons on https://atom.io](@images/atom/linux-downloads.png "Download buttons on https://atom.io")
-  </CodeGroupItem>
-  <CodeGroupItem title="Mac">
-    ![Download buttons on https://atom.io](@images/atom/mac-downloads.png "Download buttons on https://atom.io")
-  </CodeGroupItem>
-  <CodeGroupItem title="Windows">
-    ![Download buttons on https://atom.io](@images/atom/windows-downloads.png "Download buttons on https://atom.io")
-    </CodeGroupItem>
-</CodeGroup>
+::: tabs#installing-atom
+
+@tab Linux
+
+![Download buttons on https://atom.io](@images/atom/linux-downloads.png "Download buttons on https://atom.io")
+
+@tab Mac
+
+![Download buttons on https://atom.io](@images/atom/mac-downloads.png "Download buttons on https://atom.io")
+
+@tab Windows
+
+![Download buttons on https://atom.io](@images/atom/windows-downloads.png "Download buttons on https://atom.io")
+
+:::
 
 The button or buttons should be specific to your platform and the download
 package should be easily installable. However, let's go over them here in a
 bit of detail.
 
-<CodeGroup>
+::: tabs#installing-atom
 
-  <CodeGroupItem title="Linux">
-  #### Installing Atom on Linux
+@tab Linux
+
+#### Installing Atom on Linux
 
 You can install Atom on Linux using your distribution's package manager
 by configuring it to use one of our official package repositories. This
@@ -133,9 +138,7 @@ Alternatively, you can download the
 $ sudo zypper in -y atom.x86_64.rpm
 ```
 
-  </CodeGroupItem>
-
-  <CodeGroupItem title="Mac">
+@tab Mac
 
 #### Installing Atom on Mac
 
@@ -172,10 +175,9 @@ Commands" from the
 [Command Palette](/getting-started/sections/atom-basics#command-palette),
 which will prompt you for an administrator password.
 
-  </CodeGroupItem>
+@tab Windows
 
-  <CodeGroupItem title="Windows">
-  #### Installing Atom on Windows
+#### Installing Atom on Windows
 
 Atom is available with Windows installers that can be downloaded from
 https://atom.io or from the
@@ -194,8 +196,8 @@ controlled by the System Settings panel as seen above.
 With Atom open, click on `File > Settings`, and then the `System` tab on
 the left. Check the boxes next to `Show in file context menus`, as well
 as `Show in folder context menus`. And you’re all set.
-</CodeGroupItem>
-</CodeGroup>
+
+:::
 
 #### Updating Atom
 
@@ -203,19 +205,22 @@ You should consider updating Atom periodically for the latest improvements
 to the software. Additionally, When Atom receives hotfixes for security
 vulnerabilities you will want to update your version of Atom as soon as possible.
 
-<CodeGroup>
-  <CodeGroupItem title="Linux">
-  If you are using Atom's official package repositories, use your
-  distribution's package manager to update Atom.  Otherwise, you will need
-  to manually download and install the latest `.rpm` or `.deb` package from
-  https://atom.io. For more details, see
-  [Installing Atom on Linux.](https://flight-manual.atom.io/getting-started/sections/installing-atom/#installing-atom-on-linux)
-  </CodeGroupItem>
-  <CodeGroupItem title="Mac">
-  "Automatically Update" is enabled by default in Core Settings of the
-  [Settings View](https://flight-manual.atom.io/getting-started/sections/atom-basics/#settings-and-preferences),
-  which will allow Atom to check for updates automatically. If you disable
-  this setting you can update Atom manually.
+::: tabs#installing-atom
+
+@tab Linux
+
+If you are using Atom's official package repositories, use your
+distribution's package manager to update Atom. Otherwise, you will need
+to manually download and install the latest `.rpm` or `.deb` package from
+https://atom.io. For more details, see
+[Installing Atom on Linux.](https://flight-manual.atom.io/getting-started/sections/installing-atom/#installing-atom-on-linux)
+
+@tab Mac
+
+"Automatically Update" is enabled by default in Core Settings of the
+[Settings View](https://flight-manual.atom.io/getting-started/sections/atom-basics/#settings-and-preferences),
+which will allow Atom to check for updates automatically. If you disable
+this setting you can update Atom manually.
 
 To perform a manual update:
 
@@ -224,8 +229,9 @@ To perform a manual update:
   [Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette) and click the `Check now` button.
 
 Atom will begin to update if an update is available.
-</CodeGroupItem>
-<CodeGroupItem title="Windows">
+
+@tab Windows
+
 "Automatically Update" is enabled by default in Core Settings of the
 [Settings View](https://flight-manual.atom.io/getting-started/sections/atom-basics/#settings-and-preferences),
 which will allow Atom to check for updates automatically. If you disable
@@ -239,8 +245,8 @@ To perform a manual update:
   and click the `Check now` button.
 
 Atom will begin to update if an update is available.
-</CodeGroupItem>
-</CodeGroup>
+
+:::
 
 #### Portable Mode
 
@@ -254,38 +260,39 @@ To setup Atom in portable mode download the
 [zip/tar.gz package for your system](https://github.com/atom/atom/releases/latest)
 and extract it to your removable storage.
 
-<CodeGroup>
-  <CodeGroupItem title="Linux">
-  Then create a `.atom` directory alongside the directory that contains the
-  Atom binary, for example:
+::: tabs#installing-atom
+
+@tab Linux
+
+Then create a `.atom` directory alongside the directory that contains the
+Atom binary, for example:
 
 ```
 /media/myusb/atom-1.14/atom
 /media/myusb/.atom
 ```
 
-  </CodeGroupItem>
-  <CodeGroupItem title="Mac">
-  Then create a `.atom` directory alongside the Atom.app application, for
-  example:
+@tab Mac
+
+Then create a `.atom` directory alongside the Atom.app application, for
+example:
 
 ```
 /MyUSB/Atom.app
 /MyUSB/.atom
 ```
 
-  </CodeGroupItem>
-  <CodeGroupItem title="Windows">
-  Then create a `.atom` directory alongside the directory that contains
-  atom.exe, for example:
+@tab Windows
+
+Then create a `.atom` directory alongside the directory that contains
+atom.exe, for example:
 
 ```
 e:\atom-1.14\atom.exe
 e:\.atom
 ```
 
-  </CodeGroupItem>
-</CodeGroup>
+:::
 
 ##### Portable Notes
 
