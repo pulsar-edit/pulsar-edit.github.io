@@ -1,5 +1,5 @@
 ---
-title: Appendix E &#58; Atom server-side APIs
+{ "title": "Appendix E : Atom server-side APIs", "lang": "en-us" }
 ---
 
 ## Atom server-side APIs

@@ -16,12 +16,10 @@ specifiers:
   remark-preset-prettier: ^2.0.1
   vue: ^3.2.39
   vuepress: 2.0.0-beta.51
-  vuepress-plugin-md-enhance: ^2.0.0-beta.104
   vuepress-theme-hope: 2.0.0-beta.104
 
 dependencies:
   pulsar-assets: github.com/pulsar-edit/pulsar-assets/7e0d12ca1a7e47b26f497757bf07fe9a03f6e10b
-  vuepress-plugin-md-enhance: 2.0.0-beta.104
   vuepress-theme-hope: 2.0.0-beta.104
 
 devDependencies:
@@ -1590,7 +1588,7 @@ packages:
   /@types/concat-stream/2.0.0:
     resolution: {integrity: sha512-t3YCerNM7NTVjLuICZo5gYAXYoDvpuuTceCcFQWcDQz26kxUR5uIWolxbIR5jRNIXpMqhOpW/b8imCR1LEmuJw==}
     dependencies:
-      '@types/node': 18.7.20
+      '@types/node': 18.7.21
     dev: true
 
   /@types/debug/4.1.7:
@@ -1615,7 +1613,7 @@ packages:
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 18.7.20
+      '@types/node': 18.7.21
 
   /@types/hash-sum/1.0.0:
     resolution: {integrity: sha512-FdLBT93h3kcZ586Aee66HPCVJ6qvxVjBlDWNmxSGSbCZe9hTsjRKdSsl4y1T+3zfujxo9auykQMnFsfyHWD7wg==}
@@ -1668,13 +1666,13 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: false
 
-  /@types/node/18.7.20:
-    resolution: {integrity: sha512-adzY4vLLr5Uivmx8+zfSJ5fbdgKxX8UMtjtl+17n0B1q1Nz8JEmE151vefMdpD+1gyh+77weN4qEhej/O7budQ==}
+  /@types/node/18.7.21:
+    resolution: {integrity: sha512-rLFzK5bhM0YPyCoTC8bolBjMk7bwnZ8qeZUBslBfjZQou2ssJdWslx9CZ8DGM+Dx7QXQiiTVZ/6QO6kwtHkZCA==}
 
   /@types/resolve/1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.7.20
+      '@types/node': 18.7.21
     dev: false
 
   /@types/sax/1.2.4:
@@ -2082,8 +2080,8 @@ packages:
       - '@vue/composition-api'
       - vue
 
-  /@waline/client/2.10.0:
-    resolution: {integrity: sha512-eB3Hs2HxvxDS6SaS9xfHRzHpcBttFFvYkAOPDQfrN5X75vNHbKhDQwaYqKEKO1AyA2iLXVbsM2U+9iqZjDGLkw==}
+  /@waline/client/2.11.0:
+    resolution: {integrity: sha512-UBSAmbeA3cNYTpWG3kGO+8Z55rNW0YFu3n4hyPWMCO2BJAY9h8aa2FER0EdPlVtAQH/Wa9kbEaie8xBTy7m/zQ==}
     engines: {node: '>=14'}
     dependencies:
       '@vueuse/core': 9.2.0_vue@3.2.39
@@ -3180,11 +3178,11 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /echarts/5.3.3:
-    resolution: {integrity: sha512-BRw2serInRwO5SIwRviZ6Xgm5Lb7irgz+sLiFMmy/HOaf4SQ+7oYqxKzRHAKp4xHQ05AuHw1xvoQWJjDQq/FGw==}
+  /echarts/5.4.0:
+    resolution: {integrity: sha512-uPsO9VRUIKAdFOoH3B0aNg7NRVdN7aM39/OjovjO9MwmWsAkfGyeXJhK+dbRi51iDrQWliXV60/XwLA7kg3z0w==}
     dependencies:
       tslib: 2.3.0
-      zrender: 5.3.2
+      zrender: 5.4.0
     dev: false
 
   /ejs/3.1.8:
@@ -4238,7 +4236,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.7.20
+      '@types/node': 18.7.21
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: false
@@ -6373,7 +6371,7 @@ packages:
       '@types/concat-stream': 2.0.0
       '@types/debug': 4.1.7
       '@types/is-empty': 1.2.1
-      '@types/node': 18.7.20
+      '@types/node': 18.7.21
       '@types/unist': 2.0.6
       concat-stream: 2.0.0
       debug: 4.3.4
@@ -6668,7 +6666,7 @@ packages:
     dependencies:
       '@vuepress/client': 2.0.0-beta.51
       '@vuepress/utils': 2.0.0-beta.51
-      '@waline/client': 2.10.0
+      '@waline/client': 2.11.0
       giscus: 1.2.0
       twikoo: 1.6.7
       vue: 3.2.39
@@ -6766,7 +6764,7 @@ packages:
       '@vueuse/core': 9.2.0_vue@3.2.39
       balloon-css: 1.2.0
       chart.js: 3.9.1
-      echarts: 5.3.3
+      echarts: 5.4.0
       flowchart.js: 1.17.1
       juice: 8.1.0
       katex: 0.16.2
@@ -7234,8 +7232,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /zrender/5.3.2:
-    resolution: {integrity: sha512-8IiYdfwHj2rx0UeIGZGGU4WEVSDEdeVCaIg/fomejg1Xu6OifAL1GVzIPHg2D+MyUkbNgPWji90t0a8IDk+39w==}
+  /zrender/5.4.0:
+    resolution: {integrity: sha512-rOS09Z2HSVGFs2dn/TuYk5BlCaZcVe8UDLLjj1ySYF828LATKKdxuakSZMvrDz54yiKPDYVfjdKqcX8Jky3BIA==}
     dependencies:
       tslib: 2.3.0
     dev: false
