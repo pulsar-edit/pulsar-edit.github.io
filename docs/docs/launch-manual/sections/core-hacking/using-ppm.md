@@ -26,7 +26,8 @@ TODO
 @tab Windows
 
 ```sh
-TODO
+set ATOM_HOME=C:\Users\<user>\.pulsar
+set APM_PATH=\ppm\bin\apm
 ```
 
 :::
