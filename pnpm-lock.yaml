@@ -4,12 +4,12 @@ importers:
 
   .:
     specifiers:
-      '@pulsar-media': github:pulsar-edit/.github
       '@vuepress/client': 2.0.0-beta.51
       '@vuepress/utils': 2.0.0-beta.51
       husky: ^8.0.1
       lint-staged: ^13.0.3
       prettier: ^2.7.1
+      pulsar-assets: github:pulsar-edit/pulsar-assets
       remark-cli: ^11.0.0
       remark-lint: ^9.1.1
       remark-preset-lint-consistent: ^5.1.1
@@ -20,8 +20,8 @@ importers:
       vuepress: 2.0.0-beta.51
       vuepress-plugin-md-enhance: ^2.0.0-beta.103
     dependencies:
-      '@pulsar-media': github.com/pulsar-edit/.github/e2744fd7a2eaa7e8297f781ec1744cc17e33b88a
-      vuepress-plugin-md-enhance: 2.0.0-beta.103
+      pulsar-assets: github.com/pulsar-edit/pulsar-assets/7e0d12ca1a7e47b26f497757bf07fe9a03f6e10b
+      vuepress-plugin-md-enhance: 2.0.0-beta.104
     devDependencies:
       '@vuepress/client': 2.0.0-beta.51
       '@vuepress/utils': 2.0.0-beta.51
@@ -407,7 +407,7 @@ packages:
   /@types/concat-stream/2.0.0:
     resolution: {integrity: sha512-t3YCerNM7NTVjLuICZo5gYAXYoDvpuuTceCcFQWcDQz26kxUR5uIWolxbIR5jRNIXpMqhOpW/b8imCR1LEmuJw==}
     dependencies:
-      '@types/node': 18.7.19
+      '@types/node': 18.7.20
     dev: true
 
   /@types/debug/4.1.7:
@@ -428,7 +428,7 @@ packages:
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 18.7.19
+      '@types/node': 18.7.20
 
   /@types/hash-sum/1.0.0:
     resolution: {integrity: sha512-FdLBT93h3kcZ586Aee66HPCVJ6qvxVjBlDWNmxSGSbCZe9hTsjRKdSsl4y1T+3zfujxo9auykQMnFsfyHWD7wg==}
@@ -477,8 +477,8 @@ packages:
   /@types/ms/0.7.31:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
 
-  /@types/node/18.7.19:
-    resolution: {integrity: sha512-Sq1itGUKUX1ap7GgZlrzdBydjbsJL/NSQt/4wkAxUJ7/OS5c2WkoN6WSpWc2Yc5wtKMZOUA0VCs/j2XJadN3HA==}
+  /@types/node/18.7.20:
+    resolution: {integrity: sha512-adzY4vLLr5Uivmx8+zfSJ5fbdgKxX8UMtjtl+17n0B1q1Nz8JEmE151vefMdpD+1gyh+77weN4qEhej/O7budQ==}
 
   /@types/supports-color/8.1.1:
     resolution: {integrity: sha512-dPWnWsf+kzIG140B8z2w3fr5D03TLWbOAFQl45xUpI3vcizeXriNR5VYkWZ+WTMsUHqZ9Xlt3hrxGNANFyNQfw==}
@@ -540,8 +540,8 @@ packages:
       '@vue/compiler-dom': 3.2.39
       '@vue/shared': 3.2.39
 
-  /@vue/devtools-api/6.2.1:
-    resolution: {integrity: sha512-OEgAMeQXvCoJ+1x8WyQuVZzFo0wcyCmUR3baRVLmKBo1LmYZWMlRiXlux5jd0fqVJu6PfDbOrZItVqUEzLobeQ==}
+  /@vue/devtools-api/6.3.0:
+    resolution: {integrity: sha512-OfjtreoF3LtHmte3TrWSoZcyL4XWBL5+dTnCARuJZzTCYuaaO29PGMKCKdmXi4CZ0SiN0Exz1IGSo2S5BgDwEQ==}
 
   /@vue/reactivity-transform/3.2.39:
     resolution: {integrity: sha512-HGuWu864zStiWs9wBC6JYOP1E00UjMdDWIG5W+FpUx28hV3uz9ODOKVNm/vdOy/Pvzg8+OcANxAVC85WFBbl3A==}
@@ -631,7 +631,7 @@ packages:
   /@vuepress/client/2.0.0-beta.51:
     resolution: {integrity: sha512-5iQV765kwR6/eIZPMlV5O34DUvHCMjF7zpr91x5i8BEAg7A0jfHvdrwNavAKWiQEU77f4dIBXtWy6nwX+lgmbw==}
     dependencies:
-      '@vue/devtools-api': 6.2.1
+      '@vue/devtools-api': 6.3.0
       '@vuepress/shared': 2.0.0-beta.51
       vue: 3.2.39
       vue-router: 4.1.5_vue@3.2.39
@@ -776,7 +776,7 @@ packages:
   /@vuepress/plugin-theme-data/2.0.0-beta.51:
     resolution: {integrity: sha512-sfsZRhb7zZATqY1+BXkynZZ7HEZnBZEd4iuEyCNpWEnjwa7/qjPSKJyAb/M0a2SLgN2/UcPdM5URMfE1mV/4QQ==}
     dependencies:
-      '@vue/devtools-api': 6.2.1
+      '@vue/devtools-api': 6.3.0
       '@vuepress/client': 2.0.0-beta.51
       '@vuepress/core': 2.0.0-beta.51
       '@vuepress/shared': 2.0.0-beta.51
@@ -941,7 +941,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.4
-      caniuse-lite: 1.0.30001410
+      caniuse-lite: 1.0.30001412
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -996,8 +996,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001410
-      electron-to-chromium: 1.4.258
+      caniuse-lite: 1.0.30001412
+      electron-to-chromium: 1.4.261
       node-releases: 2.0.6
       update-browserslist-db: 1.0.9_browserslist@4.21.4
 
@@ -1021,8 +1021,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /caniuse-lite/1.0.30001410:
-    resolution: {integrity: sha512-QoblBnuE+rG0lc3Ur9ltP5q47lbguipa/ncNMyyGuqPk44FxbScWAeEO+k5fSQ8WekdAK4mWqNs1rADDAiN5xQ==}
+  /caniuse-lite/1.0.30001412:
+    resolution: {integrity: sha512-+TeEIee1gS5bYOiuf+PS/kp2mrXic37Hl66VY6EAfxasIk5fELTktK2oOezYed12H8w7jt3s512PpulQidPjwA==}
 
   /chalk/2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -1805,8 +1805,8 @@ packages:
       zrender: 5.3.2
     dev: false
 
-  /electron-to-chromium/1.4.258:
-    resolution: {integrity: sha512-vutF4q0dTUXoAFI7Vbtdwen/BJVwPgj8GRg/SElOodfH7VTX+svUe62A5BG41QRQGk5HsZPB0M++KH1lAlOt0A==}
+  /electron-to-chromium/1.4.261:
+    resolution: {integrity: sha512-fVXliNUGJ7XUVJSAasPseBbVgJIeyw5M1xIkgXdTSRjlmCqBbiSTsEdLOCJS31Fc8B7CaloQ/BFAg8By3ODLdg==}
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -4385,7 +4385,7 @@ packages:
       '@types/concat-stream': 2.0.0
       '@types/debug': 4.1.7
       '@types/is-empty': 1.2.1
-      '@types/node': 18.7.19
+      '@types/node': 18.7.20
       '@types/unist': 2.0.6
       concat-stream: 2.0.0
       debug: 4.3.4
@@ -4625,7 +4625,7 @@ packages:
     peerDependencies:
       vue: ^3.2.0
     dependencies:
-      '@vue/devtools-api': 6.2.1
+      '@vue/devtools-api': 6.3.0
       vue: 3.2.39
 
   /vue/3.2.39:
@@ -4637,8 +4637,8 @@ packages:
       '@vue/server-renderer': 3.2.39_vue@3.2.39
       '@vue/shared': 3.2.39
 
-  /vuepress-plugin-md-enhance/2.0.0-beta.103:
-    resolution: {integrity: sha512-LyjPRNT6s7J7Kj1/m6OT0jQ1PT1niwN14bpmcLaJZHrg4aLIZRPKQZj1g2pZt5jjqwgYA9DZOIrScN+Qc572pA==}
+  /vuepress-plugin-md-enhance/2.0.0-beta.104:
+    resolution: {integrity: sha512-lftl5uZfV3MIY0BTRYShCSWIBQtap/2zkVJRE1hO4YBL20nrs0i7AVxAXtYTcOsL7fJGHFP/Abp2X/3Oy3Tm0A==}
     peerDependencies:
       sass-loader: ^13.0.0
     peerDependenciesMeta:
@@ -4666,16 +4666,16 @@ packages:
       reveal.js: 4.3.1
       vue: 3.2.39
       vue-router: 4.1.5_vue@3.2.39
-      vuepress-plugin-sass-palette: 2.0.0-beta.103
-      vuepress-shared: 2.0.0-beta.103
+      vuepress-plugin-sass-palette: 2.0.0-beta.104
+      vuepress-shared: 2.0.0-beta.104
     transitivePeerDependencies:
       - '@vue/composition-api'
       - encoding
       - supports-color
     dev: false
 
-  /vuepress-plugin-sass-palette/2.0.0-beta.103:
-    resolution: {integrity: sha512-bdnlmQnvsaY1alyfDBChkSa4Co5veeVGUsxrELFehFmwh5n24ePHu2RvZAD86dqYrJIduQNFf20CDrMGHrZPhg==}
+  /vuepress-plugin-sass-palette/2.0.0-beta.104:
+    resolution: {integrity: sha512-dipyQIy1fceau/NE4Az3F7gNSkSaZOMCekuZ+76Pt8d13ZDGqQiqf0I0SwqkTvIBKzQZSXEI2DXC4Se8o8KYcQ==}
     peerDependencies:
       sass-loader: ^13.0.0
     peerDependenciesMeta:
@@ -4685,13 +4685,13 @@ packages:
       '@vuepress/utils': 2.0.0-beta.51
       chokidar: 3.5.3
       sass: 1.55.0
-      vuepress-shared: 2.0.0-beta.103
+      vuepress-shared: 2.0.0-beta.104
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /vuepress-shared/2.0.0-beta.103:
-    resolution: {integrity: sha512-qbHnnkrUHyYZzVyku6MdHz98x/l1Jlycg8UjbiJ1NhDpvCWKqzVM0SvAXa9nK5fFBiJKslbRs2qstEq+1yN19Q==}
+  /vuepress-shared/2.0.0-beta.104:
+    resolution: {integrity: sha512-wDQZ1D8J1uFsgI1gohIjuKdmVVcgsDg1p33VN+5aGAEAh+BwePTs34JExUdYXx9S27dW0/WP3PdHkKyj1lkIvA==}
     dependencies:
       '@vuepress/client': 2.0.0-beta.51
       '@vuepress/plugin-git': 2.0.0-beta.51
@@ -4837,8 +4837,8 @@ packages:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
     dev: true
 
-  github.com/pulsar-edit/.github/e2744fd7a2eaa7e8297f781ec1744cc17e33b88a:
-    resolution: {tarball: https://codeload.github.com/pulsar-edit/.github/tar.gz/e2744fd7a2eaa7e8297f781ec1744cc17e33b88a}
-    name: .github
-    version: 0.0.0
+  github.com/pulsar-edit/pulsar-assets/7e0d12ca1a7e47b26f497757bf07fe9a03f6e10b:
+    resolution: {tarball: https://codeload.github.com/pulsar-edit/pulsar-assets/tar.gz/7e0d12ca1a7e47b26f497757bf07fe9a03f6e10b}
+    name: pulsar-assets
+    version: 1.0.0
     dev: false
