@@ -78,8 +78,7 @@ Firstly install [Visual Studio](https://visualstudio.microsoft.com/downloads/) f
 
 nvm install 16
 corepack enable
-```sh
-
+```
 
 :::
 
