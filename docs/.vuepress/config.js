@@ -4,6 +4,8 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { getDirname, path } from '@vuepress/utils';
 import secrets from '../../.secrets.json';
 
+const docsearchapikey = (secrets.docsearchapikey ? secrets.docsearchapikey : process.env.docsearchapikey);
+
 const __dirname = getDirname(import.meta.url)
 
 
@@ -28,9 +30,8 @@ export default defineUserConfig({
       disableUserPersonalization: true,
       searchParameters: {
         attributesToRetrieve: [ "*" ],
-        attributes: {
-          attributesToRetrieve: [ "*" ]
-        },
+        attributesToSnippet: [ "*" ],
+        facetFilters: [],
         hitsPerPage: 10
       },
       locales: {
