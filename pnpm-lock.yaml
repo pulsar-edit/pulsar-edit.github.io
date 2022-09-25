@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-docsearch': ^2.0.0-beta.51
+  '@vuepress/plugin-search': 2.0.0-beta.51
   '@vuepress/utils': 2.0.0-beta.51
   husky: ^8.0.1
   lint-staged: ^13.0.3
@@ -27,6 +28,7 @@ dependencies:
 devDependencies:
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-docsearch': 2.0.0-beta.51_tbpndr44ulefs3hehwpi2mkf2y
+  '@vuepress/plugin-search': 2.0.0-beta.51
   '@vuepress/utils': 2.0.0-beta.51
   husky: 8.0.1
   lint-staged: 13.0.3
@@ -1993,6 +1995,20 @@ packages:
       prismjs: 1.29.0
     transitivePeerDependencies:
       - supports-color
+
+  /@vuepress/plugin-search/2.0.0-beta.51:
+    resolution: {integrity: sha512-LUKD1WOhesfbjRmy+3wPz27ZOat5sEL7nRVFrmoZNGjqGoUSuh/AFnd04z2utVEoceeuWWOluVmpoYKhxJVMFQ==}
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.51
+      '@vuepress/core': 2.0.0-beta.51
+      '@vuepress/shared': 2.0.0-beta.51
+      '@vuepress/utils': 2.0.0-beta.51
+      chokidar: 3.5.3
+      vue: 3.2.39
+      vue-router: 4.1.5_vue@3.2.39
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@vuepress/plugin-theme-data/2.0.0-beta.51:
     resolution: {integrity: sha512-sfsZRhb7zZATqY1+BXkynZZ7HEZnBZEd4iuEyCNpWEnjwa7/qjPSKJyAb/M0a2SLgN2/UcPdM5URMfE1mV/4QQ==}
