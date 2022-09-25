@@ -14,11 +14,13 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@pulsar-media": "github:pulsar-edit/.github",
-    "vuepress-plugin-md-enhance": "^2.0.0-beta.103"
+    "pulsar-assets": "github:pulsar-edit/pulsar-assets",
+    "vuepress-plugin-md-enhance": "^2.0.0-beta.104",
+    "vuepress-theme-hope": "2.0.0-beta.104"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.51",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.51",
     "@vuepress/utils": "2.0.0-beta.51",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",

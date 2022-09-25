@@ -1,10 +1,8 @@
----
-title: Atom Basics
----
-
 ::: danger STOP
-This is being kept for archival purposes only from the original Atom documentation. As this may no longer be relevant to Pulsar, you use this at your own risk.
-Current Pulsar documentation is found at at the [documentation home](/docs/).
+This is being kept for archival purposes only from the original Atom
+documentation. As this may no longer be relevant to Pulsar, you use this at
+your own risk. Current Pulsar documentation for this section is found at the
+[documentation home](/docs/launch-manual/getting-started).
 :::
 
 #### Atom Basics
@@ -32,7 +30,7 @@ in Atom, the Command Palette. If you press <kbd class="platform-mac">
 Cmd+Shift+P</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+P
 </kbd> while focused in an editor pane, the command palette will pop up.
 
-::: tip Note:
+::: note Note:
 Throughout the book, we will use shortcut keybindings like
 <kbd class="platform-mac">Cmd+Shift+P</kbd><kbd class="platform-windows
 platform-linux">Ctrl+Shift+P</kbd> to demonstrate how to run a command.
@@ -62,7 +60,7 @@ the command.
 Not only can you see and quickly search through thousands of possible commands,
 but you can also see if there is a keybinding associated with it. This is great
 because it means you can guess your way to doing interesting things while also
-learning the shortcut key strokes for doing it.
+learning the shortcut keystrokes for doing it.
 
 For the rest of the book, we will try to be clear as to the text you can search
 for in the Command Palette in addition to the keybinding for different commands.
@@ -80,13 +78,24 @@ screen to install new packages and themes, which we'll cover in
 [Atom Packages](/sections/atom-packages).
 
 To open the Settings View, you can:
+::: tabs Settings View
 
-- Use the <span class="platform-mac">_Atom > Preferences_</span>
-  <span class="platform-windows">_File > Settings_</span>
-  <span class="platform-linux">_Edit > Preferences_</span> menu item in the menu
-  bar
+@tab Linux
+
+- Use the _Edit > Preferences_ menu item in the menu bar
+
+@tab Mac
+
+- Use the _Atom > Preferences_ menu item in the menu bar
+
+@tab Windows
+
+- Use the _File > Settings_ menu item in the menu bar
+
+:::
+
 - Search for `settings-view:open` in the [Command Palette](#command-palette)
-- Use the <kbd class="platform-mac">Cmd+,</kbd>
+- Use the <kbd class="platform-mac">Cmd+,</kbd> or
   <kbd class="platform-windows platform-linux">Ctrl+,</kbd> keybinding
 
 ##### Changing the Theme
@@ -257,7 +266,7 @@ these plus showing the file in <span class="platform-mac">Finder</span>
 <span class="platform-linux">your native filesystem</span> or copying the file
 path to the clipboard.
 
-::: tip Note
+::: note Note
 **Atom Packages**
 
 Like many parts of Atom, the Tree View is not built directly into the editor,

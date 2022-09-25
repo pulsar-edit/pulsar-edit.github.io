@@ -192,19 +192,22 @@ You should consider updating Pulsar periodically for the latest improvements
 to the software. Additionally, When Pulsar receives hotfixes for security
 vulnerabilities you will want to update your version of Pulsar as soon as possible.
 
-<CodeGroup>
-  <CodeGroupItem title="Linux">
-  If you are using Pulsar's official package repositories, use your
-  distribution's package manager to update Pulsar.  Otherwise, you will need
-  to manually download and install the latest `.rpm` or `.deb` package from
-  https://atom.io. For more details, see
-  [Installing Pulsar on Linux.](https://flight-manual.atom.io/getting-started/sections/installing-atom/#installing-atom-on-linux)
-  </CodeGroupItem>
-  <CodeGroupItem title="Mac">
-  "Automatically Update" is enabled by default in Core Settings of the
-  [Settings View](https://flight-manual.atom.io/getting-started/sections/atom-basics/#settings-and-preferences),
-  which will allow Pulsar to check for updates automatically. If you disable
-  this setting you can update Pulsar manually.
+::: tabs#installing-pulsar
+
+@tab Linux
+
+If you are using Pulsar's official package repositories, use your
+distribution's package manager to update Pulsar. Otherwise, you will need
+to manually download and install the latest `.rpm` or `.deb` package from
+https://atom.io. For more details, see
+[Installing Pulsar on Linux.](https://flight-manual.atom.io/getting-started/sections/installing-atom/#installing-atom-on-linux)
+
+@tab Mac
+
+"Automatically Update" is enabled by default in Core Settings of the
+[Settings View](https://flight-manual.atom.io/getting-started/sections/atom-basics/#settings-and-preferences),
+which will allow Pulsar to check for updates automatically. If you disable
+this setting you can update Pulsar manually.
 
 To perform a manual update:
 
@@ -213,8 +216,9 @@ To perform a manual update:
   [Command Palette](https://flight-manual.atom.io/getting-started/sections/atom-basics/#command-palette) and click the `Check now` button.
 
 Pulsar will begin to update if an update is available.
-</CodeGroupItem>
-<CodeGroupItem title="Windows">
+
+@tab Windows
+
 "Automatically Update" is enabled by default in Core Settings of the
 [Settings View](https://flight-manual.atom.io/getting-started/sections/atom-basics/#settings-and-preferences),
 which will allow Pulsar to check for updates automatically. If you disable
@@ -228,8 +232,8 @@ To perform a manual update:
   and click the `Check now` button.
 
 Pulsar will begin to update if an update is available.
-</CodeGroupItem>
-</CodeGroup>
+
+:::
 
 #### Portable Mode
 
@@ -243,38 +247,39 @@ To setup Pulsar in portable mode download the
 [zip/tar.gz package for your system](https://github.com/atom/atom/releases/latest)
 and extract it to your removable storage.
 
-<CodeGroup>
-  <CodeGroupItem title="Linux">
-  Then create a `.atom` directory alongside the directory that contains the
-  Pulsar binary, for example:
+::: tabs#installing-pulsar
+
+@tab Linux
+
+Then create a `.atom` directory alongside the directory that contains the
+Pulsar binary, for example:
 
 ```
 /media/myusb/atom-1.14/atom
 /media/myusb/.atom
 ```
 
-  </CodeGroupItem>
-  <CodeGroupItem title="Mac">
-  Then create a `.atom` directory alongside the Pulsar.app application, for
-  example:
+@tab Mac
+
+Then create a `.atom` directory alongside the Pulsar.app application, for
+example:
 
 ```
 /MyUSB/Pulsar.app
 /MyUSB/.atom
 ```
 
-  </CodeGroupItem>
-  <CodeGroupItem title="Windows">
-  Then create a `.atom` directory alongside the directory that contains
-  atom.exe, for example:
+@tab Windows
+
+Then create a `.atom` directory alongside the directory that contains
+atom.exe, for example:
 
 ```
 e:\atom-1.14\atom.exe
 e:\.atom
 ```
 
-  </CodeGroupItem>
-</CodeGroup>
+:::
 
 ##### Portable Notes
 
