@@ -28,7 +28,7 @@ in Pulsar, the Command Palette. If you press <kbd class="platform-mac">
 Cmd+Shift+P</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+P
 </kbd> while focused in an editor pane, the command palette will pop up.
 
-::: tip Note:
+::: note Note:
 Throughout the book, we will use shortcut keybindings like
 <kbd class="platform-mac">Cmd+Shift+P</kbd><kbd class="platform-windows
 platform-linux">Ctrl+Shift+P</kbd> to demonstrate how to run a command.
@@ -253,7 +253,7 @@ these plus showing the file in <span class="platform-mac">Finder</span>
 <span class="platform-linux">your native filesystem</span> or copying the file
 path to the clipboard.
 
-::: tip Note
+::: note Note
 **Pulsar Packages**
 
 Like many parts of Pulsar, the Tree View is not built directly into the editor,
