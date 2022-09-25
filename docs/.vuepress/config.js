@@ -14,7 +14,7 @@ export default defineUserConfig({
   title: 'Pulsar Edit',
   description: 'Next generation hackable editor for the future',
   alias: {
-    '@images': path.resolve(__dirname, '../../node_modules/@pulsar-media/images')
+    '@images': path.resolve(__dirname, '../../node_modules/pulsar-assets/images')
   },
   devServer: {
     https: true
