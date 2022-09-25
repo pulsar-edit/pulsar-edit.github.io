@@ -1,7 +1,8 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
 import { hopeTheme } from "vuepress-theme-hope";
-// import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { getDirname, path } from '@vuepress/utils';
+import secrets from '../../.secrets.json';
 
 const __dirname = getDirname(import.meta.url)
 
@@ -20,9 +21,12 @@ export default defineUserConfig({
     https: true
   },
   plugins: [
-    /* docsearchPlugin({
-      // options
-    }), */
+     docsearchPlugin({
+      apiKey: secrets.docsearchapikey,
+      indexName: "dev_pulsaredit",
+      appId: "NR3CRBCBZ1",
+      placeholder: "Search Pulsar Edit"
+    }),
   ],
   theme: hopeTheme({
     displayAllHeaders: true,
