@@ -42,6 +42,7 @@ devDependencies:
   vue: 3.2.39
   vuepress: 2.0.0-beta.51_7i62w7p625cuklq36af6cl57wi
 
+
 packages:
 
   /@algolia/autocomplete-core/1.7.1:
@@ -6769,7 +6770,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
-
+    
   /vuepress-plugin-md-enhance/2.0.0-beta.104:
     resolution: {integrity: sha512-lftl5uZfV3MIY0BTRYShCSWIBQtap/2zkVJRE1hO4YBL20nrs0i7AVxAXtYTcOsL7fJGHFP/Abp2X/3Oy3Tm0A==}
     peerDependencies:
@@ -6860,7 +6861,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
-
+    
   /vuepress-plugin-sass-palette/2.0.0-beta.104:
     resolution: {integrity: sha512-dipyQIy1fceau/NE4Az3F7gNSkSaZOMCekuZ+76Pt8d13ZDGqQiqf0I0SwqkTvIBKzQZSXEI2DXC4Se8o8KYcQ==}
     peerDependencies:
