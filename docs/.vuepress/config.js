@@ -25,7 +25,24 @@ export default defineUserConfig({
       apiKey: secrets.docsearchapikey,
       indexName: "dev_pulsaredit",
       appId: "NR3CRBCBZ1",
-      placeholder: "Search Pulsar Edit"
+      disableUserPersonalization: true,
+      searchParameters: {
+        attributesToRetrieve: [ "*" ],
+        attributes: {
+          attributesToRetrieve: [ "*" ]
+        },
+        hitsPerPage: 10
+      },
+      locales: {
+        '/': {
+          placeholder: "Search Pulsar Edit",
+          translations: {
+            button: {
+              buttonText: "Search Docs"
+            },
+          },
+        },
+      }
     }),
   ],
   theme: hopeTheme({
