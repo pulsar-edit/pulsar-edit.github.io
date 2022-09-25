@@ -9,6 +9,9 @@ on:
   # Trigger deployment manually.
   workflow_dispatch:
 
+env:
+  docsearchapikey: ${{ secrets.DOCSEARCHAPIKEY }}
+
 jobs:
   cache-and-install:
     runs-on: ubuntu-latest
