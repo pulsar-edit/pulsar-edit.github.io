@@ -1,7 +1,7 @@
 ## Having trouble?
 
 If you have any issues then please feel free to ask for help from the Pulsar Team:
-- [Discord server](https://discord.gg/gp9UStzsHk)
+- [Discord server](https://discord.gg/7aEbB9dGRT)
 - [subreddit](https://www.reddit.com/r/pulsaredit/)
 - [GitHub Discussions](https://github.com/pulsar-edit/pulsar/discussions)
 
