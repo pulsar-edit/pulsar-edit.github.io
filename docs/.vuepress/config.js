@@ -1,6 +1,6 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
 import { hopeTheme } from "vuepress-theme-hope";
-// import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+import { searchPlugin } from '@vuepress/plugin-search';
 import { getDirname, path } from '@vuepress/utils';
 
 const __dirname = getDirname(import.meta.url)
@@ -20,9 +20,9 @@ export default defineUserConfig({
     https: true
   },
   plugins: [
-    /* docsearchPlugin({
-      // options
-    }), */
+    searchPlugin({
+      maxSuggestions: 10
+    }),
   ],
   theme: hopeTheme({
     displayAllHeaders: true,
