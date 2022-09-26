@@ -1,35 +1,45 @@
 # Workflow to lint Markdown provided 
 
-name: Lint 
+name: Lint
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
-    
+
 jobs:
   lint:
-    runs-on: ubuntu-latest 
-    
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: Setup Node.js
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - name: Cache Dependencies 
-        uses: actions/cache@v2
-        id: yarn-cache 
-        with: 
-          path: |
-            **/node_modules 
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2.0.1
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-
-      - name: Install Dependencies 
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --frozen-lockfile 
+            ${{ runner.os }}-pnpm-store-
+
       - name: Run Linting 
-        run: yarn run lint 
+        run: pnpm lint 
+      
