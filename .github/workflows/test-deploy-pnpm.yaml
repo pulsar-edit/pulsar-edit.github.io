@@ -16,9 +16,17 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16'
-      - name: Setup PNPM
-        run: npm install -g pnpm@latest
+      - name: Setup pnpm
+      # You may pin to the exact commit or the version.
+      # uses: pnpm/action-setup@10693b3829bf86eb2572aef5f3571dcf5ca9287d
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+          run_install: |
+            - recursive: true
+              args: [--frozen-lockfile, --strict-peer-dependencies]
+            - args: [--global, prettier, gulp]
       - name: Install Dependencies
         run: pnpm install
       - name: Test Build
-        run: pnpm run build
+        run: pnpm build
