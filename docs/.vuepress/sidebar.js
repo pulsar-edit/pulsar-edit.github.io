@@ -8,6 +8,7 @@ const sidebar_en = {
       title: 'Documentation Home',
       link: '/docs/',
       prefix: '/docs/',
+      collapsible: true,
       children: [
         {
           text: 'Launch Manual',
@@ -26,6 +27,7 @@ const sidebar_en = {
           title: 'resources',
           link: 'resources/',
           prefix: 'resources/',
+          collapsible: true,
           children: [
             'glossary/',
             'pulsar-api/'
@@ -36,6 +38,7 @@ const sidebar_en = {
           title: 'atom archive',
           link: 'atom-archive/',
           prefix: 'atom-archive/',
+          collapsible: true,
           children: [
             'getting-started/',
             'using-atom/',
