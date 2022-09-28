@@ -2155,7 +2155,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001412
-      electron-to-chromium: 1.4.265
+      electron-to-chromium: 1.4.267
       node-releases: 2.0.6
       update-browserslist-db: 1.0.9_browserslist@4.21.4
 
@@ -3020,8 +3020,8 @@ packages:
       jake: 10.8.5
     dev: false
 
-  /electron-to-chromium/1.4.265:
-    resolution: {integrity: sha512-38KaYBNs0oCzWCpr6j7fY/W9vF0vSp4tKFIshQTgdZMhUpkxgotkQgjJP6iGMdmlsgMs3i0/Hkko4UXLTrkYVQ==}
+  /electron-to-chromium/1.4.267:
+    resolution: {integrity: sha512-ik4QnU3vFRsVgwt0vsn7og28++2cGnsdgqYagaE3ur1f3wj5AzmWu+1k3//SOc6CwkP2xfu46PNfVP6X+SRepg==}
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -4551,8 +4551,8 @@ packages:
       micromark-util-types: 1.0.2
     dev: true
 
-  /micromark-util-sanitize-uri/1.0.0:
-    resolution: {integrity: sha512-cCxvBKlmac4rxCGx6ejlIviRaMKZc0fWm5HdCHEeDWRSkn44l6NdYVRyU+0nT1XC72EQJMZV8IPHF+jTr56lAg==}
+  /micromark-util-sanitize-uri/1.1.0:
+    resolution: {integrity: sha512-RoxtuSCX6sUNtxhbmsEFQfWzs8VN7cTctmBPvYivo98xb/kDEoTCtJQX5wyzIYEmk/lvNFTat4hL8oW0KndFpg==}
     dependencies:
       micromark-util-character: 1.1.0
       micromark-util-encode: 1.0.1
@@ -4591,7 +4591,7 @@ packages:
       micromark-util-encode: 1.0.1
       micromark-util-normalize-identifier: 1.0.0
       micromark-util-resolve-all: 1.0.0
-      micromark-util-sanitize-uri: 1.0.0
+      micromark-util-sanitize-uri: 1.1.0
       micromark-util-subtokenize: 1.0.2
       micromark-util-symbol: 1.0.1
       micromark-util-types: 1.0.2
