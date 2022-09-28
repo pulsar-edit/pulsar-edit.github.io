@@ -1,7 +1,7 @@
 ---
 lang: en-us
 title: Atom Documentation Archive
-description: Archived Atom Documentation in it's original form
+description: "Archived Atom Documentation in it's original form"
 ---
 
 ::: danger STOP

@@ -35,12 +35,25 @@ const sidebar_en = {
       title: 'Atom Archive',
       text: 'Atom Archive',
       link: '/docs/atom-archive/',
+      prefix: '/docs/atom-archive',
       collapsible: true,
       children: [
-        '/docs/atom-archive/getting-started/',
-        '/docs/atom-archive/using-atom/',
-        '/docs/atom-archive/hacking-atom/',
-        '/docs/atom-archive/atom-server-side-apis/'
+        '/getting-started/',
+        '/using-atom/',
+        '/hacking-atom/',
+        '/behind-atom/',
+        {
+          text: 'Resources',
+          prefix:'/resources',
+          link: '/resources/',
+          children: [
+            '/glossary/'
+          ],
+        },
+        '/faq/',
+        '/shadow-dom/',
+        '/upgrading-to-1.0-apis/',
+        '/atom-server-side-apis/',
       ]
     }
   ],
