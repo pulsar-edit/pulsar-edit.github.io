@@ -12,19 +12,19 @@ This means some of this information may be old, or no longer relevant. If it is,
 
 As well, we have a record of [community packages](#community-packages) as well. This is meant to be a record of these. This section should be updated as we get more community contributions of these. The process for adding this will be added at a later date.
 
-
 ## Core Packages
 
 ### Updated
-* TODO: Add Documentation from updated packages documentation.
+
+- TODO: Add Documentation from updated packages documentation.
 
 ### Archived Documentation
 
-* [Atom-LanguageClient](/docs/packages/core/atom-languageclient/index.md)
-* [Autocomplete-Plus](/docs/packages/core/autocomplete-plus/index.md)
-* [GitHub](/docs/packages/core/github/index.md)
-* [IDE-Java](/docs/packages/core/ide-java/index.md)
-
+- [Atom-LanguageClient](/docs/packages/core/atom-languageclient/index.md)
+- [Autocomplete-Plus](/docs/packages/core/autocomplete-plus/index.md)
+- [GitHub](/docs/packages/core/github/index.md)
+- [IDE-Java](/docs/packages/core/ide-java/index.md)
 
 ## Community Packages
-* TODO: Add Documentation for Community packages, these can be straight grabs of the read-mes for these packages. With possibility of overrides
+
+- TODO: Add Documentation for Community packages, these can be straight grabs of the read-mes for these packages. With possibility of overrides

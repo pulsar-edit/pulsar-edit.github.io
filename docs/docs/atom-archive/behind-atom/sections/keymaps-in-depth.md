@@ -8,7 +8,25 @@ title: Keymaps In-Depth
 
 Keymap files are encoded as JSON or CSON files containing nested hashes. They work much like style sheets, but instead of applying style properties to elements matching the selector, they specify the meaning of keystrokes on elements matching the selector. Here is an example of some bindings that apply when keystrokes pass through `atom-text-editor` elements:
 
-{{#mac}}
+::: tabs#keymaps-indepth
+
+@tab Linux
+
+```coffee
+'atom-text-editor':
+  'ctrl-left': 'editor:move-to-beginning-of-word'
+  'ctrl-right': 'editor:move-to-end-of-word'
+  'ctrl-shift-left': 'editor:select-to-beginning-of-word'
+  'ctrl-shift-right': 'editor:select-to-end-of-word'
+  'ctrl-backspace': 'editor:delete-to-beginning-of-word'
+  'ctrl-delete': 'editor:delete-to-end-of-word'
+
+'atom-text-editor:not([mini])':
+  'ctrl-alt-[': 'editor:fold-current-row'
+  'ctrl-alt-]': 'editor:unfold-current-row'
+```
+
+@tab Mac
 
 ```coffee
 'atom-text-editor':
@@ -23,9 +41,7 @@ Keymap files are encoded as JSON or CSON files containing nested hashes. They wo
   'cmd-alt-]': 'editor:unfold-current-row'
 ```
 
-{{/mac}}
-
-{{#windows}}
+@tab Windows
 
 ```coffee
 'atom-text-editor':
@@ -41,25 +57,7 @@ Keymap files are encoded as JSON or CSON files containing nested hashes. They wo
   'ctrl-alt-]': 'editor:unfold-current-row'
 ```
 
-{{/windows}}
-
-{{#linux}}
-
-```coffee
-'atom-text-editor':
-  'ctrl-left': 'editor:move-to-beginning-of-word'
-  'ctrl-right': 'editor:move-to-end-of-word'
-  'ctrl-shift-left': 'editor:select-to-beginning-of-word'
-  'ctrl-shift-right': 'editor:select-to-end-of-word'
-  'ctrl-backspace': 'editor:delete-to-beginning-of-word'
-  'ctrl-delete': 'editor:delete-to-end-of-word'
-
-'atom-text-editor:not([mini])':
-  'ctrl-alt-[': 'editor:fold-current-row'
-  'ctrl-alt-]': 'editor:unfold-current-row'
-```
-
-{{/linux}}
+:::
 
 Beneath the first selector are several keybindings, mapping specific key combinations to commands. When an element with the `atom-text-editor` class is focused and <kbd class="platform-mac">Alt+Backspace</kbd><kbd class="platform-windows platform-linux">Ctrl+Backspace</kbd> is pressed, a custom DOM event called `editor:delete-to-beginning-of-word` is emitted on the `atom-text-editor` element.
 
@@ -143,32 +141,30 @@ But if some element above the Tree View had a keybinding for `a`, that keybindin
 
 When the keymap system encounters a binding with the `abort!` directive as its command, it will stop searching for a keybinding. For example, the following code removes the keybinding for <kbd class='platform-mac'>Cmd+O</kbd><kbd class='platform-windows platform-linux'>Ctrl+O</kbd> when the selection is inside an editor pane:
 
-{{#mac}}
+::: codetabs#keymaps-in-depth
+
+@tab Linux
+
+```coffee
+'atom-text-editor':
+  'ctrl-o': 'abort!'
+```
+
+@tab Mac
 
 ```coffee
 'atom-text-editor':
   'cmd-o': 'abort!'
 ```
 
-{{/mac}}
-
-{{#windows}}
+@tab Windows
 
 ```coffee
 'atom-text-editor':
   'ctrl-o': 'abort!'
 ```
 
-{{/windows}}
-
-{{#linux}}
-
-```coffee
-'atom-text-editor':
-  'ctrl-o': 'abort!'
-```
-
-{{/linux}}
+:::
 
 But if you click inside the Tree View and press <kbd class='platform-mac'>Cmd+O</kbd><kbd class='platform-windows platform-linux'>Ctrl+O</kbd>, it will work.
 

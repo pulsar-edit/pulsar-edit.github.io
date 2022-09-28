@@ -1,5 +1,5 @@
 ---
-title: Upgrading to 1.0 APIs
+title: "Appendix D : Upgrading to 1.0 APIs"
 ---
 
 ## Upgrading to 1.0 APIs

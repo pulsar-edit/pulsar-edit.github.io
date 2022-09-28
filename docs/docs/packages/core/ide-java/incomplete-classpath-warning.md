@@ -1,9 +1,9 @@
 ---
 lang: en-us
-title: Incomplete Classpath Warning 
+title: Incomplete Classpath Warning
 ---
 
-# Incomplete Classpath Warning 
+# Incomplete Classpath Warning
 
 ::: warning
 Please note that its possible this is outdated, as its original version was published by @'Damein Guard' on Feb 16, 2018.
