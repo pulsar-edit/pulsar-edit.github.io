@@ -1,5 +1,5 @@
 ---
-title: Appendix B &#58; FAQ
+title: "Appendix B : FAQ"
 ---
 
 ## FAQ
