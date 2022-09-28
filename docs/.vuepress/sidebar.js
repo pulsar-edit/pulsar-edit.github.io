@@ -35,7 +35,7 @@ const sidebar_en = {
       title: 'Atom Archive',
       text: 'Atom Archive',
       link: '/docs/atom-archive/',
-      prefix: '/docs/atom-archive',
+      prefix: '/docs/atom-archive/',
       collapsible: true,
       children: [
         '/getting-started/',
