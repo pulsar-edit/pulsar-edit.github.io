@@ -17,7 +17,8 @@ const sidebar_en = {
       children: [
         '/docs/launch-manual/sections/getting-started',
         '/docs/launch-manual/sections/core-hacking',
-        '/docs/launch-manual/sections/packages'
+        '/docs/launch-manual/sections/packages',
+        '/docs/launch-manual/sections/faq'
       ]
     },
     {
@@ -29,8 +30,21 @@ const sidebar_en = {
         '/docs/resources/glossary',
         '/docs/resources/pulsar-api'
       ]
+    },
+    {
+      title: 'Atom Archive',
+      text: 'Atom Archive',
+      link: '/docs/atom-archive/',
+      collapsible: true,
+      children: [
+        '/docs/atom-archive/getting-started/',
+        '/docs/atom-archive/using-atom/',
+        '/docs/atom-archive/hacking-atom/',
+        '/docs/atom-archive/atom-server-side-apis/'
+      ]
     }
   ],
+
   '/about/': [
 
   ]

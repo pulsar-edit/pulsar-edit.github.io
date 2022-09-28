@@ -1,7 +1,7 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
-
-import { getDirname, path } from '@vuepress/utils'
+import { hopeTheme } from "vuepress-theme-hope";
+import { searchPlugin } from '@vuepress/plugin-search';
+import { getDirname, path } from '@vuepress/utils';
 
 const __dirname = getDirname(import.meta.url)
 
@@ -14,19 +14,17 @@ export default defineUserConfig({
   title: 'Pulsar Edit',
   description: 'Next generation hackable editor for the future',
   alias: {
-    '@images': path.resolve(__dirname, '../../node_modules/@pulsar-media/images')
+    '@images': path.resolve(__dirname, '../../node_modules/pulsar-assets/images')
   },
   devServer: {
     https: true
   },
   plugins: [
-    mdEnhancePlugin({
-      align: true,
-      include:true,
-      tabs: true
+    searchPlugin({
+      maxSuggestions: 10
     }),
   ],
-  theme: defaultTheme({
+  theme: hopeTheme({
     displayAllHeaders: true,
     editLinks: true,
     navbar: navbar_en,
@@ -35,7 +33,15 @@ export default defineUserConfig({
         selectLanguageName: "English"
       }
     },
+    plugins: {
+      mdEnhance: {
+        align: true,
+        include:true,
+        tabs: true,
+        container: true
+      },
+    },
     sidebar: sidebar_en,
-    sidebarDepth: 1
-  })
+    sidebarDepth: 3
+  }),
 });

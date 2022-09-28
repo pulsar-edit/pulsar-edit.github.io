@@ -15,10 +15,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.0.2
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v3.4.1
         with:
           node-version: 16
 
@@ -48,9 +48,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build VuePress Site
-        run: pnpm run build
+        run: pnpm build
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
           build_dir: docs/.vuepress/dist
