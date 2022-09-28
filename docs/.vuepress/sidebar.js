@@ -38,22 +38,22 @@ const sidebar_en = {
       prefix: '/docs/atom-archive/',
       collapsible: true,
       children: [
-        '/getting-started/',
-        '/using-atom/',
-        '/hacking-atom/',
-        '/behind-atom/',
+        'getting-started/',
+        'using-atom/',
+        'hacking-atom/',
+        'behind-atom/',
         {
           text: 'Resources',
-          prefix:'/resources',
-          link: '/resources/',
+          prefix:'resources/',
+          link: 'resources/',
           children: [
-            '/glossary/'
+            'glossary/'
           ],
         },
-        '/faq/',
-        '/shadow-dom/',
-        '/upgrading-to-1.0-apis/',
-        '/atom-server-side-apis/',
+        'faq/',
+        'shadow-dom/',
+        'upgrading-to-1-0-apis/',
+        'atom-server-side-apis/',
       ]
     }
   ],
