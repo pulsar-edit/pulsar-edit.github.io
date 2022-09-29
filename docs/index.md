@@ -7,6 +7,16 @@ actions:
     link: "/docs/launch-manual"
 heroText: Pulsar
 features:
-  - title: Teletype for Pulsar
-    details: "Great things happen when developers work together—from teaching and sharing knowledge to building better software. Teletype for Pulsar makes collaborating on code just as easy as it is to code alone, right from your editor. Share your workspace and edit code together in real time. To start collaborating, open Teletype in Pulsar and install the package."
+  - title: "Cross-platform Editing"
+    details: "Pulsar works across operating systems. Use it on OS X, Windows, or Linux."
+  - title: "Built-in package manager"
+    details: "Search and install new packages or create your own right from Pulsar."
+  - title: "Smart Autocompletion"
+    text: "Pulsar helps you write code faster with a smart and flexible autocomplete."
+  - title: "File system browser"
+    text: "Easily browse and open a single file, a whole project, or multiple projects in one window."
+  - title: "Multiple panes"
+    text: "Split your Atom interface into multiple panes to compare and edit code across files."
+  - title: "Find and replace"
+    text: "Find, preview, and replace text as you type in a file or across all your projects."
 ---
