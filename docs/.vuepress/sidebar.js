@@ -4,47 +4,57 @@ const sidebar_en = {
   ],
   '/docs/': [
     {
-      title: "Documentation Home",
-      text: "Documentation Home",
-      link: "/docs/",
-      collapsible: true
-    },
-    {
-      title: "Launch Manual",
-      text: "Launch Manual",
-      link: '/docs/launch-manual',
+      text: 'Documentation Home',
+      title: 'Documentation Home',
+      link: '/docs/',
+      prefix: '/docs/',
       collapsible: true,
       children: [
-        '/docs/launch-manual/sections/getting-started',
-        '/docs/launch-manual/sections/core-hacking',
-        '/docs/launch-manual/sections/packages',
-        '/docs/launch-manual/sections/faq'
-      ]
-    },
-    {
-      title: 'Resources',
-      text: 'Resources',
-      link: '/docs/resources',
-      collapsible: false,
-      children: [
-        '/docs/resources/glossary',
-        '/docs/resources/pulsar-api'
-      ]
-    },
-    {
-      title: 'Atom Archive',
-      text: 'Atom Archive',
-      link: '/docs/atom-archive/',
-      collapsible: true,
-      children: [
-        '/docs/atom-archive/getting-started/',
-        '/docs/atom-archive/using-atom/',
-        '/docs/atom-archive/hacking-atom/',
-        '/docs/atom-archive/atom-server-side-apis/'
+        {
+          text: 'Launch Manual',
+          link:'launch-manual/',
+          prefix: 'launch-manual/sections/',
+          collapsible: true,
+          children: [
+            'getting-started/',
+            'core-hacking/',
+            'faq/'
+          ]
+        },
+        'packages/',
+        {
+          text: 'Resources',
+          title: 'resources',
+          link: 'resources/',
+          prefix: 'resources/',
+          collapsible: true,
+          children: [
+            'glossary/',
+            'pulsar-api/'
+          ]
+        },
+        {
+          text: 'Atom Archive',
+          title: 'atom archive',
+          link: 'atom-archive/',
+          prefix: 'atom-archive/',
+          collapsible: true,
+          children: [
+            'getting-started/',
+            'using-atom/',
+            'hacking-atom/',
+            'behind-atom/',
+            'api/',
+            'resources/',
+            'faq/',
+            'shadow-dom/',
+            'upgrading-to-1-0-apis/',
+            'atom-server-side-apis/'
+          ]
+        }
       ]
     }
   ],
-
   '/about/': [
 
   ]

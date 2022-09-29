@@ -3,7 +3,7 @@ lang: en-us
 title: Autocomplete-Plus
 ---
 
-# Autocomplete-Plus 
+# Autocomplete-Plus
 
 Welcome to the `autocomplete-plus` wiki!
 

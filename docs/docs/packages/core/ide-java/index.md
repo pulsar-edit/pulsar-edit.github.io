@@ -3,7 +3,7 @@ lang: en-us
 title: IDE-Java
 ---
 
-# IDE-Java 
+# IDE-Java
 
 Welcome to the `ide-java` wiki!
 
