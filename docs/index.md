@@ -16,7 +16,7 @@ features:
   - title: "File system browser"
     text: "Easily browse and open a single file, a whole project, or multiple projects in one window."
   - title: "Multiple panes"
-    text: "Split your Atom interface into multiple panes to compare and edit code across files."
+    text: "Split your Pulsar interface into multiple panes to compare and edit code across files."
   - title: "Find and replace"
     text: "Find, preview, and replace text as you type in a file or across all your projects."
 ---
