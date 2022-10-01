@@ -1,0 +1,11 @@
+{
+  "name": "pulsar-web-ui",
+  "version": "1.0.0",
+  "description": "Browse the Pulsar Backend, via a Web UI",
+  "author": "confused-Techie",
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+
+  }
+}

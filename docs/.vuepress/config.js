@@ -2,6 +2,7 @@ import { defineUserConfig, defaultTheme } from 'vuepress';
 import { hopeTheme } from "vuepress-theme-hope";
 import { searchPlugin } from '@vuepress/plugin-search';
 import { getDirname, path } from '@vuepress/utils';
+import { pulsarWeb } from "pulsar-web-ui";
 
 const __dirname = getDirname(import.meta.url)
 
@@ -39,6 +40,9 @@ export default defineUserConfig({
         include:true,
         tabs: true,
         container: true
+      },
+      pulsarWeb: {
+
       },
     },
     sidebar: sidebar_en,
