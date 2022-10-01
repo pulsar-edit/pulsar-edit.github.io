@@ -178,7 +178,7 @@ These are alredy in our atom-archive folder. These just need to be reformatted, 
 
 ### Chapter 3: Hacking Atom
 
-- Tutorials
+- Tutorials:
   - Word Count Package (Basic)
   - Word Count Status Bar (status bar manipulation)
   - Go To Line Package (simple with feedback and cursor movement)
