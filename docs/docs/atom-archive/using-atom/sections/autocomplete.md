@@ -1,7 +1,3 @@
----
-title: Autocomplete
----
-
 ### Autocomplete
 
 If you're still looking to save some typing time, Atom also ships with simple autocompletion functionality.
