@@ -254,7 +254,7 @@ These are alredy in our atom-archive folder. These just need to be reformatted, 
 
 ## Chapter 5: Contributing to Atom
 
-- To packages
+- To packages:
   - Cloning and apm linking
   - apm install/update
   - Native modules
