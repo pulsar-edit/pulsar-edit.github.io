@@ -1,6 +1,25 @@
 # Pulsar Edit
 
-This is the website repo for Pulsar Edit. It contains our documenation and other information users might be looking for. Visit the [Website](https://pulsar-edit.github.io).
+This is the website repo for Pulsar Edit. It contains our documentation and other information users might be looking for. Visit the [Website](https://pulsar-edit.github.io).
+
+## Guide
+
+### Dependencies we use:
+
+- Vuepress@next
+- pnpm
+-
+
+### Recommended Tools:
+
+### Setup
+
+- Clone the repo! You can do this by using the following command:
+  `git clone https://github.com/pulsar-edit/pulsar-edit.github.io.git pulsar-site`
+  This will create a folder called `pulsar-site` at the current location of your terminal
+- Once you've installed Toolbox, create a toolbox container using the following command `toolbox create pulsar-site` where `pulsar-site` is the container's name.
+- After the container has been built, you can begin using it by entering `toolbox enter pulsar-site` into your terminal. If you used a different name when creating the container, substitute `pulsar-site` with that name.
+- This is the website repo for Pulsar Edit. It contains our documentation and other information users might be looking for. Visit the [Website](https://pulsar-edit.github.io).
 
 ## Development
 
