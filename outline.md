@@ -69,7 +69,7 @@ These are alredy in our atom-archive folder. These just need to be reformatted, 
 
 ### Reference: API
 
-**_ this section is not loaded in since it's in JSON files we need to parse. _**
+**_this section is not loaded in since it's in JSON files we need to parse._**
 
 - AtomEnvironment
 - BufferedNodeProcess
