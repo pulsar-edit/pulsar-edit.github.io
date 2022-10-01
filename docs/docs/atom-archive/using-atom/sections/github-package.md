@@ -1,7 +1,3 @@
----
-title: GitHub package
----
-
 ### GitHub package
 
 The github package brings Git and GitHub integration right inside Atom.
