@@ -260,7 +260,7 @@ These are alredy in our atom-archive folder. These just need to be reformatted, 
   - Native modules
   - Running specs
   - Link to sending a pull request
-- To core
+- To core:
   - Opening issues
   - Roadmaps
     - https://blog.atom.io/2014/10/23/public-roadmap.html
