@@ -1,7 +1,3 @@
----
-title: Grammar
----
-
 ### Grammar
 
 The "grammar" of a file is what language Atom has associated with that file. Types of grammars would include "Java" or "GitHub-Flavored Markdown". We looked at this a bit when we created some snippets in [Snippets](/using-atom/sections/snippets/).

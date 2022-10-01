@@ -1,7 +1,3 @@
----
-title: Folding
----
-
 ### Folding
 
 If you want to see an overview of the structure of the code file you're working on, folding can be a helpful tool. Folding hides blocks of code such as functions or looping blocks in order to simplify what is on your screen.

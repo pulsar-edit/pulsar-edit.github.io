@@ -1,7 +1,3 @@
----
-title: Find and Replace
----
-
 ### Find and Replace
 
 Finding and replacing text in your file or project is quick and easy in Atom.
