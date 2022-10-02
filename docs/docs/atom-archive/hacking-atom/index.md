@@ -1,5 +1,5 @@
 ---
-title: Chapter 3 &#58; Hacking Atom
+title: "Chapter 3 : Hacking Atom"
 ---
 
 ## Hacking Atom

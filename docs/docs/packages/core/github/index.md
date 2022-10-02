@@ -5,12 +5,7 @@ title: GitHub
 
 # GitHub
 
-::: warning Under Construction
-This document is under construction, please check back soon for updates.
-Please see [our socials](link/to/socials/list) and feel free to ask for assistance or inquire as to the status of this document.
-:::
-
-Welcome to the `github` package documentation!
+Welcome to the `github` wiki!
 
 This wiki contains a single file from the original [upstream Atom Wiki](https://github.com/atom/github/wiki). Which while serves no purpose for the current mission or direction of Pulsar, just seemed like an interesting insight into how Atom originally began, and how progress originally happened.
 

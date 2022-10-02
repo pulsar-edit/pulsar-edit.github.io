@@ -3,7 +3,7 @@ lang: en-us
 title: Provider API
 ---
 
-# Provider API 
+# Provider API
 
 ::: warning
 Please note that its possible this is outdated, as its original version was published by @'Nathan Sobo' on Jan 3, 2018.
@@ -54,19 +54,19 @@ provider =
 
 The properties of a provider:
 
-* `selector` (required): Defines the scope selector(s) (can be comma-separated) for which your provider should receive suggestion requests
-* `getSuggestions` (required): Is called when a suggestion request has been dispatched by `autocomplete+` to your provider. Return an array of suggestions (if any) in the order you would like them displayed to the user. Returning a Promise of an array of suggestions is also supported.
-* `getSuggestionDetailsOnSelect` (optional): (**experimental**) Is called when a suggestion is selected by the user for the purpose of loading more information about the suggestion. Return a Promise of the new suggestion to replace it with or return `null` if no change is needed.
-* `disableForSelector` (optional): Defines the scope selector(s) (can be comma-separated) for which your provider should not be used
-* `inclusionPriority` (optional): A number to indicate its priority to be included in a suggestions request. The default provider has an inclusion priority of `0`. Higher priority providers can suppress lower priority providers with `excludeLowerPriority`.
-* `excludeLowerPriority` (optional): Will not use lower priority providers when this provider is used.
-* `suggestionPriority` (optional): A number to determine the sort order of suggestions. The default provider has an suggestion priority of `1`
-* `filterSuggestions` (optional): If set to `true`, `autocomplete+` will perform fuzzy filtering and sorting on the list of matches returned by `getSuggestions`.
-* `dispose` (optional): Will be called if your provider is being destroyed by `autocomplete+`
-* `onDidInsertSuggestion` (optional): Function that is called when a suggestion from your provider was inserted into the buffer
-  * `editor`: the [TextEditor](https://atom.io/docs/api/latest/TextEditor) your suggestion was inserted in
-  * `triggerPosition`: A [Point](https://atom.io/docs/api/latest/Point) where autocomplete was triggered
-  * `suggestion`: The suggestion object that was inserted.
+- `selector` (required): Defines the scope selector(s) (can be comma-separated) for which your provider should receive suggestion requests
+- `getSuggestions` (required): Is called when a suggestion request has been dispatched by `autocomplete+` to your provider. Return an array of suggestions (if any) in the order you would like them displayed to the user. Returning a Promise of an array of suggestions is also supported.
+- `getSuggestionDetailsOnSelect` (optional): (**experimental**) Is called when a suggestion is selected by the user for the purpose of loading more information about the suggestion. Return a Promise of the new suggestion to replace it with or return `null` if no change is needed.
+- `disableForSelector` (optional): Defines the scope selector(s) (can be comma-separated) for which your provider should not be used
+- `inclusionPriority` (optional): A number to indicate its priority to be included in a suggestions request. The default provider has an inclusion priority of `0`. Higher priority providers can suppress lower priority providers with `excludeLowerPriority`.
+- `excludeLowerPriority` (optional): Will not use lower priority providers when this provider is used.
+- `suggestionPriority` (optional): A number to determine the sort order of suggestions. The default provider has an suggestion priority of `1`
+- `filterSuggestions` (optional): If set to `true`, `autocomplete+` will perform fuzzy filtering and sorting on the list of matches returned by `getSuggestions`.
+- `dispose` (optional): Will be called if your provider is being destroyed by `autocomplete+`
+- `onDidInsertSuggestion` (optional): Function that is called when a suggestion from your provider was inserted into the buffer
+  - `editor`: the [TextEditor](https://atom.io/docs/api/latest/TextEditor) your suggestion was inserted in
+  - `triggerPosition`: A [Point](https://atom.io/docs/api/latest/Point) where autocomplete was triggered
+  - `suggestion`: The suggestion object that was inserted.
 
 ## Support For Asynchronous Request Handling
 
@@ -83,11 +83,11 @@ getSuggestions: (options) ->
 
 An `options` object will be passed to your `getSuggestions` function, with the following properties:
 
-* `editor`: The current `TextEditor`
-* `bufferPosition`: The position of the cursor
-* `scopeDescriptor`: The [scope descriptor](http://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors/#scope-descriptors) for the current cursor position
-* `prefix`: The word characters immediately preceding the current cursor position
-* `activatedManually`: Whether the autocomplete request was initiated by the user (e.g. with ctrl+space)
+- `editor`: The current `TextEditor`
+- `bufferPosition`: The position of the cursor
+- `scopeDescriptor`: The [scope descriptor](http://flight-manual.atom.io/behind-atom/sections/scoped-settings-scopes-and-scope-descriptors/#scope-descriptors) for the current cursor position
+- `prefix`: The word characters immediately preceding the current cursor position
+- `activatedManually`: Whether the autocomplete request was initiated by the user (e.g. with ctrl+space)
 
 ## Suggestions
 
@@ -119,21 +119,21 @@ provider =
 
 Your suggestions should be returned from `getSuggestions` as an array of objects with the following properties:
 
-* `text` (required; or `snippet`): The text which will be inserted into the editor, in place of the prefix
-* `snippet` (required; or `text`): A snippet string. This will allow users to tab through function arguments or other options. e.g. `'myFunction(${1:arg1}, ${2:arg2})'`. See the [snippets](https://github.com/pulsar-edit/snippets) package for more information.
-* `displayText` (optional): A string that will show in the UI for this suggestion. When not set, `snippet || text` is displayed. This is useful when `snippet` or `text` displays too much, and you want to simplify. e.g. `{type: 'attribute', snippet: 'class="$0"$1', displayText: 'class'}`
-* `replacementPrefix` (optional): The text immediately preceding the cursor, which will be replaced by the `text`. If not provided, the prefix passed into `getSuggestions` will be used.
-* `type` (optional): The suggestion type. It will be converted into an icon shown against the suggestion. [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334). Predefined styles exist for `variable`, `constant`, `property`, `value`, `method`, `function`, `class`, `type`, `keyword`, `tag`, `snippet`, `import`, `require`. This list represents nearly everything being colorized.
-* `leftLabel` (optional): This is shown before the suggestion. Useful for return values. [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334)
-* `leftLabelHTML` (optional): Use this instead of `leftLabel` if you want to use html for the left label.
-* `rightLabel` (optional): An indicator (e.g. `function`, `variable`) denoting the "kind" of suggestion this represents
-* `rightLabelHTML` (optional): Use this instead of `rightLabel` if you want to use html for the right label.
-* `className` (optional): Class name for the suggestion in the suggestion list. Allows you to style your suggestion via CSS, if desired
-* `iconHTML` (optional): If you want complete control over the icon shown against the suggestion. e.g. ` iconHTML: '<i class="icon-move-right"></i>'` [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334). The background color of the icon will still be determined (by default) from the `type`.
-* `description` (optional): A doc-string summary or short description of the suggestion. When specified, it will be displayed at the bottom of the suggestions list.
-* `descriptionMoreURL` (optional): A url to the documentation or more information about this suggestion. When specified, a `More..` link will be displayed in the description area.
+- `text` (required; or `snippet`): The text which will be inserted into the editor, in place of the prefix
+- `snippet` (required; or `text`): A snippet string. This will allow users to tab through function arguments or other options. e.g. `'myFunction(${1:arg1}, ${2:arg2})'`. See the [snippets](https://github.com/pulsar-edit/snippets) package for more information.
+- `displayText` (optional): A string that will show in the UI for this suggestion. When not set, `snippet || text` is displayed. This is useful when `snippet` or `text` displays too much, and you want to simplify. e.g. `{type: 'attribute', snippet: 'class="$0"$1', displayText: 'class'}`
+- `replacementPrefix` (optional): The text immediately preceding the cursor, which will be replaced by the `text`. If not provided, the prefix passed into `getSuggestions` will be used.
+- `type` (optional): The suggestion type. It will be converted into an icon shown against the suggestion. [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334). Predefined styles exist for `variable`, `constant`, `property`, `value`, `method`, `function`, `class`, `type`, `keyword`, `tag`, `snippet`, `import`, `require`. This list represents nearly everything being colorized.
+- `leftLabel` (optional): This is shown before the suggestion. Useful for return values. [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334)
+- `leftLabelHTML` (optional): Use this instead of `leftLabel` if you want to use html for the left label.
+- `rightLabel` (optional): An indicator (e.g. `function`, `variable`) denoting the "kind" of suggestion this represents
+- `rightLabelHTML` (optional): Use this instead of `rightLabel` if you want to use html for the right label.
+- `className` (optional): Class name for the suggestion in the suggestion list. Allows you to style your suggestion via CSS, if desired
+- `iconHTML` (optional): If you want complete control over the icon shown against the suggestion. e.g. ` iconHTML: '<i class="icon-move-right"></i>'` [screenshot](https://github.com/atom-community/autocomplete-plus/pull/334). The background color of the icon will still be determined (by default) from the `type`.
+- `description` (optional): A doc-string summary or short description of the suggestion. When specified, it will be displayed at the bottom of the suggestions list.
+- `descriptionMoreURL` (optional): A url to the documentation or more information about this suggestion. When specified, a `More..` link will be displayed in the description area.
   ![autocomplete-description](./autocomplete-description.jpg)
-* `characterMatchIndices` (optional): A list of indexes where the characters in the prefix appear in this suggestion's text. e.g. "foo" in "foo_bar" would be `[0, 1, 2]`.
+- `characterMatchIndices` (optional): A list of indexes where the characters in the prefix appear in this suggestion's text. e.g. "foo" in "foo_bar" would be `[0, 1, 2]`.
 
 ## Registering Your Provider With `autocomplete+`
 
@@ -171,9 +171,9 @@ module.exports =
 
 We've taken to making each provider its own clean repo:
 
-* [Autocomplete CSS](https://github.com/pulsar-edit/autocomplete-css)
-* [Autocomplete HTML](https://github.com/pular-edit/autocomplete-html)
-* [Autocomplete Snippets](https://github.com/pulsar-edit/autocomplete-snippets)
+- [Autocomplete CSS](https://github.com/pulsar-edit/autocomplete-css)
+- [Autocomplete HTML](https://github.com/pular-edit/autocomplete-html)
+- [Autocomplete Snippets](https://github.com/pulsar-edit/autocomplete-snippets)
 
 Check out the lib directory in each of these for the code!
 

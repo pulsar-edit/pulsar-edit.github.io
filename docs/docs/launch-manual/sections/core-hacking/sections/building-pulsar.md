@@ -27,7 +27,14 @@ For OS or distribution specific instructions see below:
 #### Ubuntu/Debian
 
 ```sh
-TODO: Ubuntu instructions
+# Install development packages
+
+apt install build-essential libxkbfile-dev libsecret-1-dev libx11-dev
+
+# Install Node16 (using `nvm` - see above) and enable corepack (for `yarn`)
+
+nvm install 16
+corepack enable
 ```
 
 #### Fedora/RHEL
