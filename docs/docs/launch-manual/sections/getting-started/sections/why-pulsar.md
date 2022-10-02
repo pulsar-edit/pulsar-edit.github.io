@@ -11,17 +11,14 @@ hackability and usability: an editor that will be welcoming to an elementary
 school student on their first day learning to code, but also a tool they won't
 outgrow as they develop into seasoned hackers.
 
-As we've used Pulsar to build Pulsar, what began as an experiment has gradually
-matured into a tool we can't live without. On the surface, Pulsar is the modern
+On the surface, Pulsar is the modern
 desktop text editor you've come to expect. Pop the hood, however, and you'll
 discover a system begging to be hacked on.
 
 ### The Nucleus of Pulsar
 
 The web is not without its faults, but two decades of development has forged it
-into an incredibly malleable and powerful platform. So when we set out to write
-a text editor that we ourselves would want to extend, web technology was the
-obvious choice. But first, we had to free it from its chains.
+into an incredibly malleable and powerful platform. This made it the perfect platform for our predecessors with Atom, and it has only improved since then.
 
 ### The Native Web
 
@@ -30,10 +27,11 @@ activity that warrants dedicated tools. More importantly, the browser severely
 restricts access to the local system for security reasons, and for us, a text
 editor that couldn't write files or run local sub-processes was a non-starter.
 
-For this reason, we didn't build Pulsar as a traditional web application.
-Instead, Pulsar is a specialized variant of Chromium designed to be a text
-editor rather than a web browser. Every Pulsar window is essentially a
-locally-rendered web page.
+For this reason, Pulsar isn't built as a traditional web application. Instead,
+Pulsar it uses a specialized variant of Chromium, Electron, they designed to
+not only be a text editor rather than a web browser, but a powerful tool anyone
+could use to make applications. Every Pulsar window is essentially a locally-
+rendered web page.
 
 All the APIs available to a typical Node.js application are also available to
 the code running in each window's JavaScript context. This hybrid provides a
@@ -56,14 +54,16 @@ application and context menu items, manipulating the window dimensions, etc.
 
 ### Web Tech: The Fun Parts
 
-Another great benefit, that comes with writing code for Pulsar, is the guarantee
-that it's running on the newest version of Chromium. That means we can ignore
-issues like browser compatibility and polyfills. We can use all the web's shiny
-features of tomorrow, today.
+<!--
+This section needs to be updated as soon as possible when we get closer to being more up to date. These parts I don't want to omit but for now, they're commented out until such a point. -->
 
-For example, the layout of our workspace and panes is based on flexbox. It's an
-emerging standard and has gone through a lot of change since we started using
-it, but none of that mattered as long as it worked.
+Another great benefit, that comes with writing code for Pulsar, <!-- is the guarantee
+that it's running on the newest version of Chromium. That means --> we can ignore
+issues like browser compatibility and polyfills. <!-- We can use all the web's shiny
+features of tomorrow, today. -->
+
+For example, the layout of our workspace and panes is based on flexbox. It's was a
+mature standard and has gone through a lot of change since Atom began using it. Now with Pulsar, it is a mature standard that is the cornerstone of our layouts.
 
 With the entire industry pushing web technology forward, we're confident that
 we're building Pulsar on fertile ground. Native UI technologies come and go, but
@@ -79,4 +79,4 @@ decades, if you want to build a thriving, long-lasting community around
 a text editor, it has to be open source.
 
 The entire Pulsar editor is free and open source and available under our
-[Organizational](https://github.com/pulsar-edit) repositories.
+[Organizational](https://github.com/pulsar-edit) repositories on GitHub.
