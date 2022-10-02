@@ -5,18 +5,20 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "vuepress build docs",
+    "clean:dev": "vuepress dev docs --clean-cache",
     "dev": "vuepress dev docs",
     "format": "prettier ./**/*.md --write --ignore-path .gitignore",
     "lint": "remark . --ignore-path .gitignore",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dep:update": "pnpm add @vuepress/client@next vuepress@next vuepress-theme-hope@next && pnpm i && pnpm up"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "pulsar-assets": "github:pulsar-edit/pulsar-assets",
-    "vuepress-plugin-md-enhance": "^2.0.0-beta.104",
-    "vuepress-theme-hope": "2.0.0-beta.104"
+    "vuepress-plugin-md-enhance": "^2.0.0-beta.106",
+    "vuepress-theme-hope": "2.0.0-beta.106"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.51",
