@@ -10,16 +10,16 @@ These are already in our atom-archive folder. These just need to be reformatted,
 
 #### Getting Started
 
-- Why Atom?
-- Installing Atom
-- Atom Basics
+- Why Pulsar?
+- Installing Pulsar
+- Pulsar Basics
 - Summary
 
-#### Using Atom
+#### Using Pulsar
 
-- Atom Packages
-- Moving in Atom
-- Atom Selections
+- Pulsar Packages
+- Moving in Pulsar
+- Pulsar Selections
 - Editing and Deleting Text
 - Find and Replace
 - Snippets
@@ -28,13 +28,13 @@ These are already in our atom-archive folder. These just need to be reformatted,
 - Panes
 - Pending Pane Items
 - Grammar
-- Version Control in Atom
+- Version Control in Pulsar
 - GitHub package
-- Writing in Atom
+- Writing in Pulsar
 - Basic Customization
 - Summary
 
-#### Hacking Atom
+#### Hacking Pulsar
 
 - Tools of the Trade
 - The Init File
@@ -51,10 +51,10 @@ These are already in our atom-archive folder. These just need to be reformatted,
 - Handling URIs
 - Cross-Platform Compatibility
 - Converting from TextMate
-- Hacking on Atom Core
-- Contributing to Official Atom Packages
-- Creating a Fork of a Core Package in atom/atom
-- Maintaining a Fork of a Core Package in atom/atom
+- Hacking on Pulsar Core
+- Contributing to Official Pulsar Packages
+- Creating a Fork of a Core Package in pulsar/pulsar
+- Maintaining a Fork of a Core Package in pulsar/pulsar
 - Summary
 
 ### Advanced topics
@@ -62,11 +62,11 @@ These are already in our atom-archive folder. These just need to be reformatted,
 - Configuration API
 - Keymaps In-Depth
 - Scoped Settings, Scopes and Scope Descriptors
-- Serialization in Atom
+- Serialization in Pulsar
 - Developing Node Modules
 - Interacting With Other Packages Via Services
 - Maintaining Your Packages
-- How Atom Uses Chromium Snapshots
+- How Pulsar Uses Chromium Snapshots
 - Summary
 
 ### Resources
@@ -77,31 +77,31 @@ These are already in our atom-archive folder. These just need to be reformatted,
 
 ### FAQ
 
-- Is Atom open source?
-- What does Atom cost?
-- What platforms does Atom run on?
-- How can I contribute to Atom?
-- Why does Atom collect usage data?
-- Atom in the cloud?
+- Is Pulsar open source?
+- What does Pulsar cost?
+- What platforms does Pulsar run on?
+- How can I contribute to Pulsar?
+- Why does Pulsar collect usage data?
+- Pulsar in the cloud?
 - What's the difference between an IDE and an editor?
 - How can I tell if subpixel antialiasing is working?
-- Why is Atom deleting trailing whitespace? Why is there a newline at the end of the file?
+- Why is Pulsar deleting trailing whitespace? Why is there a newline at the end of the file?
 - What does Safe Mode do?
-- I have a question about a specific Atom community package. Where is the best place to ask it?
+- I have a question about a specific Pulsar community package. Where is the best place to ask it?
 - I’m using an international keyboard and keys that use AltGr or Ctrl+Alt aren’t working
 - I’m having a problem with Julia! What do I do?
 - I’m getting an error about a “self-signed certificate”. What do I do?
 - I’m having a problem with PlatformIO! What do I do?
-- How do I make Atom recognize a file with extension X as language Y?
+- How do I make Pulsar recognize a file with extension X as language Y?
 - How do I make the Welcome screen stop showing up?
 - How do I preview web page changes automatically?
 - How do I accept input from my program or script when using the script package?
-- I am unable to update to the latest version of Atom on macOS. How do I fix this?
+- I am unable to update to the latest version of Pulsar on macOS. How do I fix this?
 - I’m trying to change my syntax colors from styles.less, but it isn’t working!
-- How do I build or execute code I've written in Atom?
-- How do I uninstall Atom on macOS?
+- How do I build or execute code I've written in Pulsar?
+- How do I uninstall Pulsar on macOS?
 - macOS Mojave font rendering change
-- Why does macOS say that Atom wants to access my calendar, contacts, photos, etc.?
+- Why does macOS say that Pulsar wants to access my calendar, contacts, photos, etc.?
 - How do I turn on line wrap?
 - The menu bar disappeared, how do I get it back?
 - How do I use a newline in the result of find and replace?
@@ -117,14 +117,14 @@ These are already in our atom-archive folder. These just need to be reformatted,
 - Upgrading Your UI Theme Or Package Selectors
 - Upgrading Your Syntax Theme
 
-### Appendix E: Atom server-side APIs
+### Appendix E: Pulsar server-side APIs
 
-- Atom package server API
-- Atom update server API
+- Pulsar package server API
+- Pulsar update server API
 
 ## The remaining bits to be written and finished:
 
-### Hacking Atom
+### Hacking Pulsar
 
 - Tutorials:
   - Word Count Package (Basic)
@@ -158,14 +158,14 @@ These are already in our atom-archive folder. These just need to be reformatted,
   - timecop
 - Maintaining Packages
   - how to publish
-    - Atom.io package system (adding, searching, stars)
+    - pulsar-edit.dev package system (adding, searching, stars)
   - changelog
   - issue tracker
 - Best practices (patterns and anti-patterns)
   - aggregating subscriptions
   - view best practices
   - don't make a slow package
-  - CI for packages (https://blog.atom.io/2014/04/25/ci-for-your-packages.html)
+  - CI for packages (https://blog.pulsar-edit.dev/2014/04/25/ci-for-your-packages.html)
 - Reference Manual
 
 ### Include in Core Hacking or Behind Pulsar
@@ -184,7 +184,6 @@ These are already in our atom-archive folder. These just need to be reformatted,
     - subscribing to events
     - subscribing to commands
   - creating dom elements
-    - no longer spacepen
   - runners
   - configure my package
   - add application menu/context menu
