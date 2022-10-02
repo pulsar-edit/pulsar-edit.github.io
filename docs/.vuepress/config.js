@@ -27,6 +27,7 @@ export default defineUserConfig({
   theme: hopeTheme({
     displayAllHeaders: true,
     editLinks: true,
+    iconAssets: "fontawesome",
     navbar: navbar_en,
     locales: {
       "/": {
