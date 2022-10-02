@@ -177,7 +177,7 @@ These are already in our atom-archive folder. These just need to be reformatted,
 
 ### Include in Core Hacking or Behind Pulsar
 
-- Make sure we include (in Ch 3 or Ch4 or both)
+- Make sure we include (in Core Hacking, Behind Pulsar or both)
   - views / models
   - settings (how to enable the settings button on the package installer)
   - notifications package
