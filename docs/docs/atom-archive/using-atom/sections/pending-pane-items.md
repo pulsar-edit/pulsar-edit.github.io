@@ -1,7 +1,3 @@
----
-title: Pending Pane Items
----
-
 ### Pending Pane Items
 
 _"Pending Pane Items" were formerly referred to as "Preview Tabs"_

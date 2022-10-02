@@ -1,7 +1,3 @@
----
-title: Writing in Atom
----
-
 ### Writing in Atom
 
 Though it is probably most common to use Atom to write software code, Atom can also be used to write prose quite effectively. Most often this is done in some sort of markup language such as Asciidoc or [Markdown](https://help.github.com/articles/about-writing-and-formatting-on-github/) (in which this manual is written). Here we'll quickly cover a few of the tools Atom provides for helping you write prose.

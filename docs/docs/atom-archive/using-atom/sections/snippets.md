@@ -1,7 +1,3 @@
----
-title: Snippets
----
-
 ### Snippets
 
 Snippets are an incredibly powerful way to quickly generate commonly needed code syntax from a shortcut.
