@@ -19,7 +19,7 @@ how to get started with the editor.
 ## Terminology
 
 You can find definitions for all the various terms that we use throughout the
-manual in our [Glossary](/resources/sections/glossary/).
+manual in our [Glossary](/resources/glossary/).
 
 ## Command Palette
 
