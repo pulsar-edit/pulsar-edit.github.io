@@ -79,4 +79,4 @@ decades, if you want to build a thriving, long-lasting community around
 a text editor, it has to be open source.
 
 The entire Pulsar editor is free and open source and available under our
-[Organizational](https://github.com/pulsar-edit) repositories.
+[organization](https://github.com/pulsar-edit) repositories.
