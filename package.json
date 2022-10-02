@@ -16,9 +16,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.0",
     "pulsar-assets": "github:pulsar-edit/pulsar-assets",
-    "vuepress-plugin-md-enhance": "^2.0.0-beta.106",
     "vuepress-theme-hope": "2.0.0-beta.106"
   },
   "devDependencies": {

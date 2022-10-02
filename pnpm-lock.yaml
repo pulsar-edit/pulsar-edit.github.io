@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@fortawesome/fontawesome-free': ^6.2.0
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-search': 2.0.0-beta.51
   '@vuepress/utils': 2.0.0-beta.51
@@ -17,13 +16,10 @@ specifiers:
   remark-preset-prettier: ^2.0.1
   vue: ^3.2.40
   vuepress: 2.0.0-beta.51
-  vuepress-plugin-md-enhance: ^2.0.0-beta.106
   vuepress-theme-hope: 2.0.0-beta.106
 
 dependencies:
-  '@fortawesome/fontawesome-free': 6.2.0
   pulsar-assets: github.com/pulsar-edit/pulsar-assets/8fb8c787c296b789d5eea8dd65ea20c7a2af759d
-  vuepress-plugin-md-enhance: 2.0.0-beta.106
   vuepress-theme-hope: 2.0.0-beta.106
 
 devDependencies:
@@ -1226,12 +1222,6 @@ packages:
     os: [linux]
     requiresBuild: true
     optional: true
-
-  /@fortawesome/fontawesome-free/6.2.0:
-    resolution: {integrity: sha512-CNR7qRIfCwWHNN7FnKUniva94edPdyQzil/zCwk3v6k4R6rR2Fr8i4s3PM7n/lyfPA6Zfko9z5WDzFxG9SW1uQ==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
@@ -4201,7 +4191,7 @@ packages:
       object-inspect: 1.12.2
       pidtree: 0.6.0
       string-argv: 0.3.1
-      yaml: 2.1.1
+      yaml: 2.1.2
     transitivePeerDependencies:
       - enquirer
       - supports-color
@@ -6224,7 +6214,7 @@ packages:
       vfile-message: 3.1.2
       vfile-reporter: 7.0.4
       vfile-statistics: 2.0.0
-      yaml: 2.1.1
+      yaml: 2.1.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7063,8 +7053,8 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
 
-  /yaml/2.1.1:
-    resolution: {integrity: sha512-o96x3OPo8GjWeSLF+wOAbrPfhFOGY0W00GNaxCDv+9hkcDJEnev1yh8S7pgHF0ik6zc8sQLuL8hjHjJULZp8bw==}
+  /yaml/2.1.2:
+    resolution: {integrity: sha512-VSdf2/K3FqAetooKQv45Hcu6sA00aDgWZeGcG6V9IYJnVLTnb6988Tie79K5nx2vK7cEpf+yW8Oy+7iPAbdiHA==}
     engines: {node: '>= 14'}
     dev: true
 
