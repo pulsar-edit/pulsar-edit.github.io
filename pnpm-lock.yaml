@@ -4,6 +4,7 @@ specifiers:
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-search': 2.0.0-beta.51
   '@vuepress/utils': 2.0.0-beta.51
+  fontawesome-free: ^1.0.4
   husky: ^8.0.1
   lint-staged: ^13.0.3
   prettier: ^2.7.1
@@ -20,6 +21,7 @@ specifiers:
   vuepress-theme-hope: 2.0.0-beta.106
 
 dependencies:
+  fontawesome-free: 1.0.4
   pulsar-assets: github.com/pulsar-edit/pulsar-assets/8fb8c787c296b789d5eea8dd65ea20c7a2af759d
   vuepress-plugin-md-enhance: 2.0.0-beta.106
   vuepress-theme-hope: 2.0.0-beta.106
@@ -3600,6 +3602,10 @@ packages:
     engines: {node: '>=4.0.0'}
     dependencies:
       raphael: 2.3.0
+    dev: false
+
+  /fontawesome-free/1.0.4:
+    resolution: {integrity: sha512-7sX6Lbg2oQiClFFFFitJlKg20h3YTBON6rdmq3uGjNwDo8G6EjF2bfj2OjjcCUmf4OvZCgyHaXfW2JseqissLw==}
     dev: false
 
   /format/0.2.2:
