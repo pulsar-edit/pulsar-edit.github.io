@@ -73,9 +73,9 @@ passing year. We're excited to dig deeper into its toolbox.
 ## An Open-Source Text Editor
 
 We see Pulsar as a great replacement for Atom but we can't do it without your
-support going forward, since we know that we can't achieve our vision for 
-Pulsar alone. As Emacs and Vim have demonstrated over the past three 
-decades, if you want to build a thriving, long-lasting community around 
+support going forward, since we know that we can't achieve our vision for
+Pulsar alone. As Emacs and Vim have demonstrated over the past three
+decades, if you want to build a thriving, long-lasting community around
 a text editor, it has to be open source.
 
 The entire Pulsar editor is free and open source and available under our
