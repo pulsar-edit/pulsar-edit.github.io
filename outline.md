@@ -13,7 +13,6 @@ These are already in our atom-archive folder. These just need to be reformatted,
 - Why Pulsar?
 - Installing Pulsar
 - Pulsar Basics
-- Summary
 
 #### Using Pulsar
 
@@ -32,7 +31,6 @@ These are already in our atom-archive folder. These just need to be reformatted,
 - GitHub package
 - Writing in Pulsar
 - Basic Customization
-- Summary
 
 #### Hacking Pulsar
 
@@ -43,31 +41,38 @@ These are already in our atom-archive folder. These just need to be reformatted,
 - Package: Active Editor Info
 - Creating a Theme
 - Creating a Grammar
-- Creating a Legacy TextMate Grammar
+- Converting from TextMate
+  - Creating a Legacy TextMate Grammar
+- Word Count Package (Basic)
 - Publishing
 - Iconography
-- Debugging
 - Writing specs
 - Handling URIs
 - Cross-Platform Compatibility
-- Converting from TextMate
 - Hacking on Pulsar Core
 - Contributing to Official Pulsar Packages
-- Creating a Fork of a Core Package in pulsar/pulsar
-- Maintaining a Fork of a Core Package in pulsar/pulsar
-- Summary
+  - Creating a Fork of a Core Package in pulsar/pulsar
+  - Maintaining a Fork of a Core Package in pulsar/pulsar
 
 ### Advanced topics
 
 - Configuration API
 - Keymaps In-Depth
 - Scoped Settings, Scopes and Scope Descriptors
+  - scopes (https://atom.io/docs/v0.174.0/advanced/scopes-and-scope-descriptors)
 - Serialization in Pulsar
 - Developing Node Modules
 - Interacting With Other Packages Via Services
 - Maintaining Your Packages
 - How Pulsar Uses Chromium Snapshots
-- Summary
+- config api
+  - https://blog.atom.io/2014/10/02/config-api-has-schema.html
+  - https://blog.atom.io/2014/10/31/language-scoped-config.html
+  - https://atom.io/docs/latest/advanced/scopes-and-scope-descriptors
+- subscriptions
+  - https://blog.atom.io/2014/09/16/new-event-subscription-api.html
+  - subscribing to events
+  - subscribing to commands
 
 ### Resources
 
@@ -79,6 +84,7 @@ These are already in our atom-archive folder. These just need to be reformatted,
 
 - Is Pulsar open source?
 - What does Pulsar cost?
+- Debugging
 - What platforms does Pulsar run on?
 - How can I contribute to Pulsar?
 - Why does Pulsar collect usage data?
@@ -107,17 +113,19 @@ These are already in our atom-archive folder. These just need to be reformatted,
 - How do I use a newline in the result of find and replace?
 - What is this line on the right in the editor view?
 
-### Appendix C: Shadow DOM
+#### Shadow DOM
 
 - Removing Shadow DOM styles
 
-### Appendix D: Upgrading to 1.0 APIs
+#### Upgrading to 1.0 APIs
 
 - Upgrading Your Package
 - Upgrading Your UI Theme Or Package Selectors
 - Upgrading Your Syntax Theme
 
-### Appendix E: Pulsar server-side APIs
+### Api Manual
+
+#### Pulsar server-side APIs
 
 - Pulsar package server API
 - Pulsar update server API
@@ -127,7 +135,6 @@ These are already in our atom-archive folder. These just need to be reformatted,
 ### Hacking Pulsar
 
 - Tutorials:
-  - Word Count Package (Basic)
   - Word Count Status Bar (status bar manipulation)
   - Go To Line Package (simple with feedback and cursor movement)
   - Open On GitHub - (no UI, just run command)
@@ -142,7 +149,7 @@ These are already in our atom-archive folder. These just need to be reformatted,
   - Autocomplete / Color picker (in-context UI)
   - Vim-mode (editor remapping)
   - Image View (file type rendering handler)
-  - Language (GFM?)
+  - Language
     - Creating grammars
     - converting-a-text-mate-bundle.md
   - Unity UI (UI theme)
@@ -171,18 +178,9 @@ These are already in our atom-archive folder. These just need to be reformatted,
 ### Include in Core Hacking or Behind Pulsar
 
 - Make sure we include (in Ch 3 or Ch4 or both)
-  - scopes (https://atom.io/docs/v0.174.0/advanced/scopes-and-scope-descriptors)
   - views / models
   - settings (how to enable the settings button on the package installer)
   - notifications package
-  - config api
-    - https://blog.atom.io/2014/10/02/config-api-has-schema.html
-    - https://blog.atom.io/2014/10/31/language-scoped-config.html
-    - https://atom.io/docs/latest/advanced/scopes-and-scope-descriptors
-  - subscriptions
-    - https://blog.atom.io/2014/09/16/new-event-subscription-api.html
-    - subscribing to events
-    - subscribing to commands
   - creating dom elements
   - runners
   - configure my package
