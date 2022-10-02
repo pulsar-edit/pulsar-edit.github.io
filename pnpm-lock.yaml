@@ -1,10 +1,10 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fortawesome/fontawesome-free': ^6.2.0
   '@vuepress/client': 2.0.0-beta.51
   '@vuepress/plugin-search': 2.0.0-beta.51
   '@vuepress/utils': 2.0.0-beta.51
-  fontawesome-free: ^1.0.4
   husky: ^8.0.1
   lint-staged: ^13.0.3
   prettier: ^2.7.1
@@ -21,7 +21,7 @@ specifiers:
   vuepress-theme-hope: 2.0.0-beta.106
 
 dependencies:
-  fontawesome-free: 1.0.4
+  '@fortawesome/fontawesome-free': 6.2.0
   pulsar-assets: github.com/pulsar-edit/pulsar-assets/8fb8c787c296b789d5eea8dd65ea20c7a2af759d
   vuepress-plugin-md-enhance: 2.0.0-beta.106
   vuepress-theme-hope: 2.0.0-beta.106
@@ -1227,6 +1227,12 @@ packages:
     requiresBuild: true
     optional: true
 
+  /@fortawesome/fontawesome-free/6.2.0:
+    resolution: {integrity: sha512-CNR7qRIfCwWHNN7FnKUniva94edPdyQzil/zCwk3v6k4R6rR2Fr8i4s3PM7n/lyfPA6Zfko9z5WDzFxG9SW1uQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dev: false
+
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
     engines: {node: '>=6.0.0'}
@@ -1555,8 +1561,8 @@ packages:
   /@types/web-bluetooth/0.0.15:
     resolution: {integrity: sha512-w7hEHXnPMEZ+4nGKl/KDRVpxkwYxYExuHOYXyzIzCDzEZ9ZCGMAewulr9IqJu2LR4N37fcnb1XVeuZ09qgOxhA==}
 
-  /@vitejs/plugin-vue/3.1.0_vite@3.0.9+vue@3.2.40:
-    resolution: {integrity: sha512-fmxtHPjSOEIRg6vHYDaem+97iwCUg/uSIaTzp98lhELt2ISOQuDo2hbkBdXod0g15IhfPMQmAxh4heUks2zvDA==}
+  /@vitejs/plugin-vue/3.1.2_vite@3.0.9+vue@3.2.40:
+    resolution: {integrity: sha512-3zxKNlvA3oNaKDYX0NBclgxTQ1xaFdL7PzwF6zj9tGFziKwmBa3Q/6XcJQxudlT81WxDjEhHmevvIC4Orc1LhQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0
@@ -1653,7 +1659,7 @@ packages:
   /@vuepress/bundler-vite/2.0.0-beta.51:
     resolution: {integrity: sha512-HADQujwuj0KbONq6R0UGSiktMzG0iOFmI2OACgi7r5P4pHAEF06h333g0q4tSH6HQg6VuqelQrVgWwq/0puIfA==}
     dependencies:
-      '@vitejs/plugin-vue': 3.1.0_vite@3.0.9+vue@3.2.40
+      '@vitejs/plugin-vue': 3.1.2_vite@3.0.9+vue@3.2.40
       '@vuepress/client': 2.0.0-beta.51
       '@vuepress/core': 2.0.0-beta.51
       '@vuepress/shared': 2.0.0-beta.51
@@ -3602,10 +3608,6 @@ packages:
     engines: {node: '>=4.0.0'}
     dependencies:
       raphael: 2.3.0
-    dev: false
-
-  /fontawesome-free/1.0.4:
-    resolution: {integrity: sha512-7sX6Lbg2oQiClFFFFitJlKg20h3YTBON6rdmq3uGjNwDo8G6EjF2bfj2OjjcCUmf4OvZCgyHaXfW2JseqissLw==}
     dev: false
 
   /format/0.2.2:
