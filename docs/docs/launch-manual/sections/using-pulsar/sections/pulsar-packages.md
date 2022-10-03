@@ -27,7 +27,7 @@ which is the official registry for Pulsar packages. Searching on the Settings
 View will go to the Pulsar package registry and pull in anything that matches
 your search terms.
 
-![Package install screen](@images/atom/packages-install.png "Package install screen") <!--TODO: Replace with Pulsar branded install screen-->
+![Package install screen](@images/atom/packages-install.png "Package install screen") <!--TODO: Replace with Pulsar branded pictures-->
 
 All of the packages will come up with an "Install" button. Clicking that will
 download the package and install it. Your editor will now have the functionality
@@ -40,7 +40,7 @@ under the "Packages" tab, along with all the pre-installed packages that come
 with Pulsar. To filter the list in order to find one, you can type into search
 box directly under the "Installed Packages" heading.
 
-![Package settings screen](@images/atom/package-specific-settings.png "Package settings screen") <!--TODO: Replace with Pulsar branded settings screen-->
+![Package settings screen](@images/atom/package-specific-settings.png "Package settings screen")
 
 Clicking on the "Settings" button for a package will give you the settings
 screen for that package specifically. Here you have the option of changing some
@@ -61,14 +61,14 @@ These can be either UI themes or syntax themes and you can search for them from
 the "Install" tab, just like searching for new packages. Make sure to press the
 "Themes" toggle next to the search box.
 
-![Theme search screen](@images/atom/themes.png "Theme search screen") <!--TODO: Replace with Pulsar branded theme install screen-->
+![Theme search screen](@images/atom/themes.png "Theme search screen")
 
 Clicking on the theme title will take you to a profile page for the theme on
 pulsar-edit.dev, which often has a screenshot of the theme. This way you can see
 what it looks like before installing it.
 
 Clicking on "Install" will install the theme and make it available in the Theme
-dropdowns as we saw in [Changing the Theme](../../getting-started#changing-the-theme).<!--TODO: Check link-->
+dropdowns as we saw in [Changing the Theme](../../getting-started#changing-the-theme).
 
 ![Example of the Unity UI theme with Monokai syntax theme](@images/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
 

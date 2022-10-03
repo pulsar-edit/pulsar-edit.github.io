@@ -67,7 +67,7 @@ in that line as well.
 #### Additional Movement and Selection Commands
 
 Pulsar also has a few movement and selection commands that don't have
-keybindings by default. You can access these commands from the [Command Palette](../../getting-started#command-palette),<!--TODO: Add final link when it exists-->
+keybindings by default. You can access these commands from the [Command Palette](../../getting-started#command-palette),
 but if you find yourself using commands that don't have a keybinding often, have
 no fear! You can easily add an entry to your `keymap.cson` to create a key
 combination. You can open `keymap.cson` file in an editor from the
@@ -105,7 +105,7 @@ key combination you need to add an entry in your `keymap.cson` file. For
 
 This will bind the command `editor:select-to-previous-word-boundary` to
 🐧/🪟<kbd>Ctrl+Shift+E</kbd> - 🍎<kbd>Cmd+Shift+E</kbd>. For more information on
-customizing your keybindings, see [Customizing Keybindings](/using-pulsar/sections/basic-customization/#customizing-keybindings). <!--TODO: Add proper link when it exists-->
+customizing your keybindings, see [Customizing Keybindings](#customizing-keybindings).
 
 Here's a list of Movement and Selection Commands that do not have a keyboard
 shortcut by default:

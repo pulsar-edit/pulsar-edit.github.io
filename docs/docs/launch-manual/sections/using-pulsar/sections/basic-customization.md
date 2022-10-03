@@ -8,8 +8,8 @@ amazingly flexible, so let's go over some of the simpler flexes it can do.
 #### Configuring with CSON
 
 All of Atom's config files (with the exception of your [style sheet](#style-tweaks)
-and your [Init Script](../core-hacking#the-init-file) are written in <!--TODO: Check final link to this section when published-->
-CSON, short for [CoffeeScript Object Notation](https://github.com/bevry/cson#what-is-cson).
+and your [Init Script](../core-hacking#the-init-file) are written in CSON, short
+for [CoffeeScript Object Notation](https://github.com/bevry/cson#what-is-cson).
 Just like its namesake JSON, [JavaScript Object Notation](https://json.org/),
 CSON is a text format for storing structured data in the form of simple objects
 made up of key-value pairs.
