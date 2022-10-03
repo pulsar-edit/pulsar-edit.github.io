@@ -1,7 +1,3 @@
----
-title: Version Control in Atom
----
-
 ### Version Control in Atom
 
 Version control is an important aspect of any project and Atom comes with basic [Git](https://git-scm.com) and [GitHub](https://github.com) integration built in.

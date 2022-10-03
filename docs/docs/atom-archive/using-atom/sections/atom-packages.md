@@ -1,7 +1,3 @@
----
-title: Atom Packages
----
-
 ### Atom Packages
 
 First we'll start with the Atom package system. As we mentioned previously, Atom itself is a very basic core of functionality that ships with a number of useful packages that add new features like the [Tree View](https://github.com/atom/tree-view) and the [Settings View](https://github.com/atom/settings-view).
