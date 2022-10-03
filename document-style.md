@@ -48,7 +48,7 @@ Images should be added to `[pulsar-assets](https://github.com/pulsar-edit/pulsar
 and referenced from the package imported from it. This is done via an alias on
 the `.vuepress/config.js` file which adds most of the path for you:
 `'@images': path.resolve(__dirname, '../../node_modules/pulsar-assets/images')`  
-so the link to your image would just be ![myImage](@images/pulsar/myImage.png "My Image").
+so the link to your image would just be `![myImage](@images/pulsar/myImage.png "My Image")`.
 
 ## Naming
 
