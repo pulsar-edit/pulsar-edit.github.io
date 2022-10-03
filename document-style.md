@@ -24,8 +24,9 @@ Inside `sections` are the sub-sections which group more specific topics. These
 also have an `index.md` which corresponds to the third level item on the
 sidebar. 
 This file is displayed on the website as a single long documenent but is
-actually created from a number of `@include()` lines which reference individual
-sections within the next `sections` directory.
+actually created from a number of @include() lines which reference individual
+sections within the next sections directory. These should be relative to the 
+location of index.md e.g. @include(sections/pulsar-packages.md).
 This file also contains the frontmatter for defining the title, language and
 description of the file and should also be the first level heading for the page.
 Here is also where you can place a container such as `Under Construction` to
