@@ -10,10 +10,11 @@ All docs are currently in American English (en-US) but localization is planned.
 
 The main structure for documentation can be seen in `docs/docs`.
 There are a number of "root" sections:
-- `atom-archive` - For "as is" archived Atom documentation
+
 - `launch-manual` - For the current main Pulsar documentation
 - `packages` - Currently holds wiki info from the atom package repos
 - `resources` - For other referenced docs
+- `atom-archive` - For "as is" archived Atom documentation
 
 Within each section is an `index.md` which will usually contain info about each
 sub-section as well as links to them. These correspond to the second level 
