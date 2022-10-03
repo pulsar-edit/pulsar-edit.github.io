@@ -14,7 +14,7 @@ export default defineUserConfig({
   title: 'Pulsar',
   description: 'Next generation hackable editor for the future',
   alias: {
-    '@images': path.resolve(__dirname, '../../node_modules/pulsar-assets/images')
+    '@images': path.resolve(__dirname, '../../node_modules/.github/images')
   },
   devServer: {
     https: true
@@ -27,6 +27,7 @@ export default defineUserConfig({
   theme: hopeTheme({
     displayAllHeaders: true,
     editLinks: true,
+    iconAssets: "fontawesome",
     navbar: navbar_en,
     locales: {
       "/": {
