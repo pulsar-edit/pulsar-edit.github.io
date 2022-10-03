@@ -36,15 +36,15 @@ not contain any frontmatter.
 
 ## Links
 
-Internal links can just be to the header (e.g.[Structure](#structure)), this
+Internal links can just be to the header (e.g.`[Structure](#structure)`), this
 to all sections included on the parent `index.md` so care should be made to not
 create any duplicate headers.
 
 All other links should be relative but do not need to reference the index file
-itself (e.g.[Installing](../getting-started#installing)) will find the heading
+itself (e.g.`[Installing](../getting-started#installing)`) will find the heading
 `#installing` within the index file in the `getting-started` directory above.
 
-Images should be added to [pulsar-assets](https://github.com/pulsar-edit/pulsar-assets)
+Images should be added to `[pulsar-assets](https://github.com/pulsar-edit/pulsar-assets)`
 and referenced from the package imported from it. This is done via an alias on
 the `.vuepress/config.js` file which adds most of the path for you:
 `'@images': path.resolve(__dirname, '../../node_modules/pulsar-assets/images')`  
