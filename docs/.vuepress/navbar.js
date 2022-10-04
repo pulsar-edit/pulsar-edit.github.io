@@ -13,7 +13,7 @@ const navbar_en = [
   },
   {
     text: "About Us",
-    link: "/about/index.md"
+    link: "/about/"
   },
   {
     text: "Discord",
