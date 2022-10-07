@@ -13,7 +13,7 @@ Current Pulsar documentation for this section is found at our
 # Atom Documentation Archive
 
 This is an archive of the old Atom documentation as it appeared on their
-(Flight Manual)[flight-manual.atom.io]. Anything here is just a historical
+[Flight Manual](https://flight-manual.atom.io). Anything here is just a historical
 reference of our past, when Atom existed as a GitHub supported project.
 
 This includes their original layout and formatting of how things were expected
