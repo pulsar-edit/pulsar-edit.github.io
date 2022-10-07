@@ -1,3 +1,9 @@
+---
+lang: en-us
+title: Repos
+description: All the repos in the Pulsar GitHub organization
+---
+
 # Repos
 
 With a codebase this large, it may be helpful for newcomers, and devs to an unfamiliar section of the codebase, to have a collection of what repo does what. And where is it.
