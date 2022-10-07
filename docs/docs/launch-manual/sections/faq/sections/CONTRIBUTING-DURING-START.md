@@ -1,3 +1,9 @@
+---
+lang: en-us
+title: Contributing during start
+description: Ways to contribute during the very early stages of the Pulsar project
+---
+
 During these very early stages of the Pulsar project there are many things that need to be completed, and many ways that new contributors can assist.
 
 This document describes some of the specific methods and techniques that can be used to help during the transition from the soon to be sunset `Atom` to `Pulsar`. While any contributions to the `Pulsar-Edit` Organization should follow the organization wide [Contributor Guidelines](https://github.com/pulsar-edit/.github/blob/main/CONTRIBUTING.md) this document highlights some specific tasks that need extra attention at this time and how to help with them.
