@@ -4,3 +4,7 @@ atom-languageclient
 Atom-LanguageClient
 autocomplete-plus
 Autocomplete-Plus
+coffeescript
+Coffeescript
+javascript
+Javascript
