@@ -3,7 +3,7 @@ lang: en-us
 title: Home
 home: true
 actions:
-  - text: "Get Started 💡"
+  - text: "Download 💡"
     link: "/docs/launch-manual"
 heroText: Pulsar
 features:
@@ -12,11 +12,11 @@ features:
   - title: "Built-in package manager"
     details: "Search and install new packages or create your own right from Pulsar."
   - title: "Smart Autocompletion"
-    text: "Pulsar helps you write code faster with a smart and flexible autocomplete."
+    details: "Pulsar helps you write code faster with a smart and flexible autocomplete."
   - title: "File system browser"
-    text: "Easily browse and open a single file, a whole project, or multiple projects in one window."
+    details: "Easily browse and open a single file, a whole project, or multiple projects in one window."
   - title: "Multiple panes"
-    text: "Split your Pulsar interface into multiple panes to compare and edit code across files."
+    details: "Split your Pulsar interface into multiple panes to compare and edit code across files."
   - title: "Find and replace"
-    text: "Find, preview, and replace text as you type in a file or across all your projects."
+    details: "Find, preview, and replace text as you type in a file or across all your projects."
 ---
