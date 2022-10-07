@@ -1,3 +1,9 @@
+---
+lang: en-us
+title: FAQ
+description: Frequently answered questions for Pulsar
+---
+
 # Is Pulsar-Edit the same as Atom-Community?
 
 While the original team that was working on Atom-Community is now the team creating Pulsar, they are not the same.
