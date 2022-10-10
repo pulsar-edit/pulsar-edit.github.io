@@ -29,7 +29,3 @@ And for this successor of Atom, we have some hard beliefs on how this is accompl
 # Who is in charge of Pulsar and where its going?
 
 Well Nobody, and Everyone. Pulsar is a volunteer and community driven project. While there are members that have administrative rights for the organization, or administrative rights for the repos within a team, a large consideration has been placed on feedback and teamwork. Where any large decisions use Polls, allowing everyone to have a voice. And more minor decisions use Pull Requests that can be reviewed by everyone to provide feedback in the functionality or message of new contributions. Ensuring that adequate feedback or time is utilized before committing changes.
-
-# How do I contact members of Pulsar?
-
-There are many ways, of course the classical Issues or Pull Requests on Repos is fine and well, additionally there are discussions org wide if needed, or discussions on a Repo Level. We are also all pretty active and responsive on our Discord Server, and messages there are always welcome. Lastly, we have a *new* [Subreddit](https://www.reddit.com/r/pulsaredit/) you can join as well.
