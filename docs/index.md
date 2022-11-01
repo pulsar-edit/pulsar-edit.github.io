@@ -20,3 +20,5 @@ features:
   - title: "Find and replace"
     details: "Find, preview, and replace text as you type in a file or across all your projects."
 ---
+
+# Welcome!
