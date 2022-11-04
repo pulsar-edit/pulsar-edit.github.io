@@ -147,7 +147,8 @@ saw you press and what command Pulsar executed because of that combination.
 #### Global Configuration Settings
 
 Pulsar loads configuration settings from the `config.cson` file in your
-<i class="fa-brands fa-linux"></i> <i class="fa-brands fa-apple"></i>`~/.pulsar` - <i class="fa-brands fa-windows"></i>`%USERPROFILE%\.pulsar` directory.
+**_LNX/MAC_**: `~/.pulsar` -
+**_WIN_**: `%USERPROFILE%\.pulsar` directory.
 
 ```coffee
 '*':
