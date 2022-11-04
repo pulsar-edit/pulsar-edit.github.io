@@ -47,12 +47,13 @@ So that's pretty cool, but what if there is something the language package
 didn't include or something that is custom to the code you write? Luckily it's
 incredibly easy to add your own snippets.
 
-There is a text file in your **_LNX/MAC_**: `~/.pulsar` -
+There is a text file in your
+**_LNX/MAC_**: `~/.pulsar` -
 **_WIN_**: `%USERPROFILE%\.pulsar`
 directory called `snippets.cson` that contains all your custom snippets that are
 loaded when you launch Pulsar. You can also easily open up that file by
 selecting the
-**_LNX_** _Edit > Snippets_ -
+**_LNX_**: _Edit > Snippets_ -
 **_MAC_**: _Pulsar > Snippets_ -
 **_WIN_**: _File > Snippets_ menu.
 
