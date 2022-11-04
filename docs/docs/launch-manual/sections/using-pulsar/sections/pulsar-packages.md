@@ -18,11 +18,13 @@ from the very look and feel of the entire interface to the basic operation of
 even core functionality.
 
 In order to install a new package, you can use the Install tab in the now
-familiar Settings View. Open up the Settings View using 🐧/🪟<kbd>Ctrl+,</kbd> -
-🍎<kbd>Cmd+,</kbd> click on the "Install" tab and type your search query into
+familiar Settings View. Open up the Settings View using
+**_LNX/WIN_**: <kbd>Ctrl+,</kbd> -
+**_MAC_**: <kbd>Cmd+,</kbd>
+click on the "Install" tab and type your search query into
 the box under Install Packages.
 
-The packages listed here have been published to [https://pulsar-edit.dev/packages](https://pulsar-edit.dev/packages) <!--TODO:Change address to final URL (if this is not it)-->
+The packages listed here have been published to [https://web.pulsar-edit.dev](https://web.pulsar-edit.dev) <!--TODO:Change address to final URL (if this is not it)-->
 which is the official registry for Pulsar packages. Searching on the Settings
 View will go to the Pulsar package registry and pull in anything that matches
 your search terms.

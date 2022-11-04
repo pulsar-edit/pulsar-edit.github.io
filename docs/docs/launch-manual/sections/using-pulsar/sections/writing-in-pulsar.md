@@ -17,7 +17,8 @@ spelling.
 
 Any misspelled words will be highlighted (by default with a dashed red line
 beneath the word), and you can pull up a menu of possible corrections by hitting
-🐧/🪟<kbd>Ctrl+Shift+;</kbd> - 🍎<kbd>Cmd+Shift+;</kbd> (or by choosing "Correct
+**_LNX/WIN_**: <kbd>Ctrl+Shift+;</kbd> -
+**_MAC_**: <kbd>Cmd+Shift+;</kbd> (or by choosing "Correct
 Spelling" from the right-click context menu or from the Command Palette).
 
 ![Checking your spelling](@images/atom/spellcheck.png)
@@ -47,8 +48,10 @@ As you edit the text, the preview will also update automatically. This makes it
 fairly easy to check your syntax as you type.
 
 You can also copy the rendered HTML from the preview pane into your system
-clipboard when the preview is focused and you press 🐧<kbd>Ctrl+Ins</kbd> -
-🪟<kbd>Ctrl+C</kbd> - 🍎<kbd>Cmd+C</kbd> or if you right-click in the preview
+clipboard when the preview is focused and you press
+**_LNX_**: <kbd>Ctrl+Ins</kbd> -
+**_WIN_**: <kbd>Ctrl+C</kbd> -
+**_MAC_**: <kbd>Cmd+C</kbd> or if you right-click in the preview
 pane and choose "Copy as HTML".
 
 Markdown preview is implemented in the [markdown-preview](https://github.com/pulsar-edit/markdown-preview)
@@ -71,4 +74,5 @@ fill out.
 Although there are only a handful of Markdown snippets (`b` for bold, `i` for
 italic, `code` for a code block, etc), they save you from having to look up the
 more obscure syntaxes. Again, you can easily see a list of all available
-snippets for the type of file you're currently in by choosin"Snippets: Available" in the Command Palette.
+snippets for the type of file you're currently in by choosing
+`Snippets: Available` in the Command Palette.

@@ -26,11 +26,14 @@ Replace panel at the bottom of your screen.
 
 ![Find and replace text in the current file](@images/atom/find-replace-file.png "Find and replace text in the current file")
 
-To search within your current file you can press 🐧/🪟<kbd>Cmd+F</kbd> -
-🍎<kbd>Ctrl+F</kbd>, type in a search string and press 🐧/🪟/🍎<kbd>Enter</kbd>
-or 🐧/🪟<kbd>F3</kbd>/🍎<kbd>Cmd+G</kbd> or the "Find Next" button) multiple
+To search within your current file you can press
+**_LNX/WIN_**: <kbd>Cmd+F</kbd> -
+**_MAC_**: <kbd>Ctrl+F</kbd>, type in a search string and press
+**_LNX/WIN/MAC_**: <kbd>Enter</kbd> or
+**_LNX/WIN_**<kbd>F3</kbd> -
+**_MAC_**: <kbd>Cmd+G</kbd> or the "Find Next" button) multiple
 times to cycle through all the matches in that file. <kbd>Alt+Enter</kbd> will
-find all occurences of the search string. The Find and Replace panel also
+find all occurrences of the search string. The Find and Replace panel also
 contains buttons for toggling case sensitivity, performing regular expression
 matching, scoping the search to selections, and performing whole word search.
 
@@ -51,7 +54,8 @@ to learn more about regular expression syntax you can use in Pulsar.
 :::
 
 You can also find and replace throughout your entire project if you invoke the
-panel with 🐧/🪟<kbd>Ctrl+Shift+F</kbd> - 🍎<kbd>Cmd+Shift+F</kbd>.
+panel with **_LNX/WIN_**: <kbd>Ctrl+Shift+F</kbd> -
+**_MAC_**: <kbd>Cmd+Shift+F</kbd>.
 
 ![Find and replace text in your project](@images/atom/find-replace-project.png "Find and replace text in your project")
 

@@ -43,7 +43,9 @@ lines to changing the case.
 Pulsar also has built in functionality to re-flow a paragraph to hard-wrap at a
 given maximum line length. You can format the current selection to have lines no
 longer than 80 (or whatever number `editor.preferredLineLength` is set to)
-characters using 🐧/🪟<kbd>Alt+Ctrl+Q</kbd> - 🍎<kbd>Alt+Cmd+Q</kbd>.
+characters using
+**_LNX/WIN_**: <kbd>Alt+Ctrl+Q</kbd> -
+**_MAC_**: <kbd>Alt+Cmd+Q</kbd>.
 If nothing is selected, the current paragraph will be reflowed.
 
 #### Deleting and Cutting
@@ -126,9 +128,10 @@ renaming variables or changing the format of some text. You can use this with
 almost any package or command - for example, changing case and moving or
 duplicating lines.
 
-You can also use the mouse to select text with the 🐧/🪟<kbd>Ctrl</kbd> -
-🍎<kbd>Cmd</kbd> key pressed down to select multiple regions of your text
-simultaneously.
+You can also use the mouse to select text with the
+**_LNX/WIN_**: <kbd>Ctrl</kbd> -
+**_MAC_**: <kbd>Cmd</kbd> key pressed down to select multiple regions of your
+text simultaneously.
 
 #### Whitespace
 

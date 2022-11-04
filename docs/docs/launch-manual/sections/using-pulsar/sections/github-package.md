@@ -1,6 +1,6 @@
 ### GitHub package
 
-The github package brings Git and GitHub integration right inside Atom.
+The GitHub package brings Git and GitHub integration right inside Pulsar.
 
 - [Initialize](#initialize-repositories)
 - [Clone](#clone-repositories)
@@ -75,13 +75,19 @@ commit. Choose between staging...
 - **Files**: Double-click a file or select a file and press <kbd>Enter</kbd>.
 - **Hunk**: Click on the "Stage Hunk" button or select a hunk and press <kbd>Enter</kbd>.
 - **Lines**: Click on a line (or drag on multiple lines) to select, then click
-  on the "Stage Selection" button. Or use the 🐧/🪟<kbd>Ctrl+/</kbd> -
-  🍎<kbd>Cmd-/</kbd> key to toggle from hunk mode to line mode, then
-  press 🐧/🪟<kbd>Ctrl-Enter</kbd> - 🍎<kbd>Cmd-Enter</kbd> to stage
+  on the "Stage Selection" button. Or use the
+  **_LNX/WIN_**: <kbd>Ctrl+/</kbd> -
+  **_MAC_**: <kbd>Cmd-/</kbd> key to toggle from hunk mode to line mode, then
+  press
+  **_LNX/WIN_**: <kbd>Ctrl-Enter</kbd> -
+  **_MAC_**: <kbd>Cmd-Enter</kbd> to stage
   just a single line.
 
-Use the 🐧/🪟<kbd>Cmd-Left</kbd> - 🍎<kbd>Ctrl-Left</kbd> or
-🐧/🪟<kbd>Ctrl-Right</kbd> - 🍎<kbd>Cmd-Right</kbd> arrow key to switch between
+Use the
+**_LNX/WIN_**: <kbd>Cmd-Left</kbd> -
+**_MAC_**: <kbd>Ctrl-Left</kbd> or
+**_LNX/WIN_**: <kbd>Ctrl-Right</kbd> -
+**_MAC_**: <kbd>Cmd-Right</kbd> arrow key to switch between
 file list and the diff view. Unstaging can be done in the same way.
 
 ![Stage changes](@images/atom/github-stage.png "Stage changes")

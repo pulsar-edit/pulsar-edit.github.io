@@ -9,7 +9,8 @@ Git repository.
 
 #### Checkout HEAD revision
 
-The 🐧/🪟<kbd>Alt+Ctrl+Z</kbd> - 🍎<kbd>Alt+Cmd+Z</kbd> keybinding checks out the
+The **_LNX/WIN_**: <kbd>Alt+Ctrl+Z</kbd> -
+**_MAC_**: <kbd>Alt+Cmd+Z</kbd> keybinding checks out the
 `HEAD` revision of the file in the editor.
 
 This is a quick way to discard any saved and staged changes you've made and
@@ -19,16 +20,22 @@ from the command line for that path.
 
 ![Git checkout `HEAD`](@images/atom/git-checkout-head.gif "Git checkout `HEAD`")
 
-This command goes onto the undo stack so you can use 🐧/🪟<kbd>Ctrl+Z</kbd> -
-🍎<kbd>Cmd+Z</kbd> afterwards to restore the previous contents.
+This command goes onto the undo stack so you can use
+**_LNX/WIN_**: <kbd>Ctrl+Z</kbd> -
+**_MAC_**: <kbd>Cmd+Z</kbd> afterwards to restore the previous contents.
 
 #### Git status list
 
 Pulsar ships with the [fuzzy-finder package](https://github.com/pulsar-edit/fuzzy-finder)
-which provides 🐧/🪟<kbd>Ctrl+T</kbd> - 🍎<kbd>Cmd+T</kbd> to quickly open files
-in the project and 🐧/🪟<kbd>Ctrl+B</kbd> - 🍎<kbd>Cmd+B</kbd> to jump to any
-open editor. The package also provides 🐧/🪟<kbd>Ctrl+Shift+B</kbd> -
-🍎<kbd>Cmd+Shift+B</kbd> which displays a list of all the untracked and modified
+which provides
+**_LNX/WIN_**: <kbd>Ctrl+T</kbd> -
+**_MAC_**: <kbd>Cmd+T</kbd> to quickly open files
+in the project and
+**_LNX/WIN_**: <kbd>Ctrl+B</kbd> -
+**_MAC_**: <kbd>Cmd+B</kbd> to jump to any
+open editor. The package also provides
+**_LNX/WIN_**: <kbd>Ctrl+Shift+B</kbd> -
+**_MAC_**: <kbd>Cmd+Shift+B</kbd> which displays a list of all the untracked and modified
 files in the project. These will be the same files that you would see on the
 command line if you ran `git status`.
 

@@ -7,7 +7,7 @@ amazingly flexible, so let's go over some of the simpler flexes it can do.
 
 #### Configuring with CSON
 
-All of Atom's config files (with the exception of your [style sheet](#style-tweaks)
+All of Pulsar's config files (with the exception of your [style sheet](#style-tweaks)
 and your [Init Script](../core-hacking#the-init-file) are written in CSON, short
 for [CoffeeScript Object Notation](https://github.com/bevry/cson#what-is-cson).
 Just like its namesake JSON, [JavaScript Object Notation](https://json.org/),
@@ -65,9 +65,12 @@ files.
 
 If you want to apply quick-and-dirty personal styling changes without creating
 an entire theme that you intend to publish, you can add styles to the
-`styles.less` file in your 🐧/🍎`~/.pulsar` - 🪟`%USERPROFILE%\.pulsar`
+`styles.less` file in your
+**_LNX/MAC_**: `~/.pulsar` - **_WIN_**: `%USERPROFILE%\.pulsar`
 directory. You can open this file in an editor from the
-🐧**_Edit > Stylesheet_** - 🍎**_Pulsar > Stylesheet_** - 🪟**_File > Stylesheet_**
+**_LNX_**: _Edit > Stylesheet_ -
+**_MAC_**: _Pulsar > Stylesheet_ -
+**_WIN_**: _File > Stylesheet_
 menu.
 
 For example, to change the colors of the Status Bar, you could add the following
@@ -83,8 +86,10 @@ rule to your `styles.less` file:
 The easiest way to see what classes are available to style is to inspect the DOM
 manually via the Developer Tools. We'll go over the Developer Tools in great
 detail in the next chapter, but for now let's take a simple look. You can open
-the Developer Tools by pressing 🐧/🪟<kbd>Ctrl+Shift+I</kbd> -
-🍎<kbd>Alt+Cmd+I</kbd>, which will bring up the Chromium Developer Tools panel.
+the Developer Tools by pressing
+**_LNX/WIN_**: <kbd>Ctrl+Shift+I</kbd> -
+**_MAC_**: <kbd>Alt+Cmd+I</kbd>, which will bring up the Chromium Developer Tools
+panel.
 
 ![Developer Tools](@images/atom/devtools.png "Developer Tools")
 
@@ -104,8 +109,8 @@ file, since CSS is also valid in Less.
 
 #### Customizing Keybindings
 
-Atom keymaps work similarly to stylesheets. Just as stylesheets use selectors
-to apply styles to elements, Atom keymaps use selectors to associate key
+Pulsar keymaps work similarly to stylesheets. Just as stylesheets use selectors
+to apply styles to elements, Pulsar keymaps use selectors to associate key
 combinations with events in specific contexts. Here's a small example, excerpted
 from Pulsar's built-in keymap:
 
@@ -126,21 +131,23 @@ occurs inside a select list's mini-editor, it instead triggers the
 By default, `keymap.cson` is loaded when Pulsar is started. It will always be
 loaded last, giving you the chance to override bindings that are defined by
 Pulsar's core keymaps or third-party packages. You can open this file in an
-editor from the 🐧**_Edit > Keymap_** - 🍎**_Pulsar > Keymap_** - 🪟**_File > Keymap_**
-menu.
+editor from the
+**_LNX_**: _Edit > Keymap_ -
+**_MAC_**: _Pulsar > Keymap_ -
+**_WIN_**: _File > Keymap_ menu.
 
 You can see all the keybindings that are currently configured in your
 installation of Pulsar in the Keybindings tab in the Settings View.
 
 If you run into problems with keybindings, the Keybinding Resolver is a huge
-help. It can be opened with the 🐧/🪟<kbd>Ctrl+.</kbd> -
-🍎<kbd>Cmd+.</kbd> key combination. It will show you what keys Atom saw you
-press and what command Atom executed because of that combination.
+help. It can be opened with the **_LNX/WIN_**: <kbd>Ctrl+.</kbd> -
+**_MAC_**: <kbd>Cmd+.</kbd> key combination. It will show you what keys Pulsar
+saw you press and what command Pulsar executed because of that combination.
 
 #### Global Configuration Settings
 
-Atom loads configuration settings from the `config.cson` file in your
-🐧/🍎`~/.pulsar` - 🪟`%USERPROFILE%\.pulsar` directory.
+Pulsar loads configuration settings from the `config.cson` file in your
+<i class="fa-brands fa-linux"></i> <i class="fa-brands fa-apple"></i>`~/.pulsar` - <i class="fa-brands fa-windows"></i>`%USERPROFILE%\.pulsar` directory.
 
 ```coffee
 '*':
@@ -156,7 +163,9 @@ language-specific settings under scope named keys like `.python.source` or
 package name or one of the two core namespaces: `core` or `editor`.
 
 You can open this file in an editor from the
-🐧**_Edit > Config_** - 🍎**_Pulsar > Config_** - 🪟**_File > Config_** menu.
+**_LNX_**: _Edit > Config_ -
+**_MAC_**: _Pulsar > Config_ -
+**_WIN_**: _File > Config_ menu.
 
 ##### Configuration Key Reference
 
@@ -164,7 +173,7 @@ You can open this file in an editor from the
   - `customFileTypes`: Associations of language scope to file extensions (see [Customizing Language Recognition](#customizing-language-recognition))
   - `disabledPackages`: An array of package names to disable
   - `excludeVcsIgnoredPaths`: Don't search within files specified by `.gitignore`
-  - `ignoredNames`: File names to ignore across all of Atom
+  - `ignoredNames`: File names to ignore across all of Pulsar
   - `projectHome`: The directory where projects are assumed to be located
   - `themes`: An array of theme names to load, in cascading order
 - `editor`
@@ -173,7 +182,7 @@ You can open this file in an editor from the
     boundaries
   - `fontSize`: The editor font size
   - `fontFamily`: The editor font family
-  - `invisibles`: A hash of characters Atom will use to render whitespace
+  - `invisibles`: A hash of characters Pulsar will use to render whitespace
     characters. Keys are whitespace character types, values are
     rendered characters (use value `false` to turn off individual
     whitespace character types)
@@ -205,7 +214,7 @@ You can open this file in an editor from the
 #### Language Specific Configuration Settings
 
 You can also set several configuration settings differently for different file
-types. For example, you may want Atom to soft wrap markdown files, have
+types. For example, you may want Pulsar to soft wrap markdown files, have
 two-space tabs for ruby files, and four-space tabs for python files.
 
 There are several settings now scoped to an editor's language. Here is the
@@ -237,8 +246,10 @@ language of your choice, select it, and edit away!
 ##### Language-specific Settings in your Config File
 
 You can also edit the `config.cson` directly. To open your configuration file
-via the Command Palette, press 🐧/🪟<kbd>Ctrl+Shift+P</kbd> -
-🍎<kbd>Cmd+Shift+P</kbd> type `open config`, and press <kbd>Enter</kbd>.
+via the Command Palette, press
+**_LNX/WIN_**: <kbd>Ctrl+Shift+P</kbd> -
+**_MAC_**: <kbd>Cmd+Shift+P</kbd> type `open config`,
+and press <kbd>Enter</kbd>.
 
 Global settings are under the `*` key, and each language can have its own
 top-level key. This key is the language's scope. Language-specific settings
@@ -280,8 +291,8 @@ heading:
 Another way to find the scope for a specific language is to open a file of its
 kind and:
 
-- 🐧/🪟 Choose "Editor: Log Cursor Scope" in the Command Palette
-- 🍎 Press <kbd>Alt+Cmd+P</kbd>
+- **_LNX/WIN_**: Choose "Editor: Log Cursor Scope" in the Command Palette
+- **_MAC_**: Press <kbd>Alt+Cmd+P</kbd>
   to show all scopes for the current position of the cursor. The scope mentioned
   top most is always the language for this kind of file, the scopes following are
   specific to the cursor position:
@@ -293,7 +304,7 @@ be used as class names in your stylesheet.
 
 #### Customizing Language Recognition
 
-If you want Atom to always recognize certain file types as a specific grammar,
+If you want Pulsar to always recognize certain file types as a specific grammar,
 you'll need to manually edit your `config.cson` file. You can open it using the
 _Application: Open Your Config_ command from the Command Palette. For example,
 if you wanted to add the `foo` extension to the CoffeeScript language, you could
@@ -315,7 +326,7 @@ a period to the beginning of either of these will not work.
 
 #### Controlling Where Customization is Stored to Simplify Your Workflow
 
-The CSON configuration files for Atom are stored on disk on your machine. The
+The CSON configuration files for Pulsar are stored on disk on your machine. The
 location for this storage is customizable. The default is to use the home
 directory of the user executing the application. The Pulsar Home directory will,
 by default, be called `.pulsar` and will be located in the root of the home
@@ -323,9 +334,9 @@ directory of the user.
 
 ##### Custom home location with an environment variable
 
-An environment variable can be used to make Atom use a different location. This
+An environment variable can be used to make Pulsar use a different location. This
 can be useful for several reasons. One of these may be that multiple user
-accounts on a machine want to use the same Atom Home. The environment variable
+accounts on a machine want to use the same Pulsar Home. The environment variable
 used to specify an alternate location is called `ATOM_HOME`. If this environment <!--TODO: This is still true but needs to be updated if this changes to PULSAR_HOME-->
 variable exists, the location specified will be used to load and store Pulsar
 settings.
@@ -340,12 +351,12 @@ settings and packages, from machine to machine. This may take the form of
 keeping Pulsar on a USB drive or a cloud storage platform that syncs folders to
 different machines, like Dropbox. Pulsar is in Portable Mode when there is a
 directory named .pulsar sibling to the directory in which the pulsar executable <!--TODO: Check if this is still true in Pulsar-->
-file lives. For example, the installed Atom directory can be placed into a
+file lives. For example, the installed Pulsar directory can be placed into a
 Dropbox folder next to a .pulsar folder.
 
 ![Portable mode directory structure](@images/atom/portable-mode-folder.png)
 
-With such a setup, Atom will use the same Home directory with the same settings
+With such a setup, Pulsar will use the same Home directory with the same settings
 for any machine with this directory syncronized/plugged in.
 
 ##### Moving to Portable Mode

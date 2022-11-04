@@ -9,7 +9,7 @@ of file it is. Largely this is accomplished by looking at its file extension
 (`.md` is generally a Markdown file, etc.), though sometimes it has to inspect
 the content a bit to figure it out.
 
-When you open a file and Atom can't determine a grammar for the file, it will
+When you open a file and Pulsar can't determine a grammar for the file, it will
 default to "Plain Text", which is the simplest one. If it does default to
 "Plain Text", picks the wrong grammar for the file, or if for any reason you
 wish to change the selected grammar, you can pull up the Grammar Selector with
