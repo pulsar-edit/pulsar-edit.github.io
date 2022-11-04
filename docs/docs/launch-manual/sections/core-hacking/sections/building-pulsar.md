@@ -10,8 +10,8 @@ The Pulsar application code can be found in the
 
 To build Pulsar you will need to meet some basic requirements:
 
-- Node.js 16 (recommended installation is via
-  [nvm](https://github.com/nvm-sh/nvm))
+- Node.js (version specified in [pulsar/.nvmrc](https://github.com/pulsar-edit/pulsar/blob/master/.nvmrc),
+  recommended installation is via [nvm](https://github.com/nvm-sh/nvm))
 - yarn (enable with `corepack enable`)
 - Git
 - Python
@@ -20,7 +20,7 @@ To build Pulsar you will need to meet some basic requirements:
 
 For OS or distribution specific instructions see below:
 
-::: tabs
+::: tabs#core-hacking
 
 @tab Linux
 
@@ -31,9 +31,9 @@ For OS or distribution specific instructions see below:
 
 apt install build-essential libxkbfile-dev libsecret-1-dev libx11-dev
 
-# Install Node16 (using `nvm` - see above) and enable corepack (for `yarn`)
+# Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`)
 
-nvm install 16
+nvm install
 corepack enable
 ```
 
@@ -44,9 +44,9 @@ corepack enable
 
 dnf --assumeyes install make gcc gcc-c++ glibc-devel git-core libsecret-devel rpmdevtools libX11-devel libxkbfile-devel nss atk gdk-pixbuf2 gtk3 mesa-dri-drivers
 
-# Install Node16 (using `nvm` - see above) and enable corepack (for `yarn`)
+# Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`)
 
-nvm install 16
+nvm install
 corepack enable
 ```
 
@@ -64,9 +64,9 @@ TODO: Arch instructions
 zypper in -t pattern devel_basis
 zypper in libX11-devel libxkbfile-devel libsecret-devel
 
-# Install Node16 (using `nvm` - see above) and enable corepack (for `yarn`)
+# Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`)
 
-nvm install 16
+nvm install
 corepack enable
 ```
 
@@ -81,9 +81,9 @@ TODO
 Firstly install [Visual Studio](https://visualstudio.microsoft.com/downloads/) from Microsoft.
 
 ```sh
-# Install Node16 (using `nvm` - see above) and enable corepack (for `yarn`)
+# Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`)
 
-nvm install 16
+nvm install
 corepack enable
 ```
 
@@ -128,3 +128,53 @@ yarn start
 These instructions will also build `ppm` (Pulsar Package Manager) but it will
 require some [additional configuration](#using-ppm-pulsar-package-manager) for
 use.
+
+### Building binaries
+
+The following will allow you to build Pulsar as a stand alone binary or
+installer. After running you will find your your built application in
+`pulsar/binaries`.
+
+The build script will automatically build for your system's CPU architecture,
+for example building on an `x86_64` CPU will produce binaries for `x86_64`,
+building on `arm64` will only produce binaries for `arm64`.
+
+It is not possible to "cross-build" for different OSs. For Linux binaries you
+must build from a Linux machine, macOS binaries must be built from macOS etc.
+Your OS is detected automatically and the script will build the correct binaries
+for it.
+
+::: tabs#core-hacking
+
+@tab Linux
+
+By default running `yarn dist` will attempt to create `appimage` (for most Linux
+distributions), `deb` (for Debian or Ubuntu based distributions) and
+`rpm` (for Red Hat or Fedora based distributions) binaries but you can select
+the actual target you want to build by appending the above targets to the
+command. e.g.:
+
+- `yarn dist appimage`
+- `yarn dist deb`
+- `yarn dist rpm`
+
+@tab macOS
+
+`yarn dist` will create a `dmg` installer, there are currently no additional
+targets for macOS.
+
+As noted above this builds for your current CPU architecture. i.e. on an Intel
+Mac this will create Intel binaries, on Apple silicon (M1, M2 etc.) this will
+create Apple silicon binaries.
+
+@tab Windows
+
+By default running `yarn dist` will attempt to create an `NSIS` installer as
+well as a `Portable` executable which does not require installation.
+If you only wish to build one then you can specify it by appending the above
+targets to the command e.g.:
+
+- `yarn dist nsis`
+- `yarn dist portable`
+
+:::

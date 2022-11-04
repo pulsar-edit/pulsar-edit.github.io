@@ -8,7 +8,7 @@ After following the build instructions you will find the `ppm` binary at
 `pulsar/ppm/bin/apm` but by default Pulsar will be looking in the wrong place.
 To solve this a couple of environmental variables need to be exported.
 
-::: tabs
+::: tabs#core-hacking
 
 @tab Linux
 
