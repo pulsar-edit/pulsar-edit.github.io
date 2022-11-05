@@ -28,26 +28,14 @@ For OS or distribution specific instructions see below:
 
 ```sh
 # Install development packages
-
 apt install build-essential libxkbfile-dev libsecret-1-dev libx11-dev
-
-# Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`)
-
-nvm install
-corepack enable
 ```
 
 #### Fedora/RHEL
 
 ```sh
 # Install development packages
-
 dnf --assumeyes install make gcc gcc-c++ glibc-devel git-core libsecret-devel rpmdevtools libX11-devel libxkbfile-devel nss atk gdk-pixbuf2 gtk3 mesa-dri-drivers
-
-# Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`)
-
-nvm install
-corepack enable
 ```
 
 #### Arch
@@ -60,14 +48,8 @@ TODO: Arch instructions
 
 ```sh
 # Install development packages
-
 zypper in -t pattern devel_basis
 zypper in libX11-devel libxkbfile-devel libsecret-devel
-
-# Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`)
-
-nvm install
-corepack enable
 ```
 
 @tab macOS
@@ -80,13 +62,6 @@ TODO
 
 Firstly install [Visual Studio](https://visualstudio.microsoft.com/downloads/) from Microsoft.
 
-```sh
-# Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`)
-
-nvm install
-corepack enable
-```
-
 :::
 
 ### Building and running the application
@@ -98,10 +73,19 @@ download the source code to your local machine and `cd` to the pulsar directory:
 git clone https://github.com/pulsar-edit/pulsar.git && cd pulsar
 ```
 
-Make sure you are using the correct version of Node.js as described in the
-[requirements](#requirements-and-dependencies):
+Install Node.js (using `nvm` - see above) and enable corepack (for `yarn`).
+This will install the version of Node.js specified in [pulsar/.nvmrc](https://github.com/pulsar-edit/pulsar/blob/master/.nvmrc):
 
 ```sh
+nvm install
+corepack enable
+```
+
+If Node.js is already installed, run the following to make sure the correct
+version of Node.js is being used (see [requirements](#requirements-and-dependencies)):
+
+```sh
+nvm use
 node -v
 ```
 
