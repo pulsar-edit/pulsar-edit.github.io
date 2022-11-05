@@ -1,7 +1,3 @@
----
-title: How do I build or execute code I've written in Atom?
----
-
 ### How do I build or execute code I've written in Atom?
 
 Atom doesn't have built-in support for building any type of code nor does it have built-in support for executing any kind of code other than JavaScript. Atom has a JavaScript interactive command-line (also known as a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)) available through the Developer Tools. You can access the JavaScript REPL by using the following steps:
