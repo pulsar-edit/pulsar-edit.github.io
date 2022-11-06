@@ -1,7 +1,3 @@
----
-title: Atom update server API
----
-
 ### Atom update server API
 
 ::: warning WARNING
