@@ -28,6 +28,8 @@ export default defineUserConfig({
     displayAllHeaders: true,
     editLinks: true,
     iconAssets: "fontawesome",
+    repo: "pulsar-edit/pulsar",
+    repoLabel: "GitHub",
     navbar: navbar_en,
     locales: {
       "/": {
