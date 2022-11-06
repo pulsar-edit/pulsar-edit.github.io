@@ -67,11 +67,16 @@ Operating systems should be named as such:
 This is also the order they should appear in within the tab switcher.
 
 When using the `#tabs` switcher they should be in this order.
-When referencing them inline then they should be prefixed by their FA6 icon and
-separated by a `-` <!--TODO: add FA6 icon examples-->
-To keep order consistent it should be Linux -> macOS -> Windows. If instructions
-common to two then it should either be Linux/macOS, Linux/Windows ->
-macOS/Windows
+
+When referencing them inline then they should be abbreviated to the following, strongly emphasized and
+separated by a `-`:
+- Linux = **_LNX_**
+- macOS = **_MAC_**
+- Windows = **_WIN_**
+
+To keep order consistent it should be LNX -> MAC -> WIN. If instructions:
+common to two then it should either be LNX/MAC, LNX/WIN ->
+MAC/WIN
 
 For Linux we may sometimes need to reference particular distros or families of
 distributions. We currently use:
