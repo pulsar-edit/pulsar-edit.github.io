@@ -16,7 +16,8 @@ We also have a number of other repositories to host the website, package backend
 All of the Pulsar repositories can be found under the organization at
 [https://github.com/pulsar-edit](https://github.com/pulsar-edit) but below is a
 list of some of the more regularly used ones you may wish to visit in order to
-contribute to the project.
+contribute to the project. For a more comprehensive list you can visit the
+org-level [REPOS file](https://github.com/pulsar-edit/.github/blob/main/REPOS.md).
 
 ## Editor
 
