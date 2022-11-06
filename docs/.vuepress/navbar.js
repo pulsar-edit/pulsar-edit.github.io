@@ -14,6 +14,11 @@ const navbar_en = [
     link: '/docs/'
   },
   {
+    text: 'Repositories',
+    icon: 'brands fa-github',
+    link: '/repos/'
+  },
+  {
     text: "About Us",
     icon: 'solid fa-sun',
     link: "/about/"
