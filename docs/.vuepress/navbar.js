@@ -28,14 +28,14 @@ const navbar_en = [
         link: "/community/"
       },
       {
-        text: "Discord",
-        icon: 'brands fa-discord',
-        link: "https://discord.gg/7aEbB9dGRT"
-      },
-      {
         text: "Discussions",
         icon: 'solid fa-comments',
         link: "https://github.com/orgs/pulsar-edit/discussions"
+      },
+      {
+        text: "Discord",
+        icon: 'brands fa-discord',
+        link: "https://discord.gg/7aEbB9dGRT"
       },
       {
         text: "Reddit",
