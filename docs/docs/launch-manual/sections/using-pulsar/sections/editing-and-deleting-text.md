@@ -133,6 +133,8 @@ You can also use the mouse to select text with the
 **_MAC_**: <kbd>Cmd</kbd> key pressed down to select multiple regions of your
 text simultaneously.
 
+Return to a single cursor with <kbd>Esc</kbd> or by clicking anywhere in the file to position a cursor there as normal.
+
 #### Whitespace
 
 Pulsar comes with several commands to help you manage the whitespace in your
