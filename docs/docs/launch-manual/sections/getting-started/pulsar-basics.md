@@ -73,7 +73,7 @@ View.
 This includes things like changing the theme, specifying how to handle wrapping,
 font settings, tab size, scroll speed and much more. You can also use this
 screen to install new packages and themes, which we'll cover in
-[Pulsar Packages](/sections/atom-packages).
+[Pulsar Packages](/docs/packages).
 
 To open the Settings View, you can:
 
