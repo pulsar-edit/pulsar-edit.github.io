@@ -37,7 +37,13 @@ export default defineUserConfig({
     plugins: {
       mdEnhance: {
         align: true,
-        include:true,
+        include: {
+          getPath: (file) => {
+            if (file.startsWith("@orgdocs"))
+              return file.replace("@orgdocs", path.resolve(__dirname, "../../node_modules/.github/"));
+            return file;
+          },
+        },
         tabs: true,
         container: true
       },
