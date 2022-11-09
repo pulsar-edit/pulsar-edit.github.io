@@ -30,7 +30,8 @@ const sidebar_en = {
           collapsable: true,
           children: [
             'glossary/',
-            'pulsar-api/'
+            'pulsar-api/',
+            'tooling'
           ]
         },
         {
