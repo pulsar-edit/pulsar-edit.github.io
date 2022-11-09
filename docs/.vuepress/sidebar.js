@@ -1,4 +1,5 @@
-const sidebar_en = {
+c
+onst sidebar_en = {
   '/': [
 
   ],
@@ -6,28 +7,36 @@ const sidebar_en = {
     {
       text: 'Documentation Home',
       title: 'Documentation Home',
+      icon: 'solid fa-book',
       link: '/docs/',
       prefix: '/docs/',
-      collapsible: true,
+      collapsable: false,
       children: [
         {
           text: 'Launch Manual',
+          icon: 'solid fa-rocket',
           link:'launch-manual/',
           prefix: 'launch-manual/sections/',
-          collapsible: true,
+          collapsable: true,
           children: [
             'getting-started/',
             'core-hacking/',
             'faq/'
           ]
         },
-        'packages/',
+        {
+          text: 'Packages',
+          title: 'packages',
+          icon: 'solid fa-box-open',
+          link: 'packages/'
+        },
         {
           text: 'Resources',
           title: 'resources',
+          icon: 'solid fa-wrench',
           link: 'resources/',
           prefix: 'resources/',
-          collapsible: true,
+          collapsable: true,
           children: [
             'glossary/',
             'pulsar-api/'
@@ -36,9 +45,10 @@ const sidebar_en = {
         {
           text: 'Atom Archive',
           title: 'atom archive',
+          icon: 'solid fa-box-archive',
           link: 'atom-archive/',
           prefix: 'atom-archive/',
-          collapsible: true,
+          collapsable: true,
           children: [
             'getting-started/',
             'using-atom/',
