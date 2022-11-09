@@ -39,8 +39,10 @@ export default defineUserConfig({
         align: true,
         include: {
           getPath: (file) => {
-            if (file.startsWith("@orgdocs"))
-              return file.replace("@orgdocs", path.resolve(__dirname, "../../node_modules/.github/"));
+            if (file.startsWith("@orgdocs")) {
+              return file.replace("@orgdocs",
+                path.resolve(__dirname, "../../node_modules/.github/"));
+            }
             return file;
           },
         },
