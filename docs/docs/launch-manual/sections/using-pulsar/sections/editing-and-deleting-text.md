@@ -44,7 +44,7 @@ Pulsar also has built in functionality to re-flow a paragraph to hard-wrap at a
 given maximum line length. You can format the current selection to have lines no
 longer than 80 (or whatever number `editor.preferredLineLength` is set to)
 characters using
-**_LNX/WIN_**: <kbd>Alt+Ctrl+Q</kbd> -
+**_LNX/WIN_**: <kbd>Ctrl+Shift+Q</kbd> -
 **_MAC_**: <kbd>Alt+Cmd+Q</kbd>.
 If nothing is selected, the current paragraph will be reflowed.
 
@@ -132,6 +132,8 @@ You can also use the mouse to select text with the
 **_LNX/WIN_**: <kbd>Ctrl</kbd> -
 **_MAC_**: <kbd>Cmd</kbd> key pressed down to select multiple regions of your
 text simultaneously.
+
+Return to a single cursor with <kbd>Esc</kbd> or by clicking anywhere in the file to position a cursor there as normal.
 
 #### Whitespace
 
