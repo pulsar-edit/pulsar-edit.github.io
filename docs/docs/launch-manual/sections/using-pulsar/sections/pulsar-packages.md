@@ -72,7 +72,7 @@ what it looks like before installing it.
 Clicking on "Install" will install the theme and make it available in the Theme
 dropdowns as we saw in [Changing the Theme](../../getting-started#changing-the-theme).
 
-![Example of the Unity UI theme with Monokai syntax theme](@images/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
+![Example of the Unity UI theme with Monokai syntax theme](@images/atom/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
 
 #### Command Line <!--TODO: Currently the binary is still apm and conversations about moving to something like pulsar ppm, this section may be totally redone in the future and may currently be incorrect-->
 
