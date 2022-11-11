@@ -24,6 +24,11 @@ const navbar_en = [
     link: "/about/"
   },
   {
+    text: 'Blog',
+    icon: 'solid fa-blog',
+    link: '/article/'
+  },
+  {
     text: "Community",
     icon: 'solid fa-user-group',
     children: [

@@ -8,6 +8,7 @@ const __dirname = getDirname(import.meta.url)
 
 import { navbar_en } from "./navbar.js";
 import { sidebar_en } from "./sidebar.js";
+//import { blog_config } from "./blog.js";
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -43,6 +44,18 @@ export default defineUserConfig({
         tabs: true,
         container: true
       },
+      blog: {
+        filter: ({ filePathRelative }) =>
+          filePathRelative ? filePathRelative.startsWith("blog/") : false,
+        //autoExcerpt: true,
+        getInfo: ({ excerpt, frontmatter, git = {} }) => ({
+          author: frontmatter.author || "",
+          date: frontmatter.date || git.createdTime || null,
+          category: frontmatter.category || [],
+          tag: frontmatter.tag || [],
+          excerpt: page.excerpt
+        }),
+      }
     },
     sidebar: sidebar_en,
     sidebarDepth: 3
