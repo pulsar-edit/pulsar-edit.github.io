@@ -1,7 +1,3 @@
----
-title: Atom package server API
----
-
 ### Atom package server API
 
 This guide describes the web API used by [apm](https://github.com/atom/apm) and Atom. The vast majority of use cases are met by the `apm` command-line tool, which does other useful things like incrementing your version in `package.json` and making sure you have pushed your git tag. In fact, Atom itself shells out to `apm` rather than hitting the API directly. If you're curious about how Atom uses `apm`, see the [PackageManager class](https://github.com/atom/settings-view/blob/master/lib/package-manager.coffee) in the `settings-view` package.
