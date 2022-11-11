@@ -12,7 +12,7 @@ import { sidebar_en } from "./sidebar.js";
 export default defineUserConfig({
   lang: 'en-US',
   title: 'Pulsar',
-  description: 'Next generation hackable editor for the future',
+  description: 'A Community-led Hyper-Hackable Text Editor',
   alias: {
     '@images': path.resolve(__dirname, '../../node_modules/.github/images')
   },
