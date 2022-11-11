@@ -1,7 +1,3 @@
----
-title: Why does macOS say that Atom wants to access my calendar, contacts, photos, etc.?
----
-
 ### Why does macOS say that Atom wants to access my calendar, contacts, photos, etc.?
 
 With macOS 10.14 Mojave, Apple introduced new privacy protections similar to the existing protections found in iOS. Whenever an application attempts to access the files inside certain newly-protected directories, macOS asks the user whether they want to allow the application to access the content in those directories. These new privacy protections apply to the directories that contain your calendars, contacts, photos, mail, messages, and Time Machine backups.

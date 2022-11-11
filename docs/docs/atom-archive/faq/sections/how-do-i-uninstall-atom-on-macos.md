@@ -1,7 +1,3 @@
----
-title: How do I uninstall Atom on macOS?
----
-
 ### How do I uninstall Atom on macOS?
 
 To uninstall Atom on macOS, run the following commands from the command line:

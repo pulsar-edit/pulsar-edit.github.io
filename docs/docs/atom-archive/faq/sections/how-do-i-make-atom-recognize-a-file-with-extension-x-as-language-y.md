@@ -1,7 +1,3 @@
----
-title: How do I make Atom recognize a file with extension X as language Y?
----
-
 ### How do I make Atom recognize a file with extension X as language Y?
 
 Atom includes a feature called "custom file types" which you can use by adding some entries into your `config.cson` that look like this:

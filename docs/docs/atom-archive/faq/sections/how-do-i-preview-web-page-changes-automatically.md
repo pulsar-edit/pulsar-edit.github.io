@@ -1,7 +1,3 @@
----
-title: How do I preview web page changes automatically?
----
-
 ### How do I preview web page changes automatically?
 
 There are a couple different approaches, for example:

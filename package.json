@@ -1,7 +1,7 @@
 {
   "name": "pulsar-edit.github.io",
   "version": "1.0.0",
-  "description": "Next generation hackable editor for the future",
+  "description": "A Community-led Hyper-Hackable Text Editor",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "vuepress build docs",

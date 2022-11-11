@@ -1,7 +1,3 @@
----
-title: Glossary
----
-
 ### Glossary
 
 Below is a list of some useful terms we use with regard to Atom.
