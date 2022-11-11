@@ -17,6 +17,7 @@ const sidebar_en = {
           collapsable: true,
           children: [
             'getting-started/',
+            `using-pulsar/`,
             'core-hacking/',
             'faq/'
           ]
