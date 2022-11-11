@@ -1,7 +1,3 @@
----
-title: How can I contribute to Atom?
----
-
 ### How can I contribute to Atom?
 
 You can contribute by [creating a package](https://flight-manual.atom.io/hacking-atom/sections/tools-of-the-trade/) that adds something awesome to Atom!

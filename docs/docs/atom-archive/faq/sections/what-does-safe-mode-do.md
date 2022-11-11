@@ -1,7 +1,3 @@
----
-title: What does Safe Mode do?
----
-
 ### What does Safe Mode do?
 
 Atom's Safe Mode, which can be activated by completely exiting all instances of Atom and launching it again using the command `atom --safe` from the command line, does the following:

@@ -1,7 +1,3 @@
----
-title: I am unable to update to the latest version of Atom on macOS. How do I fix this?
----
-
 ### I am unable to update to the latest version of Atom on macOS. How do I fix this?
 
 Atom shows there is a new version available but the version fails to install. You might have an error message showing a permissions error for example:
