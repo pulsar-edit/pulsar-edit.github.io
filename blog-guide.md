@@ -48,7 +48,7 @@ This is all implemented in the main [website repository](https://github.com/puls
   and should be located in the `blog/assets` directory. You may also use standard
   html `<img>` tags, particularly if you wish to control the displayed size of the
   image.
-- Create a PR to the repo and make it obvious it is a blog post. Please don't
+- Create a PR to the repo and make it obvious it is a blog post, by including [BLOG] in the title of your PR. Please don't
   submit it alongside any website changes.
 
 See [example post](./docs/blog/20221112-Daeraxa-ExamplePost.md) with everything
