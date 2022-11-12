@@ -15,7 +15,7 @@ This is all implemented in the main [website repository](https://github.com/puls
   - This file should be named `YYYYMMDD-<author>-<title>.md` e.g `20221031-CreativeUsername-ThisIsMyBlogPost.md`
 - The metadata displayed on the website is dependent on a number of items
   are configured in the YAML frontmatter of the file. You may in theory omit any of these except the title
-  field but strongly recommend that you use `title`, `author`, `date`, `category`
+  field but it's strongly recommend that you use `title`, `author`, `date`, `category`
   and `tag` as the minimum as the others will default to false.
   - Frontmatter items supported currently are:
     - `title` - _String_: The displayed title of the post, consider this as `H1`
