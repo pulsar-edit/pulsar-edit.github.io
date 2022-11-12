@@ -20,6 +20,7 @@ onst sidebar_en = {
           collapsable: true,
           children: [
             'getting-started/',
+            `using-pulsar/`,
             'core-hacking/',
             'faq/'
           ]
@@ -39,7 +40,8 @@ onst sidebar_en = {
           collapsable: true,
           children: [
             'glossary/',
-            'pulsar-api/'
+            'pulsar-api/',
+            'tooling'
           ]
         },
         {

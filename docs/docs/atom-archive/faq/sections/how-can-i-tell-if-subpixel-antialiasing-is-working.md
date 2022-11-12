@@ -1,7 +1,3 @@
----
-title: How can I tell if subpixel antialiasing is working?
----
-
 ### How can I tell if subpixel antialiasing is working?
 
 If you take a screenshot and blow it up you'll see something like this:

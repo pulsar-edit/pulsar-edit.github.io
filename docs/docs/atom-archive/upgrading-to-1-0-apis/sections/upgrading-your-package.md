@@ -1,7 +1,3 @@
----
-title: Upgrading Your Package
----
-
 ### Upgrading Your Package
 
 This document will guide you through the large bits of upgrading your package to work with 1.0 APIs.

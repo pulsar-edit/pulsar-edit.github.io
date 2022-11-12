@@ -12,7 +12,7 @@ import { sidebar_en } from "./sidebar.js";
 export default defineUserConfig({
   lang: 'en-US',
   title: 'Pulsar',
-  description: 'Next generation hackable editor for the future',
+  description: 'A Community-led Hyper-Hackable Text Editor',
   alias: {
     '@images': path.resolve(__dirname, '../../node_modules/.github/images')
   },
@@ -28,6 +28,8 @@ export default defineUserConfig({
     displayAllHeaders: true,
     editLinks: true,
     iconAssets: "fontawesome",
+    repo: "pulsar-edit",
+    repoLabel: "GitHub",
     navbar: navbar_en,
     locales: {
       "/": {
@@ -37,7 +39,15 @@ export default defineUserConfig({
     plugins: {
       mdEnhance: {
         align: true,
-        include:true,
+        include: {
+          getPath: (file) => {
+            if (file.startsWith("@orgdocs")) {
+              return file.replace("@orgdocs",
+                path.resolve(__dirname, "../../node_modules/.github/"));
+            }
+            return file;
+          },
+        },
         tabs: true,
         container: true
       },
