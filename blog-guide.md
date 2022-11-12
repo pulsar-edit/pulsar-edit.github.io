@@ -44,7 +44,7 @@ This is all implemented in the main [website repository](https://github.com/puls
   supporting the standard features as per the [MDEnhance](https://vuepress-theme-hope.github.io/v2/md-enhance/config.html#vueplayground)
   plugin but if we need more features such as GFM then please discuss and we can
   look at adding it to the website.
-- Images are supported with the standard image syntax ()`![myImage](./assets/myImage.png)`)
+- Images are supported with the standard image syntax (`![myImage](./assets/myImage.png)`)
   and should be located in the `blog/assets` directory. You may also use standard
   html `<img>` tags, particularly if you wish to control the displayed size of the
   image.
