@@ -10,7 +10,7 @@ tag:
   - placeholder
 sticky: false
 star: false
-article: true
+article: false
 ---
 
 This is the excerpt.
