@@ -1,3 +1,5 @@
+# Blog guide
+
 This is a guide on how to add a blog post to the website which will be shown on
 [http://localhost:8080/article/](http://localhost:8080/article/).
 
