@@ -7,7 +7,7 @@ We are using the [Vuepress Blog Plugin](https://vuepress-theme-hope.github.io/v2
 which comes as part of our Vuepress Hope Theme with some light configuration
 to suit our purposes.
 
-This is all implemented in the main [website repository](https://github.com/pulsar-edit/pulsar-edit.github.io)
+This is all implemented in the main [website repository](https://github.com/pulsar-edit/pulsar-edit.github.io).
 
 ## Writing a new post
 
