@@ -54,7 +54,13 @@ This is all implemented in the main [website repository](https://github.com/puls
 See [example post](./docs/blog/20221112-Daeraxa-ExamplePost.md) with everything
 above.
 
-## Website "Blog" pages(s)
+## Testing locally
+
+After cloning the repo run `pnpm install` followed by `pnpm dev`.
+New articles will not be picked up automatically so you will need to stop the
+server and run `pnpm dev` again.
+
+## Website "Blog" page(s)
 
 The website itself has a number of features which the aforementioned frontmatter
 fields can influence.
