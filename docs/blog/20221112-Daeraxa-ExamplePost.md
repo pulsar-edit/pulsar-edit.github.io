@@ -7,18 +7,18 @@ article: false
 
 ---
 
-title: Example Post
-author: Daeraxa
-date: 2022-11-12
+title: Example Post  
+author: Daeraxa  
+date: 2022-11-12  
 category:
 
 - website
-- testing
+- testing  
   tag:
 - new feature
-- placeholder
+- placeholder  
   sticky: false
-  star: false
+  star: false  
   article: false
 
 ---
