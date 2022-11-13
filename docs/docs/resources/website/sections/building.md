@@ -2,7 +2,7 @@
 
 ### Prerequisites
 
-- Node.js - at least version 16 (recommended install via [nvm](https://github.com/nvm-sh/nvm)).
+- Node.js - at least version 16 (recommended installation via [nvm](https://github.com/nvm-sh/nvm)).
 - git
 - [pnpm](https://pnpm.io/) - simply run `corepack enable`
 
