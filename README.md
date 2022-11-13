@@ -1,27 +1,23 @@
-# Pulsar Edit
+# Pulsar Website ([https://pulsar-edit.dev](https://pulsar-edit.dev))
 
-This is the website repo for Pulsar Edit. It contains our documenation and other information users might be looking for. Visit the [Website](https://pulsar-edit.github.io).
+This is the website repo for Pulsar Edit. It contains our documentation and
+other information users might be looking for. Visit the [Website](https://pulsar-edit.dev).
 
-## Development
+Documentation relating to this repository and website can be found on the
+website at [http://pulsar-edit.dev/docs/resources/website/](http://pulsar-edit.dev/docs/resources/website/).
 
-The package manifest provides several scripts to help during development:
+Alternatively the source files for this documentation can be found on this
+repository in [pulsar-edit.github.io/docs/resources/website)](https://github.com/pulsar-edit/pulsar-edit.github.io/tree/main/docs/resources/website).
 
-### `dev`
+Useful sections of the documentation are linked below
 
-Starts a watch task that will rebuild VuePress whenever a change has been made to the included Markdown and JavaScript files. Additionally, it launches the development server to test the results in the browser.
-
-### `build`
-
-Creates an optimized production build.
-
-### `format`
-
-Runs [Prettier](https://prettier.io) over all Markdown files included in the repository to ensure consistent formatting.
-
-**Note:** This task will run automatically on every commit, so it can be ignored in most cases
-
-### `lint`
-
-Lints all Markdown files in the repository.
-
-**Note:** This task will run automatically on every commit, so it can be ignored in most cases
+- [Building the site](http://pulsar-edit.dev/docs/resources/website/#building-the-website)
+  - [Repo link](https://github.com/pulsar-edit/pulsar-edit.github.io/tree/main/docs/resources/website/sections/building.md)
+- [Configuration files](http://pulsar-edit.dev/docs/resources/website/#configuration-files)
+  - [Repo link](https://github.com/pulsar-edit/pulsar-edit.github.io/tree/main/docs/resources/website/sections/configuration-files.md)
+- [File organization](http:///pulsar-edit.dev/docs/resources/website/#file-organization)
+  - [Repo link](https://github.com/pulsar-edit/pulsar-edit.github.io/tree/main/docs/resources/website/sections/file-organization.md)
+- [Document style](http://pulsar-edit.dev/docs/resources/website/#documentation-style-reusable-components)
+  - [Repo link](https://github.com/pulsar-edit/pulsar-edit.github.io/tree/main/docs/resources/website/sections/document-style.md)
+- [Blog guide](http://pulsar-edit.dev/docs/resources/website/#blog-guide)
+  - [Repo link](https://github.com/pulsar-edit/pulsar-edit.github.io/tree/main/docs/resources/website/sections/blog-guide.md)
