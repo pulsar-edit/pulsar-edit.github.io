@@ -1,7 +1,3 @@
----
-title: Serialization in Atom
----
-
 ### Serialization in Atom
 
 When a window is refreshed or restored from a previous session, the view and its associated objects are _deserialized_ from a JSON representation that was stored during the window's previous shutdown. For your own views and objects to be compatible with refreshing, you'll need to make them play nicely with the serializing and deserializing.

@@ -1,7 +1,3 @@
----
-title: Configuration API
----
-
 ### Configuration API
 
 #### Reading Config Settings
