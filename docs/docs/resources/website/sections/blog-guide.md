@@ -1,7 +1,7 @@
 ## Blog guide
 
 This is a guide on how to add a blog post to the website which will be shown on
-[http://pulsar-edit.dev/article/](http://pulsar-edit.dev/article/).
+[https://pulsar-edit.dev/article/](https://pulsar-edit.dev/article/).
 
 We are using the [Vuepress Blog Plugin](https://vuepress-theme-hope.github.io/v2/blog/)
 which comes as part of our Vuepress Hope Theme with some light configuration

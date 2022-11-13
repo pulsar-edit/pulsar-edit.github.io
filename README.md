@@ -4,7 +4,7 @@ This is the website repo for Pulsar Edit. It contains our documentation and
 other information users might be looking for. Visit the [Website](https://pulsar-edit.dev).
 
 Documentation relating to this repository and website can be found on the
-website at [http://pulsar-edit.dev/docs/resources/website/](https://pulsar-edit.dev/docs/resources/website/).
+website at [https://pulsar-edit.dev/docs/resources/website/](https://pulsar-edit.dev/docs/resources/website/).
 
 Alternatively the source files for this documentation can be found on this
 repository in [pulsar-edit.github.io/docs/resources/website)](https://github.com/pulsar-edit/pulsar-edit.github.io/tree/main/docs/resources/website).
