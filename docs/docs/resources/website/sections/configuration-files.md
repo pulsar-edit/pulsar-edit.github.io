@@ -22,7 +22,7 @@ This file is broken down to to keep it tidy, the below files are imported to
 This controls the layout for the links in the top middle of the page and is
 always displayed.
 
-Items that go here are ones that we always want to be show and should always
+Items that go here are ones that we always want to be shown and should always
 be available for quick navigation.
 
 Each object can have a number of different values. The main ones we use are:
