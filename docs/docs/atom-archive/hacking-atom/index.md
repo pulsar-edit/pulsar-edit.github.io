@@ -2,6 +2,13 @@
 title: "Chapter 3 : Hacking Atom"
 ---
 
+::: danger STOP
+This is being kept for archival purposes only from the original Atom
+documentation. As this may no longer be relevant to Pulsar, you use this at
+your own risk. Current Pulsar documentation for this section is found at the
+[documentation home](/docs/launch-manual/getting-started).
+:::
+
 ## Hacking Atom
 
 Now it's time to come to the "Hackable" part of the Hackable Editor. As we've seen throughout the second section, a huge part of Atom is made up of bundled packages. If you wish to add some functionality to Atom, you have access to the same APIs and tools that the core features of Atom has. From the [tree-view](https://github.com/atom/tree-view) to the [command-palette](https://github.com/atom/command-palette) to [find-and-replace](https://github.com/atom/find-and-replace) functionality, even the most core features of Atom are implemented as packages.

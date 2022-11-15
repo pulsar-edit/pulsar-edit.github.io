@@ -1,7 +1,3 @@
----
-title: How Atom Uses Chromium Snapshots
----
-
 ### How Atom Uses Chromium Snapshots
 
 In order to improve startup time, when Atom is built we create a [V8 snapshot](https://v8project.blogspot.it/2015/09/custom-startup-snapshots.html) in which we preload core services and packages. Then, at runtime, we finish loading Atom by supplying all the information we didn't have during the compilation phase (e.g. loading third party packages, custom style sheets, configuration, etc.).
