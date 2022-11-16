@@ -1,7 +1,7 @@
-# Blog guide
+## Blog guide
 
 This is a guide on how to add a blog post to the website which will be shown on
-[http://pulsar-edit.dev/article/](http://pulsar-edit.dev/article/).
+[https://pulsar-edit.dev/article/](https://pulsar-edit.dev/article/).
 
 We are using the [Vuepress Blog Plugin](https://vuepress-theme-hope.github.io/v2/blog/)
 which comes as part of our Vuepress Hope Theme with some light configuration
@@ -9,7 +9,7 @@ to suit our purposes.
 
 This is all implemented in the main [website repository](https://github.com/pulsar-edit/pulsar-edit.github.io).
 
-## Writing a new post
+### Writing a new post
 
 - Create a new .md file in pulsar-edit.github.io/docs/blog.
   - This file should be named `YYYYMMDD-<author>-<title>.md` e.g `20221031-CreativeUsername-ThisIsMyBlogPost.md`
@@ -54,13 +54,11 @@ This is all implemented in the main [website repository](https://github.com/puls
 See [example post](./docs/blog/20221112-Daeraxa-ExamplePost.md) with everything
 above.
 
-## Testing locally
+### Testing locally
 
-After cloning the repo run `pnpm install` followed by `pnpm dev`.
-New articles will not be picked up automatically so you will need to stop the
-server and run `pnpm dev` again.
+See [building](../#building-the-website)
 
-## Website "Blog" page(s)
+### Website "Blog" page(s)
 
 The website itself has a number of features which the aforementioned frontmatter
 fields can influence.
@@ -78,7 +76,7 @@ submitted in the respective frontmatter fields.
 The `Timeline` allows views of blog posts over time according to the dates set
 in the `date` frontmatter field.
 
-## Questions? Suggestions
+### Questions? Suggestions
 
 Just ask in Discord or GH Discussions and ping the `@documentation` team.
 

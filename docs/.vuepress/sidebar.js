@@ -60,6 +60,11 @@ const sidebar_en = {
             text: 'Tooling',
             icon: 'solid fa-toolbox',
             link: 'tooling/'
+          },
+          {
+            text: 'Website',
+            icon: 'solid fa-table-columns',
+            link: 'website/'
           }
         ]
       },

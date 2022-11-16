@@ -1,4 +1,4 @@
-# Documentation style & reusable components
+## Documentation style & reusable components
 
 The documentation for the project should maintain a consistent style where
 possible. This covers a number of aspects such as writing style, naming
@@ -6,7 +6,7 @@ conventions, folder structure, links etc.
 
 All docs are currently in American English (en-US) but localization is planned.
 
-## Structure
+### Structure
 
 The main structure for documentation can be seen in `docs/docs`.
 There are a number of "root" sections:
@@ -14,18 +14,19 @@ There are a number of "root" sections:
 - `launch-manual` - For the current main Pulsar documentation
 - `packages` - Currently holds wiki info from the atom package repos
 - `resources` - For other referenced docs
+- `blog` - For the website blog
 - `atom-archive` - For "as is" archived Atom documentation
 
 Within each section is an `index.md` which will usually contain info about each
-sub-section as well as links to them. These correspond to the second level 
+sub-section as well as links to them. These correspond to the second level
 items on the sidebar.
 
 Inside `sections` are the sub-sections which group more specific topics. These
 also have an `index.md` which corresponds to the third level item on the
-sidebar. 
+sidebar.
 This file is displayed on the website as a single long documenent but is
 actually created from a number of @include() lines which reference individual
-sections within the next sections directory. These should be relative to the 
+sections within the next sections directory. These should be relative to the
 location of index.md e.g. @include(sections/pulsar-packages.md).
 This file also contains the frontmatter for defining the title, language and
 description of the file and should also be the first level heading for the page.
@@ -34,9 +35,9 @@ apply to the entire page.
 
 Inside the next `sections` directory should be the actual content of the
 document. Each section should start with a second level header and should
-not contain any frontmatter. 
+not contain any frontmatter.
 
-## Links
+### Links
 
 Internal links can just be to the header (e.g.`[Structure](#structure)`), this
 to all sections included on the parent `index.md` so care should be made to not
@@ -52,7 +53,7 @@ the `.vuepress/config.js` file which adds most of the path for you:
 `'@images': path.resolve(__dirname, '../../node_modules/pulsar-assets/images')`  
 so the link to your image would just be `![myImage](@images/pulsar/myImage.png "My Image")`.
 
-## Naming
+### Naming
 
 The name of the application is `Pulsar` and should be capitalized as such.
 Whilst the website and GitHub org name is `Pulsar-Edit`, this should not be used
@@ -70,6 +71,7 @@ When using the `#tabs` switcher they should be in this order.
 
 When referencing them inline then they should be abbreviated to the following, strongly emphasized and
 separated by a `-`:
+
 - Linux = **_LNX_**
 - macOS = **_MAC_**
 - Windows = **_WIN_**
@@ -80,24 +82,26 @@ MAC/WIN
 
 For Linux we may sometimes need to reference particular distros or families of
 distributions. We currently use:
+
 - `Ubuntu/Debian` for all distributions based on Debian or Ubuntu
 - `Fedora/RHEL` for all distrububtions based on Fedora Linux & Red Hat
-                Red Hat Enterprise Linux. This includes AlmaLinux, CentOS, Rocky
-                Linux etc.
+  Red Hat Enterprise Linux. This includes AlmaLinux, CentOS, Rocky
+  Linux etc.
 - `Arch` - for all Arch based distributions such as Manjaro, Garuda, ArcoLinux
-           etc.
+  etc.
 - `OpenSUSE` - for all OpenSUSE based distributions such as GeckoLinux
 
-We may need to add more in the future but generally users of less popular or 
+We may need to add more in the future but generally users of less popular or
 more technical distributions such as Gentoo or NixOS understand how to
 adapt to their OS from the instructions above.
 
-## Containers
+### Containers
 
 Where you want to display an `info`, `warning` or tab/code switcher in the
 document you should use a container with the `:::` syntax.
 
-e.g. 
+e.g.
+
 ```
 ::: tabs#filename
 
@@ -117,6 +121,7 @@ Lorem ipsum dolor sit amet...
 ```
 
 or
+
 ```
 ::: tip My Helpful Tip
 
@@ -130,6 +135,6 @@ various purposes at [pulsar-edit.github.io/common-text-blocks.md](https://github
 
 See [VuePress Hope documentation](https://vuepress-theme-hope.github.io/v2/guide/get-started/markdown.html#theme-enhancement)
 
-## Writing style
+### Writing style
 
 TODO: Needs consensus
