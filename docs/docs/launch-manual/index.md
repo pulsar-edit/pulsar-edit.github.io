@@ -22,6 +22,13 @@ This is really what Pulsar is all about, here you will get to grips with what
 lies under the skin of Pulsar so you can begin hacking on it to extend and
 customize its functionality.
 
+## [<i class="fa-solid fa-microscope"></i> Behind Pulsar](/docs/launch-manual/sections/behind-pulsar)
+
+Her you will get into the real nitty-gritty of Pulsar. Here you will get into
+the details of various internal APIs and full details of how to maintain
+packages.
+
 ## [<i class="fa-solid fa-circle-question"></i> FAQ](/docs/launch-manual/sections/faq)
 
-Frequently asked questions. This is where you can find some of the more common questions and answers regarding Pulsar.
+Frequently asked questions. This is where you can find some of the more common
+questions and answers regarding Pulsar.
