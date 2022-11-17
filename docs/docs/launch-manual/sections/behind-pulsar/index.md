@@ -21,7 +21,7 @@ done.
 @include(sections/configuration-api.md)
 @include(sections/keymaps-in-depth.md)
 @include(sections/scoped-settings-scopes-and-scope-descriptors.md)
-@include(sections/serialization-in-atom.md)
+@include(sections/serialization-in-pulsar.md)
 @include(sections/developing-node-modules.md)
 @include(sections/interacting-with-other-packages-via-services.md)
 @include(sections/maintaining-your-packages.md)
