@@ -25,7 +25,4 @@ done.
 @include(sections/developing-node-modules.md)
 @include(sections/interacting-with-other-packages-via-services.md)
 @include(sections/maintaining-your-packages.md)
-
-<!--@include(sections/how-pulsar-uses-chromium-snapshots.md) TODO: Commented out currently because not sure if this is still relevant, need to review-->
-
 @include(sections/summary.md)
