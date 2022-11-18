@@ -11,7 +11,7 @@ This is all implemented in the main [website repository](https://github.com/puls
 
 ### Writing a new post
 
-- Create a new .md file in pulsar-edit.github.io/docs/blog.
+- Create a new .md file in [pulsar-edit.github.io/docs/blog](pulsar-edit.github.io/docs/blog).
   - This file should be named `YYYYMMDD-<author>-<title>.md` e.g `20221031-CreativeUsername-ThisIsMyBlogPost.md`
 - The metadata displayed on the website is dependent on a number of items that
   are configured in the YAML frontmatter of the file. You may in theory omit any of these except the title
@@ -51,7 +51,7 @@ This is all implemented in the main [website repository](https://github.com/puls
 - Create a PR to the repo and make it obvious it is a blog post, by including [BLOG] in the title of your PR. Please don't
   submit it alongside any website changes.
 
-See [example post](./docs/blog/20221112-Daeraxa-ExamplePost.md) with everything
+See [example post](https://github.com/pulsar-edit/pulsar-edit.github.io/blob/main/docs/blog/20221112-Daeraxa-ExamplePost.md) with everything
 above.
 
 ### Testing locally
