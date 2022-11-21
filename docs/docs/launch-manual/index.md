@@ -24,7 +24,7 @@ customize its functionality.
 
 ## [<i class="fa-solid fa-microscope"></i> Behind Pulsar](/docs/launch-manual/sections/behind-pulsar)
 
-Here you will get into the real nitty-gritty of Pulsar, where you get into
+Here you will get into the real heart of Pulsar, where you get into
 the details of various internal APIs and full details of how to maintain
 packages.
 
