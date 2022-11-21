@@ -19,7 +19,7 @@ $ git clone https://github.com/pulsar-edit/atom-keymap.git
 $ cd atom-keymap
 $ npm install
 $ npm link
-$ cd <em>WHERE YOU CLONED PULSAR</em>
+$ cd <WHERE YOU CLONED PULSAR>
 $ npm link atom-keymap
 
 # This is the special step, it makes the Node module work with Pulsar's version of Node
@@ -27,7 +27,7 @@ $ pulsar -p rebuild
 
 # If you have cloned Pulsar in a different location than ~/github/pulsar
 # you need to set the following environment variable
-$ export ATOM_DEV_RESOURCE_PATH=<em>WHERE YOU CLONED PULSAR</em>
+$ export ATOM_DEV_RESOURCE_PATH=<WHERE YOU CLONED PULSAR>
 
 # Should work!
 $ pulsar --dev .
@@ -40,7 +40,7 @@ $ git clone https://github.com/pulsar-edit/atom-keymap.git
 $ cd atom-keymap
 $ npm install
 $ npm link
-$ cd <em>WHERE YOU CLONED PULSAR</em>
+$ cd <WHERE YOU CLONED PULSAR>
 $ npm link atom-keymap
 
 # This is the special step, it makes the Node module work with Pulsar's version of Node
@@ -48,7 +48,7 @@ $ pulsar -p rebuild
 
 # If you have cloned Pulsar in a different location than ~/github/pulsar
 # you need to set the following environment variable
-$ export ATOM_DEV_RESOURCE_PATH=<em>WHERE YOU CLONED PULSAR</em>
+$ export ATOM_DEV_RESOURCE_PATH=<WHERE YOU CLONED PULSAR>
 
 # Should work!
 $ pulsar --dev .
@@ -61,7 +61,7 @@ $ git clone https://github.com/pulsar-edit/atom-keymap.git
 $ cd atom-keymap
 $ npm install
 $ npm link
-$ cd <em>WHERE YOU CLONED PULSAR</em>
+$ cd <WHERE YOU CLONED PULSAR>
 $ npm link atom-keymap
 
 # This is the special step, it makes the Node module work with Pulsar's version of Node
@@ -69,7 +69,7 @@ $ pulsar -p rebuild
 
 # If you have cloned Pulsar in a different location than %USERPROFILE%\github\pulsar
 # you need to set the following environment variable
-$ setx ATOM_DEV_RESOURCE_PATH=<em>WHERE YOU CLONED PULSAR</em>
+$ setx ATOM_DEV_RESOURCE_PATH=<WHERE YOU CLONED PULSAR>
 
 # Should work!
 $ pulsar --dev .
@@ -81,9 +81,9 @@ After you get the Node module linked and working, every time you make a change
 to the Node module's code, you will have to exit Pulsar and do the following:
 
 ```sh
-$ cd <em>WHERE YOU CLONED THE NODE MODULE</em>
+$ cd <WHERE YOU CLONED THE NODE MODULE>
 $ npm install
-$ cd <em>WHERE YOU CLONED PULSAR</em>
+$ cd <WHERE YOU CLONED PULSAR>
 $ pulsar -p rebuild
 $ pulsar --dev .
 ```

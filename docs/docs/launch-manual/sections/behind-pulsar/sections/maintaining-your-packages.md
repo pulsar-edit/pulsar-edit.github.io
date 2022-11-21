@@ -1,14 +1,10 @@
 ## Maintaining Your Packages
 
-<!--This entire file needs to be checked for accuracy and content once the new
-backend supports this fully.
-We will also need to add to this file if support for alternative hosting sites
-such as GitLab and Codeberg is possible-->
+::: info Pre-release information
 
-::: danger STOP
-
-This is outdated information from Atom and will be reviewed at a later date when
-this has been re-evaluated for the new backend.
+This section is about a feature in pre-release. The information below documents
+the intended functionality but there is still ongoing work to support these
+features with stability.
 
 :::
 
@@ -91,7 +87,7 @@ For example, if your package is named `package-name` then the command you would
 execute is:
 
 ```sh
-$ pulsar -p unpublish <em>package-name</em>
+$ pulsar -p unpublish <package-name>
 ```
 
 This will remove your package from the [https://pulsar-edit.dev](https://web.pulsar-edit.dev)
@@ -107,7 +103,7 @@ your package. For example, if your package is named `package-name` and the bad
 version of your package is v1.2.3 then the command you would execute is:
 
 ```sh
-$ pulsar -p unpublish <em>package-name@1.2.3</em>
+$ pulsar -p unpublish <package-name@1.2.3>
 ```
 
 This will remove just this particular version from the [https://pulsar-edit.dev](https://web.pulsar-edit.dev)
@@ -121,7 +117,7 @@ command – `pulsar -p publish --rename` changes the `name` field in your packag
 Requests made to the previous name will be forwarded to the new name.
 
 ```sh
-$ pulsar -p publish --rename <em>new-package-name</em>
+$ pulsar -p publish --rename <new-package-name>
 ```
 
 ::: tip
