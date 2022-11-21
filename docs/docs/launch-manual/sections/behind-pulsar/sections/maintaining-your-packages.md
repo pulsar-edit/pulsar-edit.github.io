@@ -61,7 +61,7 @@ on the GitHub repository for your package. _Note:_ Anyone that has push access
 to your repository will have the ability to publish new versions of the package
 that belongs to that repository.
 
-You can also have packages that are owned by a[GitHub organization](https://help.github.com/articles/creating-a-new-organization-account/).
+You can also have packages that are owned by a [GitHub organization](https://help.github.com/articles/creating-a-new-organization-account/).
 Anyone who is a member of an organization's [team](https://help.github.com/articles/permission-levels-for-an-organization/)
 which has push access to the package's repository will be able to publish new
 versions of the package.
