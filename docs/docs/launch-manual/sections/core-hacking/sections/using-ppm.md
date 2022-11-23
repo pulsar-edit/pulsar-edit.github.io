@@ -6,6 +6,8 @@ hoops you have to jump through to get it to work correctly.
 
 After following the build instructions you will find the `ppm` binary at
 `pulsar/ppm/bin/apm` but by default Pulsar will be looking in the wrong place.
+There will also be issues relating to the Electron version which will prevent
+install from the package backend.
 To solve this a couple of environmental variables need to be exported.
 
 ::: tabs
@@ -15,6 +17,7 @@ To solve this a couple of environmental variables need to be exported.
 ```sh
 export ATOM_HOME=/home/<user>/.pulsar
 export APM_PATH=/ppm/bin/apm
+export ATOM_ELECTRON_VERSION=12.2.3
 ```
 
 @tab macOS
