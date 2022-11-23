@@ -1,4 +1,4 @@
-### Pulsar Packages
+## Pulsar Packages
 
 First we'll start with the Pulsar package system. As we mentioned previously,
 Pulsar itself is a very basic core of functionality that ships with a number of
@@ -35,7 +35,7 @@ All of the packages will come up with an "Install" button. Clicking that will
 download the package and install it. Your editor will now have the functionality
 that the package provides.
 
-#### Package Settings
+### Package Settings
 
 Once a package is installed in Pulsar, it will show up in the Settings View
 under the "Packages" tab, along with all the pre-installed packages that come
@@ -56,7 +56,7 @@ detect it and you can upgrade the package from either this screen or from the
 "Updates" tab. This helps you easily keep all your installed packages up to
 date.
 
-#### Pulsar Themes
+### Pulsar Themes
 
 You can also find and install new themes for Pulsar from the Settings View.
 These can be either UI themes or syntax themes and you can search for them from
@@ -74,7 +74,7 @@ dropdowns as we saw in [Changing the Theme](../../getting-started#changing-the-t
 
 ![Example of the Unity UI theme with Monokai syntax theme](@images/atom/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
 
-#### Command Line <!--TODO: Currently the binary is still apm and conversations about moving to something like pulsar ppm, this section may be totally redone in the future and may currently be incorrect-->
+### Command Line <!--TODO: Currently the binary is still apm and conversations about moving to something like pulsar ppm, this section may be totally redone in the future and may currently be incorrect-->
 
 You can also install packages or themes from the command line using `ppm`.
 

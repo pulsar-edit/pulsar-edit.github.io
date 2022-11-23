@@ -1,4 +1,4 @@
-### Grammar
+## Grammar
 
 The "grammar" of a file is what language Pulsar has associated with that file.
 Types of grammars would include "Java" or "GitHub-Flavored Markdown". We looked

@@ -1,4 +1,4 @@
-### Moving in Pulsar
+## Moving in Pulsar
 
 While it's pretty easy to move around Pulsar by clicking with the mouse or using
 the arrow keys, there are some keybindings that may help you keep your hands on
@@ -64,7 +64,7 @@ in that line as well.
 
 ![Go directly to a line](@images/atom/goto.png "Go directly to a line")
 
-#### Additional Movement and Selection Commands
+### Additional Movement and Selection Commands
 
 Pulsar also has a few movement and selection commands that don't have
 keybindings by default. You can access these commands from the [Command Palette](../../getting-started#command-palette),
@@ -177,7 +177,7 @@ editor:select-to-previous-word-boundary
 
 :::
 
-#### Navigating by Symbols
+### Navigating by Symbols
 
 You can also jump around a little more informatively with the Symbols View. To
 jump to a symbol such as a method definition, press
@@ -228,7 +228,7 @@ An example can be found [here](https://github.com/pulsar-edit/symbols-view/blob/
 The symbols navigation functionality is implemented in the [symbols-view](https://github.com/pulsar-edit/symbols-view)
 package.
 
-#### Bookmarks
+### Bookmarks
 
 Pulsar also has a great way to bookmark specific lines in your project so you can
 jump back to them quickly.
