@@ -26,6 +26,11 @@ const sidebar_en = {
             link: 'core-hacking/'
           },
           {
+            text: 'Behind Pulsar',
+            icon: 'solid fa-microscope',
+            link: 'behind-pulsar'
+          },
+          {
             text: 'FAQ',
             icon: 'solid fa-circle-question',
             link: 'faq/'
