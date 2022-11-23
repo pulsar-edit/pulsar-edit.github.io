@@ -1,4 +1,4 @@
-### Version Control in Pulsar
+## Version Control in Pulsar
 
 Version control is an important aspect of any project and Pulsar comes with
 basic [Git](https://git-scm.com) and [GitHub](https://github.com) integration
@@ -7,7 +7,7 @@ built in.
 In order to use version control in Pulsar, the project root needs to contain the
 Git repository.
 
-#### Checkout HEAD revision
+### Checkout HEAD revision
 
 The **_LNX/WIN_**: <kbd>Alt+Ctrl+Z</kbd> -
 **_MAC_**: <kbd>Alt+Cmd+Z</kbd> keybinding checks out the
@@ -24,7 +24,7 @@ This command goes onto the undo stack so you can use
 **_LNX/WIN_**: <kbd>Ctrl+Z</kbd> -
 **_MAC_**: <kbd>Cmd+Z</kbd> afterwards to restore the previous contents.
 
-#### Git status list
+### Git status list
 
 Pulsar ships with the [fuzzy-finder package](https://github.com/pulsar-edit/fuzzy-finder)
 which provides
@@ -44,7 +44,7 @@ command line if you ran `git status`.
 An icon will appear to the right of each file letting you know whether it is
 untracked or modified.
 
-#### Commit editor
+### Commit editor
 
 Pulsar can be used as your Git commit editor and ships with the [language-git package](https://github.com/pulsar-edit/language-git)
 which adds syntax highlighting to edited commit, merge, and rebase messages.
@@ -63,7 +63,7 @@ The [language-git](https://github.com/pulsar-edit/language-git) package will hel
 remind you to be brief by colorizing the first lines of commit messages when
 they're longer than 50 or 65 characters.
 
-#### Status bar icons
+### Status bar icons
 
 The [status-bar](https://github.com/pulsar-edit/status-bar) package that ships with
 Pulsar includes several Git decorations that display on the right side of the
@@ -76,7 +76,7 @@ branch is ahead of or behind its upstream branch. An icon is added if the file
 is untracked, modified, or ignored. The number of lines added and removed since
 the file was last committed will be displayed as well.
 
-#### Line diffs
+### Line diffs
 
 The included [git-diff](https://github.com/pulsar-edit/git-diff) package colorizes
 the gutter next to lines that have been added, edited, or removed.
@@ -87,7 +87,7 @@ This package also adds <kbd>Alt+G</kbd> <kbd>Down</kbd> and <kbd>Alt+G</kbd>
 <kbd>Up</kbd> keybindings that allow you to move the cursor to the next or
 previous diff in the current editor.
 
-#### Open on GitHub
+### Open on GitHub
 
 If the project you're working on is on GitHub, there are also some very useful
 integrations you can use. Most of the commands will take the current file you're

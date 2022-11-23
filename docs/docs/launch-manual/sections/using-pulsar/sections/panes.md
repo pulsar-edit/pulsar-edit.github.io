@@ -1,4 +1,4 @@
-### Panes
+## Panes
 
 :::tabs#using-pulsar
 

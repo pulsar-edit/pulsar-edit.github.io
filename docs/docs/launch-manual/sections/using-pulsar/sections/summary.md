@@ -1,4 +1,4 @@
-### Summary
+## Summary
 
 At this point you should be something of a Pulsar master user. You should be
 able to navigate and manipulate your text and files like a wizard. You should

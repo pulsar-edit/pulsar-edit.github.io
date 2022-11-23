@@ -1,11 +1,11 @@
-### Basic Customization
+## Basic Customization
 
 Now that we are feeling comfortable with just about everything built into
 Pulsar, let's look at how to tweak it. Perhaps there is a keybinding that you
 use a lot but feels wrong or a color that isn't quite right for you. Pulsar is
 amazingly flexible, so let's go over some of the simpler flexes it can do.
 
-#### Configuring with CSON
+### Configuring with CSON
 
 All of Pulsar's config files (with the exception of your [style sheet](#style-tweaks)
 and your [Init Script](../core-hacking#the-init-file) are written in CSON, short
@@ -61,7 +61,7 @@ files.
 
 :::
 
-#### Style Tweaks
+### Style Tweaks
 
 If you want to apply quick-and-dirty personal styling changes without creating
 an entire theme that you intend to publish, you can add styles to the
@@ -107,7 +107,7 @@ file, since CSS is also valid in Less.
 
 :::
 
-#### Customizing Keybindings
+### Customizing Keybindings
 
 Pulsar keymaps work similarly to stylesheets. Just as stylesheets use selectors
 to apply styles to elements, Pulsar keymaps use selectors to associate key
@@ -144,7 +144,7 @@ help. It can be opened with the **_LNX/WIN_**: <kbd>Ctrl+.</kbd> -
 **_MAC_**: <kbd>Cmd+.</kbd> key combination. It will show you what keys Pulsar
 saw you press and what command Pulsar executed because of that combination.
 
-#### Global Configuration Settings
+### Global Configuration Settings
 
 Pulsar loads configuration settings from the `config.cson` file in your
 **_LNX/MAC_**: `~/.pulsar` -
@@ -168,7 +168,7 @@ You can open this file in an editor from the
 **_MAC_**: _Pulsar > Config_ -
 **_WIN_**: _File > Config_ menu.
 
-##### Configuration Key Reference
+#### Configuration Key Reference
 
 - `core`
   - `customFileTypes`: Associations of language scope to file extensions (see [Customizing Language Recognition](#customizing-language-recognition))
@@ -212,7 +212,7 @@ You can open this file in an editor from the
   - `columns`: Array of hashes with a `pattern` and `column` key to match the
     path of the current editor to a column position.
 
-#### Language Specific Configuration Settings
+### Language Specific Configuration Settings
 
 You can also set several configuration settings differently for different file
 types. For example, you may want Pulsar to soft wrap markdown files, have
@@ -236,7 +236,7 @@ editor.softWrapHangingIndent
 editor.tabLength
 ```
 
-##### Language-specific Settings in the Settings View
+#### Language-specific Settings in the Settings View
 
 You can edit these config settings in the Settings View on a per-language basis.
 Click on "Packages" tab in the navigation bar on the left, search for the
@@ -244,7 +244,7 @@ language of your choice, select it, and edit away!
 
 ![Python-specific settings](@images/atom/python-settings.png "Python-specific settings")
 
-##### Language-specific Settings in your Config File
+#### Language-specific Settings in your Config File
 
 You can also edit the `config.cson` directly. To open your configuration file
 via the Command Palette, press
@@ -275,7 +275,7 @@ take precedence over anything set in the global section for that language only.
     'tabLength': 4
 ```
 
-##### Finding a Language's Scope Name
+#### Finding a Language's Scope Name
 
 In order to write these overrides effectively, you'll need to know the scope
 name for the language. We've already done this for finding a scope for writing a
@@ -303,7 +303,7 @@ kind and:
 These scopes can be especially useful to style the editor, since they can also
 be used as class names in your stylesheet.
 
-#### Customizing Language Recognition
+### Customizing Language Recognition
 
 If you want Pulsar to always recognize certain file types as a specific grammar,
 you'll need to manually edit your `config.cson` file. You can open it using the
@@ -325,7 +325,7 @@ In the example above, `source.coffee` is the language's scope name (see
 information) and `foo` is the file extension to match without the period. Adding
 a period to the beginning of either of these will not work.
 
-#### Controlling Where Customization is Stored to Simplify Your Workflow
+### Controlling Where Customization is Stored to Simplify Your Workflow
 
 The CSON configuration files for Pulsar are stored on disk on your machine. The
 location for this storage is customizable. The default is to use the home
@@ -333,7 +333,7 @@ directory of the user executing the application. The Pulsar Home directory will,
 by default, be called `.pulsar` and will be located in the root of the home
 directory of the user.
 
-##### Custom home location with an environment variable
+#### Custom home location with an environment variable
 
 An environment variable can be used to make Pulsar use a different location. This
 can be useful for several reasons. One of these may be that multiple user
@@ -342,7 +342,7 @@ used to specify an alternate location is called `ATOM_HOME`. If this environment
 variable exists, the location specified will be used to load and store Pulsar
 settings.
 
-##### Taking your customization with you with Portable Mode
+#### Taking your customization with you with Portable Mode
 
 In addition to using the `ATOM_HOME` environment variable, Pulsar can also be <!--TODO: This is still true but needs to be updated if this changes to PULSAR_HOME-->
 set to use "Portable Mode".
@@ -360,7 +360,7 @@ Dropbox folder next to a .pulsar folder.
 With such a setup, Pulsar will use the same Home directory with the same settings
 for any machine with this directory syncronized/plugged in.
 
-##### Moving to Portable Mode
+#### Moving to Portable Mode
 
 Pulsar provides a command-line parameter option for setting Portable Mode.
 

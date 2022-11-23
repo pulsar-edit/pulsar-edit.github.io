@@ -1,4 +1,4 @@
-### Autocomplete
+## Autocomplete
 
 If you're still looking to save some typing time, Pulsar also ships with simple
 autocompletion functionality.

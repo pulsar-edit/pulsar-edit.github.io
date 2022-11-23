@@ -1,4 +1,4 @@
-### GitHub package
+## GitHub package
 
 The GitHub package brings Git and GitHub integration right inside Pulsar.
 
@@ -39,14 +39,14 @@ changed files icon:
 
 ---
 
-#### Initialize repositories
+### Initialize repositories
 
 In case a project doesn't have a Git repository yet, you can create one from the
 Git panel.
 
 ![Initialize repositories](@images/atom/github-initialize.png "Initialize repositories")
 
-#### Clone repositories
+### Clone repositories
 
 To clone a repository, open the GitHub panel while you have no project folders
 open in Pulsar and click "Clone an existing GitHub repository". In the dialog,
@@ -59,14 +59,14 @@ to the Tree View.
 
 Alternately, run the `GitHub: Clone` command to open the Clone dialog any time.
 
-#### Branch
+### Branch
 
 To open the branch tooltip, click the branch icon in the Status Bar. From there
 you can **create** or **switch** branches.
 
 ![Create or switch branches](@images/atom/github-branch.png "Create or switch branches")
 
-#### Stage
+### Stage
 
 After making some changes, **stage** anything you want to be part of the next
 commit. Choose between staging...
@@ -92,7 +92,7 @@ file list and the diff view. Unstaging can be done in the same way.
 
 ![Stage changes](@images/atom/github-stage.png "Stage changes")
 
-#### Discard changes
+### Discard changes
 
 If you no longer want to keep some changes, you can discard them. It's similar
 to staging, but accessible behind a context menu.
@@ -105,7 +105,7 @@ to staging, but accessible behind a context menu.
 
 ![Discard changes](@images/atom/github-discard.png "Discard changes")
 
-#### Commit Preview
+### Commit Preview
 
 To double check **all changes** that are going into your next commit, click the
 "**See All Staged Changes**" button above the commit message box. It lets you
@@ -114,7 +114,7 @@ serve as an inspiration for writing the commit message.
 
 ![Commit Preview](@images/atom/github-commit-preview.png "Commit Preview")
 
-#### Commit
+### Commit
 
 Once you've staged your changes, enter a commit **message**. Feel free to
 describe the commit in more detail after leaving an empty line. Finalize by
@@ -129,7 +129,7 @@ GitHub username to give credit to a co-author.
 
 ![Commit with co-authors](@images/atom/github-commit-with-co-authors.png "Commit with co-authors")
 
-#### Amend and undo
+### Amend and undo
 
 In case you forgot to commit a change and would like to add it to your previous
 commit, right-click on the last commit, then choose "Amend" from the context
@@ -143,14 +143,14 @@ you clicked on the commit button.
 
 ![Undo previous commit](@images/atom/github-undo.png "Undo previous commit")
 
-#### View commits
+### View commits
 
 Once you've made some commits, click on a commit message in the recent commit
 list to see the full diff and commit message associated with each:
 
 ![View commit detai](@images/atom/github-commit-detail.png "View commit detai")
 
-#### Publish and push
+### Publish and push
 
 When you're ready to share your changes with your team members, click the
 **Publish** button in the Status Bar. It will push your local branch to the
@@ -159,7 +159,7 @@ the Status Bar.
 
 ![Publish and push commits](@images/atom/github-publish-push.png "Publish and push commits")
 
-#### Fetch and pull
+### Fetch and pull
 
 From time to time it's a good idea to click on the **Fetch** button to see if
 any other team member pushed changes. If so, click on **Pull** to merge the
@@ -176,7 +176,7 @@ git config --global --bool pull.rebase true
 
 Learn more about [merge vs. rebase](https://mislav.net/2013/02/merge-vs-rebase/).
 
-#### Resolve conflicts
+### Resolve conflicts
 
 Sometimes there can be conflicts when trying to merge. Files that have merge
 conflicts will show up in the "Merge Conflicts" list. Click on a file to open
@@ -185,7 +185,7 @@ further edits. Once done, stage the file and commit.
 
 ![Resolve conflicts](@images/atom/github-resolve-conflicts.png "Resolve conflicts")
 
-#### Create a Pull Request
+### Create a Pull Request
 
 When your changes are ready to be reviewed by your team members, open the
 "GitHub" panel <kbd>Ctrl+8</kbd> and click on **Open new pull request**. It will
@@ -195,7 +195,7 @@ do that automatically for you.
 
 ![Create a Pull Request](@images/atom/github-create-a-pull-request.png "Create a Pull Request")
 
-#### View Pull Requests
+### View Pull Requests
 
 Once the pull request is created, it will appear under **Current pull request**
 at the top of the panel. Underneath is a list of **Open pull requests**. It lets
@@ -205,7 +205,7 @@ center pane with more details, the timeline and conversations.
 
 ![View Pull Requests](@images/atom/github-view-pull-requests.png "View Pull Requests")
 
-#### Open any Issue or Pull Request
+### Open any Issue or Pull Request
 
 You can open issues or pull requests from any repo on GitHub. To do so, run the
 `GitHub: Open Issue Or Pull Request` command and paste the URL from an issue or
@@ -215,7 +215,7 @@ when working in another repo.
 
 ![Open Issue or Pull Request](@images/atom/github-open-issue-or-pull-request.png "Open Issue or Pull Request")
 
-#### Checkout a Pull Request
+### Checkout a Pull Request
 
 To test a pull request locally, open it in the workspace center by clicking on
 the pull request in the "open pull requests" list from the GitHub tab, then
@@ -226,7 +226,7 @@ pull request.
 
 ![Checkout a pull request](@images/atom/github-checkout.png "Checkout a pull request")
 
-#### View Pull Request review comments
+### View Pull Request review comments
 
 To view review comments on a Pull Request, open the Reviews Tab from the
 **See Reviews** button from the footer of a Pull Request Pane. Alternatively,
@@ -235,7 +235,7 @@ from the same button on GitHub Tab.
 
 ![Open review tab from footer](@images/atom/github-see-review-footer.png "Open review tab from footer")
 
-#### Navigate Pull Request review comments
+### Navigate Pull Request review comments
 
 You can see all the review summaries and comments of a pull request in the
 Reviews Tab. The comment section has a progress bar to help you keep track of
@@ -259,7 +259,7 @@ back to the Reviews Tab.
 
 ![Open review tab from diff](@images/atom/github-open-review-from-diff.png "Open review tab from diff")
 
-#### Respond to a Pull Request review comment
+### Respond to a Pull Request review comment
 
 To respond to a Pull Request review comment, type your message and click
 **Comment**; a single line comment will be created in the same thread as the
