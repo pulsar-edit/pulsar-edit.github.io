@@ -74,40 +74,42 @@ dropdowns as we saw in [Changing the Theme](../../getting-started#changing-the-t
 
 ![Example of the Unity UI theme with Monokai syntax theme](@images/atom/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
 
-#### Command Line <!--TODO: Currently the binary is still apm and conversations about moving to something like pulsar ppm, this section may be totally redone in the future and may currently be incorrect-->
+#### Command Line
 
-You can also install packages or themes from the command line using `ppm`.
+You can also install packages or themes from the command line using ppm (Pulsar
+Package Manager).
+This is used by running `pulsar -p <commmand>` or `pulsar --package <command>`.
 
 ::: tip Tip
 
-Check that you have `ppm` installed by running the following command in your
+Check that you have ppm available by running the following command in your
 terminal:
 
 ```sh
-$ ppm help install
+$ pulsar -p help install
 ```
 
-You should see a message print out with details about the `ppm install` command.
+You should see a message print out with details about the `pulsar -p install` command.
 
 If you do not, see the [Installing Pulsar section](../../getting-started#installing-pulsar)
-for instructions on how to install the `pulsar` and `ppm` commands for your
+for instructions on how to install the `pulsar` command for your
 system.
 
 :::
 
-You can also install packages by using the `ppm install` command:
+You can install packages by using the `pulsar -p install` command:
 
-- `ppm install <package_name>` to install the latest version.
-- `ppm install <package_name>@<package_version>` to install a specific version.
+- `pulsar -p install <package_name>` to install the latest version.
+- `pulsar -p install <package_name>@<package_version>` to install a specific version.
 
-For example `ppm install minimap@4.40.0 ` installs the `4.40.0` release of the
-[minimap](https://pulsar-edit.dev/packages/minimap) package.
+For example `pulsar -p install minimap@4.40.0 ` installs the `4.40.0` release of
+the [minimap](https://pulsar-edit.dev/packages/minimap) package.
 
-You can also use `ppm` to find new packages to install. If you run
-`ppm search`, you can search the package registry for a search term.
+You can also use ppm to find new packages to install. If you run
+`pulsar -p search`, you can search the package registry for a search term.
 
 ```sh
-$ ppm search linter
+$ pulsar -p search linter
 > Search Results For 'linter' (30)
 > ├── linter A Base Linter with Cow Powers (9863242 downloads, 4757 stars)
 > ├── linter-ui-default Default UI for the Linter package (7755748 downloads, 1201 stars)
@@ -119,10 +121,10 @@ $ ppm search linter
 > └── linter-rust Lint Rust-files, using rustc and/or cargo (132550 downloads, 91 stars)
 ```
 
-You can use `ppm view` to see more information about a specific package.
+You can use `pulsar -p view` to see more information about a specific package.
 
 ```sh
-$ ppm view linter
+$ pulsar -p view linter
 > linter
 > ├── 3.4.0
 > ├── https://github.com/steelbrain/linter
@@ -130,5 +132,18 @@ $ ppm view linter
 > ├── 9863242 downloads
 > └── 4757 stars
 >
-> Run `ppm install linter` to install this package.
+> Run `pulsar -p install linter` to install this package.
 ```
+
+#### Using ppm to install from other sources
+
+By default ppm will be using the [pulsar-edit.dev package site](https://web.pulsar-edit.dev/).
+However you can also use it to install from other locations.
+
+**GitHub**  
+`pulsar -p install <github_username>/<github_project> [-b <branch_or_tag_or_commit>]`
+
+**Git remote**  
+`pulsar -p install <git_remote> [-b <branch_or_tag_or_commit>]`
+
+For full details run `pulsar -p help install`.
