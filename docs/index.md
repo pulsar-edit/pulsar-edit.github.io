@@ -4,7 +4,7 @@ title: Home
 home: true
 actions:
   - text: "Download 💡"
-    link: "/docs/launch-manual"
+    link: "/download/"
 heroText: Pulsar
 features:
   - title: "Cross-platform Editing"
