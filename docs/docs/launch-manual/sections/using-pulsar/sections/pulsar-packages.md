@@ -137,7 +137,7 @@ $ pulsar -p view linter
 
 #### Using ppm to install from other sources
 
-By default ppm will be using the [pulsar-edit.dev package site](https://web.pulsar-edit.dev/).
+By default ppm will be using the [Pulsar Package Repository](https://web.pulsar-edit.dev/).
 However you can also use it to install from other locations.
 
 **GitHub**  
