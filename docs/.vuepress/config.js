@@ -31,6 +31,8 @@ export default defineUserConfig({
     iconAssets: "fontawesome",
     repo: "pulsar-edit",
     repoLabel: "GitHub",
+    docsRepo: "https://github.com/pulsar-edit/pulsar-edit.github.io",
+    docsDir: "/docs",
     navbar: navbar_en,
     locales: {
       "/": {
