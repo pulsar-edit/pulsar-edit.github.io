@@ -9,6 +9,11 @@ const navbar_en = [
     ]
   },
   {
+    text: 'Download',
+    icon: 'solid fa-download',
+    link: '/download/'
+  },
+  {
     text: 'Docs',
     icon: 'solid fa-file-lines',
     link: '/docs/'
