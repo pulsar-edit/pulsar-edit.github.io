@@ -22,3 +22,12 @@ This is being kept for archival purposes only from the original Atom documentati
 Current Pulsar documentation is found at [documentation home](/docs/launch-manual/getting-started).
 :::
 ```
+
+## For pre-release or beta functionality
+
+```
+::: info Pre-release information
+This section is about a feature in pre-release. The information below documents
+the intended functionality but there is still ongoing work to support these
+features with stability.
+:::
