@@ -70,6 +70,16 @@ const sidebar_en = {
             text: 'Website',
             icon: 'solid fa-table-columns',
             link: 'website/'
+          },
+          {
+            text: 'Privacy Policy',
+            icon: 'solid fa-file-shield',
+            link: 'privacy/'
+          },
+          {
+            text: 'Code of Conduct',
+            icon: 'solid fa-gavel',
+            link: 'conduct/'
           }
         ]
       },
