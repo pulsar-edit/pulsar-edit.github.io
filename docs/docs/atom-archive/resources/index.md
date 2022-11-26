@@ -1,5 +1,7 @@
 ---
 title: "Appendix A : Resources"
+sitemap:
+  priority: 0.1
 ---
 
 ::: danger STOP

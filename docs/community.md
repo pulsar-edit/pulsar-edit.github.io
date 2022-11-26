@@ -1,6 +1,9 @@
 ---
 title: Community areas
 path: /community/
+sitemap:
+  priority: 0.9
+  changefreq: "weekly"
 ---
 
 Here you will find a number of community links to discuss Pulsar, get help,

@@ -1,6 +1,9 @@
 ---
 title: Pulsar Downloads
 path: /download/
+sitemap:
+  priority: 0.9
+  changefreq: "daily"
 ---
 
 ::: warning Under Construction
