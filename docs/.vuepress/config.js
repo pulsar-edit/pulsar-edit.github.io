@@ -36,6 +36,8 @@ export default defineUserConfig({
     repoLabel: "GitHub",
     displayFooter: true,
     footer: footer,
+    docsRepo: "https://github.com/pulsar-edit/pulsar-edit.github.io",
+    docsDir: "/docs",
     navbar: navbar_en,
     locales: {
       "/": {
@@ -43,6 +45,10 @@ export default defineUserConfig({
       }
     },
     plugins: {
+      sitemap: {
+        hostname: "https://pulsar-edit.dev",
+        sitemapFilename: "sitemap.xml"
+      },
       mdEnhance: {
         align: true,
         include: {

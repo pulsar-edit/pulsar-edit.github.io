@@ -1,4 +1,7 @@
 ---
+sitemap:
+  priority: 1.0
+  changefreq: "daily"
 lang: en-us
 title: Home
 home: true
