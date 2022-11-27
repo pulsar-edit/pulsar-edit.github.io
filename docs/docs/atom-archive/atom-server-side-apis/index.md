@@ -1,5 +1,7 @@
 ---
 title: "Appendix E : Atom server-side APIs"
+sitemap:
+  priority: 0.1
 ---
 
 ::: danger STOP

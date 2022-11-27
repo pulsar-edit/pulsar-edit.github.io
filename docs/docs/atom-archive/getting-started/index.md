@@ -1,5 +1,7 @@
 ---
 title: "Chapter 1 : Getting started"
+sitemap:
+  priority: 0.1
 ---
 
 ::: danger STOP

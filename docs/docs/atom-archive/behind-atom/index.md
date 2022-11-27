@@ -1,5 +1,7 @@
 ---
 title: "Chapter 4 : Behind Atom"
+sitemap:
+  priority: 0.1
 ---
 
 ::: danger STOP

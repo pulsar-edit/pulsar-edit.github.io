@@ -40,6 +40,10 @@ export default defineUserConfig({
       }
     },
     plugins: {
+      sitemap: {
+        hostname: "https://pulsar-edit.dev",
+        sitemapFilename: "sitemap.xml"
+      },
       mdEnhance: {
         align: true,
         include: {

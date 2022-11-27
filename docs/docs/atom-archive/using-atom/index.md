@@ -1,5 +1,7 @@
 ---
 title: "Chapter 2 : Using Atom"
+sitemap:
+  priority: 0.1
 ---
 
 ::: danger STOP

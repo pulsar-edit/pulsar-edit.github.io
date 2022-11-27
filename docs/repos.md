@@ -1,6 +1,8 @@
 ---
 title: Pulsar Repositories
 path: /repos/
+sitemap:
+  priority: 0.4
 ---
 
 The Pulsar project is split up into a number of repositories, all hosted on
