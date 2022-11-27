@@ -5,3 +5,60 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+//Website footer section
+
+.socialsBar {
+  display: flex;
+  gap: 25px;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.linksBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.linksBoxLeft {
+  margin: 0px 60px 0px 0px;
+  text-align: left;
+}
+
+.linksBoxMid {
+  margin: 0px 60px 0px 60px;
+  text-align: left;
+}
+
+.linksBoxRight {
+  margin: 0px 0px 0px 60px;
+  text-align: left;
+}
+
+.linksBoxHeader {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.linksBoxContent, .linksBoxContent a {
+  margin: 0px;
+}
+
+.linksBoxContent ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.copyrightBar {
+
+}
+
+#logo-footer {
+  fill:var(--text-color);
+  fill-opacity:1;
+  height: 50px;
+  margin: 10px 0px 20px 0px;
+}

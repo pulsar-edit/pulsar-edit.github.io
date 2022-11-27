@@ -9,10 +9,11 @@ const __dirname = getDirname(import.meta.url)
 import { navbar_en } from "./navbar.js";
 import { sidebar_en } from "./sidebar.js";
 //import { blog_config } from "./blog.js";
+import { footer } from "./footer.js";
 
 export default defineUserConfig({
   lang: 'en-US',
-  title: 'Pulsar',
+  //title: 'Pulsar',
   description: 'A Community-led Hyper-Hackable Text Editor',
   alias: {
     '@images': path.resolve(__dirname, '../../node_modules/.github/images')
@@ -26,11 +27,15 @@ export default defineUserConfig({
     }),
   ],
   theme: hopeTheme({
+    logo: "/logo-name-navbar-light.svg",
+    logoDark: "/logo-name-navbar-dark.svg",
     displayAllHeaders: true,
     editLinks: true,
     iconAssets: "fontawesome",
     repo: "pulsar-edit",
     repoLabel: "GitHub",
+    displayFooter: true,
+    footer: footer,
     docsRepo: "https://github.com/pulsar-edit/pulsar-edit.github.io",
     docsDir: "/docs",
     navbar: navbar_en,
