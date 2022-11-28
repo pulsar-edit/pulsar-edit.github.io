@@ -13,7 +13,7 @@ tag:
 What's the natural response to finding out an application you use is being sunset?
 Spend the next several months creating a complex backend infrastructure of course!
 
-## <!-- more -->
+<!-- more -->
 
 In this blog post, which is my first so apologies if the style is widely inconsistent with everything else, I hope to get a place to talk about the journey that's occurred after the announcement of Atom's Sunset and the larger-than-assumed effect it has had on my life.
 
