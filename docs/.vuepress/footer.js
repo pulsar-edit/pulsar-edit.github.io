@@ -2,6 +2,7 @@ const orgRepo = "http://github.com/pulsar-edit";
 const orgForum = "https://github.com/orgs/pulsar-edit/discussions";
 const orgChat = "https://discord.gg/7aEbB9dGRT";
 const orgReddit = "https://www.reddit.com/r/pulsaredit/";
+const orgMastodon = "https://fosstodon.org/@pulsaredit";
 const orgPrivacy = "https://pulsar-edit.dev/docs/resources/privacy";
 const orgConduct = "https://pulsar-edit.dev/docs/resources/conduct";
 const orgContact = "https://pulsar-edit.dev/community.html";
@@ -122,6 +123,8 @@ const footer =
       </a>
       <a href=${orgReddit}>
         <i class="fa-brands fa-reddit"></i>
+      <a href=${orgMastodon}>
+        <i class="fa-brands fa-mastodon"></i>
       </a>
       <a href=${donateLink}>
         <i class="fa-solid fa-hand-holding-dollar"></i>
