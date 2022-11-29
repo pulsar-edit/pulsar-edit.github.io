@@ -1,4 +1,4 @@
-### Pending Pane Items
+## Pending Pane Items
 
 _"Pending Pane Items" were formerly referred to as "Preview Tabs"_
 
@@ -18,7 +18,7 @@ You can confirm a pending file by doing any of the following:
 You can also open a file already confirmed by double-clicking it in the tree
 view instead of single-clicking it.
 
-#### Disabling Pending Pane Items
+### Disabling Pending Pane Items
 
 ![Allow Pending Pane Items setting](@images/atom/allow-pending-pane-items.png "Allow Pending Pane Items setting")
 

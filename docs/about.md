@@ -1,6 +1,9 @@
 ---
 title: About Us
 path: /about/
+sitemap:
+  priority: 0.8
+  changefreq: "weekly"
 ---
 
 # About us

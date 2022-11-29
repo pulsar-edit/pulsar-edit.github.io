@@ -1,4 +1,4 @@
-### Writing in Pulsar
+## Writing in Pulsar
 
 Though it is probably most common to use Pulsar to write software code, Pulsar
 can also be used to write prose quite effectively. Most often this is done in
@@ -9,7 +9,7 @@ Pulsar provides for helping you write prose.
 In these docs, we'll concentrate on writing in Markdown; however, other prose
 markup languages like Asciidoc have packages that provide similar functionality.
 
-#### Spell Checking
+### Spell Checking
 
 If you're working in text (which includes plain text files, GitHub markdown,
 and Git commit messages by default), Pulsar will automatically try to check your
@@ -34,7 +34,7 @@ but you can add other grammars if you wish to check those types of files too.
 The spell checking is implemented in the [spell-check](https://github.com/pulsar-edit/spell-check)
 package.
 
-#### Previews
+### Previews
 
 When writing prose in a markup language, it's often very useful to get an idea
 of what the content will look like when it's rendered. Pulsar ships with a
@@ -57,7 +57,7 @@ pane and choose "Copy as HTML".
 Markdown preview is implemented in the [markdown-preview](https://github.com/pulsar-edit/markdown-preview)
 package.
 
-#### Snippets
+### Snippets
 
 There are also a number of great snippets available for writing Markdown quickly.
 

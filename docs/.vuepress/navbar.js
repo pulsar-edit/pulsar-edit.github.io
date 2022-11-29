@@ -9,6 +9,11 @@ const navbar_en = [
     ]
   },
   {
+    text: 'Download',
+    icon: 'solid fa-download',
+    link: '/download/'
+  },
+  {
     text: 'Docs',
     icon: 'solid fa-file-lines',
     link: '/docs/'
@@ -51,6 +56,11 @@ const navbar_en = [
         text: "Reddit",
         icon: 'brands fa-reddit',
         link: "https://www.reddit.com/r/pulsaredit/"
+      },
+      {
+        text: "Mastodon",
+        icon: 'brands fa-mastodon',
+        link: "https://fosstodon.org/@pulsaredit"
       },
       {
         text: "OpenCollective",

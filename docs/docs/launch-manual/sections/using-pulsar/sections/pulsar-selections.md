@@ -1,4 +1,4 @@
-### Pulsar Selections
+## Pulsar Selections
 
 Text selections in Pulsar support a number of actions, such as scoping deletion,
 indentation and search actions, and marking text for actions such as quoting and

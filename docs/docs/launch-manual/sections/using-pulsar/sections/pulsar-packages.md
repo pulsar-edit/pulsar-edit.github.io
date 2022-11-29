@@ -1,4 +1,4 @@
-### Pulsar Packages
+## Pulsar Packages
 
 First we'll start with the Pulsar package system. As we mentioned previously,
 Pulsar itself is a very basic core of functionality that ships with a number of
@@ -35,7 +35,7 @@ All of the packages will come up with an "Install" button. Clicking that will
 download the package and install it. Your editor will now have the functionality
 that the package provides.
 
-#### Package Settings
+### Package Settings
 
 Once a package is installed in Pulsar, it will show up in the Settings View
 under the "Packages" tab, along with all the pre-installed packages that come
@@ -56,7 +56,7 @@ detect it and you can upgrade the package from either this screen or from the
 "Updates" tab. This helps you easily keep all your installed packages up to
 date.
 
-#### Pulsar Themes
+### Pulsar Themes
 
 You can also find and install new themes for Pulsar from the Settings View.
 These can be either UI themes or syntax themes and you can search for them from

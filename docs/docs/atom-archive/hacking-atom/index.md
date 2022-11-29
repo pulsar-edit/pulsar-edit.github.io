@@ -1,5 +1,7 @@
 ---
 title: "Chapter 3 : Hacking Atom"
+sitemap:
+  priority: 0.1
 ---
 
 ::: danger STOP

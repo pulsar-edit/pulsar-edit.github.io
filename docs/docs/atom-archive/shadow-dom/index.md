@@ -1,5 +1,7 @@
 ---
 title: "Appendix C : Shadow DOM"
+sitemap:
+  priority: 0.1
 ---
 
 ::: danger STOP

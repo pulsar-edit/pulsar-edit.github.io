@@ -2,6 +2,8 @@
 lang: en-us
 title: Atom Documentation Archive
 description: "Archived Atom Documentation in its original form"
+sitemap:
+  priority: 0.2
 ---
 
 ::: danger STOP

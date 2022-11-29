@@ -1,11 +1,11 @@
-### Editing and Deleting Text
+## Editing and Deleting Text
 
 So far we've looked at a number of ways to move around and select regions of a
 file, so now let's actually change some of that text. Obviously you can type in
 order to insert characters, but there are also a number of ways to delete and
 manipulate text that could come in handy.
 
-#### Basic Manipulation
+### Basic Manipulation
 
 There are a handful of cool keybindings for basic text manipulation that might
 come in handy. These range from moving around lines of text and duplicating
@@ -48,7 +48,7 @@ characters using
 **_MAC_**: <kbd>Alt+Cmd+Q</kbd>.
 If nothing is selected, the current paragraph will be reflowed.
 
-#### Deleting and Cutting
+### Deleting and Cutting
 
 You can also delete or cut text out of your buffer with some shortcuts.
 Be ruthless.
@@ -78,7 +78,7 @@ Be ruthless.
 
 :::
 
-#### Multiple Cursors and Selections
+### Multiple Cursors and Selections
 
 One of the cool things that Pulsar can do out of the box is support multiple
 cursors. This can be incredibly helpful in manipulating long lists of text.
@@ -135,7 +135,7 @@ text simultaneously.
 
 Return to a single cursor with <kbd>Esc</kbd> or by clicking anywhere in the file to position a cursor there as normal.
 
-#### Whitespace
+### Whitespace
 
 Pulsar comes with several commands to help you manage the whitespace in your
 document. One very useful pair of commands converts leading spaces into tabs and
@@ -163,7 +163,7 @@ your settings panel and uncheck that option.
 Pulsar will also by default ensure that your file has a trailing newline. You
 can also disable this option on that screen.
 
-#### Brackets
+### Brackets
 
 Pulsar ships with intelligent and easy to use bracket handling.
 
@@ -207,7 +207,7 @@ package. Like all of these packages, to change defaults related to bracket
 handling, or to disable it entirely, you can navigate to this package in the
 Settings view.
 
-#### Encoding
+### Encoding
 
 Pulsar also ships with some basic file encoding support should you find yourself
 working with non-UTF-8 encoded files, or should you wish to create one.

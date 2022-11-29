@@ -1,4 +1,4 @@
-### Snippets
+## Snippets
 
 Snippets are an incredibly powerful way to quickly generate commonly needed code
 syntax from a shortcut.
@@ -41,7 +41,7 @@ You can also use fuzzy search to filter this list down by typing in the
 selection box. Selecting one of them will execute the snippet where your cursor
 is (or multiple cursors are).
 
-#### Creating Your Own Snippets
+### Creating Your Own Snippets
 
 So that's pretty cool, but what if there is something the language package
 didn't include or something that is custom to the code you write? Luckily it's
@@ -57,7 +57,7 @@ selecting the
 **_MAC_**: _Pulsar > Snippets_ -
 **_WIN_**: _File > Snippets_ menu.
 
-##### Snippet Format
+#### Snippet Format
 
 So let's look at how to write a snippet. The basic snippet format looks like
 this:
@@ -110,7 +110,7 @@ for more information.
 
 :::
 
-##### Multi-line Snippet Body
+#### Multi-line Snippet Body
 
 You can also use [CoffeeScript multi-line syntax](http://coffeescript.org/#strings)
 using `"""` for larger templates:
@@ -145,7 +145,7 @@ following text inserted:
 save the file, Pulsar should reload the snippets and you will immediately be
 able to try it out.
 
-##### Multiple Snippets per Source
+#### Multiple Snippets per Source
 
 You can see below the format for including multiple snippets for the same scope
 in your `snippets.cson` file. Just include the snippet name, prefix, and body
@@ -169,7 +169,7 @@ keys for additional snippets inside the scope key:
 Again, see [Configuring with CSON](#configuring-with-cson)
 for more information on CSON key structure and non-repeatability.
 
-#### More Info
+### More Info
 
 The snippets functionality is implemented in the [snippets](https://github.com/pulsar-edit/snippets)
 package.
