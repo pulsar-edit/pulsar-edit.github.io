@@ -74,7 +74,7 @@ dropdowns as we saw in [Changing the Theme](../../getting-started#changing-the-t
 
 ![Example of the Unity UI theme with Monokai syntax theme](@images/atom/unity-theme.png "Example of the Unity UI theme with Monokai syntax theme")
 
-#### Command Line
+### Command Line
 
 You can also install packages or themes from the command line using ppm (Pulsar
 Package Manager).
@@ -138,12 +138,32 @@ $ pulsar -p view linter
 #### Using ppm to install from other sources
 
 By default ppm will be using the [Pulsar Package Repository](https://web.pulsar-edit.dev/).
-However you can also use it to install from other locations.
+However you can also use it to install from other locations which can be useful
+if you are trying to install a package not published to the Pulsar Package
+Repository.
 
-**GitHub**  
-`pulsar -p install <github_username>/<github_project> [-b <branch_or_tag_or_commit>]`
+##### Github or Git Remotes
+
+Pulsar can install from a GitHub repository or any valid git remote url. The
+`-b` option can then be used to specify a particular tag or branch.
 
 **Git remote**  
-`pulsar -p install <git_remote> [-b <branch_or_tag_or_commit>]`
+`pulsar -p install <git_remote> [-b <branch_or_tag>]`
 
-For full details run `pulsar -p help install`.
+**GitHub**  
+`pulsar -p install <github_username>/<github_project> [-b <branch_or_tag>]`
+
+For example to install the [Generic-LSP](https://github.com/mauricioszabo/generic-lsp/)
+package from GitHub you could use either:
+
+`pulsar -p install https://github.com/mauricioszabo/generic-lsp/`
+
+or
+
+`pulsar -p install mauricioszabo/generic-lsp`
+
+This will use the current HEAD commit of the default branch. If you want to
+install a specific version from a branch or tag then use the `-b` option:
+
+e.g.
+`pulsar -p install https://github.com/mauricioszabo/generic-lsp/ -b v1.0.3`
