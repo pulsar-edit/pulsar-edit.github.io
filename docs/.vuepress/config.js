@@ -36,6 +36,7 @@ export default defineUserConfig({
     repoLabel: "GitHub",
     displayFooter: true,
     footer: footer,
+    copyright: false,
     docsRepo: "https://github.com/pulsar-edit/pulsar-edit.github.io",
     docsDir: "/docs",
     navbar: navbar_en,
