@@ -49,11 +49,12 @@ To download a binary from Cirrus CI please follow the below steps:
 
 @tab Linux
 
-Three binaries are currently available:
+Four binaries are currently available:
 
 - `Appimage` for a universal Linux binary (should work on most systems)
 - `rpm` for Red Hat based OSs (Fedora, RHEL etc.)
 - `deb` for Debian or Ubuntu based OSs
+- `tar.gz` generic binary for most Linux systems
 
 @tab macOS
 
