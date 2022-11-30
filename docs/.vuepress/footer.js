@@ -139,7 +139,7 @@ const footer =
         <div class="linksBoxContent">
           <ul>
             <li>
-              <a href="/download/"> Downloads </a>
+              <a href="/download.html"> Downloads </a>
             </li>
             <li>
               <a href="/docs/"> Documentation </a>
@@ -156,7 +156,7 @@ const footer =
         <div class="linksBoxContent">
           <ul>
             <li>
-              <a href="/about/"> About Us </a>
+              <a href="/about.html"> About Us </a>
             </li>
             <li>
               <a href="/article/"> Blog </a>
