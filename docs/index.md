@@ -64,6 +64,11 @@ The releases do seem to be working for most people and use cases but if you
 have any problems then please do let us know in one of our [community areas](https://pulsar-edit.dev/community.html)
 or as a [GitHub issue](https://github.com/pulsar-edit/pulsar/issues/new?assignees=&labels=bug%2Ctriage&template=bug-report.yml)
 
+#### Known Issues
+
+- MacOS Performance: Currently performance on MacOS isn't what we hope to achieve. Often times this can be resolved by disabling the `github` package.
+- Windows Package Installation: In the newer versions of our binaries, Windows systems will fail to install external packages. This can be resolved by using an older binary or installing from GitHub.
+
 ### Logos, branding and website design
 
 You may notice a lot of inconsistencies with colors, logos and general website
