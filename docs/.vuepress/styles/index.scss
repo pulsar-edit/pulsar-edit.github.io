@@ -8,6 +8,20 @@
 
 //Website footer section
 
+@media (max-width: 719px) {
+  .footer-wrapper {
+    padding-left: 0rem;
+  }
+}
+
+.no-sidebar .footer-wrapper {
+    padding-left: 0rem;
+}
+
+.footer {
+  width: 25%;
+}
+
 .socialsBar {
   display: flex;
   gap: 25px;
@@ -20,20 +34,21 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  align-items: stretch;
 }
 
 .linksBoxLeft {
-  margin: 0px 60px 0px 0px;
+  padding: 0px 10px 0px 0px;
   text-align: left;
 }
 
 .linksBoxMid {
-  margin: 0px 60px 0px 60px;
+  padding: 0px 10px 0px 10px;
   text-align: left;
 }
 
 .linksBoxRight {
-  margin: 0px 0px 0px 60px;
+  padding: 0px 0px 0px 10px;
   text-align: left;
 }
 
@@ -52,6 +67,15 @@
   padding: 0px;
 }
 
+.linksBoxContent li {
+  margin-bottom: 2px;
+}
+
+.linksBoxContent a {
+  display:inline-block;
+  line-height: 1.2;
+}
+
 .copyrightBar {
 
 }
@@ -61,4 +85,5 @@
   fill-opacity:1;
   height: 50px;
   margin: 10px 0px 20px 0px;
+  width: auto;
 }
