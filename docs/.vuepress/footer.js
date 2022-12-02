@@ -11,9 +11,7 @@ const donateLink = "https://opencollective.com/pulsar-edit";
 
 
 const footer =
-  `<div>
-
-    <!--<div><object type="image/svg+xml" data="/logo-name-footer.svg" ></object></div>TODO: Fix - I have simply run out of talent to make this work correctly with external CSS or modifying the internal values. At I can get this to do what I want when the SVG is inline-->
+  `<!--<div><object type="image/svg+xml" data="/logo-name-footer.svg" ></object></div>TODO: Fix - I have simply run out of talent to make this work correctly with external CSS or modifying the internal values. At I can get this to do what I want when the SVG is inline-->
 
     <!--The below inline SVG is the same code (with unnecessary inkscape values removed) as is in .vuepress/public/logo-name-footer.svg but inline so I can actually manipulate it with the index.css file-->
 
@@ -193,7 +191,6 @@ const footer =
 
   <div class="copyrightBar">
     <span> Pulsar-Edit © 2022 </span>
-  </div>
   </div>`
 
 export { footer as footer };

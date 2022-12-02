@@ -8,18 +8,16 @@
 
 //Website footer section
 
+//Theme adds a sidebar width even on mobile when it doesnt show, this removes it.
 @media (max-width: 719px) {
-  .footer-wrapper {
+.no-sidebar .footer-wrapper, .footer-wrapper {
     padding-left: 0rem;
   }
 }
 
-.no-sidebar .footer-wrapper {
-    padding-left: 0rem;
-}
-
 .footer {
-  width: 25%;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .socialsBar {
@@ -29,33 +27,46 @@
   justify-content: center;
 }
 
+// To allow wrapping on very narrow screens
+@media (max-width: 350px) {
+  .socialsBar {
+    flex-wrap: wrap;
+  }
+}
+
 .linksBox {
   display: flex;
+  gap: 25px;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
+}
+
+// Snaps to single column on very narrow screens
+@media (max-width: 350px) {
+  .linksBox {
+    flex-direction: column;
+  }
 }
 
 .linksBoxLeft {
-  padding: 0px 10px 0px 0px;
   text-align: left;
+  margin: auto;
 }
 
 .linksBoxMid {
-  padding: 0px 10px 0px 10px;
   text-align: left;
+  margin: auto;
 }
 
 .linksBoxRight {
-  padding: 0px 0px 0px 10px;
   text-align: left;
+  margin: auto;
 }
 
 .linksBoxHeader {
   font-weight: bold;
   font-size: 20px;
-  margin: 0px;
 }
 
 .linksBoxContent, .linksBoxContent a {
@@ -71,6 +82,8 @@
   margin-bottom: 2px;
 }
 
+// Sets the line height for wrapped text when the boxes are shrunk to make the
+// separation obvious
 .linksBoxContent a {
   display:inline-block;
   line-height: 1.2;
