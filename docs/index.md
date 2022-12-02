@@ -67,7 +67,6 @@ or as a [GitHub issue](https://github.com/pulsar-edit/pulsar/issues/new?assignee
 #### Known Issues
 
 - MacOS Performance: Currently performance on MacOS isn't what we hope to achieve. Often times this can be resolved by disabling the `github` package.
-- Windows Package Installation: In the newer versions of our binaries, Windows systems will fail to install external packages. This can be resolved by using an older binary or installing from GitHub.
 
 ### Logos, branding and website design
 
