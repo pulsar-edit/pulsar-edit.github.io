@@ -48,6 +48,10 @@ Fedora, Snap, Flatpak, Arch/AUR etc. but we need to get to a good point with
 a stable release before we instigate that so for now the downloadable binaries
 are the main supported downloads.
 
+### Automatic Updates 
+
+Currently Pulsar does not support automatic updates. What this means is that new versions will have to be obtained via the Cirrus CI or Download links here on our website. This is something on our roadmap to change as soon as possible.
+
 ### Packages
 
 One of our first and biggest tasks was to replace the closed source Atom.io
