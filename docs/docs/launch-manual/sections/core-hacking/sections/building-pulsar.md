@@ -141,6 +141,7 @@ command. e.g.:
 - `yarn dist appimage`
 - `yarn dist deb`
 - `yarn dist rpm`
+- `yarn dist targz`
 
 @tab macOS
 
