@@ -20,6 +20,12 @@ dev/beta releases of Pulsar or [build from source](https://pulsar-edit.dev/docs/
 
 ## Cirrus CI binaries
 
+Binaries are produced by [Cirrus CI](https://cirrus-ci.com/github/pulsar-edit/pulsar)
+for each commit to the Pulsar repository.  
+These binaries are to be considered dev/beta releases and allow you to test
+out the very latest work being done on Pulsar before it is added to a full
+release.
+
 See below for links to the latest binaries for each OS. If you want to download
 manually or pick a binary from another fork then follow the [manual instructions](#manual-download).
 
@@ -73,12 +79,6 @@ manually or pick a binary from another fork then follow the [manual instructions
 :::
 
 ### Manual download
-
-Binaries are produced by [Cirrus CI](https://cirrus-ci.com/github/pulsar-edit/pulsar)
-for each commit to the Pulsar repository.  
-These binaries are to be considered dev/beta releases and allow you to test
-out the very latest work being done on Pulsar before it is added to a full
-release.
 
 Binaries are built from a number of different branches and PRs but you should
 stick to the **master** branch releases for the most stable ones unless you know
