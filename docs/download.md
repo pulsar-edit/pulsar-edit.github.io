@@ -34,7 +34,7 @@ manually or pick a binary from another fork then follow the [manual instructions
 | [Appimage](https://web.pulsar-edit.dev/download?os=linux&type=linux_appimage) |  Fedora/RHEL etc.  |
 |    [tar.gz](https://web.pulsar-edit.dev/download?os=linux&type=linux_tar)     | All distributions  |
 
-**ARM** - For ARM based devices - Raspberry Pi, Pinebook etc.
+**ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
 |                                      Package                                      |    Distribution    |
 | :-------------------------------------------------------------------------------: | :----------------: |
@@ -65,10 +65,10 @@ manually or pick a binary from another fork then follow the [manual instructions
 
 ::: details Windows
 
-|                                   Package                                    |         Type          |
-| :--------------------------------------------------------------------------: | :-------------------: |
-|  [dmg](https://web.pulsar-edit.dev/download?os=windows&type=windows_setup)   |       Installer       |
-| [zip](https://web.pulsar-edit.dev/download?os=windows&type=windows_portable) | Portable (no install) |
+|                                      Package                                      |         Type          |
+| :-------------------------------------------------------------------------------: | :-------------------: |
+|    [Setup](https://web.pulsar-edit.dev/download?os=windows&type=windows_setup)    |       Installer       |
+| [Portable](https://web.pulsar-edit.dev/download?os=windows&type=windows_portable) | Portable (no install) |
 
 :::
 
