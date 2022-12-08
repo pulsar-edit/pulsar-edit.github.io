@@ -6,6 +6,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
 
+//Container formatting
+//Annoyingly the table takes on the details background which makes it look odd so this overrides some of it until we sort the overall theme out.
+.custom-container.details table {
+  display: table;
+  background-color: #FAFAFA;
+  width: 75%;
+}
+
 //Website footer section
 
 //Theme adds a sidebar width even on mobile when it doesnt show, this removes it.
