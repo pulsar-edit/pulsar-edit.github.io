@@ -10,8 +10,19 @@
 //Annoyingly the table takes on the details background which makes it look odd so this overrides some of it until we sort the overall theme out.
 .custom-container.details table {
   display: table;
-  background-color: #FAFAFA;
   width: 75%;
+}
+
+html[data-theme=light] .custom-container.details table {
+  background-color: #FAFAFA;
+}
+
+html[data-theme=light] .custom-container.details th {
+  background-color: rgba(0,0,0,0.01);
+}
+
+html[data-theme=dark] .custom-container.details th {
+  background-color: #111;
 }
 
 //Website footer section
