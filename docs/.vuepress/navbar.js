@@ -52,11 +52,6 @@ const navbar_en = [
         text: "Mastodon",
         icon: 'brands fa-mastodon',
         link: "https://fosstodon.org/@pulsaredit"
-      },
-      {
-        text: "OpenCollective",
-        icon: 'solid fa-hand-holding-dollar',
-        link: "https://opencollective.com/pulsar-edit"
       }
     ]
   },
