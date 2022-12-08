@@ -1,14 +1,5 @@
 const navbar_en = [
   {
-    text: "Start Here",
-    icon: 'solid fa-flag',
-    children: [
-      '/docs/launch-manual',
-      '/docs/packages/core',
-      '/docs/packages/community'
-    ]
-  },
-  {
     text: 'Download',
     icon: 'solid fa-download',
     link: '/download/'
@@ -68,6 +59,11 @@ const navbar_en = [
         link: "https://opencollective.com/pulsar-edit"
       }
     ]
+  },
+  {
+    text: "Donate",
+    icon: 'solid fa-hand-holding-dollar',
+    link: '/donate/'
   },
   {
     text: "Packages",
