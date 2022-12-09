@@ -5,11 +5,11 @@
     // Supported targets that correspond to the table headers (case-sensitive)
     const targets = [
         // Exact match for "Windows NT"
-        {agent: /Windows NT/g, header: 'Windows'}, 
+        {agent: /Windows NT/ig, header: 'Windows'}, 
         // Match for "Mac OS X"
-        {agent: /Mac OS X/g, header: 'macOS'},
+        {agent: /Mac OS X/ig, header: 'macOS'},
         // Match for "Linux" but not with "Android"
-        {agent: /(?!.*Android).*Linux.*$/g, header: 'Linux'}
+        {agent: /(?!.*Android).*Linux.*$/ig, header: 'Linux'}
     ];
     // Obtain the browser's user agent
     const agent = navigator.userAgent;
