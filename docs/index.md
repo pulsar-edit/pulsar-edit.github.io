@@ -6,8 +6,13 @@ lang: en-us
 title: Home
 home: true
 actions:
-  - text: "Download 💡"
+  - text: "Download 📥"
     link: "/download/"
+    type: primary
+  - text: "Documentation 📖"
+    link: "/docs/"
+  - text: "Donate 🎁"
+    link: "/donate/"
 heroText: Pulsar
 features:
   - title: "Cross-platform Editing"
@@ -47,6 +52,10 @@ We are looking to support distro repositories such as Debian/Ubuntu repos,
 Fedora, Snap, Flatpak, Arch/AUR etc. but we need to get to a good point with
 a stable release before we instigate that so for now the downloadable binaries
 are the main supported downloads.
+
+### Automatic Updates 
+
+Currently Pulsar does not support automatic updates. What this means is that new versions will have to be obtained via the Cirrus CI or Download links here on our website. This is something on our roadmap to change as soon as possible.
 
 ### Packages
 
