@@ -18,5 +18,5 @@
     // Find an instance of the target in the user agent (case-insensitive)
     const target = targets.find(i => agent.match(i.agent) );
     // Set the open property on the element who's summary header corresponds to the found target
-    detailsElements.find(i => i.childNodes[0].innerHTML === target.header)?.setAttribute('open', '');
+    detailsElements.find(i => i.childNodes[0].innerHTML === target?.header)?.setAttribute('open', '');
 })();
