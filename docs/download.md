@@ -35,18 +35,18 @@ manually or pick a binary from another fork then follow the [manual instructions
 
 |                                    Package                                    |    Distribution    |
 | :---------------------------------------------------------------------------: | :----------------: |
-|      [deb](https://web.pulsar-edit.dev/download?os=linux&type=linux_deb)      | All distributions  |
-|      [rpm](https://web.pulsar-edit.dev/download?os=linux&type=linux_rpm)      | Debian/Ubuntu etc. |
-| [Appimage](https://web.pulsar-edit.dev/download?os=linux&type=linux_appimage) |  Fedora/RHEL etc.  |
+|      [deb](https://web.pulsar-edit.dev/download?os=linux&type=linux_deb)      | Debian/Ubuntu etc. |
+|      [rpm](https://web.pulsar-edit.dev/download?os=linux&type=linux_rpm)      | Fedora/RHEL etc. 	 |
+| [Appimage](https://web.pulsar-edit.dev/download?os=linux&type=linux_appimage) | All distributions  |
 |    [tar.gz](https://web.pulsar-edit.dev/download?os=linux&type=linux_tar)     | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
 |                                      Package                                      |    Distribution    |
 | :-------------------------------------------------------------------------------: | :----------------: |
-|      [deb](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_deb)      | All distributions  |
-|      [rpm](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_rpm)      | Debian/Ubuntu etc. |
-| [Appimage](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_appimage) |  Fedora/RHEL etc.  |
+|      [deb](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_deb)      | Debian/Ubuntu etc. |
+|      [rpm](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_rpm)      | Fedora/RHEL etc. 	 |
+| [Appimage](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_appimage) | All distributions  |
 |    [tar.gz](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_tar)     | All distributions  |
 
 :::
