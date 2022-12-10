@@ -53,9 +53,11 @@ Fedora, Snap, Flatpak, Arch/AUR etc. but we need to get to a good point with
 a stable release before we instigate that so for now the downloadable binaries
 are the main supported downloads.
 
-### Automatic Updates 
+### Automatic Updates
 
-Currently Pulsar does not support automatic updates. What this means is that new versions will have to be obtained via the Cirrus CI or Download links here on our website. This is something on our roadmap to change as soon as possible.
+Currently Pulsar does not support automatic updates. What this means is that new
+versions will have to be obtained via the Cirrus CI or Download links here on
+our website. This is something on our roadmap to change as soon as possible.
 
 ### Packages
 
@@ -75,7 +77,11 @@ or as a [GitHub issue](https://github.com/pulsar-edit/pulsar/issues/new?assignee
 
 #### Known Issues
 
-- MacOS Performance: Currently performance on MacOS isn't what we hope to achieve. Often times this can be resolved by disabling the `github` package.
+- macOS Performance: Currently performance on MacOS isn't what we hope to
+  achieve. Often times this can be resolved by disabling the `github` package.
+- macOS dmg install: Current binaries are not signed so will produce an error
+  "App is damaged and can’t be opened". This can be fixed by running
+  `xattr -cr /Applications/Pulsar.app/`.
 
 ### Logos, branding and website design
 
