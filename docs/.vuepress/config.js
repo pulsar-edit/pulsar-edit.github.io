@@ -81,4 +81,7 @@ export default defineUserConfig({
     sidebar: sidebar_en,
     sidebarDepth: 3
   }),
+  head: [
+    ['script', {src: '/download-preselect.js'}],
+ ],
 });

@@ -26,6 +26,60 @@ These binaries are to be considered dev/beta releases and allow you to test
 out the very latest work being done on Pulsar before it is added to a full
 release.
 
+See below for links to the latest binaries for each OS. If you want to download
+manually or pick a binary from another fork then follow the [manual instructions](#manual-download).
+
+::: details Linux
+
+**x86_64** - For most desktops and laptops with Intel or AMD processors
+
+|                                    Package                                    |    Distribution    |
+| :---------------------------------------------------------------------------: | :----------------: |
+|      [deb](https://web.pulsar-edit.dev/download?os=linux&type=linux_deb)      | Debian/Ubuntu etc. |
+|      [rpm](https://web.pulsar-edit.dev/download?os=linux&type=linux_rpm)      | Fedora/RHEL etc. 	 |
+| [Appimage](https://web.pulsar-edit.dev/download?os=linux&type=linux_appimage) | All distributions  |
+|    [tar.gz](https://web.pulsar-edit.dev/download?os=linux&type=linux_tar)     | All distributions  |
+
+**ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
+
+|                                      Package                                      |    Distribution    |
+| :-------------------------------------------------------------------------------: | :----------------: |
+|      [deb](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_deb)      | Debian/Ubuntu etc. |
+|      [rpm](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_rpm)      | Fedora/RHEL etc. 	 |
+| [Appimage](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_appimage) | All distributions  |
+|    [tar.gz](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_tar)     | All distributions  |
+
+:::
+
+::: details macOS
+
+**Silicon** - For Apple Silicon (M1/M2) macs
+
+|                                 Package                                 |     Type      |
+| :---------------------------------------------------------------------: | :-----------: |
+| [dmg](https://web.pulsar-edit.dev/download?os=silicon_mac&type=mac_dmg) | DMG installer |
+| [zip](https://web.pulsar-edit.dev/download?os=silicon_mac&type=mac_zip) |  Zip archive  |
+
+**Intel** - For Intel macs
+
+|                                Package                                |     Type      |
+| :-------------------------------------------------------------------: | :-----------: |
+| [dmg](https://web.pulsar-edit.dev/download?os=intel_mac&type=mac_dmg) | DMG installer |
+| [zip](https://web.pulsar-edit.dev/download?os=intel_mac&type=mac_zip) |  Zip archive  |
+
+:::
+
+::: details Windows
+
+|                                      Package                                      |         Type          |
+| :-------------------------------------------------------------------------------: | :-------------------: |
+|    [Setup](https://web.pulsar-edit.dev/download?os=windows&type=windows_setup)    |       Installer       |
+| [Portable](https://web.pulsar-edit.dev/download?os=windows&type=windows_portable) | Portable (no install) |
+
+:::
+
+### Manual download
+
 Binaries are built from a number of different branches and PRs but you should
 stick to the **master** branch releases for the most stable ones unless you know
 exactly what you are looking for.
