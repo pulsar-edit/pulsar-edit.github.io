@@ -106,11 +106,4 @@
     <div ref="_container" id="starfield" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
         <canvas ref="_canvas" id="starfield-canvas"></canvas>
     </div>
-    <div id="hero" class="flex items-center gap-24 justify-center h-screen">
-        <div>
-            <img src="text-only-light.svg" class="w-64 mb-3">
-            <h1>A Community-led<br>Hyper-Hackable<br>Text Editor</h1>
-        </div>
-        <img src="logo-only-light.svg" class="w-52 animate-slide-slow	">
-    </div>
 </template>

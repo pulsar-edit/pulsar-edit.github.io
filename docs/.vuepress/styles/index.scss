@@ -25,6 +25,42 @@ html[data-theme=dark] .custom-container.details th {
   background-color: #111;
 }
 
+#hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  height: 100vh;
+}
+
+#hero > div {
+  max-width: 37em;
+}
+
+#hero > div img {
+  height: 3em;
+}
+
+#hero h1 {
+  font-size: 4em;
+  color: var(--c-brand);
+  font-weight: bold;
+}
+
+#hero > img {
+  position: relative;
+  height: 12em;
+  animation: mymove linear 10s infinite;
+}
+
+@keyframes mymove {
+  0%   {top: 0px;}
+  25% {top: -50px;}
+  75% {top: 50px;}
+  100% {top: 0px;}
+}
+
 //Website footer section
 
 //Theme adds a sidebar width even on mobile when it doesnt show, this removes it.
