@@ -1,9 +1,3 @@
-/*
-
-
-*/
-
-
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
 
 //Container formatting
@@ -32,6 +26,12 @@ html[data-theme=dark] .custom-container.details th {
   justify-content: center;
   gap: 10em;
   height: 100vh;
+}
+
+@media screen and (max-width: 970px) {
+  #hero {
+    display: block;
+  }
 }
 
 #hero > div {
