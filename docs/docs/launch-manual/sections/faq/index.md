@@ -13,3 +13,4 @@ inquire as to the status of this document.
 :::
 
 @include(sections/get-help.md)
+@include(sections/common-issues.md)
