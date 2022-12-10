@@ -1,5 +1,6 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
 import { hopeTheme } from "vuepress-theme-hope";
+import pulsarTheme from './theme/index';
 import { searchPlugin } from '@vuepress/plugin-search';
 import { getDirname, path } from '@vuepress/utils';
 
@@ -26,7 +27,7 @@ export default defineUserConfig({
       maxSuggestions: 10
     }),
   ],
-  theme: hopeTheme({
+  theme: pulsarTheme({
     logo: "/logo-name-navbar-light.svg",
     logoDark: "/logo-name-navbar-dark.svg",
     displayAllHeaders: true,
