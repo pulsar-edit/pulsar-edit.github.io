@@ -1,6 +1,6 @@
 ## Common Issues
 
-### macOS error "_App Is Damaged and Can’t Be Opened_"
+### macOS error "_App is damaged and can’t be opened_"
 
 Current binaries are not signed so will produce an error "**_App is damaged and
 can’t be opened_**". This can be fixed by running
