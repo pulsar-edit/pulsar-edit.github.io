@@ -10,11 +10,10 @@ export default (options) => ({
   extends: hopeTheme(options),
 
   alias: {
-    // You can override or add aliases here
-    // For example, here we change the vuepress-theme-hope HomePage component to components/HomePage.js under our own theme
+    // https://vuepress-theme-hope.github.io/v2/cookbook/advanced/replace.html#replace-components
     "@theme-hope/components/HomePage.js": path.resolve(
       __dirname,
-      "../components/Home.vue"
+      "../components/HomePage.vue"
     ),
   },
 });
