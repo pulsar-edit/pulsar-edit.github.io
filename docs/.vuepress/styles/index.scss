@@ -75,13 +75,6 @@ html[data-theme=dark] .custom-container.details th {
   }
 }
 
-@media screen and (max-height: 600px) {
-  #hero {
-    align-items: initial;
-    height: auto;
-  }
-}
-
 //Website footer section
 
 //Theme adds a sidebar width even on mobile when it doesnt show, this removes it.
