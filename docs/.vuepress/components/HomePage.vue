@@ -4,7 +4,7 @@
     import Starfield from './Starfield.vue'
     // vuepress-theme-hope does not export their scss files :( - Justin White <kyjus25>
     import './home-page.scss';
-    const everything = usePageFrontmatter().value;
+    const { actions } = usePageFrontmatter().value;
     const { description } = useSiteData().value;
 </script>
 
@@ -15,7 +15,7 @@
             <img src="/text-only-light.svg">
             <h1>{{description}}</h1>
             <a
-                v-for="{text, link, type} in everything.actions"
+                v-for="{text, link, type} in actions"
                 :href="link"
                 :class="`nav-link action-button ${type || 'default'}`"
             >
