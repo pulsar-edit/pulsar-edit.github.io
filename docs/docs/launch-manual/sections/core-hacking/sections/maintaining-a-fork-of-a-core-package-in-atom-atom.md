@@ -11,7 +11,7 @@ in the main repository.
 
 The Pulsar team has continued this trend and has move even more packages into
 the core, particularly default language packages. A list of these packages moved
-can be found in [this commit](https://github.com/pulsar-edit/pulsar/commit/4bd4b8831f53a77cee9c0325ad6b2d1a6cc4a0f3). <!--TODO: Reference a doc rather than a commit when made-->
+can be found in [this document](https://github.com/pulsar-edit/pulsar/blob/master/packages/README.md).
 
 If you forked one of the core packages before it was moved into the
 atom/atom or pulsar-edit/pulsar repository, and you want to continue merging
