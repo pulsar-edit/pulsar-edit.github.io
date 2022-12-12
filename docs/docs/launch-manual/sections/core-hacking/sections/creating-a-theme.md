@@ -94,7 +94,7 @@ README.
 
 To create a UI theme, do the following:
 
-1. Fork the [ui-theme-template](https://github.com/atom-community/ui-theme-template)
+1. Fork the [ui-theme-template](https://github.com/pulsar-edit/ui-theme-template)
 2. Clone the forked repository to the local filesystem
 3. Open a terminal in the forked theme's directory
 4. Open your new theme in a Dev Mode Pulsar window run `pulsar --dev .` in the
