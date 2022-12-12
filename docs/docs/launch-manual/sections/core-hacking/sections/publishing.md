@@ -50,7 +50,7 @@ Now run the following commands to publish your package:
 $ cd path-to-your-package
 $ pulsar -p publish minor
 ```
-
+<!-- TODO: Rewrite this Section once Authentication Information is Public -->
 If this is the first package you are publishing, the `pulsar -p publish` command
 may prompt you for your GitHub username and password. If you have two-factor
 authentication enabled, use a [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
