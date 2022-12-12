@@ -50,7 +50,9 @@ Now run the following commands to publish your package:
 $ cd path-to-your-package
 $ pulsar -p publish minor
 ```
+
 <!-- TODO: Rewrite this Section once Authentication Information is Public -->
+
 If this is the first package you are publishing, the `pulsar -p publish` command
 may prompt you for your GitHub username and password. If you have two-factor
 authentication enabled, use a [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
@@ -71,25 +73,18 @@ $ pulsar -p publish <version-type>
 
 where `version-type` can be `major`, `minor` and `patch`.
 
-The `major` option to the publish command tells PPM to increment the first
-number of the version before publishing so the published version will be `1.0.0`
-and the Git tag created will be `v1.0.0`.
+- **MAJOR** version when you make incompatible API changes
+- **MINOR** version when you add functionality in a backwards compatible manner
+- **PATCH** version when you make backwards compatible bug fixes
 
-The `minor` option to the publish command tells PPM to increment the second
-number of the version before publishing so the published version will be `0.1.0`
-and the Git tag created will be `v0.1.0`.
+i.e. to bump a package from v1.**0**.0 to v1.**1**.0:
 
-The `patch` option to the publish command tells PPM to increment the third
-number of the version before publishing so the published version will be `0.0.1`
-and the Git tag created will be `v0.0.1`.
+```sh
+$ pulsar -p publish minor
+```
 
-Use `major` when you make a change that breaks backwards compatibility, like
-changing defaults or removing features. Use `minor` when adding new
-functionality or options, but without breaking backwards compatibility. Use
-`patch` when you've changed the implementation of existing features, but without
-changing the behaviour or options of your package. Check out
-[semantic versioning](https://semver.org) to learn more about best practices for
-versioning your package releases.
+Check out [semantic versioning](https://semver.org/) to learn more about best
+practices for versioning your package releases.
 
 You can also run `pulsar -p help publish` to see all the available options and
 `pulsar -p help` to see all the other available commands.
