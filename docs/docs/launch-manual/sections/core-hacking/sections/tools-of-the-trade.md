@@ -9,7 +9,7 @@ Less, which is a preprocessor for CSS.
 
 While much of Pulsar has been converted to JavaScript, a lot of older code is
 still implemented in CoffeeScript but the process of "decaffeination" is
-ongoing to continue this conversion. <!--TODO: Add link to decaff docs-->
+ongoing, to continue this conversion feel free to read [more](https://github.com/pulsar-edit/.github/blob/main/project-birth/CONTRIBUTING-DURING-START.md#decaffeination).
 Additionally, Pulsar's default configuration language is CSON, which is based on
 CoffeeScript. If you don't know CoffeeScript, but you are familiar with
 JavaScript, you shouldn't have too much trouble. Here is an example of some
