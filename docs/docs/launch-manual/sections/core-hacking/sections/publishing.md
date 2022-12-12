@@ -14,6 +14,7 @@ There are a few things you should double check before publishing:
 
 - Your `package.json` file has `name`, `description`, and `repository` fields.
 - Your `package.json` file has a `version` field with a value of `"0.0.0"`.
+- Your `package.json` `version` field is [Semver V2](https://semver.org/spec/v2.0.0.html) compliant.
 - Your `package.json` file has an `engines` field that contains an entry for
   `atom` such as: `"engines": {"atom": ">=1.0.0 <2.0.0"}`.
 - Your package has a `README.md` file at the root.
