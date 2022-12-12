@@ -10,7 +10,7 @@ There will also be issues relating to the Electron version which will prevent
 install from the package backend.
 To solve this a couple of environmental variables need to be exported.
 
-::: tabs
+::: tabs#core-hacking
 
 @tab Linux
 
