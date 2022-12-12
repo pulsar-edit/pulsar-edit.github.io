@@ -51,8 +51,8 @@ $ cd ~/src/one-light-ui-plus
 
 @tab Windows
 
-```sh
-$ xcopy C:\TEMP\pulsar\packages\one-light-ui C:\src\one-light-ui-plus /E /H /K
+```powershell
+$ Copy-Item -Path "C:\TEMP\pulsar\packages\one-light-ui" -Destination "C:\src\one-light-ui-plus" -Recurse -Force
 $ cd C:\src\one-light-ui-plus
 ```
 
