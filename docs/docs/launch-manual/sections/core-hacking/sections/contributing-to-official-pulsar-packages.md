@@ -3,7 +3,7 @@
 If you discover a bug or issue with an official Pulsar package then feel free to
 open up the issue in that specific repository instead. When in doubt just open
 the issue on the [pulsar-edit/pulsar](https://github.com/pulsar-edit/pulsar)
-repository but be aware that it may get closed and reopened in the proper
+repository but be aware that it may get transferred to the proper
 package's repository.
 
 ### Hacking on Packages
