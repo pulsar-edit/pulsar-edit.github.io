@@ -1,5 +1,7 @@
 ## Why Pulsar?
 
+<!--TODO: We probably want to make this our own, it is very "Atom" still-->
+
 There are a lot of text editors out there; why should you spend your time
 learning about and using Pulsar? Editors like Sublime and TextMate offer
 convenience but only limited extensibility. On the other end of the spectrum,
@@ -70,12 +72,12 @@ we're building Pulsar on fertile ground. Native UI technologies come and go, but
 the web is a standard that becomes more capable and ubiquitous with every
 passing year. We're excited to dig deeper into its toolbox.
 
-## An Open-Source Text Editor
+### An Open-Source Text Editor
 
 We see Pulsar as a great replacement for Atom but we can't do it without your
-support going forward, since we know that we can't achieve our vision for 
-Pulsar alone. As Emacs and Vim have demonstrated over the past three 
-decades, if you want to build a thriving, long-lasting community around 
+support going forward, since we know that we can't achieve our vision for
+Pulsar alone. As Emacs and Vim have demonstrated over the past three
+decades, if you want to build a thriving, long-lasting community around
 a text editor, it has to be open source.
 
 The entire Pulsar editor is free and open source and available under our
