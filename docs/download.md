@@ -36,7 +36,7 @@ manually or pick a binary from another fork then follow the [manual instructions
 |                                    Package                                    |    Distribution    |
 | :---------------------------------------------------------------------------: | :----------------: |
 |      [deb](https://web.pulsar-edit.dev/download?os=linux&type=linux_deb)      | Debian/Ubuntu etc. |
-|      [rpm](https://web.pulsar-edit.dev/download?os=linux&type=linux_rpm)      | Fedora/RHEL etc. 	 |
+|      [rpm](https://web.pulsar-edit.dev/download?os=linux&type=linux_rpm)      |  Fedora/RHEL etc.  |
 | [Appimage](https://web.pulsar-edit.dev/download?os=linux&type=linux_appimage) | All distributions  |
 |    [tar.gz](https://web.pulsar-edit.dev/download?os=linux&type=linux_tar)     | All distributions  |
 
@@ -45,13 +45,27 @@ manually or pick a binary from another fork then follow the [manual instructions
 |                                      Package                                      |    Distribution    |
 | :-------------------------------------------------------------------------------: | :----------------: |
 |      [deb](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_deb)      | Debian/Ubuntu etc. |
-|      [rpm](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_rpm)      | Fedora/RHEL etc. 	 |
+|      [rpm](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_rpm)      |  Fedora/RHEL etc.  |
 | [Appimage](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_appimage) | All distributions  |
 |    [tar.gz](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_tar)     | All distributions  |
 
 :::
 
-::: details macOS
+:::: details macOS
+
+<!--TODO: Remove once app is signed and error no longer shows-->
+
+::: info Info
+
+Current binaries are not signed so will produce an error _"App is damaged and
+can’t be opened"_.
+The following command should be run after installation.
+
+```sh
+$ xattr -cr /Applications/Pulsar.app/
+```
+
+:::
 
 **Silicon** - For Apple Silicon (M1/M2) macs
 
@@ -67,7 +81,7 @@ manually or pick a binary from another fork then follow the [manual instructions
 | [dmg](https://web.pulsar-edit.dev/download?os=intel_mac&type=mac_dmg) | DMG installer |
 | [zip](https://web.pulsar-edit.dev/download?os=intel_mac&type=mac_zip) |  Zip archive  |
 
-:::
+::::
 
 ::: details Windows
 
