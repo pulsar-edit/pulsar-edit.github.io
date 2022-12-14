@@ -7,12 +7,12 @@ title: Home
 home: true
 actions:
   - text: "Download 📥"
-    link: "/download/"
+    link: "/download.html"
     type: primary
   - text: "Documentation 📖"
     link: "/docs/"
   - text: "Donate 🎁"
-    link: "/donate/"
+    link: "/donate.html"
 heroText: Pulsar
 features:
   - title: "Cross-platform Editing"
