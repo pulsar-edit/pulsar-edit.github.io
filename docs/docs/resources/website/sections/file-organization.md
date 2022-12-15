@@ -1,7 +1,7 @@
 ## File Organization
 
 One of the most important things to take note of when adding new documentation
-is where is should go within the website layout.
+is where it should go within the website layout.
 
 The generalized overall layout of the website looks like this:
 
