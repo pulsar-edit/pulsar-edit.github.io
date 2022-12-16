@@ -41,7 +41,11 @@ dnf --assumeyes install make gcc gcc-c++ glibc-devel git-core libsecret-devel rp
 #### Arch
 
 ```sh
-TODO: Arch instructions
+# Make sure you update the system
+pacman -Syu
+
+# Install the base packges
+pacman -S build-essential libxkbfile-dev libsecret-1-dev libx11-dev
 ```
 
 #### OpenSUSE
@@ -98,15 +102,13 @@ git submodule init && git submodule update
 Now install and build Pulsar & ppm:
 
 ```sh
-yarn install
-yarn build
-yarn build:apm
+yarn install && yarn build && yarn build:apm
 ```
 
 Start Pulsar!
 
 ```sh
-yarn start
+yarn start --no-sandbox
 ```
 
 These instructions will also build `ppm` (Pulsar Package Manager) but it will
