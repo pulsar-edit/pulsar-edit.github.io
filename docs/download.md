@@ -8,6 +8,10 @@ sitemap:
 
 ## Releases
 
+These are our current tagged releases. `Latest` is our current stable release,
+`Beta` is our current release candidate version that may still require some
+additional work.
+
 ::: details Linux
 
 **x86_64** - For most desktops and laptops with Intel or AMD processors
@@ -62,7 +66,7 @@ $ xattr -cr /Applications/Pulsar.app/
 
 ::::
 
-::: details Windows
+:::: details Windows
 
 <!--TODO: Remove once app is signed and error no longer shows-->
 
@@ -72,12 +76,14 @@ Current binaries are not signed so will produce an error with Windows
 Smartscreen "Windows protected your PC"...
 You can bypass this by clicking "More info" then "Run anyway".
 
+:::
+
 |                                                                Package                                                                |         Type          |
 | :-----------------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
 | Setup - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Windows.Pulsar.Setup.1.100.0-beta.exe) |       Installer       |
 |  Portable - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Windows.Pulsar.1.100.0-beta.exe)   | Portable (no install) |
 
-:::
+::::
 
 ## Cirrus CI binaries
 
