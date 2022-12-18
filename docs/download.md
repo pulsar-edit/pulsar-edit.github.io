@@ -21,7 +21,7 @@ dev/beta releases of Pulsar or [build from source](https://pulsar-edit.dev/docs/
 ## Cirrus CI binaries
 
 Binaries are produced by [Cirrus CI](https://cirrus-ci.com/github/pulsar-edit/pulsar)
-for each commit to the Pulsar repository.
+for each commit to the Pulsar repository.\
 These binaries are to be considered dev/beta releases and allow you to test
 out the very latest work being done on Pulsar before it is added to a full
 release.
