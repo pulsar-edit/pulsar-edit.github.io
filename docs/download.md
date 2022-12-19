@@ -6,23 +6,90 @@ sitemap:
   changefreq: "daily"
 ---
 
-::: warning Under Construction
-This document is under construction, please check back soon for updates.
-Please see [our socials](/docs/launch-manual/sections/faq/#having-trouble) and feel free to ask for assistance or inquire as to the status of this document.
-:::
-
 ## Releases
 
-::: info
-Full releases of Pulsar are not yet available, see Cirrus CI releases below for
-dev/beta releases of Pulsar or [build from source](https://pulsar-edit.dev/docs/launch-manual/sections/core-hacking/#building-pulsar).
+These are our current tagged releases. `Latest` is our current stable release,
+`Beta` is our current release candidate version that may still require some
+additional work.
+
+::: details Linux
+
+**x86_64** - For most desktops and laptops with Intel or AMD processors
+
+|                                                                Package                                                                |    Distribution    |
+| :-----------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
+|   deb - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar_1.100.0-beta_amd64.deb)   | Debian/Ubuntu etc. |
+|  rpm - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar-1.100.0-beta.x86_64.rpm)   |  Fedora/RHEL etc.  |
+| AppImage - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.Pulsar-1.100.0-beta.AppImage) | All distributions  |
+|   tar.gz - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar-1.100.0-beta.tar.gz)   | All distributions  |
+
+**ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
+
+|                                                                     Package                                                                     |    Distribution    |
+| :---------------------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
+|      deb - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar_1.100.0-beta_arm64.deb)      | Debian/Ubuntu etc. |
+|     rpm - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar-1.100.0-beta.aarch64.rpm)     |  Fedora/RHEL etc.  |
+| AppImage - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.Pulsar-1.100.0-beta-arm64.AppImage) | All distributions  |
+|   tar.gz - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar-1.100.0-beta-arm64.tar.gz)   | All distributions  |
+
 :::
+
+:::: details macOS
+
+<!--TODO: Remove once app is signed and error no longer shows-->
+
+::: info Info
+
+Current binaries are not signed so will produce an error _"App is damaged and
+can’t be opened"_.
+The following command should be run after installation.
+
+```sh
+$ xattr -cr /Applications/Pulsar.app/
+```
+
+:::
+
+**Silicon** - For Apple Silicon (M1/M2) macs
+
+|                                                                 Package                                                                 |     Type      |
+| :-------------------------------------------------------------------------------------------------------------------------------------: | :-----------: |
+| dmg - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Silicon_Mac.Pulsar-1.100.0-beta-arm64.dmg) | DMG installer |
+|                                                          zip - Latest \| Beta                                                           |  Zip archive  |
+
+**Intel** - For Intel macs
+
+|                                                             Package                                                             |     Type      |
+| :-----------------------------------------------------------------------------------------------------------------------------: | :-----------: |
+| dmg - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Intel.Mac.Pulsar-1.100.0-beta.dmg) | DMG installer |
+|                                                      zip - Latest \| Beta                                                       |  Zip archive  |
+
+::::
+
+:::: details Windows
+
+<!--TODO: Remove once app is signed and error no longer shows-->
+
+::: info Info
+
+Current binaries are not signed so will produce an error with Windows
+Smartscreen "Windows protected your PC"...
+You can bypass this by clicking "More info" then "Run anyway".
+
+:::
+
+|                                                                Package                                                                |         Type          |
+| :-----------------------------------------------------------------------------------------------------------------------------------: | :-------------------: |
+| Setup - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Windows.Pulsar.Setup.1.100.0-beta.exe) |       Installer       |
+|  Portable - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Windows.Pulsar.1.100.0-beta.exe)   | Portable (no install) |
+
+::::
 
 ## Cirrus CI binaries
 
 Binaries are produced by [Cirrus CI](https://cirrus-ci.com/github/pulsar-edit/pulsar)
 for each commit to the Pulsar repository.  
-These binaries are to be considered dev/beta releases and allow you to test
+These binaries are to be considered dev releases and allow you to test
 out the very latest work being done on Pulsar before it is added to a full
 release.
 
