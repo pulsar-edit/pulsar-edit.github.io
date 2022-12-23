@@ -13,7 +13,7 @@ Things that changed:
 ## Made it easier to install from source
 
 Atom used to have a 5,000 script to prepare a development environment. That also
-dependend on older `npm` tool - newer `npm` versions would crash (and, honestly,
+dependends on older `npm` tool - newer `npm` versions would crash (and, honestly,
 still are crashing) so we moved away from `npm` and are now using `yarn`.
 
 This is _not a final decision_ - we just decided for `yarn` because newer `npm`
@@ -29,7 +29,7 @@ sent to our servers, ever. If you're seeing some suspicious requests to servers,
 first try to reproduce on safe mode and if it's still present, please open an
 issue - it may be leftover code that we missed.
 
-We don't have telemetry andpoints on our backend, and don't intend to have any.
+We don't have telemetry endpoints on our backend, and don't intend to have any.
 
 ## Library bumps
 
@@ -79,7 +79,7 @@ organized](https://github.com/atom/atom/blob/master/script/lib/generate-startup-
 None of these exist on the newer code. This means that _currently_ Pulsar takes
 more space on the disk _and_ it's slower to load on some systems. Another weird
 side-effect of the V8 Snapshots is that it allowed Atom to "preload" some code -
-sometimes, even **before** that could could even run! Which means we saw some
+sometimes, even **before** that could even run! Which means we saw some
 weird bugs appearing that didn't happen on Atom (because some of the stuff that
 should be _loaded_ in the future was already _pre-loaded_ because of the
 snapshots), but this, again, made the development process unstable - the source
