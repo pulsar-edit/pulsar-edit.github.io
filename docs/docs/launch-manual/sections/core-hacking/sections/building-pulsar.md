@@ -41,9 +41,6 @@ dnf --assumeyes install make gcc gcc-c++ glibc-devel git-core libsecret-devel rp
 #### Arch
 
 ```sh
-# Make sure you update the system
-pacman -Syu
-
 # Install the base packges
 pacman -S build-essential libxkbfile-dev libsecret-1-dev libx11-dev
 ```
