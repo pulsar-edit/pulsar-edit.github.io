@@ -103,7 +103,7 @@ to the software. Additionally, When Pulsar receives hotfixes for security
 vulnerabilities you will want to update your version of Pulsar as soon as possible.
 
 Currently Pulsar does not support automatic updates. What this means is that new
-versions will have to be obtained via the [Pulsar Downloads](/download/) here on
+versions will have to be obtained via the [Pulsar Downloads](/download.html) here on
 our website. This is something on our roadmap to change as soon as possible.
 
 <!--TODO: Auto upgrade instructions - selectively pull info from atom archive as this becomes possible-->
