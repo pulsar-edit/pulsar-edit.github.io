@@ -82,7 +82,7 @@ folder.
 @tab Windows
 
 Pulsar is available as a 64-bit Windows installer and [portable app](https://en.wikipedia.org/wiki/Portable_application)
-that can be downloaded from [Pulsar Downloads](/download/).
+that can be downloaded from [Pulsar Downloads](/download.html).
 
 ![Pulsar on Windows](@images/atom/windows-system-settings.png)
 
