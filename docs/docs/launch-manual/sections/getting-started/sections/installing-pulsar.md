@@ -45,7 +45,7 @@ manually.
 ### Debian/Ubuntu based distributions
 
 To install Pulsar on Debian, Ubuntu, or related distributions download the `.deb`
-from either the latest release or beta/dev version from [Pulsar Downloads](/download/).
+from either the latest release or beta/dev version from [Pulsar Downloads](/download.html).
 
 You can install this by opening it in your file manager or via the terminal:
 
