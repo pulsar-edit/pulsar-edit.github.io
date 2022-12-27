@@ -71,7 +71,7 @@ $ sudo yum install -y ./pulsar_1.100.0_amd64.rpm
 @tab macOS
 
 Pulsar follows the standard macOS installation process. Grab the correct
-download `.dmg` for your system from [Pulsar Downloads](/download/). Once you
+download `.dmg` for your system from [Pulsar Downloads](/download.html). Once you
 have the file, you can open it to run the installer and drag the new `Pulsar`
 application into your "Applications" folder.
 
