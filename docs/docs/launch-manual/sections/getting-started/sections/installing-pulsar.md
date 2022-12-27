@@ -56,7 +56,7 @@ $ sudo apt install ./pulsar_1.100.0_amd64.deb
 ### Fedora/RHEL based distributions
 
 To install Pulsar on Fedora, RHEL, or related distributions download the `.rpm`
-from either the latest release or beta/dev version from [Pulsar Downloads](/download/).
+from either the latest release or beta/dev version from [Pulsar Downloads](/download.html).
 
 You can install this by opening it in your file manager or via the terminal:
 
