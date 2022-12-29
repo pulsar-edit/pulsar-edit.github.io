@@ -42,7 +42,7 @@ dnf --assumeyes install make gcc gcc-c++ glibc-devel git-core libsecret-devel rp
 
 ```sh
 # Install the development packges
-pacman -S base-devel libxkbfile libsecret-1 libx11
+pacman -S base-devel libxkbfile libsecret libx11
 ```
 
 #### OpenSUSE
