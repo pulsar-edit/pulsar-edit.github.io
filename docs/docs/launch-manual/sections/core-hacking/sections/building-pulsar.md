@@ -99,8 +99,8 @@ git submodule init && git submodule update
 Now install and build Pulsar & ppm:
 
 ```sh
-yarn install 
-yarn build 
+yarn install
+yarn build
 yarn build:apm
 ```
 
