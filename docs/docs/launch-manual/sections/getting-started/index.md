@@ -2,17 +2,14 @@
 
 ::: warning Under Construction
 This document is under construction, please check back soon for updates. Please
-see [our socials](link/to/socials/list) and feel free to ask for assistance or
+see [our community links](/community/) and feel free to ask for assistance or
 inquire as to the status of this document.
 :::
 
-@include(why-pulsar.md)
+This section is all about how to start using Pulsar, such as how to install it
+and how to use it for basic text editing.
 
-## Installing Pulsar
-
-Coming soon
-
-<!-- @include(installing-pulsar.md) -->
-
-@include(pulsar-basics.md)
-@include(summary.md)
+@include(sections/why-pulsar.md)
+@include(sections/installing-pulsar.md)
+@include(sections/pulsar-basics.md)
+@include(sections/summary.md)
