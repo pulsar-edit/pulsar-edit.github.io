@@ -100,21 +100,21 @@ manually or pick a binary from another fork then follow the [manual instructions
 
 **x86_64** - For most desktops and laptops with Intel or AMD processors
 
-|                                    Package                                    |    Distribution    |
-| :---------------------------------------------------------------------------: | :----------------: |
-|      [deb](https://web.pulsar-edit.dev/download?os=linux&type=linux_deb)      | Debian/Ubuntu etc. |
-|      [rpm](https://web.pulsar-edit.dev/download?os=linux&type=linux_rpm)      |  Fedora/RHEL etc.  |
-| [Appimage](https://web.pulsar-edit.dev/download?os=linux&type=linux_appimage) | All distributions  |
-|    [tar.gz](https://web.pulsar-edit.dev/download?os=linux&type=linux_tar)     | All distributions  |
+|                                  Package                                   |    Distribution    |
+| :------------------------------------------------------------------------: | :----------------: |
+|      [deb](https://download.pulsar-edit.dev/?os=linux&type=linux_deb)      | Debian/Ubuntu etc. |
+|      [rpm](https://download.pulsar-edit.dev/?os=linux&type=linux_rpm)      |  Fedora/RHEL etc.  |
+| [Appimage](https://download.pulsar-edit.dev/?os=linux&type=linux_appimage) | All distributions  |
+|    [tar.gz](https://download.pulsar-edit.dev/?os=linux&type=linux_tar)     | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
-|                                      Package                                      |    Distribution    |
-| :-------------------------------------------------------------------------------: | :----------------: |
-|      [deb](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_deb)      | Debian/Ubuntu etc. |
-|      [rpm](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_rpm)      |  Fedora/RHEL etc.  |
-| [Appimage](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_appimage) | All distributions  |
-|    [tar.gz](https://web.pulsar-edit.dev/download?os=arm_linux&type=linux_tar)     | All distributions  |
+|                                    Package                                     |    Distribution    |
+| :----------------------------------------------------------------------------: | :----------------: |
+|      [deb](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_deb)      | Debian/Ubuntu etc. |
+|      [rpm](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_rpm)      |  Fedora/RHEL etc.  |
+| [Appimage](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_appimage) | All distributions  |
+|    [tar.gz](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar)     | All distributions  |
 
 :::
 
@@ -136,26 +136,26 @@ $ xattr -cr /Applications/Pulsar.app/
 
 **Silicon** - For Apple Silicon (M1/M2) macs
 
-|                                 Package                                 |     Type      |
-| :---------------------------------------------------------------------: | :-----------: |
-| [dmg](https://web.pulsar-edit.dev/download?os=silicon_mac&type=mac_dmg) | DMG installer |
-| [zip](https://web.pulsar-edit.dev/download?os=silicon_mac&type=mac_zip) |  Zip archive  |
+|                               Package                                |     Type      |
+| :------------------------------------------------------------------: | :-----------: |
+| [dmg](https://download.pulsar-edit.dev/?os=silicon_mac&type=mac_dmg) | DMG installer |
+| [zip](https://download.pulsar-edit.dev/?os=silicon_mac&type=mac_zip) |  Zip archive  |
 
 **Intel** - For Intel macs
 
-|                                Package                                |     Type      |
-| :-------------------------------------------------------------------: | :-----------: |
-| [dmg](https://web.pulsar-edit.dev/download?os=intel_mac&type=mac_dmg) | DMG installer |
-| [zip](https://web.pulsar-edit.dev/download?os=intel_mac&type=mac_zip) |  Zip archive  |
+|                              Package                               |     Type      |
+| :----------------------------------------------------------------: | :-----------: |
+| [dmg](https://download.pulsar-edit.dev/?os=intel_mac&type=mac_dmg) | DMG installer |
+| [zip](https://download.pulsar-edit.dev/?os=intel_mac&type=mac_zip) |  Zip archive  |
 
 ::::
 
 ::: details Windows
 
-|                                      Package                                      |         Type          |
-| :-------------------------------------------------------------------------------: | :-------------------: |
-|    [Setup](https://web.pulsar-edit.dev/download?os=windows&type=windows_setup)    |       Installer       |
-| [Portable](https://web.pulsar-edit.dev/download?os=windows&type=windows_portable) | Portable (no install) |
+|                                    Package                                     |         Type          |
+| :----------------------------------------------------------------------------: | :-------------------: |
+|    [Setup](https://download.pulsar-edit.dev/?os=windows&type=windows_setup)    |       Installer       |
+| [Portable](https://download.pulsar-edit.dev/?os=windows&type=windows_portable) | Portable (no install) |
 
 :::
 
