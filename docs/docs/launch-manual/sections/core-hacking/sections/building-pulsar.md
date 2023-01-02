@@ -107,7 +107,7 @@ yarn build:apm
 Start Pulsar!
 
 ```sh
-yarn start --no-sandbox
+yarn start
 ```
 
 These instructions will also build `ppm` (Pulsar Package Manager) but it will
