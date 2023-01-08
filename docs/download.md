@@ -16,21 +16,24 @@ additional work.
 
 **x86_64** - For most desktops and laptops with Intel or AMD processors
 
-|                                                                Package                                                                |    Distribution    |
-| :-----------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|   deb - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar_1.100.0-beta_amd64.deb)   | Debian/Ubuntu etc. |
-|  rpm - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar-1.100.0-beta.x86_64.rpm)   |  Fedora/RHEL etc.  |
-| AppImage - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.Pulsar-1.100.0-beta.AppImage) | All distributions  |
-|   tar.gz - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar-1.100.0-beta.tar.gz)   | All distributions  |
+|                                                                         Package                                                                         |    Distribution    |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
+|            deb - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar_1.100.0-beta_amd64.deb)            | Debian/Ubuntu etc. |
+|           rpm - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar-1.100.0-beta.x86_64.rpm)            |  Fedora/RHEL etc.  |
+| AppImage <sup>[1][2]</sup> - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.Pulsar-1.100.0-beta.AppImage) | All distributions  |
+|            tar.gz - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/Linux.pulsar-1.100.0-beta.tar.gz)            | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
-|                                                                     Package                                                                     |    Distribution    |
-| :---------------------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|      deb - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar_1.100.0-beta_arm64.deb)      | Debian/Ubuntu etc. |
-|     rpm - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar-1.100.0-beta.aarch64.rpm)     |  Fedora/RHEL etc.  |
-| AppImage - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.Pulsar-1.100.0-beta-arm64.AppImage) | All distributions  |
-|   tar.gz - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar-1.100.0-beta-arm64.tar.gz)   | All distributions  |
+|                                                                             Package                                                                              |    Distribution    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
+|              deb - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar_1.100.0-beta_arm64.deb)               | Debian/Ubuntu etc. |
+|             rpm - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar-1.100.0-beta.aarch64.rpm)              |  Fedora/RHEL etc.  |
+| AppImage<sup>[1][2]</sup> - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.Pulsar-1.100.0-beta-arm64.AppImage) | All distributions  |
+|           tar.gz - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.100.0-beta/ARM.Linux.pulsar-1.100.0-beta-arm64.tar.gz)            | All distributions  |
+
+[1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
+[2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
 
 :::
 
@@ -100,21 +103,24 @@ manually or pick a binary from another fork then follow the [manual instructions
 
 **x86_64** - For most desktops and laptops with Intel or AMD processors
 
-|                                  Package                                   |    Distribution    |
-| :------------------------------------------------------------------------: | :----------------: |
-|      [deb](https://download.pulsar-edit.dev/?os=linux&type=linux_deb)      | Debian/Ubuntu etc. |
-|      [rpm](https://download.pulsar-edit.dev/?os=linux&type=linux_rpm)      |  Fedora/RHEL etc.  |
-| [Appimage](https://download.pulsar-edit.dev/?os=linux&type=linux_appimage) | All distributions  |
-|    [tar.gz](https://download.pulsar-edit.dev/?os=linux&type=linux_tar)     | All distributions  |
+|                                           Package                                           |    Distribution    |
+| :-----------------------------------------------------------------------------------------: | :----------------: |
+|              [deb](https://download.pulsar-edit.dev/?os=linux&type=linux_deb)               | Debian/Ubuntu etc. |
+|              [rpm](https://download.pulsar-edit.dev/?os=linux&type=linux_rpm)               |  Fedora/RHEL etc.  |
+| [Appimage](https://download.pulsar-edit.dev/?os=linux&type=linux_appimage)<sup>[1][2]</sup> | All distributions  |
+|             [tar.gz](https://download.pulsar-edit.dev/?os=linux&type=linux_tar)             | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
-|                                    Package                                     |    Distribution    |
-| :----------------------------------------------------------------------------: | :----------------: |
-|      [deb](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_deb)      | Debian/Ubuntu etc. |
-|      [rpm](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_rpm)      |  Fedora/RHEL etc.  |
-| [Appimage](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_appimage) | All distributions  |
-|    [tar.gz](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar)     | All distributions  |
+|                                             Package                                             |    Distribution    |
+| :---------------------------------------------------------------------------------------------: | :----------------: |
+|              [deb](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_deb)               | Debian/Ubuntu etc. |
+|              [rpm](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_rpm)               |  Fedora/RHEL etc.  |
+| [Appimage](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_appimage)<sup>[1][2]</sup> | All distributions  |
+|             [tar.gz](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar)             | All distributions  |
+
+[1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
+[2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
 
 :::
 
