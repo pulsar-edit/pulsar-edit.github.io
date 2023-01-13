@@ -18,8 +18,8 @@ donate and view how the money is being used.
   <img src="https://opencollective.com/webpack/donate/button@2x.png?color=blue" width=300 />
 </a>
 
-Additionally if you'd rather contribute to the running costs of the project via
-[GitHub Sponsors](https://github.com/sponsors/pulsar-edit) you can visit our GitHub profile to safely donate.
+If you'd rather contribute via [GitHub Sponsors](https://github.com/sponsors/pulsar-edit)
+you can do this on our GitHub profile.
 
 <iframe src="https://github.com/sponsors/pulsar-edit/card" title="Sponsor pulsar-edit" height="225" width="600" style="border: 0;"></iframe>
 
