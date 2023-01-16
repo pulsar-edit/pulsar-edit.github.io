@@ -18,7 +18,7 @@ Have a read of the changelog for the full details but some highlights include fi
 
 Thank you so much to everyone who has been involved in this release, every comment to our discussions board or Discord server, every issue logged on GitHub and every pull request created have all contributed to getting us where we are today.
 
-And a special thank you for all of the donations we have recieved, we have some plans to use these wisely for the good of the project so look forward to the next big release!
+And a special thank you for all of the donations we have received, we have some plans to use these wisely for the good of the project so look forward to the next big release!
 
 So please, if you have any comments then please join us on our Discord or discussions page, if you find any bugs or regressions then let us know via a GitHub issue (and if you can fix it (or anything else) then feel free to open a pull request).
 
