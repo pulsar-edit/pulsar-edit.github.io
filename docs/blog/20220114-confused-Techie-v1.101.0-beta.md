@@ -6,7 +6,7 @@ category:
   - dev
 ---
 
-Check out our Second GitHub Release for Pulsar! [Available Now!]()
+Check out our Second GitHub Release for Pulsar! [Available Now!](https://github.com/pulsar-edit/pulsar/releases/tag/v1.101.0-beta)
 
 <!-- more -->
 
