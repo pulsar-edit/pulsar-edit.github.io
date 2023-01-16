@@ -27,4 +27,8 @@ As well, we have a record of [community packages](#community-packages) as well. 
 
 ## Community Packages
 
-- TODO: Add Documentation for Community packages, these can be straight grabs of the read-mes for these packages. With possibility of overrides
+There are currently thousands of community packages published to the Pulsar Package Registry, if you are coming from Atom you should be able to find all of your familiar packages as we have archived everything that Atom once had published.
+
+If one of your favourite packages that you had on Atom is missing feel free to [contact us](https://pulsar-edit.dev/community.html) or take a look through the [Pulsar Package Registry Administrative Actions Log](https://github.com/pulsar-edit/package-backend/blob/main/docs/reference/Admin_Actions.md) to see if it's been officially removed.
+
+Otherwise to browse the vast collection of packages available to install on Pulsar you can open up the Pulsar Settings Package page, or browse them on the [Pulsar Package Registry Website](https://web.pulsar-edit.dev/).
