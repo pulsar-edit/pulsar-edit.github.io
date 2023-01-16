@@ -102,24 +102,23 @@ manually or pick a binary from another fork then follow the [manual instructions
 
 **x86_64** - For most desktops and laptops with Intel or AMD processors
 
-|                                           Package                                           |    Distribution    |
-| :-----------------------------------------------------------------------------------------: | :----------------: |
-|              [deb](https://download.pulsar-edit.dev/?os=linux&type=linux_deb)               | Debian/Ubuntu etc. |
-|              [rpm](https://download.pulsar-edit.dev/?os=linux&type=linux_rpm)               |  Fedora/RHEL etc.  |
-| [Appimage](https://download.pulsar-edit.dev/?os=linux&type=linux_appimage)<sup>[1][2]</sup> | All distributions  |
-|             [tar.gz](https://download.pulsar-edit.dev/?os=linux&type=linux_tar)             | All distributions  |
+|                                         Package                                          |    Distribution    |
+| :--------------------------------------------------------------------------------------: | :----------------: |
+|             [deb](https://download.pulsar-edit.dev/?os=linux&type=linux_deb)             | Debian/Ubuntu etc. |
+|             [rpm](https://download.pulsar-edit.dev/?os=linux&type=linux_rpm)             |  Fedora/RHEL etc.  |
+| [Appimage](https://download.pulsar-edit.dev/?os=linux&type=linux_appimage)<sup>[1]</sup> | All distributions  |
+|           [tar.gz](https://download.pulsar-edit.dev/?os=linux&type=linux_tar)            | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
-|                                             Package                                             |    Distribution    |
-| :---------------------------------------------------------------------------------------------: | :----------------: |
-|              [deb](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_deb)               | Debian/Ubuntu etc. |
-|              [rpm](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_rpm)               |  Fedora/RHEL etc.  |
-| [Appimage](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_appimage)<sup>[1][2]</sup> | All distributions  |
-|             [tar.gz](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar)             | All distributions  |
+|                                           Package                                            |    Distribution    |
+| :------------------------------------------------------------------------------------------: | :----------------: |
+|             [deb](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_deb)             | Debian/Ubuntu etc. |
+|             [rpm](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_rpm)             |  Fedora/RHEL etc.  |
+| [Appimage](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_appimage)<sup>[1]</sup> | All distributions  |
+|           [tar.gz](https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar)            | All distributions  |
 
-[1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
-[2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
+[1] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
 
 :::
 
