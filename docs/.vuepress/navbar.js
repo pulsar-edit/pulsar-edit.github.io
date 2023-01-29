@@ -11,7 +11,7 @@ const navbar_en = [
   },
   {
     text: 'Repositories',
-    icon: 'brands fa-github',
+    icon: 'fab fa-github',
     link: '/repos/'
   },
   {
@@ -40,17 +40,17 @@ const navbar_en = [
       },
       {
         text: "Discord",
-        icon: 'brands fa-discord',
+        icon: 'fab fa-discord',
         link: "https://discord.gg/7aEbB9dGRT"
       },
       {
         text: "Reddit",
-        icon: 'brands fa-reddit',
+        icon: 'fab fa-reddit',
         link: "https://www.reddit.com/r/pulsaredit/"
       },
       {
         text: "Mastodon",
-        icon: 'brands fa-mastodon',
+        icon: 'fab fa-mastodon',
         link: "https://fosstodon.org/@pulsaredit"
       }
     ]

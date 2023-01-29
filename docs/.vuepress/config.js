@@ -32,7 +32,8 @@ export default defineUserConfig({
     logoDark: "/logo-name-navbar-dark.svg",
     displayAllHeaders: true,
     editLinks: true,
-    iconAssets: "fontawesome",
+    // iconAssets: 'fontawesome',
+    iconPrefix: 'fas ',
     repo: "pulsar-edit",
     repoLabel: "GitHub",
     displayFooter: true,
@@ -83,5 +84,6 @@ export default defineUserConfig({
   }),
   head: [
     ['script', {src: '/download-preselect.js'}],
+    ['script', {src: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js'}]
  ],
 });
