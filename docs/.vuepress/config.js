@@ -33,7 +33,7 @@ export default defineUserConfig({
     displayAllHeaders: true,
     editLinks: true,
     // iconAssets: 'fontawesome',
-    iconPrefix: 'fas ',
+    iconPrefix: 'fa-',
     repo: "pulsar-edit",
     repoLabel: "GitHub",
     displayFooter: true,
