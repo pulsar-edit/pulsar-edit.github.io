@@ -20,7 +20,7 @@ specifiers:
   vuepress-theme-hope: 2.0.0-beta.106
 
 dependencies:
-  .github: github.com/pulsar-edit/.github/be58e3e9aa5243419278b508da531db52bd67258
+  .github: github.com/pulsar-edit/.github/971cb20aa1a7039e73d399ceaf9eb8a6d3bc4971
   pulsar-assets: github.com/pulsar-edit/pulsar-assets/8fb8c787c296b789d5eea8dd65ea20c7a2af759d
   vuepress-theme-hope: 2.0.0-beta.106
 
@@ -7072,8 +7072,8 @@ packages:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
     dev: true
 
-  github.com/pulsar-edit/.github/be58e3e9aa5243419278b508da531db52bd67258:
-    resolution: {tarball: https://codeload.github.com/pulsar-edit/.github/tar.gz/be58e3e9aa5243419278b508da531db52bd67258}
+  github.com/pulsar-edit/.github/971cb20aa1a7039e73d399ceaf9eb8a6d3bc4971:
+    resolution: {tarball: https://codeload.github.com/pulsar-edit/.github/tar.gz/971cb20aa1a7039e73d399ceaf9eb8a6d3bc4971}
     name: .github
     version: 0.0.0
     dev: false
