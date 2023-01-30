@@ -41,11 +41,11 @@ Electron versions.
 
 So instead of trying to fix the old one, the current goal is to look at using
 the [WASM version](https://github.com/tree-sitter/tree-sitter/blob/master/lib/binding_web/README.md)
-and `@Maurício Szabo` has been doing some fantastic work on getting this
+and [@Maurício Szabo] has been doing some fantastic work on getting this
 implemented into Pulsar. This post isn't for the specifics of this work save to
-say we have seen "interesting" issues and challenges with this but the work
-is looking very promising and if all works out then our main barrier to a
-major Electron upgrade will be out of our way.
+say we have seen "interesting" issues and challenges with this but the work is
+looking very promising and if all works out then our main barrier to a major
+Electron upgrade will be out of our way.
 
 ## Package repository
 
@@ -53,14 +53,14 @@ There has been an awful lot of work going on in this area and it is mostly
 work that, in theory, should be pretty invisible to most users of Pulsar if all
 goes well.
 
-`@confused-techie` and `@giusykurmikon` have been doing some amazing work to improve
+[@confused-techie] and [@Digitalone1] have been doing some amazing work to improve
 this area with updates to the way it handles versioning and a refactoring of the
 git and github interactions so hopefully we might support other platforms in the
 future.
 
-`@Spiker985` has been creating and updating the [Swagger/OpenAPI definition](https://api.pulsar-edit.dev/swagger-ui/)
+[@Spiker985] has been creating and updating the [Swagger/OpenAPI definition](https://api.pulsar-edit.dev/swagger-ui/)
 for the backend API so we have a proper definition and validation of it and
-`@confused-techie` started the [Architecture document](https://github.com/pulsar-edit/package-backend/blob/main/ARCHITECTURE.md)
+[@confused-techie] started the [Architecture document](https://github.com/pulsar-edit/package-backend/blob/main/ARCHITECTURE.md)
 which explains how everything works at a high level to allow people to more
 easily contribute to the project. We hope to include more of these in other
 repositories as time goes on.
@@ -75,10 +75,10 @@ preserve more than a few of them.
 ## Donations and binary signing
 
 We have had an awful lot of generous donations sent to us recently. In
-particular we have to give a massive shout out to `@SubAtomic` who has donated
-more money to the project alone than we thought we get in a whole year.
+particular we have to give a massive shout out to **_@SubAtomic_** who has
+donated more money to the project alone than we thought we get in a whole year.
 
-`@anonCoffee` also gave us a very generous donation and was also the first
+**_@anonCoffee_** also gave us a very generous donation and was also the first
 sponsor on our new [GitHub Sponsorship](https://github.com/sponsors/pulsar-edit)
 which is an alternative should you want to donate by a platform other than our
 existing [Open Collective](https://opencollective.com/pulsar-edit).
@@ -92,16 +92,23 @@ appreciate everything you give and make so much of what we want to do, possible.
 Our first big expenditure we voted for (outside of ongoing hosting costs) will
 be to pay for licences from Apple and Microsoft so that we can finally sign our
 binaries to prevent the issue of new users being told that they are broken,
-dangerous or may contain harmful code. `@autumnblazey` has already started on the
+dangerous or may contain harmful code. [@Meadowsys] has already started on the
 macOS process of this so with any luck the need to run a special command just
 to run our software will be a thing of the past.
 
 ## Matrix space
 
-`@kaosine` has been working to set us up a [Matrix](https://matrix.org/) space for
+[@kaosine] has been working to set us up a [Matrix](https://matrix.org/) space for
 an alternative who would prefer to use an open source alternative to our main
 [Discord Server](https://discord.gg/7aEbB9dGRT). However, we do not want to
 split the community in this way so before we start publicising it and providing
 links we would rather get our Discord bridge set up first so that all messages
 can be seen on both platforms seamlessly. Once it is up and live we will update
 the community with all the info that could be needed.
+
+[@maurício szabo]: https://github.com/mauricioszabo
+[@confused-techie]: https://github.com/confused-Techie
+[@digitalone1]: https://github.com/Digitalone1
+[@spiker985]: https://github.com/spiker985
+[@meadowsys]: https://github.com/Meadowsys
+[@kaosine]: https://github.com/kaosine
