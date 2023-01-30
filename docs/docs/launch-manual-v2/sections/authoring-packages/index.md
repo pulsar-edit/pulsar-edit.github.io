@@ -24,4 +24,8 @@ If you are just jumping in here are some resources you may want to keep handy to
 
 ::: details Sections
 
+- [Publishing a Package](#publishing-a-package)
+
 :::
+
+@include(sections/publishing-a-package.md)
