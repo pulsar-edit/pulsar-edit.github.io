@@ -100,7 +100,7 @@ to run our software will be a thing of the past.
 ## Matrix space
 
 [@kaosine] has been working to set us up a [Matrix](https://matrix.org/) space for
-an alternative who would prefer to use an open source alternative to our main
+an alternative for people who would prefer to use an open source alternative to our main
 [Discord Server](https://discord.gg/7aEbB9dGRT). However, we do not want to
 split the community in this way so before we start publicising it and providing
 links we would rather get our Discord bridge set up first so that all messages
