@@ -190,7 +190,7 @@ const footer =
   <hr>
 
   <div class="copyrightBar">
-    <span> Pulsar-Edit © 2022 </span>
+    <span> Pulsar-Edit © 2022-2023 </span>
   </div>`
 
 export { footer as footer };
