@@ -84,7 +84,8 @@ which is an alternative should you want to donate by a platform other than our
 existing [Open Collective](https://opencollective.com/pulsar-edit).
 
 We also now have a webhook set up for the GitHub sponsors so now when we get
-a donation we can properly thank them as it pops up on our Discord feed.
+a donation we can properly thank them as it pops up on our Discord `#donations`
+channel.
 
 A huge thank you to literally all of our other donators on both platforms, we
 appreciate everything you give and make so much of what we want to do, possible.
