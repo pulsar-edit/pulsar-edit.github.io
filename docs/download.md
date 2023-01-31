@@ -97,7 +97,7 @@ out the very latest work being done on Pulsar before it is added to a full
 release.
 
 See below for links to the latest binaries for each OS. If you want to download
-manually or pick a binary from another fork then follow the [manual instructions](#manual-download).
+manually or pick a binary from another branch or PR, then follow the [manual instructions](#manual-download).
 
 ::: details Linux
 
