@@ -30,7 +30,7 @@ project and as ever we will see you among the stars!
 ## Tree-sitter
 
 Those who have been keeping up with the development of Pulsar know that one of
-our major goals is to move upgrade to newer versions of Electron. Unfortunately
+our major goals is to upgrade to newer versions of Electron. Unfortunately
 this comes with quite a few challenges, one of which is the implementation of
 [Tree-sitter](https://tree-sitter.github.io/tree-sitter/), a language parsing
 library who's history is entwined with Atom's.
