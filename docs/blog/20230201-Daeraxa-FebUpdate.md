@@ -91,7 +91,7 @@ A huge thank you to literally all of our other donators on both platforms, we
 appreciate everything you give and make so much of what we want to do, possible.
 
 Our first big expenditure we voted for (outside of ongoing hosting costs) will
-be to pay for licences from Apple and Microsoft so that we can finally sign our
+be to pay for Code Signing Certificates from Apple and Microsoft so that we can finally sign our
 binaries to prevent the issue of new users being told that they are broken,
 dangerous or may contain harmful code. [@Meadowsys] has already started on the
 macOS process of this so with any luck the need to run a special command just
