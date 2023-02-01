@@ -76,6 +76,7 @@ export default defineUserConfig({
           tag: frontmatter.tag || [],
           excerpt: page.excerpt
         }),
+        article: "/blog/",
       }
     },
     sidebar: sidebar_en,

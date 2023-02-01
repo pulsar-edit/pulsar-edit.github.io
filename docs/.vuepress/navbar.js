@@ -22,7 +22,7 @@ const navbar_en = [
   {
     text: 'Blog',
     icon: 'solid fa-blog',
-    link: '/article/'
+    link: '/blog/'
   },
   {
     text: "Community",
