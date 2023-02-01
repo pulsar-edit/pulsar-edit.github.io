@@ -1,23 +1,19 @@
-import type { Theme } from '@vuepress/core'
-import { path } from '@vuepress/utils'
-import { hopeTheme } from 'vuepress-theme-hope'
+// .vuepress/theme/index.js
+import { getDirname, path } from "@vuepress/utils";
+import { hopeTheme } from "vuepress-theme-hope";
 
-const __dirname = getDirname(import.meta.url)
+const __dirname = getDirname(import.meta.url);
 
+export default (options) => ({
+  name: "vuepress-theme-local",
 
-export const childTheme = (options: default) => ({
-	return {
-		name: "pulsar-theme",
+  extends: hopeTheme(options),
 
-	  extends: hopeTheme(options),
-
-	  alias: {
-	    // You can override or add aliases here
-	    // For example, here we change the vuepress-theme-hope HomePage component to components/HomePage.js under our own theme
-	    //"@theme-hope/components/HomePage.js": path.resolve(
-	    //  __dirname,
-	    //  "./components/HomePage.js"
-	    //),
-	  },
-	},
+  alias: {
+    // https://vuepress-theme-hope.github.io/v2/cookbook/advanced/replace.html#replace-components
+    "@theme-hope/components/HomePage.js": path.resolve(
+      __dirname,
+      "../components/HomePage.vue"
+    ),
+  },
 });

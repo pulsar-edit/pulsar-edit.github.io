@@ -41,7 +41,8 @@ dnf --assumeyes install make gcc gcc-c++ glibc-devel git-core libsecret-devel rp
 #### Arch
 
 ```sh
-TODO: Arch instructions
+# Install the development packges
+pacman -S base-devel libxkbfile libsecret libx11 libxcrypt-compat
 ```
 
 #### OpenSUSE

@@ -67,7 +67,7 @@ from the huge package ecosystem
 
 Currently searching and downloading from the [package repository](https://web.pulsar-edit.dev/)
 is fully functional but other functions for maintaining packages such as
-publishing/updating/deleting are not yet functional.
+publishing/updating/deleting are in beta. Feel free to publish and update your packages, but if you experience any issues please feel free to report this to the Pulsar Team.
 
 ### Pulsar
 

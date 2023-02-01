@@ -8,7 +8,7 @@ tag:
   - sunset
 ---
 
-Check out our first GitHub Release for Pulsar! [Available Now!](https://github.com/pulsar-edit/pulsar/releases/tag/v1.100.1-beta)
+Check out our first GitHub Release for Pulsar! [Available Now!](https://github.com/pulsar-edit/pulsar/releases/tag/v1.100.0-beta)
 
 <!-- more -->
 

@@ -1,9 +1,3 @@
-/*
-
-
-*/
-
-
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
 
 //Container formatting
@@ -23,6 +17,62 @@ html[data-theme=light] .custom-container.details th {
 
 html[data-theme=dark] .custom-container.details th {
   background-color: #111;
+}
+
+#hero {
+  position: relative;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  height: 100vh;
+}
+
+#hero > div {
+  max-width: 37em;
+}
+
+#hero > div img {
+  height: 3em;
+}
+
+#hero h1 {
+  font-size: 4em;
+  color: var(--c-brand);
+  font-weight: bold;
+}
+
+#hero > img {
+  position: relative;
+  height: 12em;
+  animation: slide linear 10s infinite;
+}
+
+@keyframes slide {
+  0%   {top: 0px;}
+  25% {top: -50px;}
+  75% {top: 50px;}
+  100% {top: 0px;}
+}
+
+@media screen and (max-width: 900px) {
+  #hero > img {
+    height: 20vw;
+  }
+  #hero h1 {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #hero {
+    flex-direction: column;
+    gap: 3em;
+  }
+  #hero h1 {
+    font-size: 10vw;
+  }
 }
 
 //Website footer section
