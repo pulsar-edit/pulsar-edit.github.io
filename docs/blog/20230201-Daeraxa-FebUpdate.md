@@ -1,5 +1,5 @@
 ---
-title: February Update
+title: Community Update
 author: Daeraxa
 date: 2023-02-01
 category:
@@ -32,8 +32,8 @@ project and as ever we will see you among the stars!
 Those who have been keeping up with the development of Pulsar know that one of
 our major goals is to upgrade to newer versions of Electron. Unfortunately
 this comes with quite a few challenges, one of which is the implementation of
-[Tree-sitter](https://tree-sitter.github.io/tree-sitter/), a language parsing
-library who's history is entwined with Atom's.
+[Tree-sitter](https://tree-sitter.github.io/tree-sitter/), an incremental
+parsing library who's history is entwined with Atom's.
 
 Ultimately Tree-sitter moved on from Atom leaving it with a different
 implementation and one which is difficult to use with the changes in newer
