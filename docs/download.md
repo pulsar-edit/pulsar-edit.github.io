@@ -39,32 +39,18 @@ additional work.
 
 :::: details macOS
 
-<!--TODO: Remove once app is signed and error no longer shows-->
-
-::: info Info
-
-Current binaries are not signed so will produce an error _"App is damaged and
-can’t be opened"_.
-The following command should be run after installation.
-
-```sh
-$ xattr -cr /Applications/Pulsar.app/
-```
-
-:::
-
 **Silicon** - For Apple Silicon (M1/M2) macs
 
-|                                                                 Package                                                                     |     Type      |
+|                                                                   Package                                                                   |     Type      |
 | :-----------------------------------------------------------------------------------------------------------------------------------------: | :-----------: |
-| dmg - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Silicon.Mac.Pulsar-1.101.0-beta-arm64.dmg)     | DMG installer |
+|   dmg - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Silicon.Mac.Pulsar-1.101.0-beta-arm64.dmg)   | DMG installer |
 | zip - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Silicon.Mac.Pulsar-1.101.0-beta-arm64-mac.zip) |  Zip archive  |
 
 **Intel** - For Intel macs
 
-|                                                             Package                                                                 |     Type      |
+|                                                               Package                                                               |     Type      |
 | :---------------------------------------------------------------------------------------------------------------------------------: | :-----------: |
-| dmg - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Intel.Mac.Pulsar-1.101.0-beta.dmg)     | DMG installer |
+|   dmg - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Intel.Mac.Pulsar-1.101.0-beta.dmg)   | DMG installer |
 | zip - Latest \| [Beta](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Intel.Mac.Pulsar-1.101.0-beta-mac.zip) |  Zip archive  |
 
 ::::
@@ -125,20 +111,6 @@ manually or pick a binary from another branch or PR, then follow the [manual ins
 :::
 
 :::: details macOS
-
-<!--TODO: Remove once app is signed and error no longer shows-->
-
-::: info Info
-
-Current binaries are not signed so will produce an error _"App is damaged and
-can’t be opened"_.
-The following command should be run after installation.
-
-```sh
-$ xattr -cr /Applications/Pulsar.app/
-```
-
-:::
 
 **Silicon** - For Apple Silicon (M1/M2) macs
 
