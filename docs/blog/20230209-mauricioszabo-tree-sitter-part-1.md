@@ -1,6 +1,6 @@
 ---
 title: "Tales of Tree-Sitter part 1: the start of a tale"
-author: Daeraxa
+author: Maurício
 date: 2023-02-09
 category:
   - dev
