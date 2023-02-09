@@ -12,15 +12,15 @@ Things that changed:
 
 ## Made it easier to install from source
 
-Atom used to have a 5,000 script to prepare a development environment. That also
+Atom used to have a 5,000 line script to prepare a development environment. That also
 dependends on older `npm` tool - newer `npm` versions would crash (and, honestly,
 still are crashing) so we moved away from `npm` and are now using `yarn`.
 
-This is _not a final decision_ - we just decided for `yarn` because newer `npm`
+This is _not a final decision_ - we just decided on `yarn` because newer `npm`
 still doesn't work with Pulsar dependencies. Together with this decision, we
 added `electron` as a development dependency, and made some scripts like `yarn build` and `yarn start` to [make it easier to run the editor from
 source](/docs/launch-manual/sections/core-hacking). This also makes it easier
-for newcomers help if they want.
+for newcomers to contribute.
 
 ## Removed all Telemetry
 
@@ -35,24 +35,24 @@ We don't have telemetry endpoints on our backend, and don't intend to have any.
 
 At the time we forked Atom, it was using Electron 10. We changed to Electron 12
 (the latest version we could bump until things started to become problematic,
-like native dependencies crashing and other random errors). We _do intent_ to
-upgrade Pulsar to the latest Electron, and then try to keep up-to-date. This can
+like native dependencies crashing and other random errors). We _do intend_ to
+upgrade Pulsar to the latest version of Electron, and then try to keep it up-to-date. This can
 cause issues with packages that used deprecated Electron features.
 
 We also upgraded Tree-Sitter to the latest community version, and all grammars
 with it; bumped some other libraries in the process, trying to make things more
 up-to-date, but _no functionality_ was changed.
 
-## Changes on the way Pulsar watches for file changes
+## Changes in the way Pulsar watches for file changes
 
 At the time we forked Atom, it basically had three different ways of checking
-file changes: polling for changes, using tree-view as a mechanism, using an
+file changes: polling for changes using tree-view as a mechanism, using an
 internal library called `@atom/watcher`, and using [Node sentinel file
 watcher](https://github.com/Axosoft/nsfw). We removed all options except for
-this latest one, because _all other options_ were internal code made by the Atom
+this last one, because _all other options_ were internal code made by the Atom
 team.
 
-In fact, the `@atom/watcher` was under the options "experimental watching
+In fact, `@atom/watcher` was under the option "experimental watching
 library", and we actually have no idea what was the intended result for that.
 Considering it would probably become stale, buggy, and be a security issue, we
 decided to stop supporting it.
@@ -62,7 +62,7 @@ decided to stop supporting it.
 This is somewhat controversial. Atom used to have a very big, very hard to
 follow, build process that needed constant tweaking to work. We removed all the
 build process to use the external tool
-[electron-builder](https://www.electron.build/)
+[electron-builder](https://www.electron.build/).
 
 While this made things easier for us and allowed us to have beta (and alpha)
 binaries for everything we want to develop and test (and that's, close to "day
