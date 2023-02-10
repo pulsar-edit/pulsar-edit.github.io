@@ -41,7 +41,7 @@ this remapping: currently, it uses some patter in CSON files, with some kind of
 it only works in Atom (and now in Pulsar)...
 
 Basically - it means that all this remapping only works on Pulsar, and have no
-other editor that supports this; which, again, means that every version bump for
+other editors that supports this; which, again, means that every version bump for
 grammars will have to keep remapping things over and over again (considering
 that all tree elements and nodes are considered "internal state" of each
 grammar) which is far from ideal (and does not scale, specially considering that
@@ -83,7 +83,7 @@ answered me that "that the query result is up to interpretation" which is not
 fine for my approaches...
 
 And so, without any official guide, I decided to try to match what the
-tree-sitter command-line interface does. Tree sister has a CLI that allows to
+tree-sitter command-line interface does. Tree-sitter has a CLI that allows to
 highlight files. You run with `tree-sitter highlight <name-of-file>`, basically,
 and I found that it uses a new library that's basically not yet complete and
 does not have bindings for the browser (WASM) or Node. So first, I tried to
