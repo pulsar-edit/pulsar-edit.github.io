@@ -36,7 +36,7 @@ basically try to convert the "left token" to a variable.
 
 That's where the problems begin. The new versions of tree-sitter are changing
 the AST in a way that Atom (or Pulsar) does not support. The second problem is
-this remapping: currently, it uses some patter in CSON files, with some kind of
+this remapping: currently, it uses some pattern in CSON files, with some kind of
 "CSS selector"-based metalanguage. CSON is basically a YAML version of JSON and
 it only works in Atom (and now in Pulsar)...
 
