@@ -6,6 +6,14 @@ sitemap:
   changefreq: "daily"
 ---
 
+::: info "Rolling" and "Regular" Releases
+
+We have "Rolling" and "Regular" releases to choose from. These differ only in the frequency of updates they receive. (See details below.) Please use whichever suits your preference.
+
+Note: There are no automatic updates at this time, regardless of which type of download you choose.
+
+:::
+
 ## Rolling Release
 
 These releases are built on each push to our `master` branch and automatically
