@@ -157,7 +157,7 @@ const footer =
               <a href="/about.html"> About Us </a>
             </li>
             <li>
-              <a href="/article/"> Blog </a>
+              <a href="/blog/"> Blog </a>
             </li>
             <li>
               <a href=${orgRepo}> Org Repositories </a>
