@@ -8,7 +8,7 @@ sitemap:
 
 ::: info "Rolling" and "Regular" Releases
 
-We have ["Rolling"](#rolling-release) and ["Regular"](#regular-releases) releases to choose from. These differ only in the frequency of updates they receive. (See details below.) Please use whichever suits your preference.
+We have ["Rolling"](#rolling-release) and ["Regular"](#regular-releases) releases to choose from. These differ only in the frequency of updates they receive.
 
 Note: There are no automatic updates at this time, regardless of which type of download you choose.
 
