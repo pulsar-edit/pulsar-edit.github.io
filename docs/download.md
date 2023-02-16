@@ -112,21 +112,21 @@ those instead.
 
 **x86_64** - For most desktops and laptops with Intel or AMD processors
 
-|                                                                Package                                                                |    Distribution    |
-| :-----------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|           [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Linux.pulsar_1.101.0-beta_amd64.deb)            | Debian/Ubuntu etc. |
-|           [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Linux.pulsar-1.101.0-beta.x86_64.rpm)           |  Fedora/RHEL etc.  |
-| [AppImage<sup>[1][2]</sup>](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Linux.Pulsar-1.101.0-beta.AppImage) | All distributions  |
-|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Linux.pulsar-1.101.0-beta.tar.gz)            | All distributions  |
+|                                                       Package                                                        |    Distribution    |
+| :------------------------------------------------------------------------------------------------------------------: | :----------------: |
+|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Linux.1.102.0.deb)               | Debian/Ubuntu etc. |
+|              [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Linux.1.102.0.rpm)               |  Fedora/RHEL etc.  |
+| [AppImage<sup>[1][2]</sup>](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Linux.1.102.0.AppImage) | All distributions  |
+|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Linux.1.102.0.tar.gz)            | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
-|                                                                     Package                                                                     |    Distribution    |
-| :---------------------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/ARM.Linux.pulsar_1.101.0-beta_arm64.deb)               | Debian/Ubuntu etc. |
-|             [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/ARM.Linux.pulsar-1.101.0-beta.aarch64.rpm)              |  Fedora/RHEL etc.  |
-| [AppImage<sup>[1][2]</sup>](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/ARM.Linux.Pulsar-1.101.0-beta-arm64.AppImage) | All distributions  |
-|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/ARM.Linux.pulsar-1.101.0-beta-arm64.tar.gz)            | All distributions  |
+|                                                         Package                                                          |    Distribution    |
+| :----------------------------------------------------------------------------------------------------------------------: | :----------------: |
+|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/ARM.Linux.1.102.0.deb)               | Debian/Ubuntu etc. |
+|              [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/ARM.Linux.1.102.0.rpm)               |  Fedora/RHEL etc.  |
+| [AppImage<sup>[1][2]</sup>](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/ARM.Linux.1.102.0.AppImage) | All distributions  |
+|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/ARM.Linux.1.102.0.tar.gz)            | All distributions  |
 
 [1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
 [2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
@@ -135,33 +135,19 @@ those instead.
 
 :::: details macOS
 
-<!--TODO: Remove once app is signed and error no longer shows-->
-
-::: info Info
-
-Current binaries are not signed so will produce an error _"App is damaged and
-can’t be opened"_.
-The following command should be run after installation.
-
-```sh
-$ xattr -cr /Applications/Pulsar.app/
-```
-
-:::
-
 **Silicon** - For Apple Silicon (M1/M2) macs
 
-|                                                          Package                                                           |     Type      |
-| :------------------------------------------------------------------------------------------------------------------------: | :-----------: |
-|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Silicon.Mac.Pulsar-1.101.0-beta-arm64.dmg)   | DMG installer |
-| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Silicon.Mac.Pulsar-1.101.0-beta-arm64-mac.zip) |  Zip archive  |
+|                                             Package                                             |     Type      |
+| :---------------------------------------------------------------------------------------------: | :-----------: |
+| [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Silicon.Mac.1.102.0.dmg) | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Silicon.Mac.1.102.0.zip) |  Zip archive  |
 
 **Intel** - For Intel macs
 
-|                                                      Package                                                       |     Type      |
-| :----------------------------------------------------------------------------------------------------------------: | :-----------: |
-|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Intel.Mac.Pulsar-1.101.0-beta.dmg)   | DMG installer |
-| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Intel.Mac.Pulsar-1.101.0-beta-mac.zip) |  Zip archive  |
+|                                            Package                                            |     Type      |
+| :-------------------------------------------------------------------------------------------: | :-----------: |
+| [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Intel.Mac.1.102.0.dmg) | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Intel.Mac.1.102.0.zip) |  Zip archive  |
 
 ::::
 
@@ -177,10 +163,10 @@ You can bypass this by clicking "More info" then "Run anyway".
 
 :::
 
-|                                                       Package                                                        |         Type          |
-| :------------------------------------------------------------------------------------------------------------------: | :-------------------: |
-| [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Windows.Pulsar.Setup.1.101.0-beta.exe) |       Installer       |
-|  [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.101.0-beta/Windows.Pulsar.1.101.0-beta.exe)   | Portable (no install) |
+|                                               Package                                               |         Type          |
+| :-------------------------------------------------------------------------------------------------: | :-------------------: |
+| [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Windows.Setup.1.102.0.exe) |       Installer       |
+|  [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Windows.1.102.0.exe)   | Portable (no install) |
 
 ::::
 
