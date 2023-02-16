@@ -2,9 +2,10 @@
 
 ### macOS error "_App is damaged and can’t be opened_"
 
-Current binaries are not signed so will produce an error "**_App is damaged and
-can’t be opened_**". This can be fixed by running
-`xattr -cr /Applications/Pulsar.app/` in the terminal.  
+The binary is likely from before macOS binaries started being signed.
+A up-to-date and signed binary may be downloaded from [the download page](/download.html).
+The unsigned binary can be made to run by running
+`xattr -cr /Applications/Pulsar.app/` in the terminal.
 See [here](https://appletoolbox.com/app-is-damaged-cannot-be-opened-mac/) for
 more information.
 
