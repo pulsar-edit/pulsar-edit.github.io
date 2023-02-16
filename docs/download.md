@@ -48,20 +48,6 @@ manually or pick a binary from another branch or PR, then follow the [manual ins
 
 :::: details macOS
 
-<!--TODO: Remove once app is signed and error no longer shows-->
-
-::: info Info
-
-Current binaries are not signed so will produce an error _"App is damaged and
-can’t be opened"_.
-The following command should be run after installation.
-
-```sh
-$ xattr -cr /Applications/Pulsar.app/
-```
-
-:::
-
 **Silicon** - For Apple Silicon (M1/M2) macs
 
 |                               Package                                |     Type      |
