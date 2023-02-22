@@ -38,7 +38,6 @@ You'll be able to confirm that the **only** permissions requested by Pulsar are 
 - public_repo
 - read:org
 
-These are the only permissions needed for your Pulsar User Account to access all features it's capable of.
 
 Once you click to "Sign Up with GitHub OAuth" you'll be redirected to GitHub to authorize Pulsar to access your account. There you can check the account you are allowing access, and review the permissions being granted.
 
