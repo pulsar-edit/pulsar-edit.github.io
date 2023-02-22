@@ -56,7 +56,7 @@ If you need to refresh your account information — for instance, if you've chan
 
 Pulsar respects your privacy. We don't want to feel intrusive, and we especially don't want the responsibility of managing your sensitive information.
 
-That's why when you create a User Account with Pulsar there are only three pieces of information stored about you:
+That's why we store only three pieces of information about you when you create a Pulsar user account:
 
 - Your GitHub Account Username.
 - Your GitHub Gravatar Image URL.
