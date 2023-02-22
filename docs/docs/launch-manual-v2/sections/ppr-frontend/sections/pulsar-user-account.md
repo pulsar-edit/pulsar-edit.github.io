@@ -46,7 +46,7 @@ Afterwards you should be redirected to your [Pulsar user account page](https://w
 
 Now that your Pulsar user account has been successfully created, you can manage it on your [Pulsar user account page](https://web.pulsar-edit.dev/users).
 
-Here you can view the account information saved to Pulsar, and view your Pulsar API Token.
+On this page, you can view the account information saved to Pulsar and your Pulsar API token. This token is what enables you to publish to the Pulsar Package Registry using `ppm`.
 
 This Pulsar API Token is what can be used to allow you to publish to the Pulsar Package Registry using [PPM]().
 
