@@ -4,7 +4,7 @@ title: Authoring Pulsar Packages
 description: Creating and Publishing Packages for Pulsar Package Registry
 ---
 
-Here we will focus on the "Hackable" part of the Hyper-Hackable Editor. As well as take a look at how to get your package listed on the Pulsar Package Registry. As we've seen and you've probably noticed a huge part of Pulsar is made up of bundled and community made packages. If you wish to add some functionality to Pulsar, you have access to the same APIs and tools that the core features of Pulsar has. From the [tree-view](https://github.com/pulsar-edit/tree-view) to the [command-palette](https://github.com/pulsar-edit/command-palette) functionality, even the most core features of Pulsar are implemented as packages.
+A huge part of Pulsar is made up of bundled and community-made packages. If you wish to add some functionality to Pulsar, you have access to the same APIs and tools that were used to build Pulsar itself. From the [tree-view](https://github.com/pulsar-edit/tree-view) to the [command-palette](https://github.com/pulsar-edit/command-palette) functionality — most core features of Pulsar are implemented as packages.
 
 In this section we will cover how to extend the functionality of Pulsar through writing packages. Packages can do a number of things: change the user interface, add a new theme, add a grammar for a language, and more. We'll learn this by writing a series of increasingly complex packages together, introducing you to new APIs, tools, and techniques as we need them.
 
