@@ -12,7 +12,7 @@ We'll then take a look at how we can get new packages published to the Pulsar Pa
 
 ---
 
-If you are just jumping in here are some resources you may want to keep handy to get yourself familair with the other parts of Pulsar we will be using here.
+If you are just jumping in, here are some resources you may want to keep handy to get yourself familiar with the other parts of Pulsar we'll be using.
 
 - [Pulsar Package Registry API]()
 - [Pulsar Editor API]()
