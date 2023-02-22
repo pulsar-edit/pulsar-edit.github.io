@@ -19,7 +19,7 @@ Using a PAT token from GitHub allows you precise control over what permissions y
 
 You can go to your GitHub Account and [create your own PAT token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token), granting only the permissions that Pulsar needs.
 
-When creating your PAT token it's good to know what scopes should be allowed access to your Pulsar User Account. By default the only scopes needed are:
+Pulsar needs **only** the permissions listed below:
 
 - public_repo
 - read:org
