@@ -17,7 +17,7 @@ There are two ways to create an account:
 
 Using a PAT token from GitHub allows you precise control over what permissions your Pulsar User Account has over your GitHub account, which you don't get with the OAuth Signup.
 
-This way you can go to your GitHub Account and [create your own PAT token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) that is create a Personal Access Token with only the permissions you decide.
+You can go to your GitHub Account and [create your own PAT token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token), granting only the permissions that Pulsar needs.
 
 When creating your PAT token it's good to know what scopes should be allowed access to your Pulsar User Account. By default the only scopes needed are:
 
