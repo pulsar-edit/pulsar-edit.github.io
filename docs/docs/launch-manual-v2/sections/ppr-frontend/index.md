@@ -6,7 +6,7 @@ description: Using and Navigating the Pulsar Package Registry Website
 
 # Pulsar Package Registry
 
-The Package Registry Frontend Website viewable on [https://web.pulsar-edit.dev](https://web.pulsar-edit.dev/) is the frontend counterpart to the Pulsar Package Registry. Allowing an easy way for anyone on any platform to view and browse the packages that are available to install on Pulsar.
+The [Pulsar Package Registry](https://web.pulsar-edit.dev/) is an easy way for anyone on any platform to view and browse the packages that are available to install on Pulsar.
 
 While the website isn't much more than a wrapper around the actual Pulsar Package Registry API it does serve a few important purposes for Pulsar.
 
