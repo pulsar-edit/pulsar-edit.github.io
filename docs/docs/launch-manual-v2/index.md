@@ -2,7 +2,7 @@
 title: Launch Manual v2
 ---
 
-Here you will find the V2 of the Launch Manual. A redisgined and reimagined way to browse and read our documentation. With the goal of being easier than before to understand, skim, and consume.
+Here you will find version 2 of the Launch Manual. It's a redesigned and reimagined way to browse and read our documentation with the goal of being easier to understand, skim, and consume.
 
 Currently this page is not linked on the sidebar as it is nowhere near complete. But if you've found the page by accident feel free to click onto the standard Launch Manual on the sidebar as the documentation there is complete.
 
