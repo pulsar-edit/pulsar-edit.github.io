@@ -54,7 +54,7 @@ With `pulsar -p publish`, you can bump the version and publish by using
 $ pulsar -p publish <version-type>
 ```
 
-Where `version-type` can be `major`, `minor`, and `patch`.
+where `version-type` can be `major`, `minor`, and `patch`.
 
 - **MAJOR** version when you make incompatible API changes.
 - **MINOR** version when you add functionality in a backwards compatible manner.
