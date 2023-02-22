@@ -46,7 +46,7 @@ If this is the first package you are publishing, the `pulsar -p publish` command
 
 Additionally if this is your first time publishing to the Pulsar Package Registry, you also need to provide PPM an API token to access your Pulsar User Account. If you don't have a Pulsar User Account already, you'll need to make one on the [Pulsar Website](https://web.pulsar-edit.dev/login). You can learn more about creating an account on the [Pulsar Website Docs](). Once you have successfully created an account copy the API token available on your user page and use `pulsar -p --login <YOUR_PULSAR_API_TOKEN>` to give PPM your API Key. Again just like your GitHub credentials this API Key is stored securely in your [keychain](<https://en.wikipedia.org/wiki/Keychain_(software)>).
 
-Now your package is published and available on the Pulsar Package Registry. Head on over to `https://web.pulsar-edit.dev/packages/your-package-name` to see your package's page.
+Now your package is published and available on the Pulsar Package Registry. Head on over to `https://web.pulsar-edit.dev/packages/[your-package-name]` to see your package's page.
 
 With `pulsar -p publish`, you can bump the version and publish by using
 
