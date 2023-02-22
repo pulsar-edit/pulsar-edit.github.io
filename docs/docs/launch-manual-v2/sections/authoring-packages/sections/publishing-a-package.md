@@ -21,7 +21,7 @@ There are a few important things to double check before publishing your package:
 Before you publish a package, it's a good idea to check ahead of time if a
 package with the same name has already been published to
 [the Pulsar Package Repository](https://web.pulsar-edit.dev/packages). You can
-do that by visiting `https://web.pulsar-edit.dev/packages/your-package-name` to
+do that by visiting `https://web.pulsar-edit.dev/packages/[your-package-name]` to
 see if the package already exists. If it does, update your package's name to
 something that is available before proceeding.
 
