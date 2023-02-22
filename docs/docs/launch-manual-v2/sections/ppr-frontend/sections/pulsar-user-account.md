@@ -1,6 +1,6 @@
 ## Pulsar User Account
 
-A Pulsar User Account enables you to Publish and manage Published Packages to the Pulsar Package Registry, as well as lets you star packages that exist on the Pulsar Package Registry.
+A Pulsar user account enables you to publish to the Pulsar Package Registry, manage packages you've published, and “star” your favorite packages.
 
 Otherwise for just downloading and using packages from the Pulsar Package Registry no account is required.
 
