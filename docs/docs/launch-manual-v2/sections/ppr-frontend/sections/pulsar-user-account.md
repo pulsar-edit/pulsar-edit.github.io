@@ -31,7 +31,9 @@ Once your PAT Token is created, navigate back to the Pulsar signup page. Paste y
 
 Using GitHub OAuth signup means you don't have to manage the permissions and signup process on your own as opposed to the PAT Token signup.
 
-Still when signing up with GitHub OAuth the only permissions requested (That you'll be able to review during the process) are:
+When you click "Sign Up with GitHub OAuth," you'll be redirected to GitHub to authorize Pulsar to access your account. On that page, you can double-check that you're connecting Pulsar to the correct account and review the permissions being granted.
+
+You'll be able to confirm that the **only** permissions requested by Pulsar are the following:
 
 - public_repo
 - read:org
