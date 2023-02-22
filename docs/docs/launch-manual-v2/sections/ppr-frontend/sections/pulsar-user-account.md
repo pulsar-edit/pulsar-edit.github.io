@@ -54,7 +54,7 @@ If you need to refresh your account information — for instance, if you've chan
 #### Privacy
 
 
-Pulsar greatly respects your privacy, and more than that doesn't want the chance to invade your privacy, or be responsible for your sensitive account credentials.
+Pulsar respects your privacy. We don't want to feel intrusive, and we especially don't want the responsibility of managing your sensitive information.
 
 That's why when you create a User Account with Pulsar there are only three pieces of information stored about you:
 
