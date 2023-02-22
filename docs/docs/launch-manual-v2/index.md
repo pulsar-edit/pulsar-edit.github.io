@@ -6,7 +6,6 @@ Here you will find version 2 of the Launch Manual. It's a redesigned and reimagi
 
 Currently this page is not linked on the sidebar, as it is nowhere near complete. But if you've found the page by accident, feel free to click onto the standard Launch Manual on the sidebar as the documentation there is complete.
 
-Otherwise with that said lets get onto our docs.
 
 ## [Pulsar Package Registry Frontend Website](/docs/launch-manual-v2/sections/ppr-frontend)
 
