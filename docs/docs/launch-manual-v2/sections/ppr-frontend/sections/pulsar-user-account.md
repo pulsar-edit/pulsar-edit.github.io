@@ -51,7 +51,7 @@ On this page, you can view the account information saved to Pulsar and your Puls
 
 If you need to refresh your account information — for instance, if you've changed your profile picture — you can click "Log Out" at the top of the page and sign in again using the same process described above. This does not affect any of the packages you've already published.
 
-#### Notes on a Pulsar User Account
+#### Privacy
 
 A few important notes about your Pulsar User Account to keep in mind.
 
