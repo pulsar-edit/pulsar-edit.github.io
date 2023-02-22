@@ -9,7 +9,7 @@ Currently this page is not linked on the sidebar, as it is nowhere near complete
 
 ## [Pulsar Package Registry Frontend Website](/docs/launch-manual-v2/sections/ppr-frontend)
 
-Detials and Guides to using the Pulsar Package Registry Frontend Website, where you can manage your Pulsar User Account, and browse the available Packages for Pulsar from any device on the web.
+Guide to using the Pulsar Package Registry, where you can manage your Pulsar user account and browse the available packages for Pulsar from any device on the web.
 
 ## [Authoring Pulsar Packages](/docs/launch-manual-v2/sections/authoring-packages)
 
