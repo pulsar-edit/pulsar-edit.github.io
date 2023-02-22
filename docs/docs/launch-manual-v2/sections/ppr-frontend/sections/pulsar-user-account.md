@@ -7,7 +7,6 @@ If you don't plan on doing any of these things, you don't need to create a user 
 ### Creating a Pulsar User Account
 
 To create a Pulsar user account, navigate to the [Pulsar Package Registry](https://web.pulsar-edit.dev) and click "Sign In" on the top header bar — or go directly to [the signup page](https://web.pulsar-edit.dev/login).
-Otherwise you can go directly to [the Signup Page](https://web.pulsar-edit.dev/login).
 
 Here you can see there's a few choices of how to create your account.
 
