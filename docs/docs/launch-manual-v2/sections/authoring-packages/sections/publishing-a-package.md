@@ -60,7 +60,7 @@ where `version-type` can be `major`, `minor`, and `patch`.
 - **MINOR** version when you add functionality in a backwards compatible manner.
 - **PATCH** version when you make backwards compatible bug fixes.
 
-i.e. to bump a package from v1.**0**.0 to v1.**1**.0:
+For instance, to bump a package from v1.**0**.0 to v1.**1**.0:
 
 ```sh
 $ pulsar -p publish minor
