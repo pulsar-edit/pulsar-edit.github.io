@@ -8,7 +8,7 @@ A huge part of Pulsar is made up of bundled and community-made packages. If you 
 
 In this section we will cover how to extend the functionality of Pulsar through writing packages. Packages can do a number of things: change the user interface, add a new theme, add a grammar for a language, and more. We'll learn this by writing a series of increasingly complex packages together, introducing you to new APIs, tools, and techniques as we need them.
 
-Additionally we will then take a look at how we can get your packages published to the Pulsar Package Registry using the built in tool PPM to do so.
+We'll then take a look at how we can get new packages published to the Pulsar Package Registry using the built-in tool `ppm`.
 
 ---
 
