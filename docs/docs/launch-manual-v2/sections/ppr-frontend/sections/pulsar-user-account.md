@@ -40,7 +40,7 @@ You'll be able to confirm that the **only** permissions requested by Pulsar are 
 
 
 
-Afterwards you should be redirected to your [Pulsar User Account Page](https://web.pulsar-edit.dev/users).
+Afterwards you should be redirected to your [Pulsar user account page](https://web.pulsar-edit.dev/users).
 
 #### Managing your Account
 
