@@ -12,7 +12,7 @@ There are a few important things to double check before publishing your package:
 - Your `package.json` `name` field is URL-safe — for instance, it doesn't include any emoji or other special characters.
 - Your `package.json` `version` field is [Semver V2](https://semver.org/spec/v2.0.0.html) compliant.
 - Your `package.json` `engines` field contains an entry for `atom` such as: `"engines": { "atom": ">=1.0.0 <2.0.0"}`.
-- Your package has a `README.md` file at it's root.
+- Your package has a `README.md` file at its root.
 - Your `repository` URL in the `package.json` file is the same as the URL of your repository on GitHub.
 - Your package is in a git repository that has been pushed to [GitHub](https://github.com). Follow [this guide](https://help.github.com/articles/importing-a-git-repository-using-the-command-line/) if your package isn't already on GitHub.
 
