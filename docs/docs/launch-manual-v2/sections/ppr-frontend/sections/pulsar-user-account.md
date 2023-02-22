@@ -53,7 +53,6 @@ If you need to refresh your account information — for instance, if you've chan
 
 #### Privacy
 
-A few important notes about your Pulsar User Account to keep in mind.
 
 Pulsar greatly respects your privacy, and more than that doesn't want the chance to invade your privacy, or be responsible for your sensitive account credentials.
 
