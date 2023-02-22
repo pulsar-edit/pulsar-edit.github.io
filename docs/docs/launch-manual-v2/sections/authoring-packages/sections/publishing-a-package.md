@@ -68,4 +68,4 @@ $ pulsar -p publish minor
 
 Check out [semantic versioning](https://semver.org/) to learn more about best practices for versioning your package releases.
 
-You can also run `pulsar -p help publish` to see all the available options and `pulsar -p help` to see all the other available commands. Or check our the [PPM Docs]() to learn more about using PPM.
+You can also run `pulsar -p help publish` to see all the available options and `pulsar -p help` to see all the other available commands. Or check our the [PPM Docs]() to learn more about using `ppm`.
