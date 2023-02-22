@@ -39,7 +39,6 @@ You'll be able to confirm that the **only** permissions requested by Pulsar are 
 - read:org
 
 
-Once you click to "Sign Up with GitHub OAuth" you'll be redirected to GitHub to authorize Pulsar to access your account. There you can check the account you are allowing access, and review the permissions being granted.
 
 Afterwards you should be redirected to your [Pulsar User Account Page](https://web.pulsar-edit.dev/users).
 
