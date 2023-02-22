@@ -62,6 +62,8 @@ That's why we store only three pieces of information about you when you create a
 - Your GitHub Gravatar Image URL.
 - Your GitHub `node_id`.
 
-Think of your `node_id` like the random number GitHub assigned to your account when you created it. This is a public value that anyone on GitHub can find using the API and doesn't reveal any private details about yourself , your location or your account. Beyond this the Pulsar Backend collects zero information about who you are, and doesn't even save your API Keys itself.
+Think of your `node_id` as a random number GitHub assigned to your account when you created it. This is a public value that anyone on GitHub can find using the API. It doesn't reveal any private details about yourself, your location, or your account.
+
+Beyond these three values, Pulsar collects and stores nothing about who you are. Pulsar doesn't even store your API key.
 
 If you'd like to read more about how your information is used for Pulsar take a look at our [Privacy Policy]() or the [Pulsar Backend]() Documentation.
