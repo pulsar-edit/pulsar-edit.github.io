@@ -8,7 +8,7 @@ See more in the [PPM Docs]() section.
 
 There are a few important things to double check before publishing your package:
 
-- Your `package.json` file has a `name`, `description`, and `repository` fields.
+- Your `package.json` file has the `name`, `description`, and `repository` fields.
 - Your `package.json` `name` field is URL-safe — for instance, it doesn't include any emoji or other special characters.
 - Your `package.json` `version` field is [Semver V2](https://semver.org/spec/v2.0.0.html) compliant.
 - Your `package.json` `engines` field contains an entry for `atom` such as: `"engines": { "atom": ">=1.0.0 <2.0.0"}`.
