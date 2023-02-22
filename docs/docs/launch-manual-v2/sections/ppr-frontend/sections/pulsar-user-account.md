@@ -66,4 +66,4 @@ Think of your `node_id` as a random number GitHub assigned to your account when 
 
 Beyond these three values, Pulsar collects and stores nothing about who you are. Pulsar doesn't even store your API key.
 
-If you'd like to read more about how your information is used for Pulsar take a look at our [Privacy Policy]() or the [Pulsar Backend]() Documentation.
+If you want to know more about how your information is used, please read our [privacy policy]() or the [Pulsar backend]() documentation.
