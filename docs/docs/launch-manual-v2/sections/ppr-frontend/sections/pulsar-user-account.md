@@ -8,7 +8,7 @@ If you don't plan on doing any of these things, you don't need to create a user 
 
 To create a Pulsar user account, navigate to the [Pulsar Package Registry](https://web.pulsar-edit.dev) and click "Sign In" on the top header bar — or go directly to [the signup page](https://web.pulsar-edit.dev/login).
 
-Here you can see there's a few choices of how to create your account.
+There are two ways to create an account:
 
 - [Sign Up with a PAT Token](#sign-up-with-a-pat-token)
 - [Sign Up with GitHub OAuth](#sign-up-with-github-oauth)
