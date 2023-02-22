@@ -44,7 +44,7 @@ Afterwards you should be redirected to your [Pulsar user account page](https://w
 
 #### Managing your Account
 
-Now that your Pulsar User Account has been successfully created you can manage it on your [Pulsar User Account Page](https://web.pulsar-edit.dev/users).
+Now that your Pulsar user account has been successfully created, you can manage it on your [Pulsar user account page](https://web.pulsar-edit.dev/users).
 
 Here you can view the account information saved to Pulsar, and view your Pulsar API Token.
 
