@@ -49,7 +49,7 @@ Now that your Pulsar user account has been successfully created, you can manage 
 On this page, you can view the account information saved to Pulsar and your Pulsar API token. This token is what enables you to publish to the Pulsar Package Registry using `ppm`.
 
 
-Otherwise if you ever notice your account information here has become out of date (i.e. you've changed your profile picture) you can always click "Log Out" at the top of the page, and sign in again with the same steps as before. When you click go through the sign up process after already having created a Pulsar User Account this just updates your account information with what's most recent from GitHub.
+If you need to refresh your account information — for instance, if you've changed your profile picture — you can click "Log Out" at the top of the page and sign in again using the same process described above. This does not affect any of the packages you've already published.
 
 #### Notes on a Pulsar User Account
 
