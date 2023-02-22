@@ -25,7 +25,7 @@ Pulsar needs **only** the permissions listed below:
 - read:org
 
 
-Once your PAT Token is created navigate back to the Pulsar Signup Screen and plug your PAT token into the text box where it says "Enter your GitHub PAT" and click "Sign Up". After a few redirects you should be brought to your [Pulsar User Account Page](https://web.pulsar-edit.dev/users).
+Once your PAT Token is created, navigate back to the Pulsar signup page. Paste your PAT token into the "Enter your GitHub PAT" text box and click "Sign Up." After a few redirects, you should be brought to your [Pulsar user account page](https://web.pulsar-edit.dev/users).
 
 #### Sign Up with GitHub OAuth
 
