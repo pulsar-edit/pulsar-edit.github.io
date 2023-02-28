@@ -39,8 +39,8 @@ Pulsar.
 He has covered a bunch of topics in his videos such as general overview of
 Pulsar, migrating from other editors, a look at a bunch of useful community
 packages and advice on HTML writing & editing.  
-Definitely give his videos a look if you want to know how to get the most out
-of Pulsar!
+Definitely give his [videos](https://www.youtube.com/@htmltim) or [website](http://htmltim.com/)
+a look if you want to know how to get the most out of Pulsar!
 
 ## macOS Binary Signing
 
