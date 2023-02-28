@@ -100,7 +100,7 @@ Look forward to these updates in an upcoming version of Pulsar.
 [action-pulsar-dependency](https://github.com/pulsar-edit/action-pulsar-dependency)
 is a GitHub action used for testing Pulsar packages. [@spiker985] has been
 making some updates here to ensure Windows path registration and macOS
-symlinking working correctly.
+symlinking is working correctly.
 Any GitHub CI is now able to autonomously install the most recent Pulsar rolling
 release for package testing.
 
