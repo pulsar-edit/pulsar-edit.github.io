@@ -44,8 +44,8 @@ any questions you have at this early stage of the project.
 
 ### Downloads and Releases
 
-We are still working on the editor to get to our first stable release.
-You can still download a binary of Pulsar by following [this link](https://pulsar-edit.dev/download.html#cirrus-ci-binaries)
+We are constantly working on the editor and maintain both a rolling release and regular release model for our binaries.
+You can find out more about the difference and download a binary of Pulsar by following [this link](https://pulsar-edit.dev/download.html)
 and following the instructions.
 
 We are looking to support distro repositories such as Debian/Ubuntu repos,
