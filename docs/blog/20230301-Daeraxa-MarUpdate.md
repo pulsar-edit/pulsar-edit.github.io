@@ -50,7 +50,7 @@ misleading messages on macOS when trying to install Pulsar.
 From the v1.102.0 release onwards (and including all rolling releases) you will
 no longer have to execute a terminal command to get this to run.
 
-## Tree-sitter modernization
+## Tree-sitter Modernization
 
 [@maurício szabo] is still pushing ahead to get a modern implementation of
 [tree-sitter](https://tree-sitter.github.io/tree-sitter/) working on Pulsar.  
@@ -63,7 +63,7 @@ of Atom's tokenizer. With this, we can simplify some of the work that
 will open the door to more interesting experiments, like packages that
 contribute to syntax elements, such as semantic highlighting.
 
-## Autocomplete CSS/HTML automatic updates
+## Autocomplete CSS/HTML Automatic Updates
 
 It was found that two of our core packages for HTML and CSS autocompletion had
 out of date or missing references. The project that was supplying the data
@@ -76,7 +76,7 @@ remain up to date with current standards.
 These changes will hopefully be implemented shortly and included in an
 forthcoming update.
 
-## Backend version updates
+## Backend Version Updates
 
 A refactoring on the Pulsar package backed for a new versioning system has been
 underway by [@confused-techie] and [@digitalone1].
@@ -86,7 +86,7 @@ There is also a change to add a new "VCS service system" which will allow for
 publishing of channels from other systems than just GitHub so authors can
 instead publish from the platform of their choice.
 
-## Snippets package updates
+## Snippets Package Updates
 
 [@savetheclocktower] has recently been heavily contributing to the project.
 As somebody originally involved (and experienced) with the atom/snippets
@@ -95,7 +95,7 @@ Particularly exciting updates here include the ability to map a snippet to a
 command as well as introducing the concept of snippet variables to Pulsar.  
 Look forward to these updates in an upcoming version of Pulsar.
 
-## `action-pulsar-dependency` stabilization updates
+## `action-pulsar-dependency` Stabilization Updates
 
 [action-pulsar-dependency](https://github.com/pulsar-edit/action-pulsar-dependency)
 is a GitHub action used for testing Pulsar packages. [@spiker985] has been
