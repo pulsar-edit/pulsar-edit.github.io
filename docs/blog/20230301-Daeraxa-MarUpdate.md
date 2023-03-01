@@ -26,7 +26,7 @@ still deserve to be known about.
 
 We also launched our first [community survey](https://pulsar-edit.dev/blog/20230227-Daeraxa-Survey1.html)
 which, as of time of writing, is still open. If this goes well (and depending
-on feedback) then will be creating more in the future such as asking about
+on feedback) then we will be creating more in the future such as asking about
 new features, platform/use case surveys and general application feedback.
 
 With that said - onto the updates!
