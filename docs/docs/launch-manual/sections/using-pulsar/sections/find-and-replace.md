@@ -4,17 +4,17 @@ Finding and replacing text in your file or project is quick and easy in Pulsar.
 
 ::: tabs#using-pulsar
 
-@tabs Linux
+@tab Linux
 
 - <kbd>Ctrl+F</kbd> - Search within a buffer
 - <kbd>Ctrl+Shift+F</kbd> - Search the entire project
 
-@tabs macOS
+@tab macOS
 
 - <kbd>Cmd+F</kbd> - Search within a buffer
 - <kbd>Cmd+Shift+F</kbd> - Search the entire project
 
-@tabs Windows
+@tab Windows
 
 - <kbd>Ctrl+F</kbd> - Search within a buffer
 - <kbd>Ctrl+Shift+F</kbd> - Search the entire project
