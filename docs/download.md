@@ -108,19 +108,19 @@ those instead.
 
 |                                                       Package                                                        |    Distribution    |
 | :------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Linux.1.102.0.deb)               | Debian/Ubuntu etc. |
-|              [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Linux.1.102.0.rpm)               |  Fedora/RHEL etc.  |
-| [AppImage<sup>[1][2]</sup>](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Linux.1.102.0.AppImage) | All distributions  |
-|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Linux.1.102.0.tar.gz)            | All distributions  |
+|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Linux.pulsar_1.103.0_amd64.deb)               | Debian/Ubuntu etc. |
+|              [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Linux.pulsar-1.103.0.x86_64.rpm)               |  Fedora/RHEL etc.  |
+| [AppImage<sup>[1][2]</sup>](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Linux.Pulsar-1.103.0.AppImage) | All distributions  |
+|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Linux.pulsar-1.103.0.tar.gz)            | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
 |                                                         Package                                                          |    Distribution    |
 | :----------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/ARM.Linux.1.102.0.deb)               | Debian/Ubuntu etc. |
-|              [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/ARM.Linux.1.102.0.rpm)               |  Fedora/RHEL etc.  |
-| [AppImage<sup>[1][2]</sup>](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/ARM.Linux.1.102.0.AppImage) | All distributions  |
-|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/ARM.Linux.1.102.0.tar.gz)            | All distributions  |
+|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/ARM.Linux.pulsar_1.103.0_arm64.deb)               | Debian/Ubuntu etc. |
+|              [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/ARM.Linux.pulsar-1.103.0.aarch64.rpm)               |  Fedora/RHEL etc.  |
+| [AppImage<sup>[1][2]</sup>](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/ARM.Linux.Pulsar-1.103.0-arm64.AppImage) | All distributions  |
+|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/ARM.Linux.pulsar-1.103.0-arm64.tar.gz)            | All distributions  |
 
 [1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
 [2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
@@ -133,15 +133,15 @@ those instead.
 
 |                                             Package                                             |     Type      |
 | :---------------------------------------------------------------------------------------------: | :-----------: |
-| [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Silicon.Mac.1.102.0.dmg) | DMG installer |
-| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Silicon.Mac.1.102.0.zip) |  Zip archive  |
+| [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Silicon.Mac.Pulsar-1.103.0-arm64.dmg) | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Silicon.Mac.Pulsar-1.103.0-arm64-mac.zip) |  Zip archive  |
 
 **Intel** - For Intel macs
 
 |                                            Package                                            |     Type      |
 | :-------------------------------------------------------------------------------------------: | :-----------: |
-| [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Intel.Mac.1.102.0.dmg) | DMG installer |
-| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Intel.Mac.1.102.0.zip) |  Zip archive  |
+| [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Intel.Mac.Pulsar-1.103.0.dmg) | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Intel.Mac.Pulsar-1.103.0-mac.zip) |  Zip archive  |
 
 ::::
 
@@ -159,8 +159,8 @@ You can bypass this by clicking "More info" then "Run anyway".
 
 |                                               Package                                               |         Type          |
 | :-------------------------------------------------------------------------------------------------: | :-------------------: |
-| [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Windows.Setup.1.102.0.exe) |       Installer       |
-|  [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.102.0/Windows.1.102.0.exe)   | Portable (no install) |
+| [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Windows.Pulsar.Setup.1.103.0.exe) |       Installer       |
+|  [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Windows.Pulsar.1.103.0.exe)   | Portable (no install) |
 
 ::::
 
