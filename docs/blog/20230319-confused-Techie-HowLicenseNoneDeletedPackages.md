@@ -29,6 +29,7 @@ A quick refresher for anybody less familiar, some of the most popular open sourc
   - Allows Commercial use, Distribution, Modification, Patent use, and Private use.
 
 - [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
+
   - Allows Commercial use, Distribution, Modification, Patent use, and Private use.
 
 A license is an agreed upon binding contract between the code author and anyone that finds themselves using it. That is if it's used properly.
@@ -39,17 +40,17 @@ Now often times when a developer first begins working in the open source world l
 
 Maybe they don't feel like researching which one is the right one to choose, or don't want to be locked into the wrong choice.
 
-Now for us at Pulsar we often times prefer to go with the `MIT` license, as it's one of the more permissive choices, and was what all the core developers could agree on. You can even see that listed in the [`package.json`](https://github.com/pulsar-edit/pulsar-edit.github.io/blob/main/package.json) of the code that holds this blog.
+Now for us at Pulsar we often times prefer to go with the `MIT` license, as it's one of the more permissive choices, and was what all the core developers could agree on. You can even see that listed in the [`package.json`](https://github.com/pulsar-edit/pulsar-edit.github.io/blob/main/package.json) of the code that hosts this blog.
 
 But while developers may not want to take the time to understand a license, the tools they use do their best to help them.
 
 With NPM when you run `npm init` (to automatically make a `package.json` on your system) will automatically choose the [`ISC`](https://opensource.org/license/isc-license-txt/) as the default license.
 
-Or even Pulsar's own `package-generator` package defaulting to the `MIT` license when setting up a package for developers.
+Or even Pulsar's own [`package-generator`](https://github.com/pulsar-edit/pulsar/tree/master/packages/package-generator) package defaulting to the `MIT` license when setting up a package for developers.
 
 But even then, of course, developers are able to and should modify their package's licenses to however they see fit.
 
-## Why this matters
+## Why This Matters
 
 Now, for anyone that's read my [previous blog post](https://pulsar-edit.dev/blog/20221127-confused-Techie-SunsetMisadventureBackend.html) about initially creating the Pulsar package registry, you'll know that we had taken every single package from the original Atom package registry, and hosted it for Pulsar. Because like I say there, the package ecosystem is one of my major driving factors of using and loving Pulsar/Atom.
 
@@ -57,9 +58,9 @@ When this was originally done though, we had no concerns over the license of a p
 
 But it wasn't long after talking to someone much more familiar with digital law, and Intellectual Property laws than anyone else on the team, we realized that re-hosting this content (even though it was just the metadata of the packages themselves, as the Pulsar Package Registry doesn't actually host the code of a package) counts as distribution, and redistribution. Which, the permission to do so is entirely governed by the package license, and the will of the author.
 
-Now when a developer had published something to the Atom package registry it doesn't matter the license they choose. As by act of them publishing the package there, they are giving permission to Atom for distributing that content. And the same is true when a package is purposefully published to Pulsar. But because the developers of the packages we had at first had never implicitly given us their permission, all we had was the license of their package to go off of.
+Now when a developer had published something to the Atom package registry it doesn't matter the license they choose. As by act of them publishing the package there, they are giving permission to Atom for distributing that content. And the same is true when a package is purposefully published to Pulsar. But because the developers of the packages we had at first had never had implicitly given us their permission, all we had was the license of their package to go off of.
 
-## How did we handle this
+## How did we Handle This
 
 The night after learning of this potential break of authors licenses, me and many others on the Pulsar team began the painstaking process of verifying the license of every single package on the Pulsar package registry. Where we had to manually check the `license` field of 12,470 individual package's `package.json`.
 
@@ -67,7 +68,7 @@ Since luckily at this point everything was in a database I was able to filter pa
 
 From there we started filtering all of the licenses as we read through them, by properly written [SPDX License IDs](https://spdx.org/licenses/). Being able to outright exclude results that contained `MIT` or `mit` and variations for all the other licenses listed in the above link for anything that allowed redistribution.
 
-Doing this was able to reduce or unique license variations to `116` licenses. But then came the time for the more obscure ones listed. For example we had a lot that simply said `GNU AGPL`, `EPL`, `GNU LGPGL`, or `Apache`. But those licenses all had multiple versions, and with no version specified we had to read through the terms of every single version to determine if any of them prohibited re-distribution, since if any single version did, then we had to remove the package.
+Doing this I was able to reduce or unique license variations to `116` licenses. But then came the time for the more obscure ones listed. For example we had a lot that simply said `GNU AGPL`, `EPL`, `GNU LGPGL`, or `Apache`. But those licenses all had multiple versions, and with no version specified we had to read through the terms of every single version to determine if any of them prohibited re-distribution, since if any single version did, then we had to remove the package.
 
 And let me tell you, as someone unfamiliar with legalese, reading through the terms of these obscure licenses that had no easy breakdown on [tl;drLegal](https://tldrlegal.com/) it wasn't easy reading material. For example, it meant decoding lines like this from the ['Apple Public Source License 2.0'](https://opensource.apple.com/apsl/):
 
@@ -77,7 +78,7 @@ And let me tell you, as someone unfamiliar with legalese, reading through the te
 
 Although I think the most fun discovery made through trawling so many different possible licenses is discovering gems like ['WTFPL (Do What The F\*ck You Want To Public License)'](<https://tldrlegal.com/license/do-what-the-f*ck-you-want-to-public-license-(wtfpl)>).
 
-Then finally, after 3 non-stop hours of reading the terms of more licenses than I ever knew existed, I had reached the first finish line, leaving my with 30 unique variations of licenses across many packages that were either a completely non-existent license, an invalid license, or simply a variation of "License in LICENSE.md"
+Then finally, after 3 non-stop hours of reading the terms of more licenses than I ever knew existed, I had reached the first finish line, leaving me with 30 unique variations of licenses across many packages that were either a completely non-existent license, an invalid license, or simply a variation of "License in LICENSE.md"
 
 Below you can see the abomination of a filter I wrote as I slowly went through all of the possible licenses.
 
