@@ -1,7 +1,7 @@
 ---
 title: "How 'license: none' Deleted Packages"
 author: confused-Techie
-date: 2022-03-19
+date: 2023-03-19
 category:
   - dev
 tag:
