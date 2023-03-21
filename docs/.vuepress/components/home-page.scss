@@ -248,4 +248,16 @@
   #{hope-config.$content-class} {
     padding-bottom: 1.5rem;
   }
+
+  #sponsors {
+    text-align: center;
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 1.5rem;
+    }
+  }
 }

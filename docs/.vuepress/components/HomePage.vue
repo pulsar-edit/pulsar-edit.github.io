@@ -27,6 +27,16 @@
     <main class="home project" id="main-content" aria-labelledby="main-title">
         <HomeFeatures />
         <Content />
+        <hr>
+        <div id="sponsors">
+          <h1>Our Sponsors</h1>
+          <h3>Thank you to the following organizations for sponsoring our project!</h3>
+          <div class="links">
+            <a href="https://tutanota.com/" target="_blank">
+              <img src="/tutanota-logo.webp" alt="tutanota.com">
+            </a>
+          </div>
+        </div>
     </main>
-    
+
 </template>
