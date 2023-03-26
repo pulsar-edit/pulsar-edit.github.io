@@ -15,7 +15,7 @@ Here we have the results and analysis of our first community survey (and an info
 
 A big thank you to everyone who participated in our recent social media survey. This really helped answer some questions that we had in order to be able to make sure we were reaching as much of the community as possible. We were honestly surprised at some of the results and we will definitely be taking lots of it on board.
 
-First of all here is an infographic we put together on the data that was provided.
+First of all here is an infographic [@Daeraxa](https://github.com/Daeraxa) put together on the data that was provided.
 
 <!-- markdownlint-disable -->
 
