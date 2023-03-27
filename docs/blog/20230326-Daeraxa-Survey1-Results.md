@@ -70,7 +70,7 @@ A slightly more surprising result was the number of people who found out via Red
 
 We also had a lot of people come from seeing a YouTube video on the project and it seems a considerable number of those were from the [DistroTube channel](https://www.youtube.com/@DistroTube) (which we mentioned in a [previous blog](https://pulsar-edit.dev/blog/20221208-Daeraxa-DistroTubeVideo.html)). It really goes a long way to show the effect that community content creators in this space can have on a project and its popularity.
 
-We had a couple of other interesting results here such as word of mouth from colleagues, various web articles, alternative software sites and even the Atom Wikipedia page (although Pulsar seems to have been removed from it now).
+We had a couple of other interesting results here such as word of mouth from colleagues, various web articles, alternative software sites and even the Atom Wikipedia page.
 
 ## Which community area do you check for updates?
 
