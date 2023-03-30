@@ -15,7 +15,7 @@ Another dose of our regular monthly community update!
 
 # Welcome to the April Community Update (don't worry, no fooling going on here)!
 
-Hi everyone and welcome to the April instalment of our monthly update that keeps keeps you informed about what is going on in the background of Pulsar, work in progress, community contributions and more!
+Hi everyone and welcome to the April installment of our monthly update that keeps keeps you informed about what is going on in the background of Pulsar, work in progress, community contributions and more!
 
 One thing to quickly note in this opening ramble, a big thank you for everyone who responded to our recent community survey, if you want to see the results and analysis then have a look at the previous [blog post](https://pulsar-edit.dev/blog/20230326-Daeraxa-Survey1-Results.html) we wrote. If you missed it then don't worry, there will be plenty more examples to have your say as we plan to create more surveys in the future.
 
