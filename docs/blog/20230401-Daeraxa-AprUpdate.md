@@ -35,7 +35,7 @@ We will make a bigger announcement on this feature once it is ready.
 
 <img src="./assets/tree-sitter.png" height="150" />[^2]
 
-Another month and more progress has been made on this front, particularly by [@maurício szabo] and [@savetheclocktower], to get our tree-sitter implementation modernized. Some users noticed that opening some languages on Pulsar, like C++, Java, and Ruby, makes some syntax highlighting to get different from what they were in Atom, and most of the time, highlighting is either wrong or some tokens are simply missing.
+Another month and more progress has been made on this front, particularly by [@maurício szabo] and [@savetheclocktower], to get our tree-sitter implementation modernized. Some users noticed that opening some languages on Pulsar, like C++, Java, and Ruby, makes some syntax highlighting tokens different from what they were in Atom, and most of the time, highlighting is either wrong or some tokens are simply missing.
 
 With this rewrite, we basically are moving syntax highlight to the modern version of tree-sitter, using queries. This means some tokens will be more precise, we'll not have a "different implementation" of all other editors, and we can keep up-to-date with the recent developments and advancements on tree-sitter
 
