@@ -2,6 +2,7 @@ import { defineUserConfig, defaultTheme } from 'vuepress';
 import { hopeTheme } from "vuepress-theme-hope";
 import pulsarTheme from './theme/index';
 import { searchPlugin } from '@vuepress/plugin-search';
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { getDirname, path } from '@vuepress/utils';
 
 const __dirname = getDirname(import.meta.url)
@@ -23,15 +24,24 @@ export default defineUserConfig({
     https: true
   },
   plugins: [
-    searchPlugin({
-      maxSuggestions: 10
+    searchProPlugin({
+      indexContent: true,
+      customFields: [
+        {
+          getter: (page) => page.frontmatter.category,
+          formatter: "Category: $content",
+        },
+        {
+          getter: (page) => page.frontmatter.tag,
+          formatter: "Tag: $content",
+        },
+      ],
     }),
   ],
   theme: pulsarTheme({
     logo: "/logo-name-navbar-light.svg",
     logoDark: "/logo-name-navbar-dark.svg",
-    displayAllHeaders: true,
-    editLinks: true,
+    editLink: true,
     iconAssets: "fontawesome",
     repo: "pulsar-edit",
     repoLabel: "GitHub",
@@ -53,15 +63,17 @@ export default defineUserConfig({
       },
       mdEnhance: {
         align: true,
-        include: {
-          getPath: (file) => {
+        include: [
+          true,
+          {
+          resolvePath: (file) => {
             if (file.startsWith("@orgdocs")) {
               return file.replace("@orgdocs",
                 path.resolve(__dirname, "../../node_modules/.github/"));
             }
             return file;
           },
-        },
+        }],
         tabs: true,
         container: true
       },

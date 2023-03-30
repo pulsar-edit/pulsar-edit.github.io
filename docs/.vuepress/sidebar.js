@@ -8,7 +8,7 @@ const sidebar_en = {
         icon: 'solid fa-rocket',
         link:'launch-manual/',
         prefix: 'launch-manual/sections/',
-        collapsable: true,
+        collapsible: true,
         children: [
           {
             text: 'Getting Started',
@@ -39,17 +39,15 @@ const sidebar_en = {
       },
       {
         text: 'Packages',
-        title: 'packages',
         icon: 'solid fa-box-open',
         link: 'packages/'
       },
       {
         text: 'Resources',
-        title: 'resources',
         icon: 'solid fa-wrench',
         link: 'resources/',
         prefix: 'resources/',
-        collapsable: true,
+        collapsible: true,
         children: [
           {
             text: 'Glossary',
@@ -85,11 +83,10 @@ const sidebar_en = {
       },
       {
         text: 'Atom Archive',
-        title: 'atom archive',
         icon: 'solid fa-box-archive',
         link: 'atom-archive/',
         prefix: 'atom-archive/',
-        collapsable: true,
+        collapsible: true,
         children: [
           'getting-started/',
           'using-atom/',
