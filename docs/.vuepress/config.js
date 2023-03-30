@@ -63,7 +63,8 @@ export default defineUserConfig({
           },
         },
         tabs: true,
-        container: true
+        container: true,
+        footnote: true
       },
       blog: {
         filter: ({ filePathRelative }) =>
