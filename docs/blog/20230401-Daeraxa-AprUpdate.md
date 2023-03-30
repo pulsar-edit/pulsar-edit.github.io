@@ -49,7 +49,7 @@ For more background info see some of the previous updates or [Maurício's blog p
 
 Atom and current versions of Pulsar use a library called [first-mate](https://github.com/pulsar-edit/first-mate) that uses [node-oniguruma](https://github.com/pulsar-edit/node-oniguruma/) to parse the legacy TextMate grammars (the original ones before Atom moved to tree-sitter as its primary grammar choice). Like tree-sitter and superstring, this is something that is preventing our migration to modern versions of Electron so [@maurício szabo] and [@savetheclocktower] have been working on this to instead migrate to a new library we are calling `second-mate` which uses [vscode-oniguruma](https://github.com/microsoft/vscode-oniguruma) instead which is WASM based. Funny how things eventually come back around to borrowing from VSC instead...
 
-Work has also been going on to migrate the existing [superstring](https://github.com/pulsar-edit/superstring) library to WASM. This, along with `tree-sitter` and `first-mate` mentioned above is blocking our progress to modern Electron versions.
+Work has also been going on to migrate the existing [superstring](https://github.com/pulsar-edit/superstring) library to WASM. This, along with `tree-sitter` and `first-mate` mentioned above, is blocking our progress to modern Electron versions.
 Superstring is the library at the heart of the editor itself so this is quite a big change that will require a good amount of work and testing before it is ready but we are making progress!
 
 ## Package Badges
