@@ -11,7 +11,7 @@ export default (options) => ({
 
   alias: {
     // https://vuepress-theme-hope.github.io/v2/cookbook/advanced/replace.html#replace-components
-    "@theme-hope/components/HomePage.js": path.resolve(
+    "@theme-hope/components/HomePage": path.resolve(
       __dirname,
       "../components/HomePage.vue"
     ),
