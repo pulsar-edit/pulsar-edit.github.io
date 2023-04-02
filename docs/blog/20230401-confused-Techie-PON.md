@@ -20,7 +20,7 @@ What we created is PON (Pulsar Object Notation)!
 
 This new file format takes the best thing of every language and combines them into one.
 
-Taking all of their strengths, and none of their weaknesses.
+Taking _all_ of their strengths, and _none_ of their weaknesses.
 Pulsar Object Notation has a more expansive feature set than any other object file format than has ever existed!
 
 - Easy to determine the types of keys
