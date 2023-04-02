@@ -79,4 +79,4 @@ So stay tuned for further updates, and when to expect all system files to be con
 
 Happy stargazing!
 
-And also, remember, this is a **joke**. But if you do like PON, the resources above are fully functional and available to use. Happy April Fools everyone.
+Important note: this is a **joke**. But if you do like PON, the resources above are fully functional and available to use. Happy April Fools everyone.
