@@ -44,7 +44,7 @@ Compare the following JSON:
 }
 ```
 
-The above JSON is flat out ugly. Plus has no support for comments, and it's nearly impossible to see which object a key belongs to without painstackingly counting each and every bracket, really JSON is an outdated, and hard to read format.
+The above JSON is flat out ugly. Plus, it has no support for comments, and it's nearly impossible to see which object a key belongs to without painstakingly counting each and every bracket; really JSON is an outdated, and hard to read format.
 
 But from the impossible to use JSON above, here is the same thing in PON!
 
