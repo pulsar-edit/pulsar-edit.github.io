@@ -67,7 +67,7 @@ Dim showChangeLog As Boolean
 
 Look at that! As you can see anyone can pick it up without even reading a manual! But if you do need one, make sure to read the full [Specification 1.0.0](https://github.com/confused-Techie/pon/blob/main/spec/1.0.0-specification.md)
 
-As might be expected, PON already has full support in Pulsar!
+As you might expect, PON already has full support in Pulsar!
 
 You can install the syntax highlighting for Pulsar via [Language PON](https://web.pulsar-edit.dev/packages/language-pon) on the Pulsar Package Registry.
 
