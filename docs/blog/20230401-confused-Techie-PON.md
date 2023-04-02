@@ -12,7 +12,7 @@ The release of PON!
 
 <!-- more -->
 
-One day during discussions amoung the Pulsar dev team, we came to the topic of what file types to support for user's config files. While it was mostly a question of how support would go with allowing anything from JSON, JSON5, TOML, YAML, CSON, and anything else we coudl think of, in the end we couldn't agree on a solution.
+One day during discussions amoung the Pulsar dev team, we came to the topic of what file types to support for user's config files. While it was mostly a question of how support would go with allowing anything from JSON, JSON5, TOML, YAML, CSON, and anything else we could think of, in the end we couldn't agree on a solution.
 
 We kept finding downsides to every possibility, and concerns for support with so many. So we decided it only made sense, to take the true Atom approch, and create something new.
 
