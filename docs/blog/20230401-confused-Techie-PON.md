@@ -71,7 +71,7 @@ As you might expect, PON already has full support in Pulsar!
 
 You can install the syntax highlighting for Pulsar via [Language PON](https://web.pulsar-edit.dev/packages/language-pon) on the Pulsar Package Registry.
 
-Plus by using the JavaScript Module [PON](https://github.com/confused-Techie/pon) we can convert any JSON data into a proper PON object, and read any PON object form the filesystem into a JavaScript Object.
+Plus, by using the JavaScript Module [PON](https://github.com/confused-Techie/pon) we can convert any JSON data into a proper PON object, and read any PON object form the filesystem into a JavaScript Object.
 
 With the above module, we are happy to announce that the next release of Pulsar will automatically convert all configuration files it finds on your system (Not just Pulsar ones) into PON. We are hoping to do this system wide to help increase adoption of PON as a data structure.
 
