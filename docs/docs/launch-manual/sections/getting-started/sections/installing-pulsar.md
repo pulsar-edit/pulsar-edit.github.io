@@ -84,6 +84,9 @@ folder.
 Pulsar is available as a 64-bit Windows installer and [portable app](https://en.wikipedia.org/wiki/Portable_application)
 that can be downloaded from [Pulsar Downloads](/download.html).
 
+We also have Pulsar available in certain package manager repositories. See the
+relevant section within the downloads for the installation commands.
+
 ![Pulsar on Windows](@images/atom/windows-system-settings.png)
 
 The context menu `Open with Pulsar` in File Explorer, and the option to
@@ -105,6 +108,9 @@ vulnerabilities you will want to update your version of Pulsar as soon as possib
 Currently Pulsar does not support automatic updates. What this means is that new
 versions will have to be obtained via the [Pulsar Downloads](/download.html) here on
 our website. This is something on our roadmap to change as soon as possible.
+
+If you have installed Pulsar via a package manager then you should use the
+instructions provided by that package manager for updating your installation.
 
 <!--TODO: Auto upgrade instructions - selectively pull info from atom archive as this becomes possible-->
 
