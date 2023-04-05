@@ -17,19 +17,34 @@ Now that we've covered the very basics of Atom, we are ready to see how to reall
 
 At the end of this chapter, you should have a customized environment that you're comfortable in and you should be able to change, create and move through your text like a master.
 
-@include(./sections/atom-packages.md)
-@include(./sections/moving-in-atom.md)
-@include(./sections/atom-selections.md)
-@include(./sections/editing-and-deleting-text.md)
-@include(./sections/find-and-replace.md)
-@include(./sections/snippets.md)
-@include(./sections/autocomplete.md)
-@include(./sections/folding.md)
-@include(./sections/panes.md)
-@include(./sections/pending-pane-items.md)
-@include(./sections/grammar.md)
-@include(./sections/version-control-in-atom.md)
-@include(./sections/github-package.md)
-@include(./sections/writing-in-atom.md)
-@include(./sections/basic-customization.md)
-@include(./sections/summary.md)
+<!-- @include: ./sections/atom-packages.md -->
+
+<!-- @include: ./sections/moving-in-atom.md -->
+
+<!-- @include: ./sections/atom-selections.md -->
+
+<!-- @include: ./sections/editing-and-deleting-text.md -->
+
+<!-- @include: ./sections/find-and-replace.md -->
+
+<!-- @include: ./sections/snippets.md -->
+
+<!-- @include: ./sections/autocomplete.md -->
+
+<!-- @include: ./sections/folding.md -->
+
+<!-- @include: ./sections/panes.md -->
+
+<!-- @include: ./sections/pending-pane-items.md -->
+
+<!-- @include: ./sections/grammar.md -->
+
+<!-- @include: ./sections/version-control-in-atom.md -->
+
+<!-- @include: ./sections/github-package.md -->
+
+<!-- @include: ./sections/writing-in-atom.md -->
+
+<!-- @include: ./sections/basic-customization.md -->
+
+<!-- @include: ./sections/summary.md -->

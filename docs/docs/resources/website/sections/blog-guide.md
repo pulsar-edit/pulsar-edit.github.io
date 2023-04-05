@@ -3,8 +3,8 @@
 This is a guide on how to add a blog post to the website which will be shown on
 [https://pulsar-edit.dev/article/](https://pulsar-edit.dev/article/).
 
-We are using the [Vuepress Blog Plugin](https://vuepress-theme-hope.github.io/v2/blog/)
-which comes as part of our Vuepress Hope Theme with some light configuration
+We are using the [VuePress Blog Plugin](https://theme-hope.vuejs.pressblog/)
+which comes as part of our VuePress Hope Theme with some light configuration
 to suit our purposes.
 
 This is all implemented in the main [website repository](https://github.com/pulsar-edit/pulsar-edit.github.io).
@@ -41,14 +41,14 @@ This is all implemented in the main [website repository](https://github.com/puls
     to be working on the theme at the moment, this file will be updated if and
     when it is available.
 - The rest of the post is just standard Markdown - we are currently only
-  supporting the standard features as per the [MDEnhance](https://vuepress-theme-hope.github.io/v2/md-enhance/config.html#vueplayground)
+  supporting the standard features as per the [MDEnhance](https://theme-hope.vuejs.pressmd-enhance/config.html#vueplayground)
   plugin but if we need more features such as GFM then please discuss and we can
   look at adding it to the website.
 - Images are supported with the standard image syntax (`![myImage](./assets/myImage.png)`)
   and should be located in the `blog/assets` directory. You may also use standard
   html `<img>` tags, particularly if you wish to control the displayed size of the
   image.
-- Create a PR to the repo and make it obvious it is a blog post, by including [BLOG] in the title of your PR. Please don't
+- Create a PR to the repo and make it obvious it is a blog post, by including `[BLOG]` in the title of your PR. Please don't
   submit it alongside any website changes.
 
 See [example post](https://github.com/pulsar-edit/pulsar-edit.github.io/blob/main/docs/blog/20221112-Daeraxa-ExamplePost.md) with everything

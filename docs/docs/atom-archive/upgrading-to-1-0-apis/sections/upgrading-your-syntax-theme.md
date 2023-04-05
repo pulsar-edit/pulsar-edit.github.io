@@ -17,13 +17,13 @@ Here's an example from Atom's light syntax theme. Note that the `atom-text-edito
 ```less
 atom-text-editor,
 :host {
-	/* :host added */
-	background-color: @syntax-background-color;
-	color: @syntax-text-color;
+  /* :host added */
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
 
-	.invisible-character {
-		color: @syntax-invisible-character-color;
-	}
-	/* more nested selectors... */
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+  /* more nested selectors... */
 }
 ```

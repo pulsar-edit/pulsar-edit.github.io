@@ -1,85 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap");
 
-//Container formatting
-//Annoyingly the table takes on the details background which makes it look odd so this overrides some of it until we sort the overall theme out.
-.custom-container.details table {
-  display: table;
-  width: 75%;
+.site-name {
+  display: none !important;
 }
 
-html[data-theme=light] .custom-container.details table {
-  background-color: #FAFAFA;
-}
+// Container formatting
+// Annoyingly the table takes on the details background which makes it look odd so this overrides some of it until we sort the overall theme out.
+.custom-container.details {
+  table {
+    display: table;
+    width: 75%;
+  }
 
-html[data-theme=light] .custom-container.details th {
-  background-color: rgba(0,0,0,0.01);
-}
+  html[data-theme="light"] & {
+    table {
+      background-color: #fafafa;
+    }
 
-html[data-theme=dark] .custom-container.details th {
-  background-color: #111;
-}
+    th {
+      background-color: rgba(0, 0, 0, 0.01);
+    }
 
-#hero {
-  position: relative;
-  padding: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10em;
-  height: 100vh;
-}
-
-#hero > div {
-  max-width: 37em;
-}
-
-#hero > div img {
-  height: 3em;
-}
-
-#hero h1 {
-  font-size: 4em;
-  color: var(--c-brand);
-  font-weight: bold;
-}
-
-#hero > img {
-  position: relative;
-  height: 12em;
-  animation: slide linear 10s infinite;
+    th {
+      background-color: #111;
+    }
+  }
 }
 
 @keyframes slide {
-  0%   {top: 0px;}
-  25% {top: -50px;}
-  75% {top: 50px;}
-  100% {top: 0px;}
-}
-
-@media screen and (max-width: 900px) {
-  #hero > img {
-    height: 20vw;
+  0% {
+    top: 0px;
   }
-  #hero h1 {
-    font-size: 6vw;
+  25% {
+    top: -50px;
   }
-}
-
-@media screen and (max-width: 700px) {
-  #hero {
-    flex-direction: column;
-    gap: 3em;
+  75% {
+    top: 50px;
   }
-  #hero h1 {
-    font-size: 10vw;
+  100% {
+    top: 0px;
   }
 }
 
-//Website footer section
+// Website footer section
 
-//Theme adds a sidebar width even on mobile when it doesnt show, this removes it.
+//Theme adds a sidebar width even on mobile when it doesn't show, this removes it.
 @media (max-width: 719px) {
-.no-sidebar .footer-wrapper, .footer-wrapper {
+  .no-sidebar .footer-wrapper,
+  .footer-wrapper {
     padding-left: 0rem;
   }
 }
@@ -94,11 +62,9 @@ html[data-theme=dark] .custom-container.details th {
   gap: 25px;
   font-size: 25px;
   justify-content: center;
-}
 
-// To allow wrapping on very narrow screens
-@media (max-width: 350px) {
-  .socialsBar {
+  // To allow wrapping on very narrow screens
+  @media (max-width: 350px) {
     flex-wrap: wrap;
   }
 }
@@ -109,11 +75,9 @@ html[data-theme=dark] .custom-container.details th {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
 
-// Snaps to single column on very narrow screens
-@media (max-width: 350px) {
-  .linksBox {
+  // Snaps to single column on very narrow screens
+  @media (max-width: 350px) {
     flex-direction: column;
   }
 }
@@ -138,7 +102,8 @@ html[data-theme=dark] .custom-container.details th {
   font-size: 20px;
 }
 
-.linksBoxContent, .linksBoxContent a {
+.linksBoxContent,
+.linksBoxContent a {
   margin: 0px;
 }
 
@@ -154,17 +119,13 @@ html[data-theme=dark] .custom-container.details th {
 // Sets the line height for wrapped text when the boxes are shrunk to make the
 // separation obvious
 .linksBoxContent a {
-  display:inline-block;
+  display: inline-block;
   line-height: 1.2;
 }
 
-.copyrightBar {
-
-}
-
 #logo-footer {
-  fill:var(--text-color);
-  fill-opacity:1;
+  fill: var(--text-color);
+  fill-opacity: 1;
   height: 50px;
   margin: 10px 0px 20px 0px;
   width: auto;

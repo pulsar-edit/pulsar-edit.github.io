@@ -40,15 +40,15 @@ as the URL:
 
 ```js
 atom.commands.add("atom-text-editor", "markdown:paste-as-link", () => {
-	let clipboardText, editor, selection;
-	if (!(editor = atom.workspace.getActiveTextEditor())) {
-		return;
-	}
-	selection = editor.getLastSelection();
-	clipboardText = atom.clipboard.read();
-	return selection.insertText(
-		"[" + selection.getText() + "](" + clipboardText + ")"
-	);
+  let clipboardText, editor, selection;
+  if (!(editor = atom.workspace.getActiveTextEditor())) {
+    return;
+  }
+  selection = editor.getLastSelection();
+  clipboardText = atom.clipboard.read();
+  return selection.insertText(
+    "[" + selection.getText() + "](" + clipboardText + ")"
+  );
 });
 ```
 

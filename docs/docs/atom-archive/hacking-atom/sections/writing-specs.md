@@ -18,7 +18,7 @@ The `describe` method takes two arguments, a description and a function. If the 
 
 ```javascript
 describe("when a test is written", function () {
-	// contents
+  // contents
 });
 ```
 
@@ -26,7 +26,7 @@ or
 
 ```javascript
 describe("Editor::moveUp", function () {
-	// contents
+  // contents
 });
 ```
 
@@ -36,9 +36,9 @@ The `it` method also takes two arguments, a description and a function. Try and 
 
 ```javascript
 describe("when a test is written", function () {
-	it("has some expectations that should pass", function () {
-		// Expectations
-	});
+  it("has some expectations that should pass", function () {
+    // Expectations
+  });
 });
 ```
 
@@ -48,10 +48,10 @@ The best way to learn about expectations is to read the [Jasmine documentation](
 
 ```javascript
 describe("when a test is written", function () {
-	it("has some expectations that should pass", function () {
-		expect("apples").toEqual("apples");
-		expect("oranges").not.toEqual("apples");
-	});
+  it("has some expectations that should pass", function () {
+    expect("apples").toEqual("apples");
+    expect("oranges").not.toEqual("apples");
+  });
 });
 ```
 
@@ -78,13 +78,13 @@ Working with promises is rather easy in Atom. You can use our `waitsForPromise` 
 
 ```javascript
 describe("when we open a file", function () {
-	it("should be opened in an editor", function () {
-		waitsForPromise(function () {
-			atom.workspace
-				.open("c.coffee")
-				.then((editor) => expect(editor.getPath()).toContain("c.coffee"));
-		});
-	});
+  it("should be opened in an editor", function () {
+    waitsForPromise(function () {
+      atom.workspace
+        .open("c.coffee")
+        .then((editor) => expect(editor.getPath()).toContain("c.coffee"));
+    });
+  });
 });
 ```
 
@@ -92,15 +92,15 @@ This method can be used in the `describe`, `it`, `beforeEach` and `afterEach` fu
 
 ```javascript
 describe("when we open a file", function () {
-	beforeEach(function () {
-		waitsForPromise(() => atom.workspace.open("c.coffee"));
-	});
+  beforeEach(function () {
+    waitsForPromise(() => atom.workspace.open("c.coffee"));
+  });
 
-	it("should be opened in an editor", function () {
-		expect(atom.workspace.getActiveTextEditor().getPath()).toContain(
-			"c.coffee"
-		);
-	});
+  it("should be opened in an editor", function () {
+    expect(atom.workspace.getActiveTextEditor().getPath()).toContain(
+      "c.coffee"
+    );
+  });
 });
 ```
 
@@ -108,18 +108,18 @@ If you need to wait for multiple promises use a new `waitsForPromise` function f
 
 ```javascript
 describe("waiting for the packages to load", function () {
-	beforeEach(function () {
-		waitsForPromise(() => atom.workspace.open("sample.js"));
+  beforeEach(function () {
+    waitsForPromise(() => atom.workspace.open("sample.js"));
 
-		waitsForPromise(() => atom.packages.activatePackage("tabs"));
+    waitsForPromise(() => atom.packages.activatePackage("tabs"));
 
-		waitsForPromise(() => atom.packages.activatePackage("tree-view"));
-	});
+    waitsForPromise(() => atom.packages.activatePackage("tree-view"));
+  });
 
-	it("should have waited long enough", function () {
-		expect(atom.packages.isPackageActive("tabs")).toBe(true);
-		expect(atom.packages.isPackageActive("tree-view")).toBe(true);
-	});
+  it("should have waited long enough", function () {
+    expect(atom.packages.isPackageActive("tabs")).toBe(true);
+    expect(atom.packages.isPackageActive("tree-view")).toBe(true);
+  });
 });
 ```
 
@@ -131,19 +131,19 @@ describe("waiting for the packages to load", function () {
 
 ```javascript
 describe("when we open a file", function () {
-	it("should be opened in an editor", function () {
-		waitsForPromise(
-			{
-				shouldReject: false,
-				timeout: 5000,
-				label: "promise to be resolved or rejected",
-			},
-			() =>
-				atom.workspace
-					.open("c.coffee")
-					.then((editor) => expect(editor.getPath()).toContain("c.coffee"))
-		);
-	});
+  it("should be opened in an editor", function () {
+    waitsForPromise(
+      {
+        shouldReject: false,
+        timeout: 5000,
+        label: "promise to be resolved or rejected",
+      },
+      () =>
+        atom.workspace
+          .open("c.coffee")
+          .then((editor) => expect(editor.getPath()).toContain("c.coffee"))
+    );
+  });
 });
 ```
 
@@ -153,19 +153,19 @@ Specs for asynchronous functions can be done using the `waitsFor` and `runs` fun
 
 ```javascript
 describe("fs.readdir(path, cb)", function () {
-	it("is async", function () {
-		const spy = jasmine.createSpy("fs.readdirSpy");
-		fs.readdir("/tmp/example", spy);
+  it("is async", function () {
+    const spy = jasmine.createSpy("fs.readdirSpy");
+    fs.readdir("/tmp/example", spy);
 
-		waitsFor(() => spy.callCount > 0);
+    waitsFor(() => spy.callCount > 0);
 
-		runs(function () {
-			const exp = [null, ["example.coffee"]];
+    runs(function () {
+      const exp = [null, ["example.coffee"]];
 
-			expect(spy.mostRecentCall.args).toEqual(exp);
-			expect(spy).toHaveBeenCalledWith(null, ["example.coffee"]);
-		});
-	});
+      expect(spy.mostRecentCall.args).toEqual(exp);
+      expect(spy).toHaveBeenCalledWith(null, ["example.coffee"]);
+    });
+  });
 });
 ```
 
@@ -179,10 +179,10 @@ To run a limited subset of specs use the `fdescribe` or `fit` methods. You can u
 
 ```javascript
 describe("when a test is written", function () {
-	fit("has some expectations that should pass", function () {
-		expect("apples").toEqual("apples");
-		expect("oranges").not.toEqual("apples");
-	});
+  fit("has some expectations that should pass", function () {
+    expect("apples").toEqual("apples");
+    expect("oranges").not.toEqual("apples");
+  });
 });
 ```
 

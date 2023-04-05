@@ -56,26 +56,48 @@ feature, you can check below for an index to this section and skip right to it.
 
 :::
 
-@include(sections/building-pulsar.md)
-@include(sections/using-ppm.md)
-@include(sections/hacking-on-the-core.md)
-@include(sections/tools-of-the-trade.md)
-@include(sections/the-init-file.md)
-@include(sections/package-word-count.md)
-@include(sections/package-modifying-text.md)
-@include(sections/package-active-editor-info.md)
-@include(sections/creating-a-theme.md)
-@include(sections/creating-a-grammar.md)
-@include(sections/creating-a-legacy-textmate-grammar.md)
-@include(sections/converting-from-textmate.md)
-@include(sections/publishing.md)
-@include(sections/iconography.md)
-@include(sections/debugging.md)
-@include(sections/writing-specs.md)
-@include(sections/handling-uris.md)
-@include(sections/cross-platform-compatibility.md)
-@include(sections/contributing-to-official-pulsar-packages.md)
-@include(sections/creating-a-fork-of-a-core-package.md)
-@include(sections/maintaining-a-fork-of-a-core-package.md)
-@include(sections/summary.md)
-@include(../faq/sections/get-help.md)
+<!-- @include: ./sections/building-pulsar.md -->
+
+<!-- @include: ./sections/using-ppm.md -->
+
+<!-- @include: ./sections/hacking-on-the-core.md -->
+
+<!-- @include: ./sections/tools-of-the-trade.md -->
+
+<!-- @include: ./sections/the-init-file.md -->
+
+<!-- @include: ./sections/package-word-count.md -->
+
+<!-- @include: ./sections/package-modifying-text.md -->
+
+<!-- @include: ./sections/package-active-editor-info.md -->
+
+<!-- @include: ./sections/creating-a-theme.md -->
+
+<!-- @include: ./sections/creating-a-grammar.md -->
+
+<!-- @include: ./sections/creating-a-legacy-textmate-grammar.md -->
+
+<!-- @include: ./sections/converting-from-textmate.md -->
+
+<!-- @include: ./sections/publishing.md -->
+
+<!-- @include: ./sections/iconography.md -->
+
+<!-- @include: ./sections/debugging.md -->
+
+<!-- @include: ./sections/writing-specs.md -->
+
+<!-- @include: ./sections/handling-uris.md -->
+
+<!-- @include: ./sections/cross-platform-compatibility.md -->
+
+<!-- @include: ./sections/contributing-to-official-pulsar-packages.md -->
+
+<!-- @include: ./sections/creating-a-fork-of-a-core-package.md -->
+
+<!-- @include: ./sections/maintaining-a-fork-of-a-core-package.md -->
+
+<!-- @include: ./sections/summary.md -->
+
+<!-- @include: ../faq/sections/get-help.md -->

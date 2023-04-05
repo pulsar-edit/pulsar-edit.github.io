@@ -32,13 +32,13 @@ Here's a sample package, written in JavaScript, that handles URIs with the `pack
 
 ```js
 export default {
-	activate() {
-		// normal activation code here
-	},
+  activate() {
+    // normal activation code here
+  },
 
-	handleURI(parsedUri) {
-		console.log(parsedUri);
-	},
+  handleURI(parsedUri) {
+    console.log(parsedUri);
+  },
 };
 ```
 

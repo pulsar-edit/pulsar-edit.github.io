@@ -75,10 +75,10 @@ Commands are custom DOM events that are triggered when a key combination or sequ
 
 ```javascript
 atom.commands.add("atom-text-editor", {
-	"user:insert-date": function (event) {
-		const editor = this.getModel();
-		return editor.insertText(new Date().toLocaleString());
-	},
+  "user:insert-date": function (event) {
+    const editor = this.getModel();
+    return editor.insertText(new Date().toLocaleString());
+  },
 });
 ```
 
@@ -92,9 +92,9 @@ A common question is, "How do I make a single keybinding execute two or more com
 
 ```javascript
 atom.commands.add("atom-text-editor", "custom:cut-line", function () {
-	const editor = this.getModel();
-	editor.selectLinesContainingCursors();
-	editor.cutSelectedText();
+  const editor = this.getModel();
+  editor.selectLinesContainingCursors();
+  editor.cutSelectedText();
 });
 ```
 
@@ -183,11 +183,11 @@ To achieve this, the snippets package makes use of the `.abortKeyBinding()` meth
 ```javascript
 // pseudo-code
 editor.command("snippets:expand", (e) => {
-	if (this.cursorFollowsValidPrefix()) {
-		this.expandSnippet();
-	} else {
-		e.abortKeyBinding();
-	}
+  if (this.cursorFollowsValidPrefix()) {
+    this.expandSnippet();
+  } else {
+    e.abortKeyBinding();
+  }
 });
 ```
 
@@ -223,14 +223,14 @@ Or if you've converted your init script to JavaScript:
 
 ```javascript
 atom.keymaps.addKeystrokeResolver(({ event }) => {
-	if (
-		event.code === "KeyG" &&
-		event.altKey &&
-		event.ctrlKey &&
-		event.type !== "keyup"
-	) {
-		return "ctrl-@";
-	}
+  if (
+    event.code === "KeyG" &&
+    event.altKey &&
+    event.ctrlKey &&
+    event.type !== "keyup"
+  ) {
+    return "ctrl-@";
+  }
 });
 ```
 

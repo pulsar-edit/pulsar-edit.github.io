@@ -21,40 +21,40 @@ import ActiveEditorInfoView from "./active-editor-info-view";
 import { CompositeDisposable, Disposable } from "atom";
 
 export default {
-	subscriptions: null,
+  subscriptions: null,
 
-	activate(state) {
-		this.subscriptions = new CompositeDisposable(
-			// Add an opener for our view.
-			atom.workspace.addOpener((uri) => {
-				if (uri === "atom://active-editor-info") {
-					return new ActiveEditorInfoView();
-				}
-			}),
+  activate(state) {
+    this.subscriptions = new CompositeDisposable(
+      // Add an opener for our view.
+      atom.workspace.addOpener((uri) => {
+        if (uri === "atom://active-editor-info") {
+          return new ActiveEditorInfoView();
+        }
+      }),
 
-			// Register command that toggles this view
-			atom.commands.add("atom-workspace", {
-				"active-editor-info:toggle": () => this.toggle(),
-			}),
+      // Register command that toggles this view
+      atom.commands.add("atom-workspace", {
+        "active-editor-info:toggle": () => this.toggle(),
+      }),
 
-			// Destroy any ActiveEditorInfoViews when the package is deactivated.
-			new Disposable(() => {
-				atom.workspace.getPaneItems().forEach((item) => {
-					if (item instanceof ActiveEditorInfoView) {
-						item.destroy();
-					}
-				});
-			})
-		);
-	},
+      // Destroy any ActiveEditorInfoViews when the package is deactivated.
+      new Disposable(() => {
+        atom.workspace.getPaneItems().forEach((item) => {
+          if (item instanceof ActiveEditorInfoView) {
+            item.destroy();
+          }
+        });
+      })
+    );
+  },
 
-	deactivate() {
-		this.subscriptions.dispose();
-	},
+  deactivate() {
+    this.subscriptions.dispose();
+  },
 
-	toggle() {
-		console.log("Toggle it!");
-	},
+  toggle() {
+    console.log("Toggle it!");
+  },
 };
 ```
 
@@ -117,13 +117,13 @@ Now that we have our view all wired up, let's update it to show some information
 
 ```js
 this.subscriptions = atom.workspace
-	.getCenter()
-	.observeActivePaneItem((item) => {
-		if (!atom.workspace.isTextEditor(item)) {
-			message.innerText = "Open a file to see important information about it.";
-			return;
-		}
-		message.innerHTML = `
+  .getCenter()
+  .observeActivePaneItem((item) => {
+    if (!atom.workspace.isTextEditor(item)) {
+      message.innerText = "Open a file to see important information about it.";
+      return;
+    }
+    message.innerHTML = `
     <h2>${item.getFileName() || "untitled"}</h2>
     <ul>
       <li><b>Soft Wrap:</b> ${item.softWrapped}</li>
@@ -132,7 +132,7 @@ this.subscriptions = atom.workspace
       <li><b>Line Count:</b> ${item.getLineCount()}</li>
     </ul>
   `;
-	});
+  });
 ```
 
 Now whenever you open a text editor in the center, the view will update with some information about it.

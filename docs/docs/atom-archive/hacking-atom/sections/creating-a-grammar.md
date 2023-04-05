@@ -198,21 +198,21 @@ Here is an injection point that would allow syntax highlighting inside of templa
 
 ```js
 atom.grammars.addInjectionPoint("source.js", {
-	type: "call_expression",
+  type: "call_expression",
 
-	language(callExpression) {
-		const { firstChild } = callExpression;
-		if (firstChild.type === "identifier") {
-			return firstChild.text;
-		}
-	},
+  language(callExpression) {
+    const { firstChild } = callExpression;
+    if (firstChild.type === "identifier") {
+      return firstChild.text;
+    }
+  },
 
-	content(callExpression) {
-		const { lastChild } = callExpression;
-		if (lastChild.type === "template_string") {
-			return lastChild;
-		}
-	},
+  content(callExpression) {
+    const { lastChild } = callExpression;
+    if (lastChild.type === "template_string") {
+      return lastChild;
+    }
+  },
 });
 ```
 

@@ -25,7 +25,7 @@ Before:
 
 ```less
 atom-text-editor::shadow .cursor {
-	border-color: hotpink;
+  border-color: hotpink;
 }
 ```
 
@@ -33,7 +33,7 @@ After:
 
 ```less
 atom-text-editor .cursor {
-	border-color: hotpink;
+  border-color: hotpink;
 }
 ```
 
@@ -45,8 +45,8 @@ Before:
 
 ```less
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
+  width: 8px;
+  height: 8px;
 }
 ```
 
@@ -54,8 +54,8 @@ After:
 
 ```less
 .scrollbars-visible-always ::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
+  width: 8px;
+  height: 8px;
 }
 ```
 
@@ -70,9 +70,9 @@ Before:
 ```less
 atom-text-editor,
 :host {
-	.cursor {
-		border-color: hotpink;
-	}
+  .cursor {
+    border-color: hotpink;
+  }
 }
 ```
 
@@ -80,9 +80,9 @@ After:
 
 ```less
 atom-text-editor {
-	.cursor {
-		border-color: hotpink;
-	}
+  .cursor {
+    border-color: hotpink;
+  }
 }
 ```
 
@@ -94,12 +94,12 @@ Before:
 
 ```less
 .comment {
-	color: @mono-3;
-	font-style: italic;
+  color: @mono-3;
+  font-style: italic;
 
-	.markup.link {
-		color: @mono-3;
-	}
+  .markup.link {
+    color: @mono-3;
+  }
 }
 ```
 
@@ -107,12 +107,12 @@ After:
 
 ```less
 .syntax--comment {
-	color: @mono-3;
-	font-style: italic;
+  color: @mono-3;
+  font-style: italic;
 
-	.syntax--markup.syntax--link {
-		color: @mono-3;
-	}
+  .syntax--markup.syntax--link {
+    color: @mono-3;
+  }
 }
 ```
 
@@ -146,7 +146,7 @@ Before:
 
 ```less
 atom-text-editor::shadow .my-class {
-	color: hotpink;
+  color: hotpink;
 }
 ```
 
@@ -154,7 +154,7 @@ After:
 
 ```less
 atom-text-editor .my-class.my-class {
-	color: hotpink;
+  color: hotpink;
 }
 ```
 

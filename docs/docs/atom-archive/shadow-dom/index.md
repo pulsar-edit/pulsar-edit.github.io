@@ -13,4 +13,4 @@ Current Pulsar documentation is found at [documentation home](/docs/launch-manua
 
 In Atom `1.13` the Shadow DOM got removed from text editors. Find a guide how to migrate your theme or package in this appendix.
 
-@include(./sections/removing-shadow-dom-styles.md)
+<!-- @include: ./sections/removing-shadow-dom-styles.md -->

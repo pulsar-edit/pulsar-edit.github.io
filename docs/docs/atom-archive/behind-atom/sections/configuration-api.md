@@ -7,7 +7,7 @@ If you are writing a package that you want to make configurable, you'll need to 
 ```javascript
 // read a value with `config.get`
 if (atom.config.get("editor.showInvisibles")) {
-	this.showInvisibles();
+  this.showInvisibles();
 }
 ```
 

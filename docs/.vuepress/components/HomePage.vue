@@ -1,42 +1,44 @@
 <script setup>
-    import HomeFeatures from '@theme-hope/components/HomeFeatures.js';
-    import { usePageFrontmatter, useSiteData } from "@vuepress/client";
-    import Starfield from './Starfield.vue'
-    // vuepress-theme-hope does not export their scss files :( - Justin White <kyjus25>
-    import './home-page.scss';
-    const { actions } = usePageFrontmatter().value;
-    const { description } = useSiteData().value;
+import AutoLink from "@theme-hope/components/AutoLink";
+import FeaturePanel from "@theme-hope/components/FeaturePanel";
+import MarkdownContent from "@theme-hope/components/MarkdownContent";
+import Starfield from "./Starfield.vue";
+import "vuepress-theme-hope/styles/home-page.scss";
+import "./home-page.scss";
 </script>
 
 <template>
+  <main class="home project" id="main-content">
     <Starfield />
-    <div id="hero">
-        <div>
-            <img src="/text-only-light.svg">
-            <h1>{{description}}</h1>
-            <a
-                v-for="{text, link, type} in actions"
-                :href="link"
-                :class="`nav-link action-button ${type || 'default'}`"
-            >
-                {{text}}
-            </a>
-        </div>
-        <img src="/logo-only-light.svg">
+    <div class="hero-info-wrapper">
+      <div id="hero-info">
+        <img class="hero-title-image" src="/text-only-light.svg" alt="PULSAR" />
+        <h2>{{ $site.description }}</h2>
+        <p class="actions">
+          <AutoLink
+            v-for="action in $frontmatter.actions"
+            class="action-button"
+            :class="action.type || 'default'"
+            :config="action"
+            no-external-link-icon
+          />
+        </p>
+      </div>
+      <img class="hero-logo" src="/logo-only-light.svg" alt="PULSAR" />
     </div>
-    <main class="home project" id="main-content" aria-labelledby="main-title">
-        <HomeFeatures />
-        <Content />
-        <hr>
-        <div id="sponsors">
-          <h1>Our Sponsors</h1>
-          <h3>Thank you to the following organizations for sponsoring our project!</h3>
-          <div class="links">
-            <a href="https://tutanota.com/" target="_blank">
-              <img src="/tutanota-logo.webp" alt="tutanota.com">
-            </a>
-          </div>
-        </div>
-    </main>
-
+    <FeaturePanel :items="$frontmatter.features" />
+    <MarkdownContent />
+    <hr />
+    <div id="sponsors">
+      <h1>Our Sponsors</h1>
+      <h3>
+        Thank you to the following organizations for sponsoring our project!
+      </h3>
+      <div class="links">
+        <a href="https://tutanota.com/" target="_blank">
+          <img src="/tutanota-logo.webp" alt="tutanota.com" />
+        </a>
+      </div>
+    </div>
+  </main>
 </template>

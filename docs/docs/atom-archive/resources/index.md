@@ -13,4 +13,4 @@ Current Pulsar documentation is found at [documentation home](/docs/launch-manua
 
 Collection of general resources for the rest of the manual.
 
-@include(./sections/glossary.md)
+<!-- @include: ./sections/glossary.md -->

@@ -27,24 +27,24 @@ Next, open up `lib/ascii-art.js` and remove all view code, so it looks like this
 const { CompositeDisposable } = require("atom");
 
 module.exports = {
-	subscriptions: null,
+  subscriptions: null,
 
-	activate() {
-		this.subscriptions = new CompositeDisposable();
-		this.subscriptions.add(
-			atom.commands.add("atom-workspace", {
-				"ascii-art:convert": () => this.convert(),
-			})
-		);
-	},
+  activate() {
+    this.subscriptions = new CompositeDisposable();
+    this.subscriptions.add(
+      atom.commands.add("atom-workspace", {
+        "ascii-art:convert": () => this.convert(),
+      })
+    );
+  },
 
-	deactivate() {
-		this.subscriptions.dispose();
-	},
+  deactivate() {
+    this.subscriptions.dispose();
+  },
 
-	convert() {
-		console.log("Convert text!");
-	},
+  convert() {
+    console.log("Convert text!");
+  },
 };
 ```
 

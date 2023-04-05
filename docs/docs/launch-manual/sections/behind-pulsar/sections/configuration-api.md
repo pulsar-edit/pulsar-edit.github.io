@@ -9,7 +9,7 @@ value of a namespaced config key with `atom.config.get`:
 ```js
 // read a value with `config.get`
 if (atom.config.get("editor.showInvisibles")) {
-	this.showInvisibles();
+  this.showInvisibles();
 }
 ```
 

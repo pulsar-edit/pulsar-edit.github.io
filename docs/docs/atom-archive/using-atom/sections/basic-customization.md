@@ -64,8 +64,8 @@ For example, to change the colors of the Status Bar, you could add the following
 
 ```css
 .status-bar {
-	color: white;
-	background-color: black;
+  color: white;
+  background-color: black;
 }
 ```
 

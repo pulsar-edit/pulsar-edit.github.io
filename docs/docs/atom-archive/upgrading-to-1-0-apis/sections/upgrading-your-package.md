@@ -12,9 +12,9 @@ If you use any class from `require 'atom'` with a `$` or `View` in the name, add
 
 ```json
 {
-	"dependencies": {
-		"atom-space-pen-views": "^2.0.3"
-	}
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
+  }
 }
 ```
 
@@ -60,9 +60,9 @@ When you are deprecation free and all done converting, upgrade the `engines` fie
 
 ```json
 {
-	"engines": {
-		"atom": ">=0.174.0 <2.0.0"
-	}
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  }
 }
 ```
 
@@ -134,9 +134,9 @@ To use the new views, you need to specify the atom-space-pen-views module in you
 
 ```json
 {
-	"dependencies": {
-		"atom-space-pen-views": "^2.0.3"
-	}
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3"
+  }
 }
 ```
 
@@ -144,9 +144,9 @@ space-pen bundles jQuery. If you do not need space-pen or any of the views, you 
 
 ```json
 {
-	"dependencies": {
-		"jquery": "^2"
-	}
+  "dependencies": {
+    "jquery": "^2"
+  }
 }
 ```
 

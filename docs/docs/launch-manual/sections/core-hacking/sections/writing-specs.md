@@ -28,7 +28,7 @@ like a unit test it begins with the method name.
 
 ```js
 describe("when a test is written", function () {
-	// contents
+  // contents
 });
 ```
 
@@ -36,7 +36,7 @@ or
 
 ```js
 describe("Editor::moveUp", function () {
-	// contents
+  // contents
 });
 ```
 
@@ -49,9 +49,9 @@ of "should work" sounds great as "it should work".
 
 ```js
 describe("when a test is written", function () {
-	it("has some expectations that should pass", function () {
-		// Expectations
-	});
+  it("has some expectations that should pass", function () {
+    // Expectations
+  });
 });
 ```
 
@@ -62,10 +62,10 @@ about them. Below is a simple example.
 
 ```js
 describe("when a test is written", function () {
-	it("has some expectations that should pass", function () {
-		expect("apples").toEqual("apples");
-		expect("oranges").not.toEqual("apples");
-	});
+  it("has some expectations that should pass", function () {
+    expect("apples").toEqual("apples");
+    expect("oranges").not.toEqual("apples");
+  });
 });
 ```
 
@@ -93,13 +93,13 @@ function.
 
 ```js
 describe("when we open a file", function () {
-	it("should be opened in an editor", function () {
-		waitsForPromise(function () {
-			atom.workspace
-				.open("c.coffee")
-				.then((editor) => expect(editor.getPath()).toContain("c.coffee"));
-		});
-	});
+  it("should be opened in an editor", function () {
+    waitsForPromise(function () {
+      atom.workspace
+        .open("c.coffee")
+        .then((editor) => expect(editor.getPath()).toContain("c.coffee"));
+    });
+  });
 });
 ```
 
@@ -107,15 +107,15 @@ This method can be used in the `describe`, `it`, `beforeEach` and `afterEach` fu
 
 ```js
 describe("when we open a file", function () {
-	beforeEach(function () {
-		waitsForPromise(() => atom.workspace.open("c.coffee"));
-	});
+  beforeEach(function () {
+    waitsForPromise(() => atom.workspace.open("c.coffee"));
+  });
 
-	it("should be opened in an editor", function () {
-		expect(atom.workspace.getActiveTextEditor().getPath()).toContain(
-			"c.coffee"
-		);
-	});
+  it("should be opened in an editor", function () {
+    expect(atom.workspace.getActiveTextEditor().getPath()).toContain(
+      "c.coffee"
+    );
+  });
 });
 ```
 
@@ -124,18 +124,18 @@ for each promise. (Caution: Without `beforeEach` this example will fail!)
 
 ```js
 describe("waiting for the packages to load", function () {
-	beforeEach(function () {
-		waitsForPromise(() => atom.workspace.open("sample.js"));
+  beforeEach(function () {
+    waitsForPromise(() => atom.workspace.open("sample.js"));
 
-		waitsForPromise(() => atom.packages.activatePackage("tabs"));
+    waitsForPromise(() => atom.packages.activatePackage("tabs"));
 
-		waitsForPromise(() => atom.packages.activatePackage("tree-view"));
-	});
+    waitsForPromise(() => atom.packages.activatePackage("tree-view"));
+  });
 
-	it("should have waited long enough", function () {
-		expect(atom.packages.isPackageActive("tabs")).toBe(true);
-		expect(atom.packages.isPackageActive("tree-view")).toBe(true);
-	});
+  it("should have waited long enough", function () {
+    expect(atom.packages.isPackageActive("tabs")).toBe(true);
+    expect(atom.packages.isPackageActive("tree-view")).toBe(true);
+  });
 });
 ```
 
@@ -149,19 +149,19 @@ The object can have the following properties:
 
 ```js
 describe("when we open a file", function () {
-	it("should be opened in an editor", function () {
-		waitsForPromise(
-			{
-				shouldReject: false,
-				timeout: 5000,
-				label: "promise to be resolved or rejected",
-			},
-			() =>
-				atom.workspace
-					.open("c.coffee")
-					.then((editor) => expect(editor.getPath()).toContain("c.coffee"))
-		);
-	});
+  it("should be opened in an editor", function () {
+    waitsForPromise(
+      {
+        shouldReject: false,
+        timeout: 5000,
+        label: "promise to be resolved or rejected",
+      },
+      () =>
+        atom.workspace
+          .open("c.coffee")
+          .then((editor) => expect(editor.getPath()).toContain("c.coffee"))
+    );
+  });
 });
 ```
 
@@ -172,19 +172,19 @@ functions. A simple example.
 
 ```js
 describe("fs.readdir(path, cb)", function () {
-	it("is async", function () {
-		const spy = jasmine.createSpy("fs.readdirSpy");
-		fs.readdir("/tmp/example", spy);
+  it("is async", function () {
+    const spy = jasmine.createSpy("fs.readdirSpy");
+    fs.readdir("/tmp/example", spy);
 
-		waitsFor(() => spy.callCount > 0);
+    waitsFor(() => spy.callCount > 0);
 
-		runs(function () {
-			const exp = [null, ["example.coffee"]];
+    runs(function () {
+      const exp = [null, ["example.coffee"]];
 
-			expect(spy.mostRecentCall.args).toEqual(exp);
-			expect(spy).toHaveBeenCalledWith(null, ["example.coffee"]);
-		});
-	});
+      expect(spy.mostRecentCall.args).toEqual(exp);
+      expect(spy).toHaveBeenCalledWith(null, ["example.coffee"]);
+    });
+  });
 });
 ```
 
@@ -204,10 +204,10 @@ above, focusing an individual spec looks like this:
 
 ```js
 describe("when a test is written", function () {
-	fit("has some expectations that should pass", function () {
-		expect("apples").toEqual("apples");
-		expect("oranges").not.toEqual("apples");
-	});
+  fit("has some expectations that should pass", function () {
+    expect("apples").toEqual("apples");
+    expect("oranges").not.toEqual("apples");
+  });
 });
 ```
 

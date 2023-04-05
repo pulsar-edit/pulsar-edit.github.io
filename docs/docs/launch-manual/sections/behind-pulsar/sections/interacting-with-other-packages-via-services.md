@@ -7,15 +7,15 @@ module:
 
 ```json
 {
-	"providedServices": {
-		"my-service": {
-			"description": "Does a useful thing",
-			"versions": {
-				"1.2.3": "provideMyServiceV1",
-				"2.3.4": "provideMyServiceV2"
-			}
-		}
-	}
+  "providedServices": {
+    "my-service": {
+      "description": "Does a useful thing",
+      "versions": {
+        "1.2.3": "provideMyServiceV1",
+        "2.3.4": "provideMyServiceV2"
+      }
+    }
+  }
 }
 ```
 
@@ -25,17 +25,17 @@ service. They should return a value that implements the service's API.
 
 ```js
 module.exports = {
-	activate() {
-		// ...
-	},
+  activate() {
+    // ...
+  },
 
-	provideMyServiceV1() {
-		return adaptToLegacyAPI(myService);
-	},
+  provideMyServiceV1() {
+    return adaptToLegacyAPI(myService);
+  },
 
-	provideMyServiceV2() {
-		return myService;
-	},
+  provideMyServiceV2() {
+    return myService;
+  },
 };
 ```
 
@@ -44,14 +44,14 @@ each paired with the name of a method on the package's main module:
 
 ```json
 {
-	"consumedServices": {
-		"another-service": {
-			"versions": {
-				"^1.2.3": "consumeAnotherServiceV1",
-				">=2.3.4 <2.5": "consumeAnotherServiceV2"
-			}
-		}
-	}
+  "consumedServices": {
+    "another-service": {
+      "versions": {
+        "^1.2.3": "consumeAnotherServiceV1",
+        ">=2.3.4 <2.5": "consumeAnotherServiceV2"
+      }
+    }
+  }
 }
 ```
 
@@ -65,18 +65,18 @@ that the package providing the service is deactivated. To do this, return a
 const { Disposable } = require("atom");
 
 module.exports = {
-	activate() {
-		// ...
-	},
+  activate() {
+    // ...
+  },
 
-	consumeAnotherServiceV1(service) {
-		useService(adaptServiceFromLegacyAPI(service));
-		return new Disposable(() => stopUsingService(service));
-	},
+  consumeAnotherServiceV1(service) {
+    useService(adaptServiceFromLegacyAPI(service));
+    return new Disposable(() => stopUsingService(service));
+  },
 
-	consumeAnotherServiceV2(service) {
-		useService(service);
-		return new Disposable(() => stopUsingService(service));
-	},
+  consumeAnotherServiceV2(service) {
+    useService(service);
+    return new Disposable(() => stopUsingService(service));
+  },
 };
 ```

@@ -18,7 +18,7 @@ Add the following to [your stylesheet](https://flight-manual.atom.io/using-atom/
 
 ```css
 atom-text-editor {
-	font-weight: bold;
+  font-weight: bold;
 }
 ```
 

@@ -102,7 +102,7 @@ document you should use a container with the `:::` syntax.
 
 e.g.
 
-```
+```md
 ::: tabs#filename
 
 @tab Linux
@@ -122,7 +122,7 @@ Lorem ipsum dolor sit amet...
 
 or
 
-```
+```md
 ::: tip My Helpful Tip
 
 You might want to do X to get Y
@@ -133,7 +133,7 @@ You might want to do X to get Y
 You can also find a list of currently maintained preformatted containers for
 various purposes at [pulsar-edit.github.io/common-text-blocks.md](https://github.com/pulsar-edit/pulsar-edit.github.io/blob/main/common-text-blocks.md).
 
-See [VuePress Hope documentation](https://vuepress-theme-hope.github.io/v2/guide/get-started/markdown.html#theme-enhancement)
+See [VuePress Hope documentation](https://theme-hope.vuejs.pressguide/get-started/markdown.html#theme-enhancement)
 
 ### Writing style
 

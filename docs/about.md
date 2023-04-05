@@ -6,8 +6,6 @@ sitemap:
   changefreq: "weekly"
 ---
 
-# About us
-
 ## The team
 
 The team behind Pulsar is a community that came about naturally after the

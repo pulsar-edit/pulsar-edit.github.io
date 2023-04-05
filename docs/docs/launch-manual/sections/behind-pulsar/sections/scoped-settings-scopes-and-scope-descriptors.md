@@ -23,7 +23,7 @@ Take this piece of JavaScript:
 
 ```js
 function functionName() {
-	console.log("Log it out");
+  console.log("Log it out");
 }
 ```
 
@@ -51,7 +51,7 @@ you can give it the JavaScript function name `scopeSelector`:
 
 ```js
 atom.config.set("my-package.my-setting", "special value", {
-	scopeSelector: ".source.js .function.name",
+  scopeSelector: ".source.js .function.name",
 });
 ```
 
@@ -74,12 +74,12 @@ function names via:
 
 ```js
 const scopeDescriptor = [
-	"source.js",
-	"meta.function.js",
-	"entity.name.function.js",
+  "source.js",
+  "meta.function.js",
+  "entity.name.function.js",
 ];
 const value = atom.config.get("my-package.my-setting", {
-	scope: scopeDescriptor,
+  scope: scopeDescriptor,
 });
 ```
 
@@ -100,9 +100,9 @@ Let's revisit our example using these methods:
 const editor = atom.workspace.getActiveTextEditor();
 const cursor = editor.getLastCursor();
 const valueAtCursor = atom.config.get("my-package.my-setting", {
-	scope: cursor.getScopeDescriptor(),
+  scope: cursor.getScopeDescriptor(),
 });
 const valueForLanguage = atom.config.get("my-package.my-setting", {
-	scope: editor.getRootScopeDescriptor(),
+  scope: editor.getRootScopeDescriptor(),
 });
 ```
