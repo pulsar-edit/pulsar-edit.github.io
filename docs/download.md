@@ -167,7 +167,7 @@ You can bypass this by clicking "More info" then "Run anyway".
 
 |                            Package Manager                             |        Command         |
 | :--------------------------------------------------------------------: | :--------------------: |
-| [Chocolatey](https://community.chocolatey.org/packages/pulsar/1.103.0) | `choco install pulsar` |
+| [Chocolatey](https://community.chocolatey.org/packages/pulsar) | `choco install pulsar` |
 
 ::::
 
