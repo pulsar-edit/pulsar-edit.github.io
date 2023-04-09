@@ -165,8 +165,8 @@ You can bypass this by clicking "More info" then "Run anyway".
 | [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Windows.Pulsar.Setup.1.103.0.exe) |       Installer       |
 |  [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.103.0/Windows.Pulsar.1.103.0.exe)   | Portable (no install) |
 
-|                            Package Manager                             |        Command         |
-| :--------------------------------------------------------------------: | :--------------------: |
+|                        Package Manager                         |        Command         |
+| :------------------------------------------------------------: | :--------------------: |
 | [Chocolatey](https://community.chocolatey.org/packages/pulsar) | `choco install pulsar` |
 
 ::::
