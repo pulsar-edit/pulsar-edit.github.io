@@ -51,7 +51,7 @@ Currently in order to use Pulsar's symbols view for navigation you first have to
 
 [@savetheclocktower] has been working on some improvements for this. For example, Tree-sitter parsers are quite good at this sort of code analysis, and can identify the important parts of a source code file with [a simple query file](https://tree-sitter.github.io/tree-sitter/code-navigation-systems).
 
-Currently this is being explored due to the ongoing work to upgrade to a modern implementation of `tree-sitter` but the eventual goal would be to move to a provider/consumer model like our `autocomplete-plus` package which would allow for much more flexibility, for example [language servers](https://microsoft.github.io/language-server-protocol/) are also potentially able to provide symbols, and on a project-wide basis - not just within a file.
+[Language servers](https://microsoft.github.io/language-server-protocol/) are another potential source of symbol information. Some language servers are even capable of supplying project-wide symbol information; this would improve other `symbol-view` responsibilities, like the “Go to Declaration” command.
 
 So to make steps towards achieving this, we'd refactor `symbols-view` to be just a generic UI for symbol navigation. We'd then package different “providers” of symbols as services for `symbols-view` to consume. This is very similar to how the `autocomplete-plus` package works.
 
