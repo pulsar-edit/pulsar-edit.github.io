@@ -49,7 +49,7 @@ If you want to read more details about what had to be done for the implementatio
 
 Currently in order to use Pulsar's symbols view for navigation you first have to generate a [ctags](https://ctags.io/) file for your project. This isn't really a perfect solution as it doesn't allow navigation of untitled files and requires the file to be updated every time there is a significant refactor of your code.
 
-[@savetheclocktower] has been working on some improvements for this, for example for languages that have tree-sitter parsers, its job can be done much better - all it does is answer the question “what are the names and line numbers for important things like class and method definitions?”
+[@savetheclocktower] has been working on some improvements for this. For example, Tree-sitter parsers are quite good at this sort of code analysis, and can identify the important parts of a source code file with [a simple query file](https://tree-sitter.github.io/tree-sitter/code-navigation-systems).
 
 Currently this is being explored due to the ongoing work to upgrade to a modern implementation of `tree-sitter` but the eventual goal would be to move to a provider/consumer model like our `autocomplete-plus` package which would allow for much more flexibility, for example [language servers](https://microsoft.github.io/language-server-protocol/) are also potentially able to provide symbols, and on a project-wide basis - not just within a file.
 
