@@ -53,7 +53,7 @@ Currently in order to use Pulsar's symbols view for navigation you first have to
 
 Currently this is being explored due to the ongoing work to upgrade to a modern implementation of `tree-sitter` but the eventual goal would be to move to a provider/consumer model like our `autocomplete-plus` package which would allow for much more flexibility, for example [language servers](https://microsoft.github.io/language-server-protocol/) are also potentially able to provide symbols, and on a project-wide basis - not just within a file.
 
-So to make steps towards achieving this, step one would be to refactor `symbols-view` to be more generic then step two would be to create packages called, for example, `symbol-provider-ctags` and `symbol-provider-tree-sitter` - both of which would be built-in packages.
+So to make steps towards achieving this, we'd refactor `symbols-view` to be just a generic UI for symbol navigation. We'd then package different “providers” of symbols as services for `symbols-view` to consume. This is very similar to how the `autocomplete-plus` package works.
 
 This has the potential to really upgrade this functionality and make navigating files and projects far more intuitive. Once the work for the `tree-sitter` upgrades have been completed then we will hopefully have something more concrete to share on this feature.
 
