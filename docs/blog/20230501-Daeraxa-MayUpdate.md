@@ -47,7 +47,7 @@ If you want to read more details about what had to be done for the implementatio
 
 <img src="./assets/symbols-view.png"/>
 
-Currently in order to use Pulsar's symbols view for navigation you first have to generate a [ctags](https://ctags.io/) file for your project. This isn't really a perfect solution as it doesn't allow navigation of untitled files and requires the file to be updated every time there is a significant refactor of your code.
+Symbol-based navigation in Pulsar currently depends on [ctags](https://ctags.io/). It's versatile and can be configured to support lots of different source code files, but it reads from disk and doesn't work well with files that have been modified a lot since the last save. It also doesn't work _at all_ on brand-new, unsaved files, or with languages that it hasn't been configured for.```
 
 [@savetheclocktower] has been working on some improvements for this. For example, Tree-sitter parsers are quite good at this sort of code analysis, and can identify the important parts of a source code file with [a simple query file](https://tree-sitter.github.io/tree-sitter/code-navigation-systems).
 
