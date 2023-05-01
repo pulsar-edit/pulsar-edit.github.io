@@ -146,14 +146,13 @@ some reason.
 Another way to open a file in Pulsar is from the command line using the `pulsar`
 command.
 
-<!--TODO: Check if this is actually still going to be used or if will be generic - see https://github.com/pulsar-edit/pulsar/issues/187
-<span class="platform-mac">The Pulsar menu bar has a command named
-"Install Shell Commands" which installs the `atom` and `apm` commands
-[if Pulsar wasn't able to install them itself](/installing-atom/#installing-atom-on-mac)
-.</span><span class="platform-windows platform-linux">The `atom` and `apm`
-commands are installed automatically as a part of Pulsar's
-[installation process](/sections/installing-atom/).</span>
--->
+::: note Note
+**Install Shell Commands on macOS**
+
+The Pulsar Command Palette has a command named "Install Shell Commands" which installs the `pulsar` and `ppm` commands if Pulsar wasn't able to install them itself on a macOS system.
+
+On Linux and Windows commands are installed automatically as a part of Pulsar's installation process.
+:::
 
 You can run the `pulsar` command with one or more file paths to open up those
 files in Pulsar.
