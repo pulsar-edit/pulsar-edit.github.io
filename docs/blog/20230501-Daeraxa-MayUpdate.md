@@ -151,7 +151,7 @@ return {
 ```
 
 This has the upside of letting only the code that retrieves API requests deal with responding to them. The rest of the backend can work with just normal functions, without a care in the world about HTTP handling.
-The hope is that by lowering the amount of knowledge needed to contribute more people might be encouraged to get involved and comes with the added bonus that now to test we can just call functions.
+This change lowers the amount of knowledge needed to contribute, so we hope that more people might be encouraged to get involved. As a bonus, it makes the code much easier to test.
 
 ---
 
