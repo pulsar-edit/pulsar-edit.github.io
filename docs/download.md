@@ -78,6 +78,9 @@ manually or pick a binary from another branch or PR, then follow the [manual ins
 
 ::: info Info
 
+We currently have no Rolling Releases for Windows package managers - see
+[Regular Releases](#regular-releases) for these instead.
+
 Current binaries are not signed so will produce an error with Windows
 Smartscreen "Windows protected your PC"...
 You can bypass this by clicking "More info" then "Run anyway".
@@ -163,6 +166,10 @@ You can bypass this by clicking "More info" then "Run anyway".
 | :---------------------------------------------------------------------------------------------------------: | :-------------------: |
 | [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.104.0/Windows.Pulsar.Setup.1.104.0.exe)  |       Installer       |
 | [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.104.0/Windows.Pulsar-1.104.0-win.zip) | Portable (no install) |
+
+|                        Package Manager                         |        Command         |
+| :------------------------------------------------------------: | :--------------------: |
+| [Chocolatey](https://community.chocolatey.org/packages/pulsar) | `choco install pulsar` |
 
 ::::
 
