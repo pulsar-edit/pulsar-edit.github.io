@@ -75,7 +75,7 @@ This has the potential to really upgrade the functionality and make navigating f
 
 Now some [changes to our package website](https://github.com/pulsar-edit/package-frontend/pull/96). There are a few separate, but related, changes by [@confused-techie] here that involve improving our package website to overhaul some of the issues we have with readme links.
 
-The first change adds shorthand string author assignment in the `package.json` file of a package. The [npm package specification(https://docs.npmjs.com/cli/v9/configuring-npm/package-json#people-fields-author-contributors)] allows the three author properties to be combined into a single string e.g.
+The first change adds shorthand string author assignment in the `package.json` file of a package. The [npm package specification](https://docs.npmjs.com/cli/v9/configuring-npm/package-json#people-fields-author-contributors) allows the three author properties to be combined into a single string e.g.
 
 ```js
 {
