@@ -103,7 +103,7 @@ These were some much needed changes which should hopefully improve the overall e
 
 Lastly we have yet another [@confused-techie] update in the works, this time [improvements to the package backend](https://github.com/pulsar-edit/package-backend/pull/171) to make developing the backend more accessible to new contributors as well making tasks such as testing easier.
 
-Currently the handling for HTTP and logic is all mixed together in the backend which means that early every function within the backend has a signature like:
+Currently the handling for HTTP and logic is all mixed together in the backend which means that nearly every function within the backend has a signature like:
 
 ```js
 aync function getPackages(res, req) {...}
