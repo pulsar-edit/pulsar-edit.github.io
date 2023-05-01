@@ -49,7 +49,7 @@ If you want to read more details about what had to be done for the implementatio
 
 Symbol-based navigation in Pulsar currently depends on [ctags](https://ctags.io/). It's versatile and can be configured to support lots of different source code files, but it reads from disk and doesn't work well with files that have been modified a lot since the last save. It also doesn't work _at all_ on brand-new, unsaved files, or with languages that it hasn't been configured for.
 
-[@savetheclocktower] has been working on some improvements for this, for example for languages that have tree-sitter parsers, its job can be done much better - all it does is answer the question “what are the names and line numbers for important things like class and method definitions?”
+[@savetheclocktower] has been working on some improvements for this. For example, Tree-sitter parsers are quite good at this sort of code analysis, and can identify the important parts of a source code file with [a simple query file](https://tree-sitter.github.io/tree-sitter/code-navigation-systems).
 
 [Language servers](https://microsoft.github.io/language-server-protocol/) are another potential source of symbol information. Some language servers are even capable of supplying project-wide symbol information; this would improve other `symbol-view` responsibilities, like the “Go to Declaration” command.
 
