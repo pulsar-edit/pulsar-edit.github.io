@@ -51,7 +51,7 @@ Symbol-based navigation in Pulsar currently depends on [ctags](https://ctags.io/
 
 [@savetheclocktower] has been working on some improvements for this, for example for languages that have tree-sitter parsers, its job can be done much better - all it does is answer the question “what are the names and line numbers for important things like class and method definitions?”
 
-Currently this is being explored due to the ongoing work to upgrade to a modern implementation of `tree-sitter` but the eventual goal would be to move to a provider/consumer model like our `autocomplete-plus` package which would allow for much more flexibility, for example [language servers](https://microsoft.github.io/language-server-protocol/) are also potentially able to provide symbols, and on a project-wide basis - not just within a file.
+[Language servers](https://microsoft.github.io/language-server-protocol/) are another potential source of symbol information. Some language servers are even capable of supplying project-wide symbol information; this would improve other `symbol-view` responsibilities, like the “Go to Declaration” command.
 
 So to make steps towards achieving this we would need to work on `symbols-view` to be more generic and then update Pulsar and its packages to take advantage of the changes.
 
