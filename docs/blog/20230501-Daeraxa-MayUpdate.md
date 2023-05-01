@@ -23,7 +23,7 @@ Now without further waffling, onto the updates!
 
 ## Octicons iconography update
 
-So this is a change we [have in the works](https://github.com/pulsar-edit/pulsar/pull/509) thanks to [@confused-techie], to upgrade Pulsar's iconography by updating the version of [Octicons](https://primer.style/octicons/). The version being used currently in Pulasr is _really_ old (v4.4.0 - from 2016!) and there have been many, many updates since then with a whole bunch of new icons and improvements (now on version v18.3.0).
+So this is a change we [have in the works](https://github.com/pulsar-edit/pulsar/pull/509) thanks to [@confused-techie], to upgrade Pulsar's iconography by updating the version of [Octicons](https://primer.style/octicons/). The version being used currently in Pulsar is _really_ old (v4.4.0 - from 2016!) and there have been many, many updates since then with a whole bunch of new icons and improvements (now on version v18.3.0).
 
 You can see examples of the new Octicons in the below image:
 
@@ -47,15 +47,15 @@ If you want to read more details about what had to be done for the implementatio
 
 <img src="./assets/symbols-view.png"/>
 
-Symbol-based navigation in Pulsar currently depends on [ctags](https://ctags.io/). It's versatile and can be configured to support lots of different source code files, but it reads from disk and doesn't work well with files that have been modified a lot since the last save. It also doesn't work _at all_ on brand-new, unsaved files, or with languages that it hasn't been configured for.```
+Symbol-based navigation in Pulsar currently depends on [ctags](https://ctags.io/). It's versatile and can be configured to support lots of different source code files, but it reads from disk and doesn't work well with files that have been modified a lot since the last save. It also doesn't work _at all_ on brand-new, unsaved files, or with languages that it hasn't been configured for.
 
-[@savetheclocktower] has been working on some improvements for this. For example, Tree-sitter parsers are quite good at this sort of code analysis, and can identify the important parts of a source code file with [a simple query file](https://tree-sitter.github.io/tree-sitter/code-navigation-systems).
+[@savetheclocktower] has been working on some improvements for this, for example for languages that have tree-sitter parsers, its job can be done much better - all it does is answer the question “what are the names and line numbers for important things like class and method definitions?”
 
-[Language servers](https://microsoft.github.io/language-server-protocol/) are another potential source of symbol information. Some language servers are even capable of supplying project-wide symbol information; this would improve other `symbol-view` responsibilities, like the “Go to Declaration” command.
+Currently this is being explored due to the ongoing work to upgrade to a modern implementation of `tree-sitter` but the eventual goal would be to move to a provider/consumer model like our `autocomplete-plus` package which would allow for much more flexibility, for example [language servers](https://microsoft.github.io/language-server-protocol/) are also potentially able to provide symbols, and on a project-wide basis - not just within a file.
 
-So to make steps towards achieving this, we'd refactor `symbols-view` to be just a generic UI for symbol navigation. We'd then package different “providers” of symbols as services for `symbols-view` to consume. This is very similar to how the `autocomplete-plus` package works.
+So to make steps towards achieving this we would need to work on `symbols-view` to be more generic and then update Pulsar and its packages to take advantage of the changes.
 
-This has the potential to really upgrade this functionality and make navigating files and projects far more intuitive. Once the work for the `tree-sitter` upgrades have been completed then we will hopefully have something more concrete to share on this feature.
+This has the potential to really upgrade the functionality and make navigating files and projects far more intuitive. It isn't ready just yet but don't worry, we will have more information to share on this feature in the coming weeks.
 
 ## CI Testing speed upgrade
 
@@ -75,10 +75,17 @@ This has the potential to really upgrade this functionality and make navigating 
 
 Now some [changes to our package website](https://github.com/pulsar-edit/package-frontend/pull/96). There are a few separate, but related, changes by [@confused-techie] here that involve improving our package website to overhaul some of the issues we have with readme links.
 
-The first change adds shorthand string author assignment in the `package.json` file of a package. Previously if this was not populated fully then the author wouldn't display. This fixes that problem by allowing the partial and shorter form details.
-**Note**: do we have an example of what this shorter form looks like vs what was required?
+The first change adds shorthand string author assignment in the `package.json` file of a package. The [npm package specification(https://docs.npmjs.com/cli/v9/configuring-npm/package-json#people-fields-author-contributors)] allows the three author properties to be combined into a single string e.g.
 
-In a similar vein we also now support GitHub shorthand for the `repository` field of the `package.json`. For example writing `authorName/repoName` wasn't working so we have provided support for this.
+```js
+{
+  "author": "Barney Rubble <b@rubble.com> (http://barnyrubble.tumblr.com/)"
+}
+```
+
+Previously if this was not populated fully with all three options then the author simply wouldn't display. This fixes that problem by allowing the optional fields to be omitted (actually this is taken a step further in our implementation - even `name` can be optional)
+
+In a similar vein we also now support [shortcut syntax](https://docs.npmjs.com/cli/v9/configuring-npm/package-json#repository) for the `repository` field of the `package.json`. For example writing `authorName/repoName` wasn't working so we have provided support for this.
 
 We noticed that many package authors would link to other community packages in their readmes in order to show other packages that work with or complement their package. Unfortunately as these point to the old `atom.io` website it means that every single link simply redirects to the [sunsetting Atom](https://github.blog/2022-06-08-sunsetting-atom/) page. This is really not helpful as it entirely breaks the embedded links, sure there are workaround, people could look at the link and work out what packages it links to but this is a hassle when all you want to do is click a link.
 
