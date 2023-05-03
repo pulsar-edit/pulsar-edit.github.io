@@ -149,7 +149,7 @@ command.
 ::: note Note
 **Install Shell Commands on macOS**
 
-The Pulsar Command Palette has a command named "Install Shell Commands" which installs the `pulsar` and `ppm` commands if Pulsar wasn't able to install them itself on a macOS system.
+The Pulsar menu has an item named "Install Shell Commands" which installs the `pulsar` and `ppm` commands if Pulsar wasn't able to install them itself on a macOS system.
 
 On Linux and Windows commands are installed automatically as a part of Pulsar's installation process.
 :::
