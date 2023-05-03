@@ -151,7 +151,7 @@ command.
 
 The Pulsar Command Palette has a command named "Install Shell Commands" which installs the `pulsar` and `ppm` commands if Pulsar wasn't able to install them itself on a macOS system.
 
-On Linux and Windows commands are installed automatically as a part of Pulsar's installation process.
+On Linux commands are installed automatically as a part of Pulsar's installation process. Windows requires the path to be [exposed manually](https://github.com/pulsar-edit/pulsar/issues/187) by the user at this time.
 :::
 
 You can run the `pulsar` command with one or more file paths to open up those
