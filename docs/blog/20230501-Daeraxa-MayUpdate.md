@@ -113,7 +113,7 @@ Lastly we have yet another [@confused-techie] update in the works, this time [im
 Currently the handling for HTTP and logic is all mixed together in the backend which means that nearly every function within the backend has a signature like:
 
 ```js
-aync function getPackages(res, req) {...}
+async function getPackages(res, req) {...}
 ```
 
 Where `res` is the response object as provided by ExpressJS and `req` is the request object provided by ExpressJS.
