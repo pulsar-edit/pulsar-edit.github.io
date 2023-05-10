@@ -4,7 +4,8 @@
 //Annoyingly the table takes on the details background which makes it look odd so this overrides some of it until we sort the overall theme out.
 .custom-container.details table {
   display: table;
-  width: 75%;
+  min-width: 75%;
+  max-width: 90%;
 }
 
 html[data-theme=light] .custom-container.details table {
