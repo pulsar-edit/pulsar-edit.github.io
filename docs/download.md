@@ -105,7 +105,7 @@ feature issues that have already been resolved in our Rolling Release so if a
 particular fix or feature is important to you it may be worth swapping to one of
 those instead.
 
-Current version is [v1.104.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.104.0).
+Current version is [v1.105.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.105.0).
 
 ::: details Linux
 
