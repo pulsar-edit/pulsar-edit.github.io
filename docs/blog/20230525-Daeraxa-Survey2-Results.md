@@ -21,7 +21,7 @@ Honestly there isn't much more to say as there wasn't really an overarching them
 
 ## Iconography
 
-Our first question was asking about upgrading our icon theme in Pulsar. We are updating our [Octicons](https://primer.style/design/foundations/icons/) version bundled with Pulsar to take advantage of changes made between v4.4.0 from 2016 to the current v18.3.0. As part of this we want to explore actually using these new icons in our default UI theme. The questions below are voting on preference between two styles of the new icons against the current theme:
+Our first question was asking about upgrading our icons in Pulsar. We are updating our [Octicons](https://primer.style/design/foundations/icons/) version bundled with Pulsar to take advantage of changes made between v4.4.0 from 2016 to the current v18.3.0. As part of this we want to explore actually using these new icons in our default UI theme. The questions below are voting on preference between two styles of the new icons against the current theme:
 
 ![survey2-icons](./assets/survey2-icons.png)
 
