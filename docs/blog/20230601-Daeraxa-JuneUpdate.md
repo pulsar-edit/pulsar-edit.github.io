@@ -63,7 +63,7 @@ We feel this is a really exciting addition so stay tuned for more info as an whe
 
 If you have been following these monthly updates then you know that [tree-sitter](https://tree-sitter.github.io/tree-sitter/) has been a common topic and one of our biggest challenges in our goals to bring Pulsar up to date.
 
-So thanks to an awful lot of work by [@savehtheclocktower] and[@maurício szabo] a this project that we have been working on for months has finally hit the rolling releases in an experimental form: [a modernization of the Tree-sitter grammars](https://github.com/pulsar-edit/pulsar/pull/472).
+So thanks to an awful lot of work by [@savetheclocktower] and [@maurício szabo] this project that we have been working on for months has finally hit the rolling releases in an experimental form: [a modernization of the Tree-sitter grammars](https://github.com/pulsar-edit/pulsar/pull/472).
 
 Atom was the first editor to integrate with [Tree-sitter](https://tree-sitter.github.io/tree-sitter/) — a system designed to deliver fast and accurate parsing of [a number of programming languages](https://tree-sitter.github.io/tree-sitter/#parsers) for better syntax highlighting than the traditional TextMate-style grammars.
 
