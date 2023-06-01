@@ -98,7 +98,7 @@ So feel free to comment on this organisation work (positive or negative - we won
 
 ## Community spotlight
 
-And finally we want to give a huge shout out this month to **@asiloisad** (aka [@bacadra] who has been creating and maintaining a ton of packages for Pulsar with constant updates making them by far our most prolific package author and maintainer.
+And finally we want to give a huge shout out this month to **@asiloisad** (aka [@bacadra]) who has been creating and maintaining a ton of packages for Pulsar with constant updates — making them by far our most prolific package author and maintainer.
 
 To give you an idea of the scale we pulled a few stats from the backend and found that we are looking at 273 updates over 15 packages (bear in mind that this is *only* packages published or updated on the Pulsar Package Repository and doesn't include those that haven't been updated since migration from Atom).
 
