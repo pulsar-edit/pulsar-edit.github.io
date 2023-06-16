@@ -105,7 +105,7 @@ feature issues that have already been resolved in our Rolling Release so if a
 particular fix or feature is important to you it may be worth swapping to one of
 those instead.
 
-Current version is [v1.105.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.105.0).
+Current version is [v1.106.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.106.0).
 
 ::: details Linux
 
@@ -113,12 +113,15 @@ Current version is [v1.105.0](https://github.com/pulsar-edit/pulsar/releases/tag
 
 |                                                           Package                                                           |    Distribution    |
 | :-------------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|           [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Linux.pulsar_1.105.0_amd64.deb)            | Debian/Ubuntu etc. |
-|           [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Linux.pulsar-1.105.0.x86_64.rpm)           |  Fedora/RHEL etc.  |
-| [AppImage](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Linux.Pulsar-1.105.0.AppImage)<sup>[1][2]</sup> | All distributions  |
-|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Linux.pulsar-1.105.0.tar.gz)            | All distributions  |
+|           [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Linux.pulsar_1.106.0_amd64.deb)            | Debian/Ubuntu etc. |
+|           [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Linux.pulsar-1.106.0.x86_64.rpm)           |  Fedora/RHEL etc.  |
+| [AppImage](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Linux.Pulsar-1.106.0.AppImage)<sup>[1][2]</sup> | All distributions  |
+|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Linux.pulsar-1.106.0.tar.gz)            | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
+
+**Note** - ARM releases are currently still on v1.105.0 due to a suspected issue
+with our CI provider which will hopefully be resolved soon.
 
 |                                                                Package                                                                |    Distribution    |
 | :-----------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
@@ -138,15 +141,15 @@ Current version is [v1.105.0](https://github.com/pulsar-edit/pulsar/releases/tag
 
 |                                                     Package                                                      |     Type      |
 | :--------------------------------------------------------------------------------------------------------------: | :-----------: |
-|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Silicon.Mac.Pulsar-1.105.0-arm64.dmg)   | DMG installer |
-| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Silicon.Mac.Pulsar-1.105.0-arm64-mac.zip) |  Zip archive  |
+|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Silicon.Mac.Pulsar-1.106.0-arm64.dmg)   | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Silicon.Mac.Pulsar-1.106.0-arm64-mac.zip) |  Zip archive  |
 
 **Intel** - For Intel macs
 
 |                                                 Package                                                  |     Type      |
 | :------------------------------------------------------------------------------------------------------: | :-----------: |
-|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Intel.Mac.Pulsar-1.105.0.dmg)   | DMG installer |
-| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Intel.Mac.Pulsar-1.105.0-mac.zip) |  Zip archive  |
+|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Intel.Mac.Pulsar-1.106.0.dmg)   | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Intel.Mac.Pulsar-1.106.0-mac.zip) |  Zip archive  |
 
 ::::
 
@@ -164,12 +167,14 @@ You can bypass this by clicking "More info" then "Run anyway".
 
 |                                                   Package                                                   |         Type          |
 | :---------------------------------------------------------------------------------------------------------: | :-------------------: |
-| [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Windows.Pulsar.Setup.1.105.0.exe)  |       Installer       |
-| [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/Windows.Pulsar-1.105.0-win.zip) | Portable (no install) |
+| [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Windows.Pulsar.Setup.1.106.0.exe)  |       Installer       |
+| [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/Windows.Pulsar-1.106.0-win.zip) | Portable (no install) |
 
-|                        Package Manager                         |        Command         |
-| :------------------------------------------------------------: | :--------------------: |
-| [Chocolatey](https://community.chocolatey.org/packages/pulsar) | `choco install pulsar` |
+|                               Package Manager                                |        Command         |
+| :--------------------------------------------------------------------------: | :--------------------: |
+| [Chocolatey](https://community.chocolatey.org/packages/pulsar)<sup>[1]</sup> | `choco install pulsar` |
+
+[1] Our Chocolatey release is currently still on v1.103.0 due to file size restrictions but we are working to resolve this to provide proper support again.
 
 ::::
 
@@ -216,9 +221,9 @@ Two binaries are provided:
 
 Two binaries are currently available:
 
-- `Pulsar Setup...exe` is the installer based executable that will install Pulsar
+- `exe` is the installer based executable that will install Pulsar
   on your system
-- `Pulsar...exe` is the "portable" version which can run without needing to be
+- `zip` is the "portable" version which can run without needing to be
   installed on the system (for example from a flash drive).
 
 :::
