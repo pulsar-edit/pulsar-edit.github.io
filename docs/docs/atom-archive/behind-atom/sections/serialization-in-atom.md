@@ -8,15 +8,15 @@ Your package's main module can optionally include a `serialize` method, which wi
 
 ```javascript
 module.exports = {
-	activate(state) {
-		this.myObject = state
-			? atom.deserializers.deserialize(state)
-			: new MyObject("Hello");
-	},
+  activate(state) {
+    this.myObject = state
+      ? atom.deserializers.deserialize(state)
+      : new MyObject("Hello");
+  },
 
-	serialize() {
-		return this.myObject.serialize();
-	},
+  serialize() {
+    return this.myObject.serialize();
+  },
 };
 ```
 
@@ -24,16 +24,16 @@ module.exports = {
 
 ```javascript
 class MyObject {
-	constructor(data) {
-		this.data = data;
-	}
+  constructor(data) {
+    this.data = data;
+  }
 
-	serialize() {
-		return {
-			deserializer: "MyObject",
-			data: this.data,
-		};
-	}
+  serialize() {
+    return {
+      deserializer: "MyObject",
+      data: this.data,
+    };
+  }
 }
 ```
 
@@ -63,9 +63,9 @@ Here, the key (`"MyObject"`) is the name of the deserializer—the same string u
 
 ```javascript
 module.exports = {
-	deserializeMyObject({ data }) {
-		return new MyObject(data);
-	},
+  deserializeMyObject({ data }) {
+    return new MyObject(data);
+  },
 };
 ```
 
@@ -77,24 +77,24 @@ An alternative is to use the `atom.deserializers.add` method with your class in 
 
 ```javascript
 class MyObject {
-	static initClass() {
-		atom.deserializers.add(this);
-	}
+  static initClass() {
+    atom.deserializers.add(this);
+  }
 
-	static deserialize({ data }) {
-		return new MyObject(data);
-	}
+  static deserialize({ data }) {
+    return new MyObject(data);
+  }
 
-	constructor(data) {
-		this.data = data;
-	}
+  constructor(data) {
+    this.data = data;
+  }
 
-	serialize() {
-		return {
-			deserializer: "MyObject",
-			data: this.data,
-		};
-	}
+  serialize() {
+    return {
+      deserializer: "MyObject",
+      data: this.data,
+    };
+  }
 }
 
 MyObject.initClass();
@@ -106,22 +106,22 @@ While this used to be the standard method of registering a deserializer, the `pa
 
 ```javascript
 class MyObject {
-	static initClass() {
-		atom.deserializers.add(this);
+  static initClass() {
+    atom.deserializers.add(this);
 
-		this.version = 2;
-	}
+    this.version = 2;
+  }
 
-	static deserialize(state) {
-		// ...
-	}
+  static deserialize(state) {
+    // ...
+  }
 
-	serialize() {
-		return {
-			version: this.constructor.version,
-			// ...
-		};
-	}
+  serialize() {
+    return {
+      version: this.constructor.version,
+      // ...
+    };
+  }
 }
 
 MyObject.initClass();

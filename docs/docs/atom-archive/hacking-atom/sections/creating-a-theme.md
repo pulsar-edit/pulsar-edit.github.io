@@ -95,8 +95,8 @@ Here's an example `.less` file that a package can define using theme variables:
 @import "ui-variables";
 
 .my-selector {
-	background-color: @base-background-color;
-	padding: @component-padding;
+  background-color: @base-background-color;
+  padding: @component-padding;
 }
 ```
 
@@ -104,7 +104,7 @@ Here's an example `.less` file that a package can define using theme variables:
 @import "syntax-variables";
 
 .my-selector {
-	background-color: @syntax-background-color;
+  background-color: @syntax-background-color;
 }
 ```
 

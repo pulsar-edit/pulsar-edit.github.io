@@ -1,5 +1,5 @@
 vuepress
-Vuepress
+VuePress
 atom-languageclient
 Atom-LanguageClient
 autocomplete-plus

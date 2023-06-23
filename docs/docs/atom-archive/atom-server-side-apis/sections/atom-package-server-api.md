@@ -146,31 +146,31 @@ Returns `package.json` with `dist` key added for e.g. tarball download:
 
 ```json
 {
-	"bugs": {
-		"url": "https://github.com/thedaniel/test-package/issues"
-	},
-	"dependencies": {
-		"async": "~0.2.6",
-		"pegjs": "~0.7.0",
-		"season": "~0.13.0"
-	},
-	"description": "Expand snippets matching the current prefix with `tab`.",
-	"dist": {
-		"tarball": "https://codeload.github.com/..."
-	},
-	"engines": {
-		"atom": "*"
-	},
-	"main": "./lib/snippets",
-	"name": "thedaniel-test-package",
-	"publishConfig": {
-		"registry": "https://..."
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/thedaniel/test-package.git"
-	},
-	"version": "0.6.0"
+  "bugs": {
+    "url": "https://github.com/thedaniel/test-package/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.6",
+    "pegjs": "~0.7.0",
+    "season": "~0.13.0"
+  },
+  "description": "Expand snippets matching the current prefix with `tab`.",
+  "dist": {
+    "tarball": "https://codeload.github.com/..."
+  },
+  "engines": {
+    "atom": "*"
+  },
+  "main": "./lib/snippets",
+  "name": "thedaniel-test-package",
+  "publishConfig": {
+    "registry": "https://..."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thedaniel/test-package.git"
+  },
+  "version": "0.6.0"
 }
 ```
 

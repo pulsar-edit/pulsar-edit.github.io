@@ -19,5 +19,6 @@ This appendix covers the the Atom server-side APIs that various parts of Atom co
 
 :::
 
-@include(./sections/atom-package-server-api.md)
-@include(./sections/atom-update-server-api.md)
+<!-- @include: ./sections/atom-package-server-api.md -->
+
+<!-- @include: ./sections/atom-update-server-api.md -->

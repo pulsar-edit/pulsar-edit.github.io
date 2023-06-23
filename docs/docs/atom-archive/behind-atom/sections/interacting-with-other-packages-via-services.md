@@ -4,15 +4,15 @@ Atom packages can interact with each other through versioned APIs called _servic
 
 ```json
 {
-	"providedServices": {
-		"my-service": {
-			"description": "Does a useful thing",
-			"versions": {
-				"1.2.3": "provideMyServiceV1",
-				"2.3.4": "provideMyServiceV2"
-			}
-		}
-	}
+  "providedServices": {
+    "my-service": {
+      "description": "Does a useful thing",
+      "versions": {
+        "1.2.3": "provideMyServiceV1",
+        "2.3.4": "provideMyServiceV2"
+      }
+    }
+  }
 }
 ```
 
@@ -20,17 +20,17 @@ In your package's main module, implement the methods named above. These methods 
 
 ```javascript
 module.exports = {
-	activate() {
-		// ...
-	},
+  activate() {
+    // ...
+  },
 
-	provideMyServiceV1() {
-		return adaptToLegacyAPI(myService);
-	},
+  provideMyServiceV1() {
+    return adaptToLegacyAPI(myService);
+  },
 
-	provideMyServiceV2() {
-		return myService;
-	},
+  provideMyServiceV2() {
+    return myService;
+  },
 };
 ```
 
@@ -38,14 +38,14 @@ Similarly, to consume a service, specify one or more [version _ranges_](https://
 
 ```json
 {
-	"consumedServices": {
-		"another-service": {
-			"versions": {
-				"^1.2.3": "consumeAnotherServiceV1",
-				">=2.3.4 <2.5": "consumeAnotherServiceV2"
-			}
-		}
-	}
+  "consumedServices": {
+    "another-service": {
+      "versions": {
+        "^1.2.3": "consumeAnotherServiceV1",
+        ">=2.3.4 <2.5": "consumeAnotherServiceV2"
+      }
+    }
+  }
 }
 ```
 
@@ -55,18 +55,18 @@ These methods will be called any time a package is activated that _provides_ the
 const { Disposable } = require("atom");
 
 module.exports = {
-	activate() {
-		// ...
-	},
+  activate() {
+    // ...
+  },
 
-	consumeAnotherServiceV1(service) {
-		useService(adaptServiceFromLegacyAPI(service));
-		return new Disposable(() => stopUsingService(service));
-	},
+  consumeAnotherServiceV1(service) {
+    useService(adaptServiceFromLegacyAPI(service));
+    return new Disposable(() => stopUsingService(service));
+  },
 
-	consumeAnotherServiceV2(service) {
-		useService(service);
-		return new Disposable(() => stopUsingService(service));
-	},
+  consumeAnotherServiceV2(service) {
+    useService(service);
+    return new Disposable(() => stopUsingService(service));
+  },
 };
 ```

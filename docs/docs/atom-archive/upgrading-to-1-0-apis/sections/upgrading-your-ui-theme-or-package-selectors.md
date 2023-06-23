@@ -57,7 +57,7 @@ The `::shadow` pseudo-element allows you to bypass a single shadow root. For exa
 ```css
 // Without shadow DOM support
 atom-text-editor .highlight.my-linter {
-	background: hotpink;
+  background: hotpink;
 }
 ```
 
@@ -67,7 +67,7 @@ In order for this style to apply with the shadow DOM enabled, you will need to a
 // With shadow DOM support
 atom-text-editor .highlight.my-linter,
 atom-text-editor::shadow .highlight.my-linter {
-	background: hotpink;
+  background: hotpink;
 }
 ```
 
@@ -80,21 +80,21 @@ The `/deep/` combinator overrides _all_ shadow boundaries, making it useful for 
 ```css
 // Without shadow DOM support
 .scrollbars-visible-always {
-	::-webkit-scrollbar {
-		width: 8px;
-		height: 8px;
-	}
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
 
-	::-webkit-scrollbar-track,
-	::-webkit-scrollbar-corner {
-		background: @scrollbar-background-color;
-	}
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-corner {
+    background: @scrollbar-background-color;
+  }
 
-	::-webkit-scrollbar-thumb {
-		background: @scrollbar-color;
-		border-radius: 5px;
-		box-shadow: 0 0 1px black inset;
-	}
+  ::-webkit-scrollbar-thumb {
+    background: @scrollbar-color;
+    border-radius: 5px;
+    box-shadow: 0 0 1px black inset;
+  }
 }
 ```
 
@@ -103,21 +103,21 @@ To style scrollbars even inside of the shadow DOM, each rule needs to be prefixe
 ```css
 // With shadow DOM support using /deep/
 .scrollbars-visible-always {
-	/deep/ ::-webkit-scrollbar {
-		width: 8px;
-		height: 8px;
-	}
+  /deep/ ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
 
-	/deep/ ::-webkit-scrollbar-track,
-	/deep/ ::-webkit-scrollbar-corner {
-		background: @scrollbar-background-color;
-	}
+  /deep/ ::-webkit-scrollbar-track,
+  /deep/ ::-webkit-scrollbar-corner {
+    background: @scrollbar-background-color;
+  }
 
-	/deep/ ::-webkit-scrollbar-thumb {
-		background: @scrollbar-color;
-		border-radius: 5px;
-		box-shadow: 0 0 1px black inset;
-	}
+  /deep/ ::-webkit-scrollbar-thumb {
+    background: @scrollbar-color;
+    border-radius: 5px;
+    box-shadow: 0 0 1px black inset;
+  }
 }
 ```
 

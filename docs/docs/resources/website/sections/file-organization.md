@@ -39,9 +39,7 @@ be the `sections` files which will be covered next.
 
 e.g.
 
-```
-@include(sections/file-organization.md)
-```
+`<!-- @include: ./sections/file-organization.md -->`
 
 However you can also use `@include` to feature files from a different section of
 the website or even files from outside the main site. We use this to include
@@ -53,10 +51,10 @@ provide an alias for us to use:
 
 ```js
 if (file.startsWith("@orgdocs")) {
-	return file.replace(
-		"@orgdocs",
-		path.resolve(__dirname, "../../node_modules/.github/")
-	);
+  return file.replace(
+    "@orgdocs",
+    path.resolve(__dirname, "../../node_modules/.github/")
+  );
 }
 ```
 
@@ -64,9 +62,7 @@ This allows us to include org-level docs by using this special alias.
 
 e.g.
 
-```
-@include(@orgdocs/TOOLING.md)
-```
+`<!-- @include: @orgdocs/TOOLING.md -->`
 
 ### Sections
 

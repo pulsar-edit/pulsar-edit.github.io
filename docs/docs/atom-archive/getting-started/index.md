@@ -15,7 +15,10 @@ your own risk. Current Pulsar documentation for this section is found at the
 
 This chapter is about getting started with Atom.
 
-@include(./sections/why-atom.md)
-@include(./sections/installing-atom.md)
-@include(./sections/atom-basics.md)
-@include(./sections/summary.md)
+<!-- @include: ./sections/why-atom.md -->
+
+<!-- @include: ./sections/installing-atom.md -->
+
+<!-- @include: ./sections/atom-basics.md -->
+
+<!-- @include: ./sections/summary.md -->

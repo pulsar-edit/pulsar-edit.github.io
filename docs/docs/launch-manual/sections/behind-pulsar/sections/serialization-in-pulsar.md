@@ -16,15 +16,15 @@ an instance of `MyObject` in the same state across refreshes.
 
 ```js
 module.exports = {
-	activate(state) {
-		this.myObject = state
-			? atom.deserializers.deserialize(state)
-			: new MyObject("Hello");
-	},
+  activate(state) {
+    this.myObject = state
+      ? atom.deserializers.deserialize(state)
+      : new MyObject("Hello");
+  },
 
-	serialize() {
-		return this.myObject.serialize();
-	},
+  serialize() {
+    return this.myObject.serialize();
+  },
 };
 ```
 
@@ -32,16 +32,16 @@ module.exports = {
 
 ```js
 class MyObject {
-	constructor(data) {
-		this.data = data;
-	}
+  constructor(data) {
+    this.data = data;
+  }
 
-	serialize() {
-		return {
-			deserializer: "MyObject",
-			data: this.data,
-		};
-	}
+  serialize() {
+    return {
+      deserializer: "MyObject",
+      data: this.data,
+    };
+  }
 }
 ```
 
@@ -81,9 +81,9 @@ object. For example, your main module might look like this:
 
 ```js
 module.exports = {
-	deserializeMyObject({ data }) {
-		return new MyObject(data);
-	},
+  deserializeMyObject({ data }) {
+    return new MyObject(data);
+  },
 };
 ```
 
@@ -99,24 +99,24 @@ in conjunction with a class-level `deserialize` method:
 
 ```js
 class MyObject {
-	static initClass() {
-		atom.deserializers.add(this);
-	}
+  static initClass() {
+    atom.deserializers.add(this);
+  }
 
-	static deserialize({ data }) {
-		return new MyObject(data);
-	}
+  static deserialize({ data }) {
+    return new MyObject(data);
+  }
 
-	constructor(data) {
-		this.data = data;
-	}
+  constructor(data) {
+    this.data = data;
+  }
 
-	serialize() {
-		return {
-			deserializer: "MyObject",
-			data: this.data,
-		};
-	}
+  serialize() {
+    return {
+      deserializer: "MyObject",
+      data: this.data,
+    };
+  }
 }
 
 MyObject.initClass();
@@ -130,22 +130,22 @@ executing your code until it's actually needed.
 
 ```js
 class MyObject {
-	static initClass() {
-		atom.deserializers.add(this);
+  static initClass() {
+    atom.deserializers.add(this);
 
-		this.version = 2;
-	}
+    this.version = 2;
+  }
 
-	static deserialize(state) {
-		// ...
-	}
+  static deserialize(state) {
+    // ...
+  }
 
-	serialize() {
-		return {
-			version: this.constructor.version,
-			// ...
-		};
-	}
+  serialize() {
+    return {
+      version: this.constructor.version,
+      // ...
+    };
+  }
 }
 
 MyObject.initClass();

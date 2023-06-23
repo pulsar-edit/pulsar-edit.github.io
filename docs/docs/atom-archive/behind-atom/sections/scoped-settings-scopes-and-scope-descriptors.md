@@ -14,7 +14,7 @@ Take this piece of JavaScript:
 
 ```js
 function functionName() {
-	console.log("Log it out");
+  console.log("Log it out");
 }
 ```
 
@@ -38,7 +38,7 @@ Scope selectors allow you to target specific tokens just like a CSS selector tar
 
 ```javascript
 atom.config.set("my-package.my-setting", "special value", {
-	scopeSelector: ".source.js .function.name",
+  scopeSelector: ".source.js .function.name",
 });
 ```
 
@@ -56,12 +56,12 @@ In our JavaScript example above, a scope descriptor for the function name token 
 
 ```javascript
 const scopeDescriptor = [
-	"source.js",
-	"meta.function.js",
-	"entity.name.function.js",
+  "source.js",
+  "meta.function.js",
+  "entity.name.function.js",
 ];
 const value = atom.config.get("my-package.my-setting", {
-	scope: scopeDescriptor,
+  scope: scopeDescriptor,
 });
 ```
 
@@ -77,9 +77,9 @@ Let's revisit our example using these methods:
 const editor = atom.workspace.getActiveTextEditor();
 const cursor = editor.getLastCursor();
 const valueAtCursor = atom.config.get("my-package.my-setting", {
-	scope: cursor.getScopeDescriptor(),
+  scope: cursor.getScopeDescriptor(),
 });
 const valueForLanguage = atom.config.get("my-package.my-setting", {
-	scope: editor.getRootScopeDescriptor(),
+  scope: editor.getRootScopeDescriptor(),
 });
 ```

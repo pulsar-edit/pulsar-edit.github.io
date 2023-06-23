@@ -30,8 +30,8 @@ And as always, happy coding, see you among the stars!
 
 - Fixed a bug where macOS menus like "Open" don't do anything
 - Fixed a bug where macOS wouldn't open files by dragging them onto the dock.
-- Fixed a bug where devtools won't open (https://github.com/pulsar-edit/pulsar/issues/260)
-- Fixed a bug where the editor refused to open with the message "GPU process isn't usable. Goodbye" (https://github.com/pulsar-edit/pulsar/issues/233)
+- Fixed a bug where devtools won't open (<https://github.com/pulsar-edit/pulsar/issues/260>)
+- Fixed a bug where the editor refused to open with the message "GPU process isn't usable. Goodbye" (<https://github.com/pulsar-edit/pulsar/issues/233>)
 - Fixed logo artifacts on Linux
 - Fixed Windows Taskbar Icon being 'Cut in Half'
 - Fixed commands like `--version`, `--package` or `--help` did not show outputs

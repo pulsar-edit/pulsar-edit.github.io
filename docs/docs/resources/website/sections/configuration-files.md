@@ -12,7 +12,7 @@ from the available settings, additional VuePress plugins, website description
 and various other elements to control various settings and plugins.
 
 For a full reference you can look at the documentation for [VuePress](https://v2.vuepress.vuejs.org/reference/config.html)
-and the [Hope Theme](https://vuepress-theme-hope.github.io/v2/config/).
+and the [Hope Theme](https://theme-hope.vuejs.pressconfig/).
 
 This file is broken down to to keep it tidy, the below files are imported to
 `config.js` to extend the configuration file without making it unwieldy.
@@ -41,7 +41,7 @@ Each object can have a number of different values. The main ones we use are:
   link from which the text will be set by the YAML title.
 
 For a full reference you can look at the documentation for [VuePress](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#navbar)
-and the [Hope Theme](https://vuepress-theme-hope.github.io/v2/config/theme/layout.html#navbar-config).
+and the [Hope Theme](https://theme-hope.vuejs.pressconfig/theme/layout.html#navbar-config).
 
 ### `sidebar.js`
 
@@ -69,7 +69,7 @@ different values.
   document it links to.
 
 For a full reference you can look at the documentation for [VuePress](https://v2.vuepress.vuejs.org/reference/default-theme/config.html#sidebar)
-and the [Hope Theme](https://vuepress-theme-hope.github.io/v2/config/theme/layout.html#sidebar-config).
+and the [Hope Theme](https://theme-hope.vuejs.pressconfig/theme/layout.html#sidebar-config).
 
 ### Theme
 

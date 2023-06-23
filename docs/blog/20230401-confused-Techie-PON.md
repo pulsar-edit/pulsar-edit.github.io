@@ -34,13 +34,13 @@ Compare the following JSON:
 
 ```json
 {
-	"core": {
-		"projectHome": "/home/dae/pulsar",
-		"welcome": {
-			"showOnStartup": true,
-			"showChangeLog": false
-		}
-	}
+  "core": {
+    "projectHome": "/home/dae/pulsar",
+    "welcome": {
+      "showOnStartup": true,
+      "showChangeLog": false
+    }
+  }
 }
 ```
 

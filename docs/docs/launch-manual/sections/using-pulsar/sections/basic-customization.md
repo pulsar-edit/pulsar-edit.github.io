@@ -78,8 +78,8 @@ rule to your `styles.less` file:
 
 ```css
 .status-bar {
-	color: white;
-	background-color: black;
+  color: white;
+  background-color: black;
 }
 ```
 

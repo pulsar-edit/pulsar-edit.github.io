@@ -2,7 +2,10 @@
 title: Example post
 article: false
 ---
+
 <!--Everything below this line is the example post. The above is necessary just to hide it completely from the website-->
+
+```md
 ---
 title: Example Post
 author: Daeraxa
@@ -17,6 +20,7 @@ sticky: false
 star: false
 article: false
 ---
+```
 
 This is the excerpt.
 

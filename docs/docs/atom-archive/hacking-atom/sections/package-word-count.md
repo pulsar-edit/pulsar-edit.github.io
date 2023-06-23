@@ -58,19 +58,19 @@ The `package.json` in the package we've just generated looks like this currently
 
 ```json
 {
-	"name": "your-name-word-count",
-	"main": "./lib/your-name-word-count",
-	"version": "0.0.0",
-	"description": "A short description of your package",
-	"activationCommands": {
-		"atom-workspace": "your-name-word-count:toggle"
-	},
-	"repository": "https://github.com/atom/your-name-word-count",
-	"license": "MIT",
-	"engines": {
-		"atom": ">=1.0.0 <2.0.0"
-	},
-	"dependencies": {}
+  "name": "your-name-word-count",
+  "main": "./lib/your-name-word-count",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationCommands": {
+    "atom-workspace": "your-name-word-count:toggle"
+  },
+  "repository": "https://github.com/atom/your-name-word-count",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
 }
 ```
 
@@ -78,20 +78,20 @@ If you wanted to use activationHooks, you might have:
 
 ```json
 {
-	"name": "your-name-word-count",
-	"main": "./lib/your-name-word-count",
-	"version": "0.0.0",
-	"description": "A short description of your package",
-	"activationHooks": [
-		"language-javascript:grammar-used",
-		"language-coffee-script:grammar-used"
-	],
-	"repository": "https://github.com/atom/your-name-word-count",
-	"license": "MIT",
-	"engines": {
-		"atom": ">=1.0.0 <2.0.0"
-	},
-	"dependencies": {}
+  "name": "your-name-word-count",
+  "main": "./lib/your-name-word-count",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "activationHooks": [
+    "language-javascript:grammar-used",
+    "language-coffee-script:grammar-used"
+  ],
+  "repository": "https://github.com/atom/your-name-word-count",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
 }
 ```
 
@@ -259,29 +259,29 @@ The second file is a View class, `lib/your-name-word-count-view.js`, which handl
 
 ```javascript
 export default class YourNameWordCountView {
-	constructor(serializedState) {
-		// Create root element
-		this.element = document.createElement("div");
-		this.element.classList.add("your-name-word-count");
+  constructor(serializedState) {
+    // Create root element
+    this.element = document.createElement("div");
+    this.element.classList.add("your-name-word-count");
 
-		// Create message element
-		const message = document.createElement("div");
-		message.textContent = "The YourNameWordCount package is Alive! It's ALIVE!";
-		message.classList.add("message");
-		this.element.appendChild(message);
-	}
+    // Create message element
+    const message = document.createElement("div");
+    message.textContent = "The YourNameWordCount package is Alive! It's ALIVE!";
+    message.classList.add("message");
+    this.element.appendChild(message);
+  }
 
-	// Returns an object that can be retrieved when package is activated
-	serialize() {}
+  // Returns an object that can be retrieved when package is activated
+  serialize() {}
 
-	// Tear down any state and detach
-	destroy() {
-		this.element.remove();
-	}
+  // Tear down any state and detach
+  destroy() {
+    this.element.remove();
+  }
 
-	getElement() {
-		return this.element;
-	}
+  getElement() {
+    return this.element;
+  }
 }
 ```
 
@@ -296,48 +296,48 @@ import YourNameWordCountView from "./your-name-word-count-view";
 import { CompositeDisposable } from "atom";
 
 export default {
-	yourNameWordCountView: null,
-	modalPanel: null,
-	subscriptions: null,
+  yourNameWordCountView: null,
+  modalPanel: null,
+  subscriptions: null,
 
-	activate(state) {
-		this.yourNameWordCountView = new YourNameWordCountView(
-			state.yourNameWordCountViewState
-		);
-		this.modalPanel = atom.workspace.addModalPanel({
-			item: this.yourNameWordCountView.getElement(),
-			visible: false,
-		});
+  activate(state) {
+    this.yourNameWordCountView = new YourNameWordCountView(
+      state.yourNameWordCountViewState
+    );
+    this.modalPanel = atom.workspace.addModalPanel({
+      item: this.yourNameWordCountView.getElement(),
+      visible: false,
+    });
 
-		// Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
-		this.subscriptions = new CompositeDisposable();
+    // Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
+    this.subscriptions = new CompositeDisposable();
 
-		// Register command that toggles this view
-		this.subscriptions.add(
-			atom.commands.add("atom-workspace", {
-				"your-name-word-count:toggle": () => this.toggle(),
-			})
-		);
-	},
+    // Register command that toggles this view
+    this.subscriptions.add(
+      atom.commands.add("atom-workspace", {
+        "your-name-word-count:toggle": () => this.toggle(),
+      })
+    );
+  },
 
-	deactivate() {
-		this.modalPanel.destroy();
-		this.subscriptions.dispose();
-		this.yourNameWordCountView.destroy();
-	},
+  deactivate() {
+    this.modalPanel.destroy();
+    this.subscriptions.dispose();
+    this.yourNameWordCountView.destroy();
+  },
 
-	serialize() {
-		return {
-			yourNameWordCountViewState: this.yourNameWordCountView.serialize(),
-		};
-	},
+  serialize() {
+    return {
+      yourNameWordCountViewState: this.yourNameWordCountView.serialize(),
+    };
+  },
 
-	toggle() {
-		console.log("YourNameWordCount was toggled!");
-		return this.modalPanel.isVisible()
-			? this.modalPanel.hide()
-			: this.modalPanel.show();
-	},
+  toggle() {
+    console.log("YourNameWordCount was toggled!");
+    return this.modalPanel.isVisible()
+      ? this.modalPanel.hide()
+      : this.modalPanel.show();
+  },
 };
 ```
 
@@ -351,11 +351,11 @@ This method does two things. The first is that it creates an instance of the Vie
 
 ```javascript
 this.yourNameWordCountView = new YourNameWordCountView(
-	state.yourNameWordCountViewState
+  state.yourNameWordCountViewState
 );
 this.modalPanel = atom.workspace.addModalPanel({
-	item: this.yourNameWordCountView.getElement(),
-	visible: false,
+  item: this.yourNameWordCountView.getElement(),
+  visible: false,
 });
 ```
 
@@ -369,9 +369,9 @@ this.subscriptions = new CompositeDisposable();
 
 // Register command that toggles this view
 this.subscriptions.add(
-	atom.commands.add("atom-workspace", {
-		"your-name-word-count:toggle": () => this.toggle(),
-	})
+  atom.commands.add("atom-workspace", {
+    "your-name-word-count:toggle": () => this.toggle(),
+  })
 );
 ```
 

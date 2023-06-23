@@ -1,10 +1,7 @@
 ---
-sitemap:
-  priority: 1.0
-  changefreq: "daily"
-lang: en-us
 title: Home
 home: true
+heroText: Pulsar
 actions:
   - text: "Download 📥"
     link: "/download.html"
@@ -13,7 +10,6 @@ actions:
     link: "/docs/"
   - text: "Donate 🎁"
     link: "/donate.html"
-heroText: Pulsar
 features:
   - title: "Cross-platform Editing"
     details: "Pulsar works across operating systems. Use it on OS X, Windows, or Linux."
@@ -27,6 +23,9 @@ features:
     details: "Split your Pulsar interface into multiple panes to compare and edit code across files."
   - title: "Find and replace"
     details: "Find, preview, and replace text as you type in a file or across all your projects."
+sitemap:
+  priority: 1.0
+  changefreq: "daily"
 ---
 
 ## Notices

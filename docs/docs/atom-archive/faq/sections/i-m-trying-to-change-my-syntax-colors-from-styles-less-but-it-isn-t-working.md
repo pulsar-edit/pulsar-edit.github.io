@@ -4,8 +4,8 @@ The best way to tweak the syntax is to wrap your syntax style rules with `atom-t
 
 ```less
 atom-text-editor {
-	.syntax--comment {
-		color: blue;
-	}
+  .syntax--comment {
+    color: blue;
+  }
 }
 ```

@@ -94,10 +94,10 @@ editor:
 
 ```js
 atom.commands.add("atom-text-editor", {
-	"user:insert-date": function (event) {
-		const editor = this.getModel();
-		return editor.insertText(new Date().toLocaleString());
-	},
+  "user:insert-date": function (event) {
+    const editor = this.getModel();
+    return editor.insertText(new Date().toLocaleString());
+  },
 });
 ```
 
@@ -123,9 +123,9 @@ You could add the following to your `init.js`:
 
 ```js
 atom.commands.add("atom-text-editor", "custom:cut-line", function () {
-	const editor = this.getModel();
-	editor.selectLinesContainingCursors();
-	editor.cutSelectedText();
+  const editor = this.getModel();
+  editor.selectLinesContainingCursors();
+  editor.cutSelectedText();
 });
 ```
 
@@ -251,11 +251,11 @@ method on the event object representing the `snippets:expand` command.
 ```js
 // pseudo-code
 editor.command("snippets:expand", (e) => {
-	if (this.cursorFollowsValidPrefix()) {
-		this.expandSnippet();
-	} else {
-		e.abortKeyBinding();
-	}
+  if (this.cursorFollowsValidPrefix()) {
+    this.expandSnippet();
+  } else {
+    e.abortKeyBinding();
+  }
 });
 ```
 
@@ -289,14 +289,14 @@ you press <kbd>Ctrl+Alt+G</kbd>:
 
 ```js
 atom.keymaps.addKeystrokeResolver(({ event }) => {
-	if (
-		event.code === "KeyG" &&
-		event.altKey &&
-		event.ctrlKey &&
-		event.type !== "keyup"
-	) {
-		return "ctrl-@";
-	}
+  if (
+    event.code === "KeyG" &&
+    event.altKey &&
+    event.ctrlKey &&
+    event.type !== "keyup"
+  ) {
+    return "ctrl-@";
+  }
 });
 ```
 

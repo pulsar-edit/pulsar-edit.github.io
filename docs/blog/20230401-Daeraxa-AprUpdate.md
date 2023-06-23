@@ -82,7 +82,7 @@ This functionality is currently only available via the API and website query but
 
 <img src="./assets/node-package.png" height="150" />[^5]
 
-As you may know, `ppm` is the `Pulsar Package Manager` —  the thing you interact with when you want to install or update packages. Most people will probably only use this by interacting with the packages menu inside Pulsar but `ppm` is also supplied as a command line applications accessible via either `ppm` or `pulsar -p`. One issue with this approach is that we have to account for all of the different OSs and packaging methods which means adding it to `$PATH` correctly on each OS etc. (This was even an issue with Atom which had a special macOS only command to install the `apm` command line again).
+As you may know, `ppm` is the `Pulsar Package Manager` — the thing you interact with when you want to install or update packages. Most people will probably only use this by interacting with the packages menu inside Pulsar but `ppm` is also supplied as a command line applications accessible via either `ppm` or `pulsar -p`. One issue with this approach is that we have to account for all of the different OSs and packaging methods which means adding it to `$PATH` correctly on each OS etc. (This was even an issue with Atom which had a special macOS only command to install the `apm` command line again).
 
 With this change we hopefully avoid all of this as it is simply part of the main `pulsar` executable so we only have to account for the details of one application and not two. This also means we can do some stuff we weren't able to easily do before, like expose the `ppm` commands within Pulsar itself without having to use a terminal at all. This update has the potential to improve a lot of things so watch this space!
 
