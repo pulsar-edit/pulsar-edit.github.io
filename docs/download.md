@@ -120,15 +120,12 @@ Current version is [v1.106.0](https://github.com/pulsar-edit/pulsar/releases/tag
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
-**Note** - ARM releases are currently still on v1.105.0 due to a suspected issue
-with our CI provider which will hopefully be resolved soon.
-
 |                                                                Package                                                                |    Distribution    |
 | :-----------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/ARM.Linux.pulsar_1.105.0_arm64.deb)               | Debian/Ubuntu etc. |
-|             [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/ARM.Linux.pulsar-1.105.0.aarch64.rpm)              |  Fedora/RHEL etc.  |
-| [AppImage](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/ARM.Linux.Pulsar-1.105.0-arm64.AppImage)<sup>[1][2]</sup> | All distributions  |
-|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.105.0/ARM.Linux.pulsar-1.105.0-arm64.tar.gz)            | All distributions  |
+|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/ARM.Linux.pulsar_1.106.0_arm64.deb)               | Debian/Ubuntu etc. |
+|             [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/ARM.Linux.pulsar-1.106.0.aarch64.rpm)              |  Fedora/RHEL etc.  |
+| [AppImage](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/ARM.Linux.Pulsar-1.106.0-arm64.AppImage)<sup>[1][2]</sup> | All distributions  |
+|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.106.0/ARM.Linux.pulsar-1.106.0-arm64.tar.gz)            | All distributions  |
 
 [1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
 [2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
