@@ -29,7 +29,14 @@ fixed.
 See below for links to the latest binaries for each OS. If you want to download
 manually or pick a binary from another branch or PR, then follow the [manual instructions](#manual-download).
 
-::: details Linux
+:::: details Linux
+
+::: info Info
+
+We currently have no Rolling Releases for Linux package managers - see
+[Regular Releases](#regular-releases) for these instead.
+
+:::
 
 **x86_64** - For most desktops and laptops with Intel or AMD processors
 
@@ -52,7 +59,7 @@ manually or pick a binary from another branch or PR, then follow the [manual ins
 [1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
 [2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
 
-:::
+::::
 
 :::: details macOS
 
@@ -129,6 +136,12 @@ Current version is [v1.106.0](https://github.com/pulsar-edit/pulsar/releases/tag
 
 [1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
 [2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
+
+**Package Managers**
+
+|                  Package Manager                   |    Distribution    |         Command          |
+| :------------------------------------------------: | :----------------: | :----------------------: |
+| [deb-get](https://github.com/wimpysworld/deb-get/) | Debian/Ubuntu etc. | `deb-get install pulsar` |
 
 :::
 
