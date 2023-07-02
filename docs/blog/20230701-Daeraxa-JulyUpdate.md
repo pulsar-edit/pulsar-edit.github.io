@@ -108,7 +108,7 @@ Despite these issues it does mean that we can now take advantage of the new `les
 
 ---
 
-And just like that we are done with yet another month's updates. As ever if you want to get more involved the community then feel free to join in on our various [social channels](https://pulsar-edit.dev/community.html). Hope to see you again this time next month!
+And just like that, we are done with yet another month's updates. As ever, if you want to get more involved in the community, please join in on our various [social channels](https://pulsar-edit.dev/community.html). Hope to see you again this time next month!
 
 [@maurício szabo]: https://github.com/mauricioszabo
 [@confused-techie]: https://github.com/confused-Techie
