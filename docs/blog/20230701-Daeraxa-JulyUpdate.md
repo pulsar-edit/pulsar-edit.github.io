@@ -82,7 +82,7 @@ So if you are on a Debian based distro and want a quick and easy way to install 
 
 <img src="./assets/toml.png" height=200>[^3]
 
-In our [last regular release](https://pulsar-edit.dev/blog/20230616-Daeraxa-v1.106.0.html) we made a big deal about our modern Tree-sitter migration and new grammars that come with it.
+In our [last regular release](https://pulsar-edit.dev/blog/20230616-Daeraxa-v1.106.0.html), we made a big deal about our modern Tree-sitter migration and the new grammars that come with it.
 
 This work is still very much ongoing and we have new grammars being migrated all the time - our latest is the [TOML Tree-sitter grammar](https://github.com/pulsar-edit/pulsar/pull/617) that [@savetheclocktower] has added which come with all the benefits of a Tree-sitter grammar such as more consistent highlighting and scope for new features in the future.
 
