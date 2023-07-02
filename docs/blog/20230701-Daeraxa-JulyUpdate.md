@@ -104,7 +104,7 @@ The latter item has more impact: because `/` is used in newer CSS features like 
 
 So existing stylesheets in syntax themes, UI themes and community packages need to be updated to ensure that `less` properly does the math rather than handing off invalid CSS, with the math still included. At times an error may be shown informing the user the stylesheet failed to be compiled, whereas in some cases, it won't be reported and instead can result in a broken UI. Pulsar itself has already been updated, as well as all core packages, but now we have to keep a lookout for non-archived community packages that may need help with this change.
 
-Despite these issues it does mean that we can now take advantage of the new `less` features, and be able to keep our implementation up to date, as well as being able to use any modern `less` examples and docs to create styles
+The upside of this upgrade is that we can take advantage of new `less` features and keep our implementation up to date.
 
 ---
 
