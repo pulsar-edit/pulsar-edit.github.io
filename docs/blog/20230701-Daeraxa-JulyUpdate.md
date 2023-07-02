@@ -84,7 +84,7 @@ So if you are on a Debian based distro and want a quick and easy way to install 
 
 In our [last regular release](https://pulsar-edit.dev/blog/20230616-Daeraxa-v1.106.0.html), we made a big deal about our modern Tree-sitter migration and the new grammars that come with it.
 
-This work is still very much ongoing and we have new grammars being migrated all the time - our latest is the [TOML Tree-sitter grammar](https://github.com/pulsar-edit/pulsar/pull/617) that [@savetheclocktower] has added which come with all the benefits of a Tree-sitter grammar such as more consistent highlighting and scope for new features in the future.
+This work is still very much ongoing and we have new grammars being migrated all the time. Our latest is the [TOML Tree-sitter grammar](https://github.com/pulsar-edit/pulsar/pull/617) that [@savetheclocktower] has added. It's got all the benefits of a Tree-sitter grammar: more consistent highlighting, better performance, and support for features that can't be delivered with a TextMate-style grammar.
 
 You can try this out in our [rolling release](https://pulsar-edit.dev/download.html#rolling-release) or wait until the next regular one. Either way you will need to tick the `Use Modern Tree-Sitter Implementation` option in your `Core` settings in order to enable it.
 
