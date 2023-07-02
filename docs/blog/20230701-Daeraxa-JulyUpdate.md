@@ -37,7 +37,7 @@ This has now been resolved, so if you were waiting for an ARM binary you can now
 
 <img src="./assets/reddit-private.png" height=200><img src="./assets/lemmy-icon.png" height=200>[^1]
 
-You may or may not be aware that we decided to [close our subreddit](https://www.reddit.com/r/pulsaredit/comments/146ja5a/rpulsaredit_is_taking_part_in_the_reddit_blackout/) as part of the protest against the Reddit API changes and this remained closed for a period of time after the original 48 hours for various reasons.
+You may or may not be aware that we decided to [close our subreddit](https://www.reddit.com/r/pulsaredit/comments/146ja5a/rpulsaredit_is_taking_part_in_the_reddit_blackout/) as part of the protest against the Reddit API changes. The subreddit remained closed after the original 48 hours for various reasons.
 
 We recently decided to [re-open the subreddit](https://www.reddit.com/r/pulsaredit/comments/14ktr3q/rpulsaredit_is_reopening_read_on_for_our/) for a number of reasons, some because we don't want to abandon a portion of our community entirely and partly because of threats from Reddit themselves.
 
