@@ -43,7 +43,7 @@ We recently decided to [re-open the subreddit](https://www.reddit.com/r/pulsared
 
 The reason I bring this up here is because it is already possible that some people who were using Reddit for Pulsar news have now left it and won't have seen the above post. This post also contains a poll to get feedback from the affected community to see what our next steps would be. Should we close the subreddit and abandon it? Should we open a Lemmy community instead? Should we do both?
 
-So if you are interested in either using Reddit or Lemmy then please have a look at the above post and vote in the poll.
+So if you are interested in using either Reddit or Lemmy, please have a look at the above post and vote in the poll.
 
 ## Antivirus `es5-ext` issue
 
