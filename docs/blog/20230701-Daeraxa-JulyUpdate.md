@@ -53,7 +53,7 @@ This is is nothing to worry about — Pulsar is not a virus, nor do we use depen
 
 After some investigation, we discovered that somewhere in our dependency tree (i.e., a package dependency of a package we use) exists this `es5-ext` package. Early last year, this package was updated to display a "message of peace" to Russians (in reference to the ongoing conflict). This message displays to anyone within a Russian time zone, and, whilst the "payload" of a simple message is harmless, the act of targeting based on time zone has caused this package to be flagged by various scanners. Unfortunately the package author does not seem to want to remove it.
 
-So we have been working on a way to get around this. [@confused-techie] has managed to [pin this to an earlier version](https://github.com/pulsar-edit/pulsar/pull/608) using our own fork of this package.
+So we have been working on a way to get around this. [@confused-techie], with [@savetheclocktower]'s help, has managed to [pin this to an earlier version](https://github.com/pulsar-edit/pulsar/pull/608) using our own fork of this package.
 
 In our experiments, binaries built in this manner are no longer being flagged by any notable antivirus program. Hopefully this gives our users peace of mind.
 
