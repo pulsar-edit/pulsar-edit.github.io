@@ -25,8 +25,6 @@ So with all that covered let's get on with it!
 
 <img src="./assets/Linux-ARM.jpg" height=200>
 
-Some of you may have noticed that we had a bit of a problem recently in producing binaries for ARM on Linux which, whilst for the most part shouldn't have affected anyone except ARM Linux users, did have a knock on effect with some of the community maintained packages on certain package managers. Mostly this would have just been a delay in updating the package to 1.106.0.
-
 Some of you may have noticed that we had a bit of a problem recently in producing binaries for ARM on Linux which, for the most part shouldn't have affected anyone except ARM Linux users, had a knock-on effect with some of the community-maintained packages. Some of these packages (and associated package managers) may have seen a delay receiving an update to 1.106.0.
 
 This wasn't anything to do with our code or builds but was instead a failure of the CI machine used to produce those builds failing to properly connect to various services.
