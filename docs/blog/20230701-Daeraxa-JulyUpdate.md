@@ -55,7 +55,7 @@ After some investigation we discovered that somewhere in our dependency tree (i.
 
 So we have been working on a way to get around this and [@confused-techie] with the help of [@savetheclocktower] has managed to [pin this to an earlier version](https://github.com/pulsar-edit/pulsar/pull/608) using our own fork of this package.
 
-Hopefully this should provide some peace of mind to anyone who has encountered this and with our update this should no longer cause people to worry.
+In our experiments, binaries built in this manner are no longer being flagged by any notable antivirus program. Hopefully this gives our users peace of mind.
 
 ## Pulsar available on deb-get
 
