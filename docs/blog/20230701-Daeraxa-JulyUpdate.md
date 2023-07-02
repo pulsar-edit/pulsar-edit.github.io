@@ -67,7 +67,7 @@ We want to put Pulsar on all major package managers, but it can be trickier than
 
 That said: Pulsar is now officially supported on [deb-get](https://github.com/wimpysworld/deb-get), a package manager for Debian (and Debian based distributions such as Ubuntu). Amongst package managers, `deb-get` is straightforward for us to support; all it does is grab a pre-built `.deb` binary from our GitHub releases and install it as any other `.deb`. You can see exactly _how_ straightforward by looking at [the script that grabs the latest version of Pulsar](https://github.com/wimpysworld/deb-get/blob/main/01-main/packages/pulsar).
 
-However this does mean you can now easily manage it. For example, once you have installed `deb-get` all you have to do to install Pulsar is:
+It's simple from the user's perspective, too. Once you have installed `deb-get`, all you have to do to install Pulsar is:
 
 - `deb-get install pulsar`
 
