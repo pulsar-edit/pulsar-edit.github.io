@@ -51,7 +51,7 @@ So if you are interested in using either Reddit or Lemmy, please have a look at 
 
 Some users have been reporting that various antivirus applications and virus scanning tools have been identifying Pulsar as a virus due to the `es5-ext` package.
 
-This is is nothing to worry about, Pulsar is not a virus nor do we use dependencies that are.
+This is is nothing to worry about — Pulsar is not a virus, nor do we use dependencies that are.
 
 After some investigation we discovered that somewhere in our dependency tree (i.e. a package dependency of a package we use) exists this `es5-ext` package. At some point this package was updated to display a "message of peace" to Russians (in reference to the ongoing conflict). This message displays to anyone within the Russian timezones and, whilst the "payload" of a simple message is harmless, the act of targeting based on time-zone has caused this package to be flagged by various scanners and the package author does not seem to want to remove it.
 
