@@ -53,9 +53,9 @@ Some users have been reporting that various antivirus applications and virus sca
 
 This is is nothing to worry about — Pulsar is not a virus, nor do we use dependencies that are.
 
-After some investigation we discovered that somewhere in our dependency tree (i.e. a package dependency of a package we use) exists this `es5-ext` package. At some point this package was updated to display a "message of peace" to Russians (in reference to the ongoing conflict). This message displays to anyone within the Russian timezones and, whilst the "payload" of a simple message is harmless, the act of targeting based on time-zone has caused this package to be flagged by various scanners and the package author does not seem to want to remove it.
+After some investigation, we discovered that somewhere in our dependency tree (i.e., a package dependency of a package we use) exists this `es5-ext` package. Early last year, this package was updated to display a "message of peace" to Russians (in reference to the ongoing conflict). This message displays to anyone within a Russian time zone, and, whilst the "payload" of a simple message is harmless, the act of targeting based on time zone has caused this package to be flagged by various scanners. Unfortunately the package author does not seem to want to remove it.
 
-So we have been working on a way to get around this and [@confused-techie] with the help of [@savetheclocktower] has managed to [pin this to an earlier version](https://github.com/pulsar-edit/pulsar/pull/608) using our own fork of this package.
+So we have been working on a way to get around this. [@confused-techie] has managed to [pin this to an earlier version](https://github.com/pulsar-edit/pulsar/pull/608) using our own fork of this package.
 
 In our experiments, binaries built in this manner are no longer being flagged by any notable antivirus program. Hopefully this gives our users peace of mind.
 
@@ -63,9 +63,9 @@ In our experiments, binaries built in this manner are no longer being flagged by
 
 <img src="./assets/deb-get-logo.png" height=200>[^2]
 
-So I think it is of no surprise that we want to get Pulsar on various package managers but with things developing so quickly and with us wanting to make sure we can support some of the more basic features with our current builds we have been taking this somewhat slowly.
+We want to put Pulsar on all major package managers, but it can be trickier than it looks. Various package managers have special requirements and restrictions, so it behoves us to move slowly and make sure we understand those constraints.
 
-This is really just a small announcement to say that Pulsar is officially supported on [deb-get](https://github.com/wimpysworld/deb-get) which is a package manager for Debian that is perfect for us at this point as all it really does is grab a pre-built `.deb` binary from our GitHub releases and install it as any other `.deb`. Our main reason to support this is because it doesn't need to do any setting of your environment or need any maintenance at all - it is just a small and simple script that just goes and grabs the latest version - you can see it on the [deb-get repo](https://github.com/wimpysworld/deb-get/blob/main/01-main/packages/pulsar)
+That said: Pulsar is now officially supported on [deb-get](https://github.com/wimpysworld/deb-get), a package manager for Debian (and Debian based distributions such as Ubuntu). Amongst package managers, `deb-get` is straightforward for us to support; all it does is grab a pre-built `.deb` binary from our GitHub releases and install it as any other `.deb`. You can see exactly _how_ straightforward by looking at [the script that grabs the latest version of Pulsar](https://github.com/wimpysworld/deb-get/blob/main/01-main/packages/pulsar).
 
 However this does mean you can now easily manage it. For example, once you have installed `deb-get` all you have to do to install Pulsar is:
 
