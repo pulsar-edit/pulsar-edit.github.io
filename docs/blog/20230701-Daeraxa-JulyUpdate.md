@@ -100,7 +100,7 @@ So [this PR](https://github.com/pulsar-edit/pulsar/pull/611) bumps it to `less-c
 - Parantheses required for mixin calls
 - Parens-division now the default math setting
 
-The most noticeable thing, at least within Pulsar, is that all division is required, and all calculations are recommended, to be enclosed within parentheses. Essentially meaning `less` does math less eagerly, as opposed to 3.x which is described as doing math eagerly.
+The latter item has more impact: because `/` is used in newer CSS features like grids, parentheses are needed when doing division to remove ambiguity about the function of `/` on a particular line. Lots of usages in Pulsar core needed to be updated as a result of this, so it's quite possible that third-party packages are affected as well.
 
 So existing stylesheets in syntax themes, UI themes and community packages need to be updated to ensure that `less` properly does the math rather than handing off invalid CSS, with the math still included. At times an error may be shown informing the user the stylesheet failed to be compiled, whereas in some cases, it won't be reported and instead can result in a broken UI. Pulsar itself has already been updated, as well as all core packages, but now we have to keep a lookout for non-archived community packages that may need help with this change.
 
