@@ -97,7 +97,7 @@ As ever we are after feedback, so if you use this new TOML Tree-sitter grammar (
 This is still in the works but [@confused-techie] has been making some updates to be added in the near future that bumps the version of `less-cache` that we are using.
 
 `less-cache` is a module that handles turning all Pulsar's (and our community's) packages written in [less](https://lesscss.org/) into valid CSS, as well as ensuring each one is able to import the values from Pulsar that it cares about. For the past three years `less-cache` has been using `less@3.12.2` which, while fine, has been missing out on some of the big new changes in less after version 4 was released.
-So [this PR](https://github.com/pulsar-edit/pulsar/pull/611) bumps it to `less-cache@2.0.0` in order to bump the version of `less` to 4.1.3 which brings along these exciting new features but also introduces breaking changes to existing `less` stylesheets. The biggest of which being:
+So [this PR](https://github.com/pulsar-edit/pulsar/pull/611) bumps it to `less-cache@2.0.0` in order to bump the version of `less` to 4.1.3. This change gives us some exciting new features, but it also introduces breaking changes to existing `less` stylesheets:
 
 - Parentheses required for mixin calls (`.some-mixin()` instead of `.some-mixin`)
 - Parens-division now required around math expressions that use division
