@@ -15,11 +15,11 @@ What has it got in its pocketses? It's the July community update!
 
 # Welcome to the July Community Update
 
-This month's update is a maybe a little different in tone to some of the others in that we have had to deal with some problems recently outside of our control which means our first few items are a little more "serious" and a bit less optimistic that our usual updates. That being said these have been front loaded into this update with all the good news coming in the second half, so don't despair!
+This month's update is a little different in tone to some of the others. Recently, we’ve had to deal with some problems outside of our control which is why our first few items are a little more "serious" and a bit less optimistic than our usual updates. But don’t despair — all the good news comes in the second half!
 
-This month we have to cover some of the issues such as our CI not building binaries, discussions about the future of our subreddit and some false antivirus positives on our packages but we then come back strong with a new method of downloading Pulsar and a bunch of improvements to the application!
+The "bad news" section covers our CI not building certain binaries, uncertainty about our subreddit's future, and some false antivirus positives on a Pulsar dependency, but the "good news" section cleanses the palate with a new method of downloading Pulsar as well as a bunch of improvements to the application!
 
-So with all that covered lets get on with it!
+So with all that covered let's get on with it!
 
 ## ARM builds problem
 
@@ -27,9 +27,11 @@ So with all that covered lets get on with it!
 
 Some of you may have noticed that we had a bit of a problem recently in producing binaries for ARM on Linux which, whilst for the most part shouldn't have affected anyone except ARM Linux users, did have a knock on effect with some of the community maintained packages on certain package managers. Mostly this would have just been a delay in updating the package to 1.106.0.
 
+Some of you may have noticed that we had a bit of a problem recently in producing binaries for ARM on Linux which, for the most part shouldn't have affected anyone except ARM Linux users, had a knock-on effect with some of the community-maintained packages. Some of these packages (and associated package managers) may have seen a delay receiving an update to 1.106.0.
+
 This wasn't anything to do with our code or builds but was instead a failure of the CI machine used to produce those builds failing to properly connect to various services.
 
-This has now been resolved so if you were waiting for an ARM binary then these are fully available on our [downloads](https://pulsar-edit.dev/download.html) page as normal and for those relying on a community package or distribution then any blocker will now have been cleared.
+This has now been resolved, so if you were waiting for an ARM binary you can now download it on our [downloads](https://pulsar-edit.dev/download.html) page as normal. Community maintained packages should now all be up-to-date as well.
 
 ## Subreddit closure/reopening and possible Lemmy community
 
@@ -97,12 +99,14 @@ This is still in the works but [@confused-techie] has been making some updates t
 `less-cache` is a module that handles turning all Pulsar's (and our community's) packages written in [less](https://lesscss.org/) into valid CSS, as well as ensuring each one is able to import the values from Pulsar that it cares about. For the past three years `less-cache` has been using `less@3.12.2` which, while fine, has been missing out on some of the big new changes in less after version 4 was released.
 So [this PR](https://github.com/pulsar-edit/pulsar/pull/611) bumps it to `less-cache@2.0.0` in order to bump the version of `less` to 4.1.3 which brings along these exciting new features but also introduces breaking changes to existing `less` stylesheets. The biggest of which being:
 
-- Parantheses required for mixin calls
-- Parens-division now the default math setting
+- Parentheses required for mixin calls (`.some-mixin()` instead of `.some-mixin`)
+- Parens-division now required around math expressions that use division
+
+See [less.js v4.0.0 change log](https://github.com/less/less.js/releases/tag/v4.0.0) for more info.
 
 The latter item has more impact: because `/` is used in newer CSS features like grids, parentheses are needed when doing division to remove ambiguity about the function of `/` on a particular line. Lots of usages in Pulsar core needed to be updated as a result of this, so it's quite possible that third-party packages are affected as well.
 
-So existing stylesheets in syntax themes, UI themes and community packages need to be updated to ensure that `less` properly does the math rather than handing off invalid CSS, with the math still included. At times an error may be shown informing the user the stylesheet failed to be compiled, whereas in some cases, it won't be reported and instead can result in a broken UI. Pulsar itself has already been updated, as well as all core packages, but now we have to keep a lookout for non-archived community packages that may need help with this change.
+We're brainstorming ways that we can detect these usages and minimise the impact on these packages, but if you've got a community package that you're maintaining that uses `less` stylesheets, please take a moment to see if it's affected. At times, an error may be shown informing the user that the stylesheet failed to be compiled; in other cases, it won't be reported and instead can result in a broken UI.
 
 The upside of this upgrade is that we can take advantage of new `less` features and keep our implementation up to date.
 
