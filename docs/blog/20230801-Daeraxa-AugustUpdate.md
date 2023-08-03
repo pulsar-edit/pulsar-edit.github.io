@@ -11,6 +11,8 @@ tag:
 
 How many roads must a man walk down? Not a clue, but what I do know is that this is the one and only Pulsar Community Update!
 
+<!-- more -->
+
 # Welcome to the August Community Update
 
 As always, a big, warm welcome to this month's update! This time around we have some interesting new features, some of which have been in the works for a while, so it is great to be able to report on their state as they will soon be making their way to a Pulsar near you! These updates include news on a new "pulsar-updater" package designed to help you keep up to date with our latest releases, a big new feature for one of our core packages for working with Markdown documents and bringing some of our dependencies up to date so you no longer have to keep around old toolchains.
