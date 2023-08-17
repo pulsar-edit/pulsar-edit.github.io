@@ -112,7 +112,7 @@ feature issues that have already been resolved in our Rolling Release so if a
 particular fix or feature is important to you it may be worth swapping to one of
 those instead.
 
-Current version is [v1.107.1](https://github.com/pulsar-edit/pulsar/releases/tag/v1.107.1).
+Current version is [v1.108.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.108.0).
 
 ::: details Linux
 
@@ -120,19 +120,19 @@ Current version is [v1.107.1](https://github.com/pulsar-edit/pulsar/releases/tag
 
 |                                                           Package                                                           |    Distribution    |
 | :-------------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|           [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Linux.pulsar_1.107.1_amd64.deb)            | Debian/Ubuntu etc. |
-|           [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Linux.pulsar-1.107.1.x86_64.rpm)           |  Fedora/RHEL etc.  |
-| [AppImage](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Linux.Pulsar-1.107.1.AppImage)<sup>[1][2]</sup> | All distributions  |
-|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Linux.pulsar-1.107.1.tar.gz)            | All distributions  |
+|           [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Linux.pulsar_1.108.0_amd64.deb)            | Debian/Ubuntu etc. |
+|           [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Linux.pulsar-1.108.0.x86_64.rpm)           |  Fedora/RHEL etc.  |
+| [AppImage](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Linux.Pulsar-1.108.0.AppImage)<sup>[1][2]</sup> | All distributions  |
+|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Linux.pulsar-1.108.0.tar.gz)            | All distributions  |
 
 **ARM_64** - For ARM based devices - Raspberry Pi, Pinebook etc.
 
 |                                                                Package                                                                |    Distribution    |
 | :-----------------------------------------------------------------------------------------------------------------------------------: | :----------------: |
-|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/ARM.Linux.pulsar_1.107.1_arm64.deb)               | Debian/Ubuntu etc. |
-|             [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/ARM.Linux.pulsar-1.107.1.aarch64.rpm)              |  Fedora/RHEL etc.  |
-| [AppImage](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/ARM.Linux.Pulsar-1.107.1-arm64.AppImage)<sup>[1][2]</sup> | All distributions  |
-|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/ARM.Linux.pulsar-1.107.1-arm64.tar.gz)            | All distributions  |
+|              [deb](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/ARM.Linux.pulsar_1.108.0_arm64.deb)               | Debian/Ubuntu etc. |
+|             [rpm](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/ARM.Linux.pulsar-1.108.0.aarch64.rpm)              |  Fedora/RHEL etc.  |
+| [AppImage](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/ARM.Linux.Pulsar-1.108.0-arm64.AppImage)<sup>[1][2]</sup> | All distributions  |
+|           [tar.gz](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/ARM.Linux.pulsar-1.108.0-arm64.tar.gz)            | All distributions  |
 
 [1] Appimage may require `--no-sandbox` as an argument to run correctly on some systems.  
 [2] Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g on Ubuntu >=22.04 `apt install libfuse2`.
@@ -151,15 +151,15 @@ Current version is [v1.107.1](https://github.com/pulsar-edit/pulsar/releases/tag
 
 |                                                     Package                                                      |     Type      |
 | :--------------------------------------------------------------------------------------------------------------: | :-----------: |
-|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Silicon.Mac.Pulsar-1.107.1-arm64.dmg)   | DMG installer |
-| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Silicon.Mac.Pulsar-1.107.1-arm64-mac.zip) |  Zip archive  |
+|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Silicon.Mac.Pulsar-1.108.0-arm64.dmg)   | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Silicon.Mac.Pulsar-1.108.0-arm64-mac.zip) |  Zip archive  |
 
 **Intel** - For Intel macs
 
 |                                                 Package                                                  |     Type      |
 | :------------------------------------------------------------------------------------------------------: | :-----------: |
-|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Intel.Mac.Pulsar-1.107.1.dmg)   | DMG installer |
-| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Intel.Mac.Pulsar-1.107.1-mac.zip) |  Zip archive  |
+|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Intel.Mac.Pulsar-1.108.0.dmg)   | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Intel.Mac.Pulsar-1.108.0-mac.zip) |  Zip archive  |
 
 ::::
 
@@ -177,8 +177,8 @@ You can bypass this by clicking "More info" then "Run anyway".
 
 |                                                   Package                                                   |         Type          |
 | :---------------------------------------------------------------------------------------------------------: | :-------------------: |
-| [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Windows.Pulsar.Setup.1.107.1.exe)  |       Installer       |
-| [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.107.1/Windows.Pulsar-1.107.1-win.zip) | Portable (no install) |
+| [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Windows.Pulsar.Setup.1.108.0.exe)  |       Installer       |
+| [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Windows.Pulsar-1.108.0-win.zip) | Portable (no install) |
 
 |                               Package Manager                                |        Command         |
 | :--------------------------------------------------------------------------: | :--------------------: |
