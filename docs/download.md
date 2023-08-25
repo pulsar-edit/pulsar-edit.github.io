@@ -180,11 +180,9 @@ You can bypass this by clicking "More info" then "Run anyway".
 | [Setup](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Windows.Pulsar.Setup.1.108.0.exe)  |       Installer       |
 | [Portable](https://github.com/pulsar-edit/pulsar/releases/download/v1.108.0/Windows.Pulsar-1.108.0-win.zip) | Portable (no install) |
 
-|                               Package Manager                                |        Command         |
-| :--------------------------------------------------------------------------: | :--------------------: |
-| [Chocolatey](https://community.chocolatey.org/packages/pulsar)<sup>[1]</sup> | `choco install pulsar` |
-
-[1] Our Chocolatey release is currently still on v1.103.0 due to file size restrictions but we are working to resolve this to provide proper support again.
+|                               Package Manager                  |        Command         |
+| :------------------------------------------------------------: | :--------------------: |
+| [Chocolatey](https://community.chocolatey.org/packages/pulsar) | `choco install pulsar` |
 
 ::::
 
