@@ -69,7 +69,7 @@ But with all of these ideas, as a Do-ocracy, [attempts](https://github.com/pulsa
 
 While this did solve a few of our needs from above, it didn't solve all of them, and introduced its own issues.
 
-The biggest one, GitHub Actions doesn't support Apple Silicon or ARM Linux. Even though Apple Silicon support is on GitHub's [Roadmap](https://github.com/orgs/github/projects/4247), it has been pushed forward over and over since June 15th, 2022. So this support wasn't something we could rely on.
+The biggest one: GitHub Actions doesn't support Apple Silicon or ARM Linux. Even though Apple Silicon support is on GitHub's [Roadmap](https://github.com/orgs/github/projects/4247), it has been pushed forward over and over since June 15th, 2022. So this support wasn't something we could rely on.
 
 In finding a solution to our platform support issue, we looked at quite a few possibilities, at a point we were even considering purchasing an Apple Silicon Mac, second hand, and using GitHub Self Hosted Runners to build there. But of course the simplest answer, would be to only build Apple Silicon on Cirrus, but we had to consider what that would actually come out to. Looking at using all 50 free credits for building only Apple Silicon binaries, would mean getting up to 833.333 minutes within Cirrus, but we had to compare those minutes into what we could acheive:
 
