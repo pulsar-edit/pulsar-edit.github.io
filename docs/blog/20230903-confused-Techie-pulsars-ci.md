@@ -43,7 +43,7 @@ Keeping in mind that we trigger the same amount of runs per platform, the differ
 
 | Month | Windows Credits/Hours  | Linux Credits/Hours    | macOS Credits/Hours     |
 | ----- | ---------------------- | ---------------------- | ----------------------- |
-| May   | 66 credits / 273 hours | 72credits / 396 hours  | 490 credits / 544 hours |
+| May   | 66 credits / 273 hours | 72 credits / 396 hours  | 490 credits / 544 hours |
 | July  | 55 credits / 229 hours | 39 credits / 213 hours | 305 credits / 339 hours |
 
 Using this data, where we consider 1 credits = $1 USD, minus the novel 50 free credits, July would've costed $349 USD. We could then realistically estimate that building Pulsar binaries would cost ~$350 USD a month.
