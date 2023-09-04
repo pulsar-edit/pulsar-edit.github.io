@@ -25,7 +25,7 @@ Whenever someone made a Pull Request to Pulsar, their code changes would be run 
 
 - The entirety of the Pulsar codebase would be have its tests run on GitHub Actions.
 - Every single core package (those that come with Pulsar) would also be tested via GitHub Actions.
-- A Pulsar binary was built for every single platform we support, this means Windows, Linux, macOS, Apple Silicon, and ARM Linux.
+- A Pulsar binary was built for every single platform we support, this means Windows, Linux, macOS (Intel), macOS (Apple silicon), and ARM Linux.
 
 The big point of interest today is the process of building the Pulsar binaries.
 
