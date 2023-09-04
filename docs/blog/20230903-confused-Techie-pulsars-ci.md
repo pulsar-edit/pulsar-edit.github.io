@@ -23,7 +23,7 @@ To better understand how drastically things have changed, let's quickly take a l
 
 Whenever someone made a Pull Request to Pulsar, their code changes would be run through a gauntlet of processes:
 
-- The entirety of the Pulsar codebase would be have its tests run on GitHub Actions.
+- The entirety of the Pulsar codebase would have its tests run on GitHub Actions.
 - Every single core package (those that come with Pulsar) would also be tested via GitHub Actions.
 - A Pulsar binary was built for every single platform we support, this means Windows, Linux, macOS (Intel), macOS (Apple silicon), and ARM Linux.
 
