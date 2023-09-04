@@ -122,7 +122,7 @@ With these exact numbers of our current trends, we could then assume we have an 
 
 But even though we now knew what we needed to do, there was still a long list of things we had to change to get there, especially now considering our deadline to do so was only a few days away.
 
-After a flurry of PR's and lots of testing, the team at Pulsar was able to accomplish all of the following in just under our 5 day limit:
+After a flurry of PRs and lots of testing, the Pulsar team was able to accomplish all of the following in just under our 5 day limit:
 
 - Migrated all other platforms over to GitHub Actions
 - Ensure binaries are easily downloadable via GitHub Actions for testing purposes
