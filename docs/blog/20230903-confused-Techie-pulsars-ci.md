@@ -48,7 +48,7 @@ Keeping in mind that we trigger the same amount of runs per platform, the differ
 
 Using this data, where we consider 1 credit = $1 USD, minus the novel 50 free credits, July would've cost $349 USD. We could then realistically estimate that building Pulsar binaries will cost ~$350 USD a month.
 
-Which when we consider that's a higher price than anything the Pulsar team spends any money on for Pulsar, it's a bit of a tough pill to swallow. But especially because Cirrus isn't the only service out there, no one on the team could justify spending our sponsors money on such a large expense. At this point, we had to determine a way to lower our usage or move off the platform.
+Which when we consider that's a higher price than anything the Pulsar team spends any money on for Pulsar, it's a bit of a tough pill to swallow. But especially because Cirrus isn't the only service out there, no one on the team could justify spending our sponsor's money on such a large expense. At this point, we had to determine a way to lower our usage or move off the platform.
 
 But to move off Cirrus, we had to consider everything it currently does for us:
 
