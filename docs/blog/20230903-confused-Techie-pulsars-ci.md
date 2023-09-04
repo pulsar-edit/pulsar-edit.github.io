@@ -15,7 +15,7 @@ How Pulsar's CI has recently changed.
 CI, or Continuous Integration, is a rather broad term used to describe the DevOps process of continuously (oftentimes on every change) building and testing a piece of software. In Pulsar's case this means two big things:
 
 - Testing Pulsar and all of its core packages
-- Building Pulsar binaries, and even then running tests using those built binaries.
+- Building Pulsar binaries and then running tests using those built binaries.
 
 To better understand how drastically things have changed, lets quickly take a look how Pulsar's CI has looked up until this month since nearly the beginning of the project.
 
