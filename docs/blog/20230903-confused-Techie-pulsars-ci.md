@@ -67,7 +67,7 @@ At this point, with the above knowledge, we had several different solutions to j
 
 But with all of these ideas, as a Do-ocracy, [attempts](https://github.com/pulsar-edit/pulsar/pull/682) began being made to switch as much as possible to GitHub Actions.
 
-While this did solve a few of our needs from above, it didn't solve all of them, and introduced it's own issues.
+While this did solve a few of our needs from above, it didn't solve all of them, and introduced its own issues.
 
 The biggest one, GitHub Actions doesn't support Apple Silicon or ARM Linux. Even though Apple Silicon support is on GitHub's [Roadmap](https://github.com/orgs/github/projects/4247), it has been pushed forward over and over since June 15th, 2022. So this support wasn't something we could rely on.
 
