@@ -69,7 +69,7 @@ So with the above process and an improvement to the wording in the `unpublish` c
 
 <img src="./assets/cleaning.png" height=200>
 
-It was brought to our attention by a community member that, upon uninstall, Pulsar was not clearing up all the directories it created during installation. Whilst this is somewhat expected for the configuration directory, there were also examples of other elements being left behind. To this end, [@confused-techie] has been putting together a new package, [pulsar-cleanup](https://github.com/pulsar-edit/pulsar-cleanup), to try and deal with these leftover elements. As `electron-builder` is largely in control of the uninstall process, some elements do get left over at the end of the process. This utility will be a stand-alone executable that can be used to fully clean up all these extra artefacts, leaving your system entirely clean of any Pulsar installation.
+It was brought to our attention by a community member that, upon uninstall, Pulsar was not clearing up all the directories it created during installation. Whilst this is somewhat expected for the configuration directory, there were also examples of other elements being left behind. To this end, [@confused-techie] has been putting together a new package, [pulsar-cleanup](https://github.com/pulsar-edit/pulsar-cleanup), to try and deal with these leftover elements. As `electron-builder` is largely in control of the uninstall process, some elements do get left over at the end of the process. This utility will be a stand-alone executable that can be used to fully clean up all these extra artifacts, leaving your system entirely clean of any Pulsar installation.
 
 ## Community spotlight
 
