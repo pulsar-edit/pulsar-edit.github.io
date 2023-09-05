@@ -81,8 +81,13 @@ In our community spotlight this month, we want to say a big thank you to new fir
 
 And yet again that brings us to the end of another community update. We hope you enjoyed this content and that you are looking forward to seeing some of these changes coming to a Pulsar near you! As ever, it would be amiss of us to not mention our amazing community and especially our financial donors, who without this project would simply not be possible! So thank you again and see you all again this time next month!
 
+[@maurício szabo]: https://github.com/mauricioszabo
 [@confused-techie]: https://github.com/confused-Techie
 [@spiker985]: https://github.com/spiker985
+[@meadowsys]: https://github.com/Meadowsys
+[@kaosine]: https://github.com/kaosine
+[@savetheclocktower]: https://github.com/savetheclocktower
+[@deedeeg]: https://github.com/DeeDeeG
 
 [@colamaroro]: https://github.com/COLAMAroro
 [@asiloisad/@bacadra]: https://github.com/bacadra/
