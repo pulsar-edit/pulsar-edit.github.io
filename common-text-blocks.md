@@ -10,7 +10,8 @@ Use the first two as sparingly as possible unless **_ABSOLUTELY_** necessary.
 ```
 ::: warning Under Construction
 This document is under construction, please check back soon for updates.
-Please see [our socials](/docs/launch-manual/sections/faq/#having-trouble) and feel free to ask for assistance or inquire as to the status of this document.
+Please see [our socials](/docs/community) and feel free to ask for assistance or
+inquire as to the status of this document.
 :::
 ```
 
@@ -18,7 +19,8 @@ Please see [our socials](/docs/launch-manual/sections/faq/#having-trouble) and f
 
 ```
 ::: danger STOP
-This is being kept for archival purposes only from the original Atom documentation. As this may no longer be relevant to Pulsar, use this at your own risk.
+This is being kept for archival purposes only from the original Atom documentation.
+As this may no longer be relevant to Pulsar, use this at your own risk.
 Current Pulsar documentation is found at [documentation home](/docs/launch-manual/getting-started).
 :::
 ```
