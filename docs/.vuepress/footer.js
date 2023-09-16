@@ -3,6 +3,7 @@ const orgForum = "https://github.com/orgs/pulsar-edit/discussions";
 const orgChat = "https://discord.gg/7aEbB9dGRT";
 const orgReddit = "https://www.reddit.com/r/pulsaredit/";
 const orgMastodon = "https://fosstodon.org/@pulsaredit";
+const orgLemmy = "https://lemmy.ml/c/pulsaredit";
 const orgPrivacy = "https://pulsar-edit.dev/docs/resources/privacy";
 const orgConduct = "https://pulsar-edit.dev/docs/resources/conduct";
 const orgContact = "https://pulsar-edit.dev/community.html";
@@ -123,6 +124,9 @@ const footer =
         <i class="fa-brands fa-reddit"></i>
       <a href=${orgMastodon}>
         <i class="fa-brands fa-mastodon"></i>
+      </a>
+      <a href=${orgLemmy}>
+        <i class="fa-solid fa-users"></i>
       </a>
       <a href=${donateLink}>
         <i class="fa-solid fa-hand-holding-dollar"></i>

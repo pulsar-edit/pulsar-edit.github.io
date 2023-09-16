@@ -76,6 +76,13 @@ html[data-theme=dark] .custom-container.details th {
   }
 }
 
+//Blog changes
+//Blog image specific centre alignment
+.blog-image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 //Website footer section
 
 //Theme adds a sidebar width even on mobile when it doesnt show, this removes it.
