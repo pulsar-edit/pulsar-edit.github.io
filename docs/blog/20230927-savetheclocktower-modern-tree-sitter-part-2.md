@@ -145,7 +145,7 @@ But that’s not all. If you use Pulsar, chances are very good that you use a pa
 
 ## What would break?
 
-Let’s go back to those built-in query files and consider our string example. In [`tree-sitter-javascript/queries/highlights.scm`](https://github.com/tree-sitter/tree-sitter-javascript/blob/master/queries/highlights.scm#L85-L88) we can see how strings are treated:
+With this in mind, let’s go back to those built-in Tree-sitter query files and consider our string example. In [`tree-sitter-javascript/queries/highlights.scm`](https://github.com/tree-sitter/tree-sitter-javascript/blob/master/queries/highlights.scm#L85-L88) we can see how strings are treated:
 
 ```scm
 [
