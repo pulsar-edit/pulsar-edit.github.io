@@ -154,7 +154,7 @@ With this in mind, let’s go back to those built-in Tree-sitter query files and
 ] @string
 ```
 
-This rule treates three different kinds of strings — single-quoted, double-quoted, and backtick-quoted — identically. If we used this rule as written, we’d be applying a scope name of `string` to all JavaScript strings. Not `string.quoted.double.js` and the like; just `string`. And there’s no rule in that file that applies scope names to string delimiters, either.
+This rule treats three different kinds of strings — single-quoted, double-quoted, and backtick-quoted — identically. If we used this rule as written, we’d be applying a scope name of `string` to all JavaScript strings. Not `string.quoted.double.js` and the like; just `string`. And there’s no rule in that file that applies scope names to string delimiters, either.
 
 If we embraced a system that used names like `string` and `comment` instead of `string.quoted.double.js` and `comment.block.documentation.js`, the editing experience would be worse in a number of ways ways — some tiny, some large.
 
