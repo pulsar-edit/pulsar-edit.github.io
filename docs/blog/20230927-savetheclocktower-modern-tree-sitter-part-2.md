@@ -15,7 +15,7 @@ Today I’ll try to illustrate what that system looks like and why it’s import
 
 <!-- more -->
 
-When I first started getting involved with Pulsar back in January, [@maurício](https://github.com/mauricioszabo/) had just begun the process of migrating us to the `web-tree-sitter` bindings, and seemed to be dreading the enormity of the task.
+When I first started getting involved with Pulsar back in January, [@mauricioszabo](https://github.com/mauricioszabo/) had just begun the process of migrating us to the `web-tree-sitter` bindings, and seemed to be dreading the enormity of the task.
 
 He noticed that most Tree-sitter parsers had [their own built-in query files](https://github.com/tree-sitter/tree-sitter-javascript/blob/master/queries/highlights.scm) for syntax highlighting. These `highlights.scm` files act like a sort of stylesheet for a Tree-sitter tree: they’re used when you run [`tree-sitter highlight`](https://tree-sitter.github.io/tree-sitter/syntax-highlighting) from the command line, and they’re what GitHub uses when it highlights code in a web browser.
 
