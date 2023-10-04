@@ -1,7 +1,7 @@
 ---
 title: Community Update
 author: Daeraxa
-date: 2023-10-02
+date: 2023-10-04
 category:
   - news
   - log
