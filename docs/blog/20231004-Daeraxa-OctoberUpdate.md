@@ -176,7 +176,7 @@ So go grab your badges now to show off your package's stats!
 
 ## Pulsar on GitHub Desktop
 
-For those of you who use [GitHub Desktop](https://desktop.github.com/) you will now find (or will soon find) that Pulsar should be available as an option for you to select as your editor of choice!
+For those of you who use [GitHub Desktop](https://desktop.github.com/) you will now find (or will soon find) that Pulsar is available as an option for you to select as your editor of choice!
 
 <img src="./assets/github-desktop.png" height="500" />
 
