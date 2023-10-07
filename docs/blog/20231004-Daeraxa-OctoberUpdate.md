@@ -110,6 +110,8 @@ if (condition) {
     await this.asyncFunc();
   } catch(error) {
     return error;
+  }
+}
 ```
 
 This has been a huge piece of work, which began because they overheard complaints about the PPM codebase being hard to read and understand due to its outdated style. As they had already previously assisted in PPM with the "decaffeination" of the codebase, they were already fairly familiar with it and thought they could help further by "upgrading" the codebase to this modern style.
