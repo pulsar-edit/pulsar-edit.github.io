@@ -78,6 +78,13 @@ if (condition) {
               if (error != null) { return callback(error); }
 
               this.doThing(value);
+            });
+          });
+        });
+      });
+    });
+  });
+}
 ```
 
 **To this:**
