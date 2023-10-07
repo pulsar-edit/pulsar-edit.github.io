@@ -49,106 +49,65 @@ If you hadn't already seen or read them, [@savetheclocktower] has been writing a
 
 <img src="./assets/development.png" height="150" />
 
-Community member [@Nemokosch/@twocolours]  has been spearheading the conversion of our [PPM codebase](https://github.com/pulsar-edit/ppm) to upgrade from the older style of callbacks to the more modern approach of promises and `async / await`. These changes will hopefully make the complex logic in the PPM codebase much more approachable and easy to maintain for those more familiar with the modern approach.
+Community member [@Nemokosch/@twocolours]  has been spearheading the conversion of our [PPM codebase](https://github.com/pulsar-edit/ppm) to upgrade old JavaScript callback style to modern ES6 `async/await`.
 
-We can see the difference quite clearly here in this section that contains a _six_ level deep callback nest.
+The PPM repo, while modern and accepted when written, is now mostly viewed as being outdated due to the pervasiveness of deeply nested callbacks. In some instances haveing nesting six levels deep, and as anyone who's been programming in JavaScript prior to ES6 knows, this can be cumbersome, difficult, and frustrating to work with. That is exactly why the effort has been made to convert the entire codebase into a shallow nested, early return patterned, modern ES6 source utilizing async/await properly. In hopes that a greatly simplified codebase can pave the way for easier modifications in the future.
+
+To show what we are talking about, take this (simplified but real) code as an example:
 
 **From this:**
 
 ```js
-if (((version != null ? version.length : undefined) > 0) || ((rename != null ? rename.length : undefined) > 0)) {
-        let originalName;
-        if (!((version != null ? version.length : undefined) > 0)) { version = 'patch'; }
-        if ((rename != null ? rename.length : undefined) > 0) { originalName = pack.name; }
+if (condition) {
+  this.promiseFunc(value, error => {
+    if (error != null) { return callback(error); }
 
-        this.registerPackage(pack, (error, firstTimePublishing) => {
+    this.promiseFunc(value, error => {
+      if (error != null) { return callback(error); }
+
+      this.promiseFunc(value, error => {
+        if (error != null) { return callback(error); }
+
+        this.promiseFunc(value, error => {
           if (error != null) { return callback(error); }
 
-          this.renamePackage(pack, rename, error => {
+          this.promiseFunc(value, error => {
             if (error != null) { return callback(error); }
 
-            this.versionPackage(version, (error, tag) => {
+            this.promiseFunc(value, error => {
               if (error != null) { return callback(error); }
 
-              this.pushVersion(tag, pack, error => {
-                if (error != null) { return callback(error); }
-
-                this.waitForTagToBeAvailable(pack, tag, () => {
-
-                  if (originalName != null) {
-                    rename = pack.name;
-                    pack.name = originalName;
-                  }
-                  this.publishPackage(pack, tag, {rename},  error => {
-                    if (firstTimePublishing && (error == null)) {
-                      this.logFirstTimePublishMessage(pack);
-                    }
-                    return callback(error);
-                  });
-                });
-              });
-            });
-          });
-        });
+              this.doThing(value);
 ```
 
 **To this:**
 
 ```js
-if ((version?.length > 0) || (rename?.length > 0)) {
-        let originalName;
-        if (version?.length <= 0) { version = 'patch'; }
-        if (rename?.length > 0) { originalName = pack.name; }
-
-        let firstTimePublishing;
-        try {
-          firstTimePublishing = await this.registerPackage(pack);
-          await this.renamePackage(pack, rename);
-          const tag = await this.versionPackage(version);
-          await this.pushVersion(tag, pack);
-        } catch (error) {
-          return error;
-        }
-
-        await this.waitForTagToBeAvailable(pack, tag);
-        if (originalName != null) {
-          rename = pack.name;
-          pack.name = originalName;
-        }
-
-        try {
-          await this.publishPackage(pack, tag, {rename});
-        } catch (error) {
-          if (firstTimePublishing) {
-            this.logFirstTimePublishMessage(pack);
-          }
-          return error;
-        }
-      } else if (tag?.length > 0) {
-        let firstTimePublishing;
-        try {
-          firstTimePublishing = await this.registerPackage(pack);
-        } catch (error) {
-          return error;
-        }
-
-        try {
-          await this.publishPackage(pack, tag);
-        } catch (error) {
-          if (firstTimePublishing) {
-            this.logFirstTimePublishMessage(pack);
-          }
-          return error;
-        }
-      } else {
-        return 'A version, tag, or new package name is required';
-      }
-    }
+if (condition) {
+  try {
+    await this.asyncFunc();
+    await this.asyncFunc();
+  } catch(error) {
+    return error;
   }
+
+  await this.asyncFunc();
+
+  try {
+    await this.asyncFunc();
+  } catch(error) {
+    return error;
+  }
+} else if (condition) {
+  try {
+    await this.asyncFunc();
+  } catch(error) {
+    return error;
 ```
 
-**NOTE**
-Higher level description needed here I think, I just don't think I understand enough to write this bit and properly do justice to it - see https://discord.com/channels/992103415163396136/1158178462926897172/1158183931099754496
+This has been a huge piece of work, which began because they overheard complaints about the PPM codebase being hard to read and understand due to its outdated style. As they had already previously assisted in PPM with the "decaffeination" of the codebase, they were already fairly familiar with it and thought they could help further by "upgrading" the codebase to this modern style.
+
+There has been a lot of focus on code flow during this conversion in order to make the codebase as easy to read and understand as possible for future contributors. Not only was the structure changed, but some code and modules could be removed entirely as their only purpose was to support the previous callback style.
 
 From a Pulsar user's perspective you shouldn't notice anything different at all. This is all about maintenance and modernization of the codebase. We want to make Pulsar as hackable and as easy to contribute as possible and these kinds of efforts go a long way to achieving that goal.
 
