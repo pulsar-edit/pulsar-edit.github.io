@@ -51,7 +51,7 @@ If you hadn't already seen or read them, [@savetheclocktower] has been writing a
 
 Community member [@Nemokosch/@twocolours]  has been spearheading the conversion of our [PPM codebase](https://github.com/pulsar-edit/ppm) to upgrade old JavaScript callback style to modern ES6 `async/await`.
 
-The PPM repo, while modern and accepted when written, is now mostly viewed as being outdated due to the pervasiveness of deeply nested callbacks. In some instances haveing nesting six levels deep, and as anyone who's been programming in JavaScript prior to ES6 knows, this can be cumbersome, difficult, and frustrating to work with. That is exactly why the effort has been made to convert the entire codebase into a shallow nested, early return patterned, modern ES6 source utilizing async/await properly. In hopes that a greatly simplified codebase can pave the way for easier modifications in the future.
+The PPM repo, while modern and accepted when written, is now mostly viewed as being outdated due to the pervasiveness of deeply nested callbacks. In some instances having nesting six levels deep, and as anyone who's been programming in JavaScript prior to ES6 knows, this can be cumbersome, difficult, and frustrating to work with. That is exactly why the effort has been made to convert the entire codebase into a shallow nested, early return patterned, modern ES6 source utilizing async/await properly. In hopes that a greatly simplified codebase can pave the way for easier modifications in the future.
 
 To show what we are talking about, take this (simplified but real) code as an example:
 
