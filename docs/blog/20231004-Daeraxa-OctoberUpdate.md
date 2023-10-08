@@ -58,59 +58,65 @@ To show what we are talking about, take this (simplified but real) code as an ex
 **From this:**
 
 ```js
-if (condition) {
-  this.promiseFunc(value, error => {
-    if (error != null) { return callback(error); }
+this.registerPackage(pack, (error, firstTimePublishing) => {
+	if (error != null) {
+		return callback(error);
+	}
 
-    this.promiseFunc(value, error => {
-      if (error != null) { return callback(error); }
+	this.renamePackage(pack, rename, (error) => {
+		if (error != null) {
+			return callback(error);
+		}
 
-      this.promiseFunc(value, error => {
-        if (error != null) { return callback(error); }
+		this.versionPackage(version, (error, tag) => {
+			if (error != null) {
+				return callback(error);
+			}
 
-        this.promiseFunc(value, error => {
-          if (error != null) { return callback(error); }
+			this.pushVersion(tag, pack, (error) => {
+				if (error != null) {
+					return callback(error);
+				}
 
-          this.promiseFunc(value, error => {
-            if (error != null) { return callback(error); }
-
-            this.promiseFunc(value, error => {
-              if (error != null) { return callback(error); }
-
-              this.doThing(value);
-            });
-          });
-        });
-      });
-    });
-  });
-}
+				this.waitForTagToBeAvailable(pack, tag, () => {
+					if (originalName != null) {
+						rename = pack.name;
+						pack.name = originalName;
+					}
+					this.publishPackage(pack, tag, { rename }, (error) => {
+						if (firstTimePublishing && error == null) {
+							this.logFirstTimePublishMessage(pack);
+						}
+						return callback(error);
+					});
+				});
+			});
+		});
+	});
+});
 ```
 
 **To this:**
 
 ```js
-if (condition) {
-  try {
-    await this.asyncFunc();
-    await this.asyncFunc();
-  } catch(error) {
-    return error;
-  }
+const firstTimePublishing = await this.registerPackage(pack);
+await this.renamePackage(pack, rename);
+const tag = await this.versionPackage(version);
+await this.pushVersion(tag, pack);
 
-  await this.asyncFunc();
+await this.waitForTagToBeAvailable(pack, tag);
+if (originalName != null) {
+	rename = pack.name;
+	pack.name = originalName;
+}
 
-  try {
-    await this.asyncFunc();
-  } catch(error) {
-    return error;
-  }
-} else if (condition) {
-  try {
-    await this.asyncFunc();
-  } catch(error) {
-    return error;
-  }
+try {
+	await this.publishPackage(pack, tag, { rename });
+} catch (error) {
+	if (firstTimePublishing) {
+		this.logFirstTimePublishMessage(pack);
+	}
+	throw error;
 }
 ```
 
