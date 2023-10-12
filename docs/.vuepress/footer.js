@@ -122,7 +122,7 @@ const footer =
       </a>
       <a href=${orgReddit}>
         <i class="fa-brands fa-reddit"></i>
-      <a href=${orgMastodon}>
+      <a rel="me" href=${orgMastodon}>
         <i class="fa-brands fa-mastodon"></i>
       </a>
       <a href=${orgLemmy}>
