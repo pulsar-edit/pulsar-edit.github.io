@@ -52,6 +52,11 @@ const navbar_en = [
         text: "Mastodon",
         icon: 'brands fa-mastodon',
         link: "https://fosstodon.org/@pulsaredit"
+      },
+      {
+        text: "Lemmy",
+        icon: 'solid fa-users',
+        link: "https://lemmy.ml/c/pulsaredit"
       }
     ]
   },
