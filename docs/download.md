@@ -202,7 +202,7 @@ We currently build on both GitHub Actions and Cirrus CI:
     uploaded to the [pulsar-edit/pulsar-rolling-releases](https://github.com/pulsar-edit/pulsar-rolling-releases/releases)
     repository for access by anyone.
 - Cirrus CI is _only_ used for building Apple silicon (macOS M1/M2) and ARM
-  Linux binaries. These are run less frequently (every other day).
+  Linux binaries. These are run less frequently (every Monday, Wednesday, and Friday).
 
 To download a binary produced by GitHub Actions then follow the below steps:
 
