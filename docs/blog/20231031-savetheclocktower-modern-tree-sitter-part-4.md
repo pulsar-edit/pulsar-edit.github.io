@@ -194,13 +194,13 @@ You might’ve had your hackles raised by this example. After all, there’s ano
 
 ```js
 switch (foo) {
-	case "bar":
-		// one thing
-		break;
-	case "baz":
-		// another thing
-		break;
-	default:
+case "bar":
+	// one thing
+	break;
+case "baz":
+	// another thing
+	break;
+default:
 	// a third thing
 }
 ```
