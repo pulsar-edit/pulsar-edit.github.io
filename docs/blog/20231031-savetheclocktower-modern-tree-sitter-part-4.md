@@ -194,13 +194,13 @@ You might’ve had your hackles raised by this example. After all, there’s ano
 
 ```js
 switch (foo) {
-case "bar":
-	// one thing
-	break;
-case "baz":
-	// another thing
-	break;
-default:
+	case "bar":
+		// one thing
+		break;
+	case "baz":
+		// another thing
+		break;
+	default:
 	// a third thing
 }
 ```
@@ -295,9 +295,9 @@ Much like indentation, code folding markers in TextMate grammars are determined 
 
 ### How legacy Tree-sitter grammars do it
 
-The same way. Notice a pattern? This is another placeholder that was never replaced with something more permanent, so it’s up to us to invent it.
+Legacy Tree-sitter grammars introduced a system for defining folds [within the grammar definition file itself](https://github.com/pulsar-edit/pulsar/blob/v1.110.0/packages/language-javascript/grammars/tree-sitter-javascript.cson#L18-L53) — one that hooks into named nodes from the tree. It’s a good start, but we can make something more expressive and flexible with queries.
 
-### Using queries instead of regular expressions
+### Using queries to define fold ranges
 
 Again, credit goes to the `nvim-treesitter` developers and to [@mauricioszabo][] for envisioning how Tree-sitter queries can describe folds more simply. Here’s how simple it can be in a language like CSS:
 
