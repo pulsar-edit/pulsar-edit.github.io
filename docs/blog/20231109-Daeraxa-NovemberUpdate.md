@@ -59,7 +59,7 @@ If you want to check it out in its current, in-development state, then have a lo
 
 <img src="./assets/tree-sitter.png" height="150" />[^1]
 
-Continuing on from [last month's entry](https://pulsar-edit.dev/blog/20231004-Daeraxa-OctoberUpdate.html#modern-tree-sitter-blog-posts) we have posted two new blog posts by [@savetheclocktower] on the topic of Pulsar's modern Tree-sitter implementation. So if you haven't seen those posts, then you can continue onto parts [three](https://pulsar-edit.dev/blog/20231013-savetheclocktower-modern-tree-sitter-part-3.html) and [four](https://pulsar-edit.dev/blog/20231031-savetheclocktower-modern-tree-sitter-part-4.html) on the topics of queries and indentation & code folding respectively.
+Continuing on from [last month's entry](https://pulsar-edit.dev/blog/20231004-Daeraxa-OctoberUpdate.html#modern-tree-sitter-blog-posts) we have posted two new blog posts by [@savetheclocktower] on the topic of Pulsar's modern Tree-sitter implementation. So if you haven't seen those posts, then you can continue onto parts [three](https://pulsar-edit.dev/blog/20231013-savetheclocktower-modern-tree-sitter-part-3.html) and [four](https://pulsar-edit.dev/blog/20231031-savetheclocktower-modern-tree-sitter-part-4.html) on the topics of syntax highlighting and indentation & code folding respectively.
 
 ## Community spotlight
 
