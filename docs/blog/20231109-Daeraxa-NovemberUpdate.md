@@ -55,7 +55,7 @@ If you want to check it out in its current, in-development state, then have a lo
 
 <img src="./assets/pulsar-runner.png" height=200>
 
-## Further instalments in the modern Tree-sitter blog post series
+## Further installments in the modern Tree-sitter blog post series
 
 <img src="./assets/tree-sitter.png" height="150" />[^1]
 
