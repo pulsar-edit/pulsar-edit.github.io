@@ -417,4 +417,4 @@ In an ideal world, the parser in step 1 would be just an ordinary Tree-sitter pa
 
 ## Next time
 
-I could keep talking about injections, but I can’t affort to test your patience while we still have other topics to visit. Next time we’ll look at what Tree-sitter calls [code navigation systems](https://tree-sitter.github.io/tree-sitter/code-navigation-systems): how to use Tree-sitter to identify functions, classes, and other important parts of your code.
+I could keep talking about injections, but I can’t afford to test your patience while we still have other topics to visit. Next time we’ll look at what Tree-sitter calls [code navigation systems](https://tree-sitter.github.io/tree-sitter/code-navigation-systems): how to use Tree-sitter to identify functions, classes, and other important parts of your code.
