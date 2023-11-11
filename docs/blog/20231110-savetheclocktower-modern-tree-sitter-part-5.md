@@ -345,8 +345,6 @@ atom.grammars.addInjectionPoint(`source.c`, {
 
 This is a low-stakes gambit for us. If the content of the macro _is_ syntactically strange, the parser might get a bit flummoxed, and the resulting highlighting might look a bit weird. But that’s OK! It won’t affect the highlighting of anything _outside of_ the macro content.
 
-That’s why the C, C++, and Rust grammars inject themselves into macro content.
-
 ### Injecting highlighting for URLs and TODOs
 
 Two built-in packages called `language-todo` and `language-hyperlink` define specialized TextMate grammars. Their purpose is to provide rules that match `TODO:` remarks (in comments) and URLs (in comments and strings), and to inject those rules into certain contexts _regardless of grammar_. This is a lovely feature of TextMate that the Atom developers got for free when implementing TextMate-style grammars back in the day.
