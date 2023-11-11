@@ -353,6 +353,8 @@ Two built-in packages called `language-todo` and `language-hyperlink` define spe
 
 The effect is that Pulsar can help you locate TODOs in comments by coloring them differently from the rest of the comment. It can also draw underlines under URLs and even _follow_ a URL when you place your cursor inside of it and invoke the **Link: Open** command.
 
+![illustration of highlighting of TODOs and URLs in a line comment](./assets/tree-sitter-todo-url-injection.png)
+
 This works because a TextMate grammar can “push” its injections into any scope _inside any other grammar_, whether that other grammar asks for it or not. For instance, the `language-hyperlink` grammar injects itself into strings, so any language that defines a `string.*` scope will have those rules injected into it.
 
 The legacy Tree-sitter system never had an equivalent feature. I missed it terribly, so I decided to create equivalent Tree-sitter parsers and grammars for these rules. These parsers, when given arbitrary text, can create nodes for things that look like URLs or TODO comments. Once those parsers existed, I could inject them into whichever grammars I wanted:
