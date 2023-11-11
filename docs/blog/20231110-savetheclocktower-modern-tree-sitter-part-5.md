@@ -305,7 +305,7 @@ We can visualize this with the “Show injection ranges” option in `tree-sitte
 
 ![disjoint content ranges in a Tree-sitter injection](./assets/tree-sitter-html-parser-injection.png)
 
-You can see that the HTML injection layer has two disjoint content ranges on either side of the interpolation. Hence the Tree-sitter HTML parser will treat it as empty space.
+You can see that the HTML injection layer has two disjoint content ranges on either side of the interpolation. The Tree-sitter HTML parser won’t even know the interpolation is there.
 
 This behavior makes sense as a default, but it can be opted out of with `includeChildren: true` in `addInjectionPoint` if it gets in your way.
 
