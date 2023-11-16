@@ -5,7 +5,7 @@
     const _container = ref(null);
 
     onMounted(() => {
-        const COUNT = 800;
+        const COUNT = 40;
         const SPEED = 0.1;
         const BG_COLOR = 'rgba(26, 5, 40, 0.6)';
     
