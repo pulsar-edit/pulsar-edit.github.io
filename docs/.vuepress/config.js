@@ -47,6 +47,11 @@ export default defineUserConfig({
       }
     },
     plugins: {
+			git: {
+				createdTime: false,
+				contributors: true,
+				updatedTime: true,
+			},
       sitemap: {
         hostname: "https://pulsar-edit.dev",
         sitemapFilename: "sitemap.xml"
