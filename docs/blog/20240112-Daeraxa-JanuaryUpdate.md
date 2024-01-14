@@ -15,7 +15,7 @@ Happy new year! Welcome to the first Pulsar community update of 2024!
 
 # Welcome to the January Community Update!
 
-First of all, we hope everyone had a fantastic new year and here is to a new one! Things have been rather busy for the Pulsar team and the community at large, but we still have plenty of things to update you on!
+First of all, we hope everyone had a fantastic new year and here is to a new one! While the Pulsar team has been largely enjoying the holidays we still have plenty of things to update you with!
 
 ## New tree-sitter becoming default
 
@@ -41,10 +41,10 @@ Staying with the PPR, [@confused-techie] has implemented a [new endpoint for the
 
 This community blog post was designed to highlight ongoing work and successes that are going on both within the Pulsar team and the community at large for "Pulsar-adjacent" items. That is, along with new features being developed for Pulsar, we also highlight things going on that might otherwise go unnoticed but are deserving of attention. Sometimes we may announce things, but due to other priorities, it may take a while until we get around to implementing or announcing any news. This doesn't mean we have forgotten about them, not by a long shot. So just to recap some of the things we are looking to progress in 2024 that have been previously mentioned on this blog and in our social channels:
 
- - Migrating Pulsar to modern Electron (more in last month's [blog post](https://pulsar-edit.dev/blog/20231212-Daeraxa-DecemberUpdate.html))
- - New custom website framework and website to replace our current Vuepress one
- - [Pulsar-Cooperative](https://pulsar-edit.dev/blog/20231004-Daeraxa-OctoberUpdate.html#introducing-pulsar-cooperative)
- - Iconography updates
+- Migrating Pulsar to modern Electron (more in last month's [blog post](https://pulsar-edit.dev/blog/20231212-Daeraxa-DecemberUpdate.html))
+- New custom website framework and website to replace our current Vuepress one
+- [Pulsar-Cooperative](https://pulsar-edit.dev/blog/20231004-Daeraxa-OctoberUpdate.html#introducing-pulsar-cooperative)
+- Iconography updates
 
 ## Community Spotlight
 
@@ -52,7 +52,7 @@ This community blog post was designed to highlight ongoing work and successes th
 
 As it is the start of the new year, this spotlight should be particularly special. We have received an absolute ton of new and repeat donations, for which we couldn't be more thankful. You really do keep this project alive. We also want to thank each and every one of our community members, no matter what you do: those who make themselves known in our social channels, publish packages, contribute code, donate to the project, and those who are just content using Pulsar or reading our blog posts. This spotlight goes out to our entire community, and here is to an even better 2024!
 
-***
+---
 
 So with that, we start another year. Thanks again to the entire community, no matter how you choose to get involved, and here is to another year of Pulsar!
 
@@ -63,8 +63,7 @@ So with that, we start another year. Thanks again to the entire community, no ma
 [@kaosine]: https://github.com/kaosine
 [@savetheclocktower]: https://github.com/savetheclocktower
 [@deedeeg]: https://github.com/DeeDeeG
-[@Daeraxa]: https://github.com/Daeraxa
-
+[@daeraxa]: https://github.com/Daeraxa
 [@bacadra]: https://github.com/bacadra/
 
 [^1]: Image from [https://tree-sitter.github.io/tree-sitter/](https://tree-sitter.github.io/tree-sitter/) - Copyright (c) 2018-2021 Max Brunsfeld
