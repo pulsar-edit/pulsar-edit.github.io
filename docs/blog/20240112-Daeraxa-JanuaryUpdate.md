@@ -40,6 +40,7 @@ Staying with the PPR, [@confused-techie] has implemented a [new endpoint for the
 <img src="./assets/checklist.png" height="150" />
 
 This community blog post was designed to highlight ongoing work and successes that are going on both within the Pulsar team and the community at large for "Pulsar-adjacent" items. That is, along with new features being developed for Pulsar, we also highlight things going on that might otherwise go unnoticed but are deserving of attention. Sometimes we may announce things, but due to other priorities, it may take a while until we get around to implementing or announcing any news. This doesn't mean we have forgotten about them, not by a long shot. So just to recap some of the things we are looking to progress in 2024 that have been previously mentioned on this blog and in our social channels:
+
  - Migrating Pulsar to modern Electron (more in last month's [blog post](https://pulsar-edit.dev/blog/20231212-Daeraxa-DecemberUpdate.html))
  - New custom website framework and website to replace our current Vuepress one
  - [Pulsar-Cooperative](https://pulsar-edit.dev/blog/20231004-Daeraxa-OctoberUpdate.html#introducing-pulsar-cooperative)
