@@ -55,7 +55,7 @@ A better approach would be to know about _both_ strategies and pick the best one
 
 In Pulsar, **services** are how packages talk to one another. Suppose I’ve authored `package-b` and it depends on another package called `package-a` that someone else has written. I could reach into `atom.packages` and grab the reference to `package-a`, but this feels weird for a number of reasons. For one, it incorrectly assumes that `package-a` has already been activated. It may get activated _after_ `package-b` — or else it may _never_ get activated because the user has disabled or uninstalled it.
 
-But even if `package-b` were able to find and consume package `package-a` this way, it’d create a tight coupling between the two. That coupling would break if `package-a` renamed itself, or if it were rewritten and changed implementation details that `package-b` was relying on.
+But even if `package-b` were able to find and consume package `package-a` this way, it’d create a tight coupling between the two. That coupling would break if `package-a` renamed itself, or if it changed implementation details that `package-b` was relying on.
 
 So instead of communicating directly, they can invent a service called `foo` and use it to communicate. One package defines itself as a _provider_ of service `foo`, and the other defines itself as a _consumer_ of service `foo`.
 
