@@ -55,7 +55,7 @@ A better approach would be to know about _both_ strategies and pick the best one
 
 In Pulsar, **services** are how packages talk to one another. Suppose I’ve authored `package-b` and it depends on another package called `package-a` that someone else has written. I could reach into `atom.packages` and grab the reference to `package-a`, but this feels weird for a number of reasons. For one, it incorrectly assumes that `package-a` has already been activated. It may get activated _after_ `package-b` — or else it may _never_ get activated because the user has disabled or uninstalled it.
 
-But even if `package-b` were able to find and consume package `package-a` this way, it’d create a tight coupling between the two. That coupling would break if `package-a` renamed itself, or if were rewritten and changed implementation details that `package-b` was relying on.
+But even if `package-b` were able to find and consume package `package-a` this way, it’d create a tight coupling between the two. That coupling would break if `package-a` renamed itself, or if it were rewritten and changed implementation details that `package-b` was relying on.
 
 So instead of communicating directly, they can invent a service called `foo` and use it to communicate. One package defines itself as a _provider_ of service `foo`, and the other defines itself as a _consumer_ of service `foo`.
 
@@ -139,15 +139,15 @@ And it might take a few version bumps on dependencies, but most other IDE backen
 
 Unlike `autocomplete-plus`, which aggregates suggestions from multiple providers and shows all of them to the user, `symbols-view` is mainly interested in choosing _the_ best provider for the job. There’s little point in aggregating across a language server _and_ Tree-sitter _and_ `ctags`, since they’re largely going to be offering the same list of symbols with varying degrees of richness, and you’d be pretty annoyed if Pulsar offered you three different list entries for the same function. Inside `symbols-view` they’re called “exclusive” providers because only one of them will be picked for the job.
 
-But I wanted to leave the door open for some creative and unexpected usages, so `symbols-view` also has a concept of “supplemental” providers. A provider that marks itself as supplemental is saying it’d like to contribute symbols that would probably not already be in an exclusive provider’s list.
+But I wanted to leave the door open for some creative and unexpected usages, so `symbols-view` also has a concept of “supplemental” providers. A provider that marks itself as supplemental is saying it’d like to contribute symbols that would probably not already be in an exclusive provider’s list. You may be wondering what kinds of symbols would fit the bill, so let me give you an example…
 
-Did you know you can bookmark lines in a buffer? Try it out — right-click on any line of your editor and select **Toggle Bookmark**. The built-in `bookmarks` package keeps track of them and will also let you navigate between them via <kbd>F2</kbd> and <kbd>Shift+F2</kbd>. They even
+Did you know you can bookmark lines in a buffer? Try it out: right-click on any line of your editor and select **Toggle Bookmark**. The built-in `bookmarks` package keeps track of them and will also let you navigate between them via <kbd>F2</kbd> and <kbd>Shift+F2</kbd>.
 
-Anyway, to illustrate the idea of a supplemental provider, I wrote one as a proof-of-concept: [`symbol-provider-bookmarks`](https://web.pulsar-edit.dev/packages/symbol-provider-bookmarks) will turn each of your bookmarks into a symbol, then display them in the `symbols-view` UI alongside your main provider’s symbols, using the text of the bookmarked line as the symbol name.
+Anyway, to illustrate the idea of a supplemental provider, I wrote one: [`symbol-provider-bookmarks`](https://web.pulsar-edit.dev/packages/symbol-provider-bookmarks) will turn each of your bookmarks into a symbol, then display them in the `symbols-view` UI alongside your main provider’s symbols, using the text of the bookmarked line as the symbol name.
 
 ![symbol-provider-bookmarks example](./assets/symbol-provider-bookmarks-example.png)
 
-This one’s not bundled with Pulsar, so [grab it on the package repo](https://web.pulsar-edit.dev/packages/symbol-provider-bookmarks) if it sounds interesting.
+This one’s not bundled with Pulsar, so [grab it from the package registry](https://web.pulsar-edit.dev/packages/symbol-provider-bookmarks) if it sounds interesting.
 
 ## Shipping now
 
