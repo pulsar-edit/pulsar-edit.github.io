@@ -37,11 +37,11 @@ Welcome to all new visitors!
 
 ### Downloads and Releases
 
-We are constantly working on the editor and maintain both a rolling release and regular release model for our binaries.
-You can find out more about the difference and download a binary of Pulsar by following [this link](https://pulsar-edit.dev/download.html)
+We are constantly working on the editor and maintain both rolling and regular releases.
+You can find out more about the differences and download Pulsar on our [downloads page](https://pulsar-edit.dev/download.html)
 and following the instructions.
 
-There are some community-maintained Pulsar packages in various formats, such as Flatpak, AUR, etc. The effort put into maintaining these packages is very much appreciated!
+There are some community-maintained packaged releases of Pulsar in various formats, such as Flatpak, AUR, etc. The effort put into maintaining these packages is very much appreciated!
 That said, the core Pulsar team doesn’t have the person-hours or familiarity with the technology to be deeply involved with these efforts.
 The Pulsar Flatpak in particular has some minor known issues due to its sandboxing, but should still work overall.
 The core team will make some effort to support users on these packaged versions of Pulsar and answer their questions, but we have less control over these packages/environments,
@@ -52,7 +52,7 @@ Users are welcome to choose the packaging format they prefer, but your mileage m
 ### App Updates
 
 Currently Pulsar does not support automatic app updates. There are, however, automated notifications of new versions,
-which include links so you can easily get the new versions when they come out. (These notifications can be disabled if you wish.)
+which include links and instructions so you can easily get the new versions when they come out. (These notifications can be disabled if you wish.)
 Beyond that, new versions can be obtained via the Download links here on our website, or from our CI (continuous integration) pages as explained on our Download page.
 
 ### Blog
