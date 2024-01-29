@@ -246,7 +246,7 @@ there's a single trailing newline in the file, you can configure that in the
 ### Check Your Configuration
 
 You might have defined some custom styles, keymaps or snippets in
-[one of your configuration files](../../using_pulsar/#basic-customization/). In
+[one of your configuration files](../../using-pulsar/#basic-customization/). In
 some situations, these personal hacks might be causing the unexpected
 behavior you're observing so try clearing those files and restarting Pulsar.
 
