@@ -41,14 +41,6 @@ We are constantly working on the editor and maintain both rolling and regular re
 You can find out more about the differences and download Pulsar on our [downloads page](https://pulsar-edit.dev/download.html)
 and following the instructions.
 
-There are some community-maintained packaged releases of Pulsar in various formats, such as Flatpak, AUR, etc. The effort put into maintaining these packages is very much appreciated!
-That said, the core Pulsar team doesn’t have the person-hours or familiarity with the technology to be deeply involved with these efforts.
-The Pulsar Flatpak in particular has some minor known issues due to its sandboxing, but should still work overall.
-The core team will make some effort to support users on these packaged versions of Pulsar and answer their questions, but we have less control over these packages/environments,
-and less time to dedicate to them, so resolving issues may take more time and involve the community packaging maintainers, not just the core Pulsar team.
-For significant technical barriers like Flatpak sandboxing, related issues may have no estimated time of completion for a fix.
-Users are welcome to choose the packaging format they prefer, but your mileage may vary.
-
 ### App Updates
 
 Currently Pulsar does not support automatic app updates. There are, however, automated notifications of new versions,
