@@ -3,13 +3,13 @@ title: Community Update
 author: Daeraxa
 date: 2024-02-01
 category:
-  - news
-  - log
+  - news
+  - log
 tag:
-  - update
+  - update
 ---
 
-Here it comes sashaying into your feeds, it's the *Fab*-ruary community update!
+Here it comes sashaying into your feeds, it's the _Fab_-ruary community update!
 
 <!-- more -->
 
@@ -49,7 +49,7 @@ Examples of this would be as follows:
 
 - To search for all packages that provide functionality for `.json` files - [https://web.pulsar-edit.dev/packages?**fileExtension=_json_**](https://web.pulsar-edit.dev/packages?fileExtension=json)
 - To find all packages owned by [@bacadra] - [https://web.pulsar-edit.dev/packages/search?**owner=_bacadra_**](https://web.pulsar-edit.dev/packages/search?owner=bacadra)
-- To find all packages that provide the `symbol.provider` service - [https://web.pulsar-edit.dev/packages?**serviceType=_provided_**&**service=_symbol.provider_**](https://web.pulsar-edit.dev/packages?serviceType=provided&service=symbol.provider) 
+- To find all packages that provide the `symbol.provider` service - [https://web.pulsar-edit.dev/packages?**serviceType=_provided_**&**service=_symbol.provider_**](https://web.pulsar-edit.dev/packages?serviceType=provided&service=symbol.provider)
 
 Currently, these filters are only available via the API directly, so they do not feature within Pulsar itself or in the PPR website UI, but we are looking to add this functionality in the future to make finding the exact package you want much easier.
 
@@ -67,11 +67,11 @@ Even better, to make sure we don't get into this same situation again with outda
 
 <img src="./assets/spotlight.png" height=200>
 
-Thank you to [@claytonrcarter] for the PR to Pulsar to [fix a breaking change](https://github.com/pulsar-edit/pulsar/pull/860) with our new Tree-sitter implementation.
+Thank you to [@claytonrcarter] for the PR to Pulsar to [fix a breaking change](https://github.com/pulsar-edit/pulsar/pull/860) with our new Tree-sitter implementation as well as a second PR for [adding a new `-f/--force` flag](https://github.com/pulsar-edit/ppm/pull/122) to the `ppm link` command in order to aid in replacing linked packages without needing to manually remove original.
 
 And a big collective thank you to all those users who have helped us by submitting issues and feedback about the new Tree-sitter implementation in general. We know this might have been unintentionally disruptive to some people, so thank you so much for sticking with us while we fix these issues!
 
-***
+---
 
 And that brings us to the end of this community update. We have a lot of exciting plans for Pulsar this year, so make sure to keep tuning into the blog for new posts from the Pulsar team!
 
@@ -82,8 +82,7 @@ And that brings us to the end of this community update. We have a lot of excitin
 [@kaosine]: https://github.com/kaosine
 [@savetheclocktower]: https://github.com/savetheclocktower
 [@deedeeg]: https://github.com/DeeDeeG
-[@Daeraxa]: https://github.com/Daeraxa
-
+[@daeraxa]: https://github.com/Daeraxa
 [@bacadra]: https://github.com/bacadra
 [@claytonrcarter]: https://github.com/claytonrcarter
 
