@@ -57,7 +57,7 @@ One of our first and biggest tasks was to replace the closed source Atom.io
 package repository with our own so that users would still be able to download
 from the huge package ecosystem.
 
-Searching and downloading from the package [package repository](https://web.pulsar-edit.dev/) is now fully supported,
+Searching and downloading from the [package repository](https://web.pulsar-edit.dev/) is now fully supported,
 as is publishing/updating/deleting packages. If you experience any issues, please feel free to report this to the Pulsar Team.
 
 ### Support and Community
