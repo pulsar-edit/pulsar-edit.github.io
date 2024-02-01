@@ -57,7 +57,7 @@ Beyond that, new versions can be obtained via the Download links here on our web
 
 ### Blog
 
-_For updates on the goings-on around here,_ please do check out our [blog](https://pulsar-edit.dev/blog/)!
+For updates on the _goings-on_ around here, please do check out our [blog](https://pulsar-edit.dev/blog/)!
 
 ### Packages
 
