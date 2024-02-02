@@ -27,7 +27,7 @@ With the release of Pulsar 1.113 we finally went live with our new Tree-sitter i
 
 The vast majority of these issues have now already been addressed (or are in process), so if you are seeing any oddities or problems, then you can download one of our [rolling releases](https://pulsar-edit.dev/download.html#rolling-release) which will already have those merged changes included. Otherwise, they will be present in the release version of Pulsar 1.114.
 
-If any of these changes are truly breaking for you and you are not in a position to upgrade to a rolling release, you can find instructions on how to do this for that particular language in the relevant [Mega-issue](https://github.com/pulsar-edit/pulsar/issues/875). If you do this, make sure to subscribe to that issue so that you are notified when it has been fixed and the configuration can be removed. The benefits of the new system are substantial, and we would hate for you to miss out on them.
+If any of these changes are truly breaking for you and you are not in a position to upgrade to a rolling release, you can find instructions on how to do this for that particular language in the relevant [Mega-issue](https://github.com/pulsar-edit/pulsar/issues/875). Make sure to subscribe to that issue so that you are notified when it has been fixed and the configuration can be removed. The benefits of the new system are substantial, and we would hate for you to miss out on them.
 
 Thank you to all those who have submitted issues or let us know about problems via our [community areas](https://pulsar-edit.dev/community.html), your help has been much appreciated. If you encounter any new problems, please check the Mega-issues and check if your issue has already been addressed. If not, then feel free to add a new post to that issue.
 
@@ -53,7 +53,7 @@ Examples of this would be as follows:
 
 Currently, these filters are only available via the API directly, so they do not feature within Pulsar itself or in the PPR website UI, but we are looking to add this functionality in the future to make finding the exact package you want much easier.
 
-Now if only there was a way to find what all these different endpoints might be and how you could construct even fancier queries... well, if only there was a
+Now if only there was a way to find what all these different endpoints might be and how you could construct even fancier queries... well, if only there was a...
 
 ## Major update to our OpenAPI documentation for the PPR
 
