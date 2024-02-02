@@ -43,7 +43,7 @@ Read it now on the [Pulsar blog](https://pulsar-edit.dev/blog/20240124-mauricios
 
 <img src="./assets/package.png" height="150" />
 
-Thanks to [@confused-techie] following on from some work via [@savetheclocktower], we now have a whole bunch of new ways to use the PPR API to filter packages. For example, you can now search for packages that provide functionality for a particular file extension, consumes/provides a service, or just search by the package owner.
+Thanks to [@confused-techie] following on from some work via [@savetheclocktower], we now have a whole bunch of new ways to use the PPR API to filter packages. For example, you can now search for packages that provide a grammar for a particular file extension, consumes/provides a service, or just search by the package owner.
 
 Examples of this would be as follows:
 
