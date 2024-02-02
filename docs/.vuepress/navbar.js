@@ -1,17 +1,17 @@
 const navbar_en = [
   {
     text: 'Download',
-    icon: 'solid fa-download',
+    icon: 'fas fa-download',
     link: '/download/'
   },
   {
     text: 'Docs',
-    icon: 'solid fa-file-lines',
+    icon: 'fas fa-file-lines',
     link: '/docs/'
   },
   {
     text: 'Repositories',
-    icon: 'brands fa-github',
+    icon: 'fab fa-github',
     link: '/repos/'
   },
   {
@@ -40,7 +40,7 @@ const navbar_en = [
       },
       {
         text: "Discord",
-        icon: 'brands fa-discord',
+        icon: 'fab fa-discord',
         link: "https://discord.gg/7aEbB9dGRT"
       },
       {

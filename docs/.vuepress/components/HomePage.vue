@@ -1,5 +1,5 @@
 <script setup>
-    import HomeFeatures from '@theme-hope/components/HomeFeatures.js';
+    import FeaturePanel from '@theme-hope/components/FeaturePanel';
     import { usePageFrontmatter, useSiteData } from "@vuepress/client";
     import Starfield from './Starfield.vue'
     // vuepress-theme-hope does not export their scss files :( - Justin White <kyjus25>

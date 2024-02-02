@@ -18,11 +18,11 @@ we'll go into more of a deep dive on individual internal APIs and systems of
 Pulsar, even looking at some Atom source to see how things are really getting
 done.
 
-@include(sections/configuration-api.md)
-@include(sections/keymaps-in-depth.md)
-@include(sections/scoped-settings-scopes-and-scope-descriptors.md)
-@include(sections/serialization-in-pulsar.md)
-@include(sections/developing-node-modules.md)
-@include(sections/interacting-with-other-packages-via-services.md)
-@include(sections/maintaining-your-packages.md)
-@include(sections/summary.md)
+<!-- @include: ./sections/configuration-api.md -->
+<!-- @include: ./sections/keymaps-in-depth.md -->
+<!-- @include: ./sections/scoped-settings-scopes-and-scope-descriptors.md -->
+<!-- @include: ./sections/serialization-in-pulsar.md -->
+<!-- @include: ./sections/developing-node-modules.md -->
+<!-- @include: ./sections/interacting-with-other-packages-via-services.md -->
+<!-- @include: ./sections/maintaining-your-packages.md -->
+<!-- @include: ./sections/summary.md -->
