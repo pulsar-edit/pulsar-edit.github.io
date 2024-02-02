@@ -47,7 +47,7 @@ Thanks to [@confused-techie] following on from some work via [@savetheclocktower
 
 Examples of this would be as follows:
 
-- To search for all packages that provide a grammar for `.json` files - [https://web.pulsar-edit.dev/packages?**fileExtension=_json_**](https://web.pulsar-edit.dev/packages?fileExtension=json)
+- To search for all packages that provide functionality for `.json` files - [https://web.pulsar-edit.dev/packages?**fileExtension=_json_**](https://web.pulsar-edit.dev/packages?fileExtension=json)
 - To find all packages owned by [@bacadra] - [https://web.pulsar-edit.dev/packages/search?**owner=_bacadra_**](https://web.pulsar-edit.dev/packages/search?owner=bacadra)
 - To find all packages that provide the `symbol.provider` service - [https://web.pulsar-edit.dev/packages?**serviceType=_provided_**&**service=_symbol.provider_**](https://web.pulsar-edit.dev/packages?serviceType=provided&service=symbol.provider)
 
