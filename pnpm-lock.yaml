@@ -20,7 +20,7 @@ specifiers:
   vuepress-theme-hope: 2.0.0-beta.106
 
 dependencies:
-  .github: github.com/pulsar-edit/.github/be58e3e9aa5243419278b508da531db52bd67258
+  .github: github.com/pulsar-edit/.github/1d7c3ddb51cc428c570ea5ad872304502a3fb145
   pulsar-assets: github.com/pulsar-edit/pulsar-assets/8fb8c787c296b789d5eea8dd65ea20c7a2af759d
   vuepress-theme-hope: 2.0.0-beta.106
 
@@ -2246,7 +2246,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   /chownr/2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
@@ -3625,8 +3625,8 @@ packages:
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents/2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -5738,7 +5738,7 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /rollup/2.79.1:
@@ -5746,7 +5746,7 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   /run-parallel/1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
@@ -6436,7 +6436,7 @@ packages:
       resolve: 1.22.1
       rollup: 2.77.3
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /vue-demi/0.13.11_vue@3.2.45:
@@ -7072,8 +7072,8 @@ packages:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
     dev: true
 
-  github.com/pulsar-edit/.github/be58e3e9aa5243419278b508da531db52bd67258:
-    resolution: {tarball: https://codeload.github.com/pulsar-edit/.github/tar.gz/be58e3e9aa5243419278b508da531db52bd67258}
+  github.com/pulsar-edit/.github/1d7c3ddb51cc428c570ea5ad872304502a3fb145:
+    resolution: {tarball: https://codeload.github.com/pulsar-edit/.github/tar.gz/1d7c3ddb51cc428c570ea5ad872304502a3fb145}
     name: .github
     version: 0.0.0
     dev: false
