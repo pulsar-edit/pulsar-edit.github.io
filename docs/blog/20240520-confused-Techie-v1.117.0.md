@@ -14,11 +14,13 @@ Pulsar [1.117.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.117.0) is
 
 ## Pulsar 1.117.0: With special love for Markdown and Tree-sitter
 
-As somewhat expected, this release is full of new improvements for Tree-sitter grammars! With SCSS now having Tree-sitter support, to Ruby getting an updated parser, or performance and highlighting enhancements in Markdown and TypeScript there's hopefully something in there for everybody. Speaking of Markdown, the `markdown-preview` package has gotten new features and improvements with significant performance increases in the preview pane and rendering fenced code blocks, while still boasting brand new dark mode support! But dark mode support doesn't stop there, Pulsar now, optionally, supports OS-level dark mode that syncs with the actively selected Theme within the app, meaning that if enabled Pulsar will change its window theme within the OS to match any built-in or community theme.
+As you may have come to expect, this release is full of new improvements for Tree-sitter grammars! From SCSS now having Tree-sitter support, to Ruby getting an updated parser, to performance and highlighting enhancements in Markdown and TypeScript, there's hopefully something in there for everybody.
+
+Speaking of Markdown, the `markdown-preview` package has gotten significant performance increases in the preview pane (especially for documents with lots of fenced code blocks), and boasts brand new dark mode support for the "GitHub.com style" option!
+
+But dark mode support doesn't stop there! Pulsar can now (optionally) use the OS-level dark mode window theme, switching automatically based on the lightness or darkness of the colors in the active Pulsar theme if enabled.
 
 Beyond the fixes and features within the editor itself, you'll be glad to know this release also saw many improvements for our Continuous Integration to ensure we can deliver timely and bug-free updates in the future.
-
-Until next time, happy coding, and see you amongst the stars!
 \- The Pulsar team
 
 ---
