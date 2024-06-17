@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-54365ad2","path":"/tag/socials/","title":"socials Tag","lang":"en-US","frontmatter":{"title":"socials Tag","blog":{"type":"category","name":"socials","key":"tag"},"layout":"Blog"},"excerpt":"","headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null}');export{a as data};
