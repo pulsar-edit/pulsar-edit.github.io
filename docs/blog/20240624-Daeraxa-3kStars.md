@@ -80,7 +80,9 @@ A new Discord server was created for the new community as well as a GitHub organ
 
 <img src="./assets/atom-packages.png" height="200" />
 
-One of the biggest problems was that time was not on our side. In under six months we would be losing the original Atom.io website and, most importantly, the package registry. The Atom.io package backend was not an open source project like the rest of the editor but was essential in keeping a list of published packages for Atom and serving them to its inbuilt package manager, APM. This is where [@confused-techie] was particularly instrumental in not only the creation of [a tool](https://github.com/confused-Techie/AtomPackagesArchive) to archive the entire package backend from Atom.io but also the, from scratch, re-implementation of the backend service needed to serve the reborn editor.
+One of the biggest problems was that time was not on our side. In under six months we would be losing the original Atom.io website and, most importantly, the package registry. The Atom.io package backend was not an open source project like the rest of the editor but was essential in keeping a list of published packages for Atom and serving them to its inbuilt package manager, APM.
+
+This is where [@confused-techie] was particularly instrumental in not only the creation of [a tool](https://github.com/confused-Techie/AtomPackagesArchive) to archive the entire package backend from Atom.io but the _from-scratch re-implementation_ of the backend service needed to serve the reborn editor.
 
 This was no mean feat and is too much to go into in this blog post, but, thankfully, this is all detailed in our [first ever blog post](https://pulsar-edit.dev/blog/20221127-confused-Techie-SunsetMisadventureBackend.html) if you really want to understand the full scale of the undertaking that was the archival and re-implementation of the Atom backend to turn it into the Pulsar Package Registry.
 
