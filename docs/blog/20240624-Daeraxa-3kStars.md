@@ -50,7 +50,7 @@ In 2015, [Atom 1.0](https://github.com/atom/atom/releases/tag/v1.0.0) was releas
 
 In June of 2018, Microsoft announced that they were [acquiring GitHub](https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/). This immediately prompted concerns from the Atom user base because Microsoft had released their own Electron-based text editor back in 2015: Visual Studio Code. The concern was that Microsoft would shut down development of Atom in favor of their own product as the two products were competing in very similar areas.
 
-To help alleviate the Atom community's worries, Microsoft's newly instated Github CEO, Nat Friedman, said in a [Reddit AMA](https://www.reddit.com/r/AMA/comments/8pc8mf/im_nat_friedman_future_ceo_of_github_ama/e0a2b2e/) that Atom was safe and development would continue on both products.
+To help alleviate the Atom community's worries, Microsoft's newly instated GitHub CEO, Nat Friedman, said in a [Reddit AMA](https://www.reddit.com/r/AMA/comments/8pc8mf/im_nat_friedman_future_ceo_of_github_ama/e0a2b2e/?context=1) that Atom was safe and development would continue on both products.
 
 ### Tree-sitter lands in Atom
 
