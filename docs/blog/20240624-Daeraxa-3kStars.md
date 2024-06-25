@@ -133,7 +133,9 @@ To this end, we set up a [subreddit](https://www.reddit.com/r/pulsaredit/), [for
 
 That just about covers the past, and we hope this fills in some of the blanks in the project timeline up until this point. We also hope it clarifies where the project came from and how it came to be. We do not want to forget the past — Pulsar wouldn't exist without Atom — but neither do we want to be tied to it forever; we are forging our own path for the project. We need to both recognise our past and be confident in our future direction.
 
-For details of what has been going on in the project since we got going in earnest, you can refer to our collection of [blog posts] (https://pulsar-edit.dev/blog/). But what can we expect for the future?
+For details of what has been going on in the project since we got going in earnest, you can refer to our collection of [blog posts] (https://pulsar-edit.dev/blog/).
+
+But what can we expect for the future?
 
 The work to get us onto modern versions of the underlying technologies of Pulsar will continue. This is still progressing nicely, and we hope to have a big announcement some time in the future when this has been achieved.
 
