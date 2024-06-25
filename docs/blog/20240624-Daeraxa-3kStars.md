@@ -123,7 +123,9 @@ We archived a copy of the original Atom Flight Manual as well as creating an edi
 
 Could we have *technically* got by without this? Probably, but we wanted to show the whole community that we were deadly serious about our commitment to the project and wanted to make sure that it came across this way to anyone who stumbled upon us.
 
-We also wanted to make sure that we were catering to as many avenues of social communication as possible. We already had the Discord server, but we didn't have anywhere that catered to longer-form or asynchronous communication. To this end, we set up a [subreddit](https://www.reddit.com/r/pulsaredit/), [forum](https://github.com/orgs/pulsar-edit/discussions) and [Mastodon account](https://fosstodon.org/@pulsaredit) to try to cover as many avenues as possible to make sure people could use their preferred method of contact (where reasonable). We later added [Lemmy](https://lemmy.ml/c/pulsaredit) as a Reddit-style option for those who like the format but would rather not use Reddit.
+We also wanted to make sure that we were catering to as many avenues of social communication as possible. We already had the Discord server, but we didn't have anywhere that catered to longer-form or asynchronous communication.
+
+To this end, we set up a [subreddit](https://www.reddit.com/r/pulsaredit/), [forum](https://github.com/orgs/pulsar-edit/discussions) and [Mastodon account](https://fosstodon.org/@pulsaredit) to try to cover as many avenues as possible to make sure people could use their preferred method of contact (where reasonable). We later added [Lemmy](https://lemmy.ml/c/pulsaredit) as a Reddit-style option for those who like the format but would rather not use Reddit.
 
 ## The future
 
