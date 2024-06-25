@@ -86,7 +86,7 @@ This is where [@confused-techie] was particularly instrumental in not only the c
 
 This was no mean feat and is too much to go into in this blog post, but, thankfully, this is all detailed in our [first ever blog post](https://pulsar-edit.dev/blog/20221127-confused-Techie-SunsetMisadventureBackend.html) if you really want to understand the full scale of the undertaking that was the archival and re-implementation of the Atom backend to turn it into the Pulsar Package Registry.
 
-Of course, there was the main technical challenge, but this wasn't the only obstacle; we had other things that had to be taken into account, like what to do about packages with [no license](https://pulsar-edit.dev/blog/20230319-confused-Techie-HowLicenseNoneDeletedPackages.html), or custom licenses specifically for Atom.io? We also had to deal with a huge amount of spam from Vietnamese and Thai gambling sites that had been hammering the original backend in its final days with no moderation. To indicate the scale of the issue, 12k packages were archived compared to 405k just before atom.io finally shut down.
+There were other challenges, too — like what to do about packages with [no licence](https://pulsar-edit.dev/blog/20230319-confused-Techie-HowLicenseNoneDeletedPackages.html), or custom licenses designed specifically for Atom.io. We also had to deal with a huge amount of spam from Vietnamese and Thai gambling sites that had been hammering the original backend. Out of around 405,000 packages, roughly 12,000 packages were archived for reasons of license incompatibility, license absence, or spam.
 
 ### Modernizing the editor
 
