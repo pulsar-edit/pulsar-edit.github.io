@@ -18,7 +18,7 @@ We figured this might be a good chance to write a blog post going into the histo
 
 <a href="https://star-history.com/#pulsar-edit/pulsar&Date"> <img src="./assets/star-history-20240624.png" height="600" /> </a>
 
-Before we go into that, we would like to take the opportunity to yet again thank our wonderful community and everyone who contributes to Pulsar. By that, we don't just mean those contributing to the codebase, but everyone: those people creating issues on GitHub, people taking part in conversations on our various social platforms, our generous financial donors, and anyone who has helped promote Pulsar by any means - upvoting, boosting toots, social media comments, and, of course, starring on GitHub.
+Before we go into that, we would like to take the opportunity to yet again thank our wonderful community and everyone who contributes to Pulsar. By that, we don't just mean those contributing to the codebase, but everyone: those people creating issues on GitHub, people taking part in conversations on our various social platforms, our generous financial donors, and anyone who has helped promote Pulsar by any means — upvoting, boosting toots, social media comments, and, of course, starring on GitHub.
 
 We know that the stars aren't everything, but they do give us a good idea about our general growth and community awareness. You can see from the graph that we are still on a steady upward trajectory, and we don't have plans on slowing down just yet!
 
