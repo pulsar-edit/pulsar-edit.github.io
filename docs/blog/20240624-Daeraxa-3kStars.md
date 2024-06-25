@@ -36,7 +36,7 @@ Initially the editor wasn't fully open source, but there were a bunch of librari
 
 <img src="./assets/early-atom.png" height="400" />
 
-Of course, the thing that made Atom, Atom, was its underlying framework, something developed specifically for Atom called "Atom Shell", a cross-platform framework designed to allow web technologies to be used in a desktop application. You might know it better these days as [Electron](https://www.electronjs.org/blog/electron/). So yes, if you weren't aware before, this means that the Atom editor is directly responsible for the framework that allows a whole host of popular applications to exist: Discord, VSCode, Joplin, Slack, and [far, far, more](https://www.electronjs.org/apps).
+Of course, the thing that made Atom _Atom_ was its underlying framework, something developed specifically for Atom called _Atom Shell_, a cross-platform framework designed to allow web technologies to be used in a desktop application. You might know it better these days as [Electron](https://www.electronjs.org/blog/electron/). So yes, if you weren't aware before, this means that the Atom editor is directly responsible for the framework that allows a whole host of popular applications to exist: Discord, VS Code, Joplin, Slack, and [far, far, more](https://www.electronjs.org/apps).
 
 Later in 2014, [GitHub announced](https://web.archive.org/web/20140506163807/http://blog.atom.io/2014/05/06/atom-is-now-open-source.html) that Atom would become fully open-sourced under the MIT license and invited the community to actively contribute to its development; it is under this license that Pulsar is still developed.
 
@@ -48,19 +48,27 @@ In 2015, [Atom 1.0](https://github.com/atom/atom/releases/tag/v1.0.0) was releas
 
 <img src="./assets/microsoft-github.png" height="200" />
 
-In June of 2018, Microsoft announced that they were [acquiring GitHub](https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/). This immediately raised concerns from the Atom user base because Microsoft had released their own Electron-based text editor back in 2015, Visual Studio Code. The concerns were that Atom would shut down development of Atom in favor of their own product as the two products were competing in very similar areas. To help alleviate the Atom community's worries, Microsoft's newly instated Github CEO, Nat Friedman, said in a [Reddit AMA](https://www.reddit.com/r/AMA/comments/8pc8mf/im_nat_friedman_future_ceo_of_github_ama/e0a2b2e/) that Atom was safe and development would continue on both products.
+In June of 2018, Microsoft announced that they were [acquiring GitHub](https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/). This immediately prompted concerns from the Atom user base because Microsoft had released their own Electron-based text editor back in 2015: Visual Studio Code. The concern was that Microsoft would shut down development of Atom in favor of their own product as the two products were competing in very similar areas.
+
+To help alleviate the Atom community's worries, Microsoft's newly instated Github CEO, Nat Friedman, said in a [Reddit AMA](https://www.reddit.com/r/AMA/comments/8pc8mf/im_nat_friedman_future_ceo_of_github_ama/e0a2b2e/) that Atom was safe and development would continue on both products.
 
 ### Tree-sitter lands in Atom
 
 <img src="./assets/tree-sitter-lands.png" height="200" />
 
-You may have read our [series of blog posts](https://pulsar-edit.dev/tag/tree-sitter/) from [@savetheclocktower] and [@maurício szabo] that detail the huge amount of work that has been going on to upgrade our Tree-sitter implementation. This all goes back to 2018 when [Max Brunsfeld announced](https://github.blog/2018-10-31-atoms-new-parsing-system/) that Atom 1.32 would be shipping with a brand new parsing system that promised to be better at understanding your code and making it easier to write - Tree-sitter. Like how Atom Shell was created for Atom and was then widely used elsewhere, the same can be said of Tree-sitter, which now sits at the heart of a number of other projects: Helix, Zed, and even Github's own [Linguist](https://github.com/github-linguist/linguist) library.
+You may have read our [series of blog posts](https://pulsar-edit.dev/tag/tree-sitter/) from [@savetheclocktower] and [@maurício szabo] that detail the huge amount of work that has been going on to upgrade our Tree-sitter implementation.  
+
+This all goes back to 2018, when [Max Brunsfeld announced](https://github.blog/2018-10-31-atoms-new-parsing-system/) that Atom 1.32 would be shipping with a brand-new parsing system that promised to be better at understanding your code and making it easier to write: [Tree-sitter](https://tree-sitter.github.io/tree-sitter/).  
+
+Just as Atom Shell was created for Atom and was then widely used elsewhere, Tree-sitter now sits at the heart of a number of other projects: [Helix](https://github.com/helix-editor/helix), [Zed](https://zed.dev/), [Neovim](https://neovim.io/), and even Github's own [Linguist](https://github.com/github-linguist/linguist) library.
 
 ### GitHub sunsets Atom
 
 <img src="./assets/sunsetting2.png" height="200" />
 
-So, having just mentioned how Microsoft had promised that Atom and VS Code would both see active development and support, it became clear that interest in Atom development was decreasing, new features weren't forthcoming, and issues were being left unresolved. The Atom.io blog page saw its last update in 2019 with the announcement of Atom 1.39, and most releases after that featured fixes and updates, but little in the way of exciting new features. The old Atom forum was shut down (but it is still browsable via the [Wayback Machine](https://web.archive.org/web/20210622052601/https://discuss.atom.io/)), and moved to the, then new, [GitHub Discussions](https://github.com/atom/atom/discussions) page, but there was little interaction from the original developers. The original package website was becoming unmaintained and hadn't had the "Featured" or "Trending" packages updated in a long time.
+Despite the reassurances that Atom and VS Code could coexist under Microsoft’s umbrella, it became clear that interest in Atom development was decreasing, new features weren't forthcoming, and issues were being left unresolved. The Atom.io blog page saw its last update in 2019 with the announcement of Atom 1.39; most releases after that featured fixes and updates, but little in the way of exciting new features.
+
+The old Atom forum was shut down (but is still browsable via the [Wayback Machine](https://web.archive.org/web/20210622052601/https://discuss.atom.io/) and moved to the then-new [GitHub Discussions](https://github.com/atom/atom/discussions)… but there was little interaction from the original developers. The original package website languished and didn't have its "Featured" or "Trending" packages updated for a long time.
 
 Finally, on the 8th of June, 2022, GitHub made an announcement that Atom would be [sunset](https://github.blog/2022-06-08-sunsetting-atom/) in favour of VS Code and gave six months’ warning before the various services that make up the Atom ecosystem would go offline forever. The software itself and its source code would, of course, still be available via the archived repository; but the website, Flight Manual, package backend, and Teletype service would no longer be available.
 
@@ -86,7 +94,7 @@ This is where [@confused-techie] was particularly instrumental in not only the c
 
 This was no mean feat and is too much to go into in this blog post, but, thankfully, this is all detailed in our [first-ever blog post](https://pulsar-edit.dev/blog/20221127-confused-Techie-SunsetMisadventureBackend.html) Give it a read if you really want to understand the full scale of the undertaking.
 
-There were other challenges, too — like what to do about packages with [no licence](https://pulsar-edit.dev/blog/20230319-confused-Techie-HowLicenseNoneDeletedPackages.html), or custom licenses designed specifically for Atom.io. We also had to deal with a huge amount of spam from Vietnamese and Thai gambling sites that had been hammering the original backend. Out of around 405,000 packages, roughly 12,000 packages were archived for reasons of license incompatibility, license absence, or spam.
+There were other challenges, too — like what to do about packages with [no license](https://pulsar-edit.dev/blog/20230319-confused-Techie-HowLicenseNoneDeletedPackages.html), or custom licenses designed specifically for Atom.io. We also had to deal with a huge amount of spam from Vietnamese and Thai gambling sites that had been hammering the original backend. Out of around 405,000 packages, roughly 12,000 packages were archived for reasons of license incompatibility, license absence, or spam.
 
 ### Modernizing the editor
 
@@ -105,9 +113,9 @@ We had some big tasks ahead of us; changes needed to be made, and work needed to
 - **Versioning:** - Atom's last (at the time) release was Atom 1.60. We wanted to stay with [Semantic Versioning](https://semver.org/) as Atom had — but what should our first full release be?
 
   It’s common for Atom packages to specify `atom` in their `package.json`’s `engines` field — and to specify a version range of `>=1.0 <2.0`. We could reset the counter back to 1.0 — but many packages specified a newer version of Atom than 1.0 because they relied on features that were added in a certain Atom version. We could move to 2.0 — but we would’ve broken lots of packages that had specified a *maximum* compatible version. We could continue the numbering from Atom — but this seemed like we weren't getting a clean break as a new project.
-    
+
   In the end, we decided to jump from 1.60 to 1.100 — a number that would give us a clean start whilst avoiding the issues with package version limits.
-    
+
 - **Electron updates:** - This was, and still is, one of our biggest goals for Pulsar. When development slowed in Atom, it caused the Electron version to get further and further behind. At the time Pulsar was born, it was using Electron 9, which went EOL in early 2021. We managed to get Pulsar onto Electron 12, but to go further required some rather extensive changes that are still being worked on. Read our blog post on [The Quest for Electron LTS](https://pulsar-edit.dev/blog/20240124-mauricioszabo-the-quest-for-electron-lts.html) for more information on the topic.
 
 
@@ -117,7 +125,7 @@ With this work either complete or underway, we made our first tagged release of 
 
 <img src="./assets/website.png" height="250" />
 
-We needed to show the world that Pulsar was a serious project in order to make sure that people looking for Atom alternatives (and those looking for VS Code or other text editor alternatives) knew we were around and were a legitimate option. To this end, we created the [pulsar-edit.dev](https://pulsar-edit.dev) website to serve as a hub for our download links, news and blog posts, documentation, and links to social platforms for people to get help.
+As mentioned, we needed to demonstrate that Pulsar was a serious project in order to make sure people looking for Atom alternatives (and those looking for VS Code or other text editor alternatives) knew we were around and were a legitimate option. To this end, we created the [pulsar-edit.dev](https://pulsar-edit.dev) website to serve as a hub for our download links, news and blog posts, documentation, and links to social platforms for people to get help.
 
 We archived a copy of the original Atom Flight Manual as well as creating an edited, rebranded, and updated version of it to work with our website framework to make sure that we had documentation we could link to and maintain. We made a download page for people to find the latest releases easily, rather than relying purely on a GitHub release link. This was a substantial amount of work that was split between multiple people and took a while to complete.
 
