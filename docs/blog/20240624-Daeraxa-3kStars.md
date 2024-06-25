@@ -149,7 +149,7 @@ Of course, if there is anything you think is missing from the project, then make
 
 We have already said it above, but thank you so much to everyone in our wonderful community. This project simply wouldn't be where it is without your involvement and contribution, no matter how small. You really do make this project not only possible but rewarding. It is always a wonderful feeling to see Pulsar recommended on various social platforms and blogs, and it makes it all worth it.
 
-So thanks again, and here is to the next 1000 stars!
+So thanks again, and here's to the next 1,000 stars!
 
 - The Pulsar Team
 
