@@ -28,7 +28,11 @@ We know that the stars aren't everything, but they do give us a good idea about 
 
 <img src="./assets/atom1.png" height="200" />
 
-Atom started out in 2008 being developed by GitHub's co-founder and then CEO, Chris Wanstrath, but it wasn't until 2014, with the addition of Corey Johnson and Nathan Sobo to the team, that things really got moving, and we first saw the beta being released to the public. You can view the [original announcement ](https://web.archive.org/web/20140302005920/http://blog.atom.io/2014/02/26/introducing-atom.html) but the gist is that Atom was designed from the ground up to be a no-compromise mix of usability and hackability. They had realised there was a gap in the market between the former (Sublime, Textmate) and the latter (Vim, Emacs) and wanted to fill it. Initially, the editor wasn't fully open source, but there were a bunch of libraries and packages that were. If you want to see what these early versions of Atom were like, they are still available in the original [atom/atom releases](https://github.com/atom/atom/releases). Back then, it looked a little different from what we are used to today, but you can still use that original theme in Pulsar! (*Settings* > *Themes* > *UI Theme* > Atom Dark/Light).
+Atom started out in 2008 being developed by GitHub's co-founder and then-CEO Chris Wanstrath; but it wasn't until 2014, with the addition of Corey Johnson and Nathan Sobo to the team, that things really got moving and we first saw the beta being released to the public.
+
+You can view the [original announcement](https://web.archive.org/web/20140302005920/http://blog.atom.io/2014/02/26/introducing-atom.html) and how it portrayed GitHub’s vision for Atom: a no-compromise mix of usability and hackability. They had realised there was a gap in the market between the former (Sublime Text, TextMate) and the latter (Vim, Emacs) and wanted to bridge that gap.
+
+Initially the editor wasn't fully open source, but there were a bunch of libraries and packages that were. If you want to see what these early versions of Atom were like, they are still available in the original [atom/atom releases](https://github.com/atom/atom/releases). Back then, it looked a little different to what we are used to today, but you can still use that original theme in Pulsar! (Settings > Themes > UI Theme > Atom Dark/Light).
 
 <img src="./assets/early-atom.png" height="400" />
 
