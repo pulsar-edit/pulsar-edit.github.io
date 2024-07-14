@@ -110,7 +110,7 @@ We had some big tasks ahead of us; changes needed to be made, and work needed to
 
 - **CI and builds:** - We needed an automated platform to build our binaries and run tests. For this, we went with [CirrusCI](https://cirrus-ci.org/), which had a more than generous free tier; it reliably built our binaries and ran our tests for over a year. We have since had to [move away](https://pulsar-edit.dev/blog/20230903-confused-Techie-pulsars-ci.html) from CirrusCI for most tasks, but we still use it for building some of our binaries.
 
-- **Versioning:** - Atom's last (at the time) release was Atom 1.60. We wanted to stay with [Semantic Versioning](https://semver.org/) as Atom had — but what should our first full release be?
+- **Versioning:** - Atom's last stable release (at the time) was Atom 1.60. We wanted to stay with [Semantic Versioning](https://semver.org/) as Atom had — but what should our first full release be?
 
   It’s common for Atom packages to specify `atom` in their `package.json`’s `engines` field — and to specify a version range of `>=1.0 <2.0`. We could reset the counter back to 1.0 — but many packages specified a newer version of Atom than 1.0 because they relied on features that were added in a certain Atom version. We could move to 2.0 — but we would’ve broken lots of packages that had specified a *maximum* compatible version. We could continue the numbering from Atom — but this seemed like we weren't getting a clean break as a new project.
 
