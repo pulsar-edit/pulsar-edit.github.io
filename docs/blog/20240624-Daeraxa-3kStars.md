@@ -116,7 +116,7 @@ We had some big tasks ahead of us; changes needed to be made, and work needed to
 
   In the end, we decided to jump from 1.60 to 1.100 — a number that would give us a clean start whilst avoiding the issues with package version limits.
 
-- **Electron updates:** - This was, and still is, one of our biggest goals for Pulsar. When development slowed in Atom, it caused the Electron version to get further and further behind. At the time Pulsar was born, it was using Electron 9, which went EOL in early 2021. We managed to get Pulsar onto Electron 12, but to go further required some rather extensive changes that are still being worked on. Read our blog post on [The Quest for Electron LTS](https://pulsar-edit.dev/blog/20240124-mauricioszabo-the-quest-for-electron-lts.html) for more information on the topic.
+- **Electron updates:** - This was, and still is, one of our biggest goals for Pulsar. When development slowed in Atom, it caused the Electron version to get further and further behind. At the time Pulsar was born, it was using Electron 11, which went EOL in the second half of 2021. We managed to get Pulsar onto Electron 12 rather quickly, but to go further required some rather extensive changes that are still being worked on. Read our blog post on [The Quest for Electron LTS](https://pulsar-edit.dev/blog/20240124-mauricioszabo-the-quest-for-electron-lts.html) for more information on the topic.
 
 
 With this work either complete or underway, we made our first tagged release of Pulsar — [1.100.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.100.0-beta) — on the same day that Atom was finally sunset: the 15th of December 2022.
