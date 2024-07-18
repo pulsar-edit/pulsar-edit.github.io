@@ -22,14 +22,14 @@ As always thanks a ton to all of those that support the project and keep it movi
 
 \- The Pulsar Team
 
----
-
-## **NOTICE**
-
-Originally, the binaries from our normal "Pull Request" CI build (which produces unsigned binaries) were accidentally uploaded to this release, instead of the binaries from the special "tag push" CI build (which signs the macOS binaries). In order to provide you with signed macOS binaries, we are re-uploading the Intel macOS binaries and updating `SHA256SUMS.txt` to reflect this. As such the following binaries have been swapped out for the correct versions, with the checksum being updated as well for the following files:
+::: info Notice
+Originally, the binaries from our normal "Pull Request" CI build (which produces unsigned binaries) were accidentally uploaded to this release, instead of the binaries from the special "tag push" CI build (which signs the macOS binaries).
+In order to provide you with signed Intel macOS binaries, we have re-uploaded them and updated `SHA256SUMS.txt` to reflect this.
+The following binaries have been swapped out for the correct versions and the checksums updated:
 
 - `Intel.Mac.Pulsar-1.119.0-mac.zip`
 - `Intel.Mac.Pulsar-1.119.0.dmg`
+  :::
 
 ---
 
