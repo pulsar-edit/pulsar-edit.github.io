@@ -190,7 +190,7 @@ You can bypass this by clicking "More info" then "Run anyway".
 ## Manual download
 
 Binaries are built from a number of different branches and PRs but you should
-stick to the **`master`** branch releases for the most stable ones unless you know
+stick to the `master` branch releases for the most stable ones unless you know
 exactly what you are looking for.
 
 For the most convenient access to these recommended binaries
