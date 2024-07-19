@@ -212,10 +212,9 @@ To download a binary produced by GitHub Actions, follow the below steps:
   part of the version e.g. 1.109.**2023091606**).
   - x86_64 binaries will be grouped together for most releases,
     but occasionally they will be split across multiple releases.
-    Apple silicon and ARM Linux binaries are usually grouped together
-    in their own separate release from the x64 binaries, but sometimes not.
-    You may need to look through the earlier releases
-    to find binaries for your platform.
+    Apple silicon and ARM Linux binaries are usually, but not always,
+    grouped together in their own separate release. You may need to look through
+    the earlier releases to find binaries for your platform.
 - Choose the binary you wish to download from the `Assets` section (you may need
   click the `Show all x assets` link to display them all). See below for
   descriptions of all available binaries.
