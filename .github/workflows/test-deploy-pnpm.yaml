@@ -21,7 +21,7 @@ jobs:
       - name: Setup pnpm
       # You may pin to the exact commit or the version.
       # uses: pnpm/action-setup@10693b3829bf86eb2572aef5f3571dcf5ca9287d
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v4
         with:
           version: 7
           run_install: |
