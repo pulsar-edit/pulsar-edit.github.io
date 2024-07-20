@@ -30,6 +30,14 @@ fit into other topics. This is where you will find information about things
 like the tools used by the team and contributors, a glossary to translate
 any confusing jargon and details of the various APIs that make up Pulsar.
 
+### [<i class="fa-solid fa-atom"></i> Differences from Atom](/docs/differences-from-atom/)
+
+Pulsar is a fork of Atom - this means that it's currently using the same
+Atom code at version 1.63-beta (we did not upgrade further because then we
+would have to remove the sunset messages and undo their code that basically
+downgraded packages, where we want to _upgrade_ them). This section
+discusses other changes
+
 ### [<i class="fa-solid fa-box-archive"></i> Atom Archive](/docs/atom-archive/)
 
 This is an archive of the old Atom documentation as it appeared on their
