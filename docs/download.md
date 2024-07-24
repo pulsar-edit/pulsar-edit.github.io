@@ -190,31 +190,54 @@ You can bypass this by clicking "More info" then "Run anyway".
 ## Manual download
 
 Binaries are built from a number of different branches and PRs but you should
-stick to the **master** branch releases for the most stable ones unless you know
+stick to the `master` branch releases for the most stable ones unless you know
 exactly what you are looking for.
 
-We currently build on both GitHub Actions and Cirrus CI:
-
-- GitHub Actions is used for building the majority of our binaries and builds
-  are run on every commit or PR.
-  - Direct artifact download is available only for those with at least read
-    permission on the repository. All artifacts are therefore automatically
-    uploaded to the [pulsar-edit/pulsar-rolling-releases](https://github.com/pulsar-edit/pulsar-rolling-releases/releases)
-    repository for access by anyone.
-- Cirrus CI is _only_ used for building Apple silicon (macOS M1/M2) and ARM
-  Linux binaries. These are run less frequently (every Monday, Wednesday, and Friday).
-
-To download a binary produced by GitHub Actions then follow the below steps:
+For the most convenient access to these recommended binaries
+from the `master` branch, please visit our Rolling Releases repository on GitHub:
 
 - Navigate to the [pulsar-edit/pulsar-rolling-releases](https://github.com/pulsar-edit/pulsar-rolling-releases/releases)
   releases.
 - Select the most recent release (or for a specific release reference the timestamp
   part of the version e.g. 1.109.**2023091606**).
-  - Most binaries will be available with every release but Apple silicon and
-    ARM Linux binaries will not. You may need to look for earlier releases.
+  - x86_64 binaries will be grouped together for most releases,
+    but occasionally they will be split across multiple releases.
+    Apple silicon and ARM Linux binaries are usually, but not always,
+    grouped together in their own separate release. You may need to look through
+    the earlier releases to find binaries for your platform.
 - Choose the binary you wish to download from the `Assets` section (you may need
   click the `Show all x assets` link to display them all). See below for
   descriptions of all available binaries.
+
+We currently build on both GitHub Actions and Cirrus CI:
+
+- GitHub Actions is used for building the majority of our binaries and builds
+  are run on every commit or PR.
+  - Direct artifact download is available only for those who are logged in
+    with their GitHub accounts.
+  - All artifacts from the `master` branch
+    are therefore automatically uploaded to the [pulsar-edit/pulsar-rolling-releases](https://github.com/pulsar-edit/pulsar-rolling-releases/releases)
+    repository for convenient access by anyone.
+- Cirrus CI is _only_ used for building Apple silicon (macOS M1/M2) and ARM
+  Linux binaries. These are run less frequently (every Monday, Wednesday, and Friday).
+  - These are also uploaded to the [pulsar-edit/pulsar-rolling-releases](https://github.com/pulsar-edit/pulsar-rolling-releases/releases)
+    repository.
+
+To directly download a binary produced by GitHub Actions, follow the below steps:
+
+- Visit the Actions tab of the [`pulsar-edit/pulsar` repository at github.com](https://github.com/pulsar-edit/pulsar/actions/workflows/build.yml),
+  or visit a specific [Pull Request](https://github.com/pulsar-edit/pulsar/pulls)
+  that you wish to obtain binaries from.
+- Log in to your GitHub account, or [create one](https://github.com/signup)
+  if you don't have one already.
+- Visit the "Summary" page for any run of the "Build Pulsar Binaries" workflow,
+  and scroll down to the bottom of the page, where you will see the "Artifacts"
+  section.
+- Download the desired binaries for your platform of choice.
+  - The labels are based on the CI runner, but the specific OS version should not
+    matter for your use. The "ubuntu" binaries are for any x64 Linux OSes.
+    The "macos-12" binaries are for any Intel-based Mac. Windows is x64-only
+    at this time.
 
 To download a binary from Cirrus CI (Apple silicon and ARM Linux only) please
 follow the below steps:
