@@ -39,7 +39,7 @@ Still, there’s a mismatch here. It’s becoming crucial infrastructure for maj
 
 #### And yet…
 
-There are ten official members of [the `tree-sitter` GitHub organization](https://github.com/tree-sitter), but I’d like to mention [@amaanq](https://github.com/amaanq) specifically as being an increasingly helpful and prolific contributor in the eighteen months that I’ve spent in the Tree-sitter ecosystem. Others, like [@clason](https://github.com/clason) and [@sogaiu](https://github.com/sogaiu), idle on Tree-sitter’s [ Discord](https://discord.gg/w7nTvsVJhm) and [Matrix](https://matrix.to/#/#tree-sitter-chat:matrix.org) channels and have written enormously helpful documentation.
+There are six official members of [the `tree-sitter` GitHub organization](https://github.com/tree-sitter), but I’d like to mention [@amaanq](https://github.com/amaanq) specifically as being an increasingly helpful and prolific contributor in the eighteen months that I’ve spent in the Tree-sitter ecosystem. Others, like [@clason](https://github.com/clason) and [@sogaiu](https://github.com/sogaiu), idle on Tree-sitter’s [ Discord](https://discord.gg/w7nTvsVJhm) and [Matrix](https://matrix.to/#/#tree-sitter-chat:matrix.org) channels and have written enormously helpful documentation.
 
 The presence of other diligent contributors is how Tree-sitter has gotten much better over that span of time despite only sporadic participation from Max.
 
