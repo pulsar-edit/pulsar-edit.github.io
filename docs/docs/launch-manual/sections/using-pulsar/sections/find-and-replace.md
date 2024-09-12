@@ -27,10 +27,10 @@ Replace panel at the bottom of your screen.
 ![Find and replace text in the current file](@images/atom/find-replace-file.png "Find and replace text in the current file")
 
 To search within your current file you can press
-**_LNX/WIN_**: <kbd>Cmd+F</kbd> -
-**_MAC_**: <kbd>Ctrl+F</kbd>, type in a search string and press
+**_LNX/WIN_**: <kbd>Ctrl+F</kbd> -
+**_MAC_**: <kbd>Cmd+F</kbd>, type in a search string and press
 **_LNX/WIN/MAC_**: <kbd>Enter</kbd> or
-**_LNX/WIN_**<kbd>F3</kbd> -
+**_LNX/WIN_**: <kbd>F3</kbd> -
 **_MAC_**: <kbd>Cmd+G</kbd> or the "Find Next" button) multiple
 times to cycle through all the matches in that file. <kbd>Alt+Enter</kbd> will
 find all occurrences of the search string. The Find and Replace panel also
