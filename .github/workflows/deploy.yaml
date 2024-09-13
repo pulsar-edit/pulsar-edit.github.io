@@ -43,9 +43,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
       - name: Build VuePress Site
         run: pnpm build
-
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages

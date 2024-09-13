@@ -1,6 +1,6 @@
-# Workflow to test the spelling within the PR 
+# Workflow to test the spelling within the PR
 
-name: Spell Checker 
+name: Spell Checker
 
 on:
   pull_request:
@@ -8,13 +8,14 @@ on:
 
 jobs:
   spellcheck:
-    runs-on: ubuntu-latest 
-    name: Spellcheck 
+    runs-on: ubuntu-latest
+    name: Spellcheck
     steps:
       - uses: actions/checkout@v3
+
       - uses: tbroadley/spellchecker-cli-action@v1
         with:
-          quiet: true # Dont output anything if the file contains no spelling mistakes 
+          quiet: true # Dont output anything if the file contains no spelling mistakes
           files: "docs/**/**/*.md !docs/.vuepress"
           language: "en-US"
           dictionaries: "./tools/spell-checker-dictionary.txt"

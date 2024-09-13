@@ -1,4 +1,4 @@
-# Workflow to lint Markdown provided 
+# Workflow to lint Markdown provided
 
 name: Lint
 
@@ -40,6 +40,5 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Run Linting 
-        run: pnpm lint 
-      
+      - name: Run Linting
+        run: pnpm lint
