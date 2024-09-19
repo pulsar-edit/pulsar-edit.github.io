@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7ab1f304","path":"/tag/chocolatey/","title":"chocolatey Tag","lang":"en-US","frontmatter":{"title":"chocolatey Tag","blog":{"type":"category","name":"chocolatey","key":"tag"},"layout":"Blog"},"excerpt":"","headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null}');export{e as data};
