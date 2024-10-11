@@ -16,7 +16,7 @@ To solve this a couple of environmental variables need to be exported.
 
 ```sh
 export ATOM_HOME=/home/<user>/.pulsar
-export APM_PATH=/ppm/bin/apm
+export APM_PATH=<pulsar source>/ppm/bin/apm
 export ATOM_ELECTRON_VERSION=12.2.3
 ```
 
@@ -30,7 +30,7 @@ TODO
 
 ```sh
 set ATOM_HOME=C:\Users\<user>\.pulsar
-set APM_PATH=\ppm\bin\apm
+set APM_PATH=<pulsar source>\ppm\bin\apm
 ```
 
 :::
