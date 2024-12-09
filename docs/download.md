@@ -150,10 +150,10 @@ Current version is [v1.123.0](https://github.com/pulsar-edit/pulsar/releases/tag
 
 **Silicon** - For Apple Silicon (M1/M2) macs
 
-|                                                   Package                                                    |     Type      |
-| :----------------------------------------------------------------------------------------------------------: | :-----------: |
-| [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.123.0/Silicon.Mac.Pulsar-1.123.0-arm64.dmg) | DMG installer |
-|   [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.123.0/Intel.Mac.Pulsar-1.123.0-mac.zip)   |  Zip archive  |
+|                                                   Package                                                        |     Type      |
+| :--------------------------------------------------------------------------------------------------------------: | :-----------: |
+|   [dmg](https://github.com/pulsar-edit/pulsar/releases/download/v1.123.0/Silicon.Mac.Pulsar-1.123.0-arm64.dmg)   | DMG installer |
+| [zip](https://github.com/pulsar-edit/pulsar/releases/download/v1.123.0/Silicon.Mac.Pulsar-1.123.0-arm64-mac.zip) |  Zip archive  |
 
 **Intel** - For Intel macs
 
