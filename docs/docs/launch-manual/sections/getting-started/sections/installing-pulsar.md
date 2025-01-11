@@ -68,6 +68,22 @@ $ sudo dnf install -y ./pulsar_1.100.0_amd64.rpm
 $ sudo yum install -y ./pulsar_1.100.0_amd64.rpm
 ```
 
+### Gentoo based distributions
+
+To install Pulsar on Gentoo or related distributions, enable the [GURU overlay](https://wiki.gentoo.org/wiki/Project:GURU/Information_for_End_Users)
+and emerge the `app-editors/pulsar-bin` package.
+
+You can do this via the terminal:
+
+```
+# If GURU is not enabled already
+$ sudo emerge --noreplace app-eselect/eselect-repository
+$ sudo eselect repository enable guru
+$ sudo emerge --sync guru
+
+$ sudo emerge app-editors/pulsar-bin
+```
+
 @tab macOS
 
 Pulsar follows the standard macOS installation process. Grab the correct
