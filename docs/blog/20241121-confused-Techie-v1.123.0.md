@@ -12,7 +12,7 @@ Pulsar [1.123.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.123.0) is
 
 <!-- more -->
 
-## Pulsar Pulsar 1.123.0: Is It Winter Yet?!
+## Pulsar 1.123.0: Is It Winter Yet?!
 
 This time around there's been a big focus on bug fixes and compatibility:
 ensuring Linux users are able to load the new SQL State Storage when starting Pulsar from a self-contained binary, and fixing a regression with Electron 12 compatibility for moving items to the trash.
