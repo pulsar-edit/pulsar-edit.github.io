@@ -16,15 +16,15 @@ Pulsar [1.125.0](https://github.com/pulsar-edit/pulsar/releases/tag/v1.125.0) is
 
 The Pulsar team is happy to welcome everyone to the new year on our ~~20~~25th regular release.
 
-We've gone back on our last update's decision to add `source comment` to the `spell-check.grammar` setting by default, as it had a greater performance impact than anticipated. This does mean that by default comments in code are no longer spell checked, but if you liked the feature, you can of course add that setting back in. Just re-add `source comment` to the list of scopes under "Settings > Packages > spell-check > Grammars."
+We've gone back on our last update's decision to add `source comment` to the `spell-check.grammar` setting by default, as it had a greater performance impact than anticipated. This does mean that by default comments in code are no longer spell-checked — but if you liked the feature, you can add that setting back in! Just re-add `source comment` to the list of scopes under "Settings > Packages > spell-check > Grammars."
 
-We've also restored an internal API that was changed a while back, so that the community package `project-plus` is returned to full functionality, after we learned it required said internal API. So we've made sure to make changes to get it working again where we can within Pulsar.
+We've also restored an internal API that was changed a while back, after we learned the change affected the `project-plus` community package.
 
-And like always, we have various other improvements, such as `language-css`s parser being updated to the latest, and `language-python` getting improved hinting for rare or unusual scenarios.
+We have our usual improvements to the Tree-sitter grammars — such as `language-css`'s parser being updated to the latest, and `language-python` getting improved indentation hinting for some unusual code constructs.
 
 We've fixed an issue that would cause `pulsar` and `ppm` to be removed from the user's PATH on Windows during an upgrade, to ensure the choices you select during installation are respected.
 
-And as always, we've engaged in some maintenance and updates to our CI operations, to ensure we can keep things working on all of our supported platforms.
+We've also engaged in some maintenance and updates to our CI operations, to ensure we can keep things working on all of our supported platforms.
 
 As always, a huge thank you to our community, contributors, and donations.
 Happy coding, and see you amongst the stars!
