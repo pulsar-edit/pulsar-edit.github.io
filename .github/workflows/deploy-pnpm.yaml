@@ -49,8 +49,10 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
       - name: Build VuePress Site
         run: pnpm build
+
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3
         with:
