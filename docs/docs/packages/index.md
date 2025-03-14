@@ -32,3 +32,6 @@ There are currently thousands of community packages published to the Pulsar Pack
 If one of your favorite packages that you had on Atom is missing feel free to [contact us](https://pulsar-edit.dev/community.html) or take a look through the [Pulsar Package Registry Administrative Actions Log](https://github.com/pulsar-edit/package-backend/blob/main/docs/reference/Admin_Actions.md) to see if it's been officially removed.
 
 Otherwise to browse the vast collection of packages available to install on Pulsar you can open up the Pulsar Settings Package page, or browse them on the [Pulsar Package Registry Website](https://web.pulsar-edit.dev/).
+
+## Make your own package
+You can read about how to write your own package [here](https://pulsar-edit.dev/docs/launch-manual/sections/core-hacking/). And [here is how to publish](https://pulsar-edit.dev/docs/launch-manual/sections/core-hacking/#publishing) your own package.
