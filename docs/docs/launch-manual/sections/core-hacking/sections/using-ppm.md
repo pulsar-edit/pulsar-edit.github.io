@@ -16,7 +16,8 @@ To solve this a couple of environmental variables need to be exported.
 
 ```sh
 export ATOM_HOME=/home/<user>/.pulsar
-export APM_PATH=/ppm/bin/apm
+# With <pulsar_clone> the path of your clone of the git repository of pulsar
+export APM_PATH=<pulsar_clone>/ppm/bin/apm
 export ATOM_ELECTRON_VERSION=12.2.3
 ```
 
