@@ -47,14 +47,16 @@ html[data-theme=dark] .custom-container.details th {
 #hero > img {
   position: relative;
   height: 12em;
-  animation: slide linear 10s infinite;
+  animation: slide ease-in-out 5s -2.5s infinite alternate both;
 }
 
 @keyframes slide {
-  0%   {top: 0px;}
-  25% {top: -50px;}
-  75% {top: 50px;}
-  100% {top: 0px;}
+  from {
+    translate: 0 -50px
+  }
+  to {
+    translate: 0 50px
+  }
 }
 
 @media screen and (max-width: 900px) {
