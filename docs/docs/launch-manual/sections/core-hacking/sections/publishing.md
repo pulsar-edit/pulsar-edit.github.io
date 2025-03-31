@@ -12,15 +12,16 @@ See more in [Using PPM](#using-ppm).
 
 There are a few things you should double check before publishing:
 
-- Your `package.json` file has `name`, `description`, and `repository` fields.
-- Your `package.json` `name` is URL Safe, as in it's not an emoji or special character.
-- Your `package.json` file has a `version` field with a value of `"0.0.0"`.
-- Your `package.json` `version` field is [Semver V2](https://semver.org/spec/v2.0.0.html) compliant.
-- Your `package.json` file has an `engines` field that contains an entry for
-  `atom` such as: `"engines": {"atom": ">=1.0.0 <2.0.0"}`.
 - Your package has a `README.md` file at the root.
-- Your `repository` URL in the `package.json` file is the same as the URL of
-  your repository.
+- Your `package.json` file:
+  - has `name` "URL Safe" field, as in it's not an emoji or special character.
+  - has `description` field.
+  - has `repository` field containing the URL of your repository.
+  - has `version` field with a value of `"0.0.0"` before the first release, in
+    any case it needs to be [Semver V2](https://semver.org/spec/v2.0.0.html)
+    compliant.
+  - has `engine` field that contains an entry for `atom` such as:
+    `"engines": {"atom": ">=1.0.0 <2.0.0"}`.
 - Your package is in a Git repository that has been pushed to
   [GitHub](https://github.com). Follow [this guide](https://help.github.com/articles/importing-a-git-repository-using-the-command-line/)
   if your package isn't already on GitHub.
@@ -34,54 +35,47 @@ do that by visiting `https://web.pulsar-edit.dev/packages/your-package-name` to
 see if the package already exists. If it does, update your package's name to
 something that is available before proceeding.
 
-Now let's review what the `pulsar -p publish` command does:
+Now, run the following commands from your package folder to publish it:
+
+```sh
+$ pulsar -p login
+$ pulsar -p publish minor
+```
+
+`pulsar -p login` will let you create and set an API token in your keychain to
+permit interacting with GitHub API
+
+`pulsar -p publish minor` command does:
 
 1. Registers the package name on Pulsar Package Repository if it is being
    published for the first time.
-2. Updates the `version` field in the `package.json` file and commits it.
+2. Updates the `version` field in the `package.json` file applying the `minor`
+   version increase (details below) and commits it.
 3. Creates a new [Git tag](https://git-scm.com/book/en/Git-Basics-Tagging) for
    the version being published.
 4. Pushes the tag and current branch up to GitHub.
 5. Updates Pulsar Package Repository with the new version being published.
 
-Now run the following commands to publish your package:
-
-```sh
-$ cd path-to-your-package
-$ pulsar -p publish minor
-```
-
-<!-- TODO: Rewrite this Section once Authentication Information is Public -->
-
-If this is the first package you are publishing, the `pulsar -p publish` command
-may prompt you for your GitHub username and password. If you have two-factor
-authentication enabled, use a [personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
-in lieu of a password. This is required to publish and you only need to enter
-this information the first time you publish. The credentials are stored securely
-in your [keychain](<https://en.wikipedia.org/wiki/Keychain_(software)>) once you
-login.
-
 Your package is now published and available on Pulsar Package Repository. Head
 on over to `https://web.pulsar-edit.dev/packages/your-package-name` to see your
 package's page.
 
+#### Version increase type
+
 With `pulsar -p publish`, you can bump the version and publish by using
 
 ```sh
-$ pulsar -p publish <version-type>
+$ pulsar -p publish <type>
 ```
 
-where `version-type` can be `major`, `minor` and `patch`.
+where `type` can be `major`, `minor` and `patch`.
 
-- **MAJOR** version when you make incompatible API changes
-- **MINOR** version when you add functionality in a backwards compatible manner
-- **PATCH** version when you make backwards compatible bug fixes
-
-i.e. to bump a package from v1.**0**.0 to v1.**1**.0:
-
-```sh
-$ pulsar -p publish minor
-```
+- **major** version when you make incompatible API changes
+  - e.g. version `1.0.0` will become `2.0.0`
+- **minor** version when you add functionality in a backwards compatible manner
+  - e.g. version `1.0.0` will become `1.1.0`
+- **patch** version when you make backwards compatible bug fixes
+  - e.g. version `1.0.0` will become `1.0.1`
 
 Check out [semantic versioning](https://semver.org/) to learn more about best
 practices for versioning your package releases.
