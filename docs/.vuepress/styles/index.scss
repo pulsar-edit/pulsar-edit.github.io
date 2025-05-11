@@ -83,6 +83,23 @@ html[data-theme=dark] .custom-container.details th {
   margin-left: auto;
   margin-right: auto;
 }
+
+// make the sponsors section responsive
+@media (max-width: 700px) {
+  .links {
+    display: inline-block;
+    max-width: 100%;
+    max-height: auto;
+    overflow: hidden;
+
+    img{
+      object-fit: contain;
+      max-width: 100%;
+      max-height: auto;
+    } 
+  }
+}
+
 //Website footer section
 
 //Theme adds a sidebar width even on mobile when it doesnt show, this removes it.
