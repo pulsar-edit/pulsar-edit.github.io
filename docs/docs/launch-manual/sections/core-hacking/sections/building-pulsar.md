@@ -117,7 +117,7 @@ use.
 ### Building binaries
 
 The following will allow you to build Pulsar as a stand alone binary or
-installer. After running you will find your your built application in
+installer. After running you will find your built application in
 `pulsar/binaries`.
 
 The build script will automatically build for your system's CPU architecture,
