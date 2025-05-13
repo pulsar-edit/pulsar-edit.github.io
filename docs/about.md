@@ -3,9 +3,9 @@ title: About Us
 layout: page
 ---
 
-# About us
+## About us
 
-## The team
+### The team
 
 The team behind Pulsar is a community that came about naturally after the
 announcement of [Atom's Sunset](https://github.blog/2022-06-08-sunsetting-atom/)
@@ -18,7 +18,7 @@ original Atom project into a contemporary, hackable and fully open editor.
 Pulsar is all of us, feel free to contribute, discuss, answer questions and
 suggest ideas in any of our [community areas](./community.md).
 
-## The goals <!--See: https://github.com/orgs/pulsar-edit/discussions/50-->
+### The goals <!--See: https://github.com/orgs/pulsar-edit/discussions/50-->
 
 - Community developed, led and focused
   - Pulsar is being made by a community who came together from the stellar
