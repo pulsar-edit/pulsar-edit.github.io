@@ -1,0 +1,15 @@
+<%- include("header") %>
+  <body>
+    <%- include("page_header") %>
+    <div class="content">
+      <main class="container">
+        <section class="header">
+          <h1 class="title" id="title"><%= title %></h1>
+        </section>
+
+        <%- content %>
+
+      </main>
+    </div>
+  </body>
+<%- include("footer") %>

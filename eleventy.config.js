@@ -1,7 +1,10 @@
 const pulsarEleventyConfig = require("11ty-config");
 
-module.exports = (eleventyConfig) => {
+module.exports = async (eleventyConfig) => {
   pulsarEleventyConfig(eleventyConfig);
+
+  const fontAwesomePlugin = await import("@11ty/font-awesome").then(fa => fa.default); // ESM export only
+  eleventyConfig.addPlugin(fontAwesomePlugin);
 
   // return config
   return {
