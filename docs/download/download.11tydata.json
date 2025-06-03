@@ -1,0 +1,140 @@
+{
+  "methods": {
+    "manual": {
+      "title": "Manual Download",
+      "description": "Pick the right installable binary for you",
+      "options": {
+        "regular": {
+          "title": "Regular Releases",
+          "description": "Releases made periodically, usually once a month, provides a stable Pulsar experience."
+        },
+        "rolling": {
+          "title": "Rolling Releases",
+          "description": "Releases built on every single commit to the Pulsar code repository. Has the latest fixes but may also have un-discovered bugs.",
+          "options": {
+            "linux": {
+              "title": "Linux",
+              "options": {
+                "x86_64": {
+                  "title": "x86_64",
+                  "description": "For most desktops and laptops with Intel or AMD processors.",
+                  "options": {
+                    "deb": {
+                      "title": "Debian/Ubuntu etc. (deb)",
+                      "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_deb"
+                    },
+                    "rpm": {
+                      "title": "Fedora/RHEL etc. (rpm)",
+                      "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_rpm"
+                    },
+                    "appimage": {
+                      "title": "All distributions (Appimage)",
+                      "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_appimage",
+                      "alerts": [
+                        "Appimage may require `--no-sandbox` as an argument to run correctly on some systems.",
+                        "Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g. on Ubuntu >=22.04 `apt install libfuse2`."
+                      ]
+                    },
+                    "targz": {
+                      "title": "All distributions (tar.gz)",
+                      "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_tar"
+                    }
+                  }
+                },
+                "arm": {
+                  "title": "ARM_64",
+                  "description": "For ARM based devices - Raspberry Pi, Pinebook, etc.",
+                  "options": {
+                    "deb": {
+                      "title": "Debian/Ubuntu etc. (deb)",
+                      "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_deb"
+                    },
+                    "rpm": {
+                      "title": "Fedora/RHEL etc. (rpm)",
+                      "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_rpm"
+                    },
+                    "appimage": {
+                      "title": "All distributions (Appimage)",
+                      "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_appimage",
+                      "alerts": [
+                        "Appimage may require `--no-sandbox` as an argument to run correctly on some systems.",
+                        "Some distributions no longer ship with `libfuse2` which Appimage requires to run. You may need to install this manually, e.g. on Ubuntu >=22.04 `apt install libfuse2`."
+                      ]
+                    },
+                    "targz": {
+                      "title": "All distributions (tar.gz)",
+                      "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar"
+                    }
+                  }
+                }
+              }
+            },
+            "windows": {
+              "title": "Windows",
+              "alerts": [
+                "Windows binaries are not signed, so will produce an error with Windows Smartscreen, you can bypass this by clicking 'More info' then 'Run anyway'"
+              ],
+              "options": {
+                "setup": {
+                  "title": "Installer",
+                  "url": "https://download.pulsar-edit.dev/?os=windows&type=windows_setup"
+                },
+                "portable": {
+                  "title": "Portable (no install)",
+                  "url": "https://download.pulsar-edit.dev/?os=windows&type=windows_portable"
+                }
+              }
+            },
+            "macos": {
+              "title": "macOS",
+              "options": {
+                "silicon": {
+                  "title": "Silicon",
+                  "description": "For Apple Silicon (M1/M2) macs.",
+                  "options": {
+                    "dmg": {
+                      "title": "DMG installer",
+                      "url": "https://download.pulsar-edit.dev/?os=silicon_mac&type=mac_dmg"
+                    },
+                    "zip": {
+                      "title": "Zip archive",
+                      "url": "https://download.pulsar-edit.dev/?os=silicon_mac&type=mac_zip"
+                    }
+                  }
+                },
+                "intel": {
+                  "title": "Intel",
+                  "description": "For Intel macs.",
+                  "options": {
+                    "dmg": {
+                      "title": "DMG installer",
+                      "url": "https://download.pulsar-edit.dev/?os=intel_mac&type=mac_dmg"
+                    },
+                    "zip": {
+                      "title": "Zip archive",
+                      "url": "https://download.pulsar-edit.dev/?os=intel_mac&type=mac_zip"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "packaged": {
+      "title": "Package Manager Download",
+      "description": "Let a package manager handle installation for you",
+      "options": {
+        "official": {
+          "title": "Officially Supported Package Managers",
+          "description": "Pulsar installs available on Package Managers that are directly maintained by the Pulsar Team."
+        },
+        "community": {
+          "title": "Community Supported Package Managers",
+          "description": "Pulsar installs available on Package Managers that are maintained by our wonderful community."
+        }
+      }
+    }
+  }
+}

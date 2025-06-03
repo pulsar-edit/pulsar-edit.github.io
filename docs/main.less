@@ -1,0 +1,27 @@
+/*
+  Override some styling from the main site to ensure download link data is readable
+*/
+ul ol, ul ul {
+  font-size: 100% !important;
+}
+/*
+  Additional styling for list items.
+*/
+
+.list, .collapsable {
+  .list-item+.list-item {
+    margin-top: 3rem;
+    border-top: 5px solid var(--thematic-break-color);
+  }
+
+  .list-item__dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 1rem;
+  }
+
+  .list-item__alert {
+    font: var(--font-color-subtle);
+  }
+}

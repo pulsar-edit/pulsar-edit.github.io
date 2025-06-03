@@ -1,0 +1,21 @@
+<%- include("header") %>
+  <body>
+    <%- include("page_header") %>
+    <div class="content">
+      <main class="container">
+        <section class="header">
+          <h1 class="title" id="title"><%= title %></h1>
+        </section>
+
+        <%- content %>
+
+        <ul class="list">
+          <%- include("download_list", { options: methods, item_key: "", heading_lvl: "h3" }) %>
+        </ul>
+
+        
+
+      </main>
+    </div>
+  </body>
+<%- include("footer") %>
