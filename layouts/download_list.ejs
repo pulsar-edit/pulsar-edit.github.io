@@ -30,12 +30,12 @@
         <% } %>
       <% } %>
 
-      <ul class="list-item__expandable" id="expandable-<%= item_key %>">
-        <%- include("download_list", { options: options[item].options, item_key: item_key.concat(item), heading_lvl: "h2" }) %>
+      <ul class="list-item__expandable hide" id="expandable-<%= item_key.concat("-",item) %>" data-status="closed">
+        <%- include("download_list", { options: options[item].options, item_key: item_key.concat("-",item), heading_lvl: "h2" }) %>
       </ul>
     </div>
     <div class="list-item__dropdown-btn">
-      <button id="expandable-<%= item_key %>-btn" class="icon-chevron-down"></button>
+      <button id="expandable-<%= item_key.concat("-",item) %>-btn" class="icon-chevron-down" onclick="expandOrCollapseDownloadSection('expandable-<%=item_key.concat("-",item)%>-btn')"></button>
     </div>
   </li>
   <% } %>

@@ -16,7 +16,8 @@ ul ol, ul ul {
 
   .list-item__dropdown {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: normal;
     align-items: flex-start;
     padding-top: 1rem;
   }
@@ -24,4 +25,8 @@ ul ol, ul ul {
   .list-item__alert {
     font: var(--font-color-subtle);
   }
+}
+
+.list-item__expandable.hide {
+  display: none;
 }
