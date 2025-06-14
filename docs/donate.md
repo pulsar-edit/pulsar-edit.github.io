@@ -1,9 +1,6 @@
 ---
 title: Donate to Pulsar
-path: /donate/
-sitemap:
-  priority: 0.8
-  changefreq: "weekly"
+layout: page
 ---
 
 Pulsar will always be free and fully open to the community but we do have some
@@ -22,6 +19,3 @@ If you'd rather contribute via [GitHub Sponsors](https://github.com/sponsors/pul
 you can do this on our GitHub profile.
 
 <iframe src="https://github.com/sponsors/pulsar-edit/card" title="Sponsor pulsar-edit" height="225" width="600" style="border: 0;"></iframe>
-
-We are currently talking about other donation platforms that we might support so
-watch this space!
