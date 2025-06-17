@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Pulsar Edit
+titlePrefix: false
 changefreq: yearly
 jsonld:
   context: http://schema.org/
@@ -27,5 +28,3 @@ jsonld:
   sameAs:
     - https://github.com/pulsar-edit/pulsar
 ---
-
-Pulsar's Homepage!

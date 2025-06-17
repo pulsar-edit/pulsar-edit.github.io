@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="">
-  <% let title = locals?.customTitle ?? locals.title %>
+  <%
+    // Allow a template to override the standard title.
+    let title = locals?.customTitle ?? locals.title;
+    // Include "Pulsar -> " before the title unless a template opts out via
+    // `titlePrefix: false`.
+    let resolvedTitlePrefix = (locals.titlePrefix ?? true) ? "Pulsar &rarr; " : "";
+  %>
   <head>
-    <title><%= title %></title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <title><%- resolvedTitlePrefix %><%= title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" id="meta-scheme" content="">
     <meta property="og:title" content="<%= title %>">
@@ -21,6 +27,9 @@
       }
     </script>
 
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="stylesheet" href="https://docs.pulsar-edit.dev/main.css" />
+    <link rel="stylesheet" href="https://docs.pulsar-edit.dev/main.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/static/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/static/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="/static/fontawesome/css/solid.min.css">
   </head>

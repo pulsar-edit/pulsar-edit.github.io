@@ -1,0 +1,77 @@
+// Overrides for the page header.
+
+@import "variables.less";
+
+.page-header__community-links {
+  .card-shadow();
+  border-radius: var(--global-radius);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: max-content;
+  opacity: 0;
+  visibility: hidden;
+  background: var(--body-color);
+  padding: 1rem;
+  transform: scale(0.95);
+  transition-property: transform, opacity, visibility;
+  transition-duration: 0.3s;
+}
+
+.page-header__link-wrapper:hover {
+  .page-header__community-links {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    transform: scale(1);
+  }
+}
+
+.page-header__community-links {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--page-header-color-link);
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      display: block;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-header {
+
+  &__link-wrapper {
+    position: relative;
+  }
+
+  &__link--community {
+    contain: initial !important;
+    cursor: pointer;
+  }
+}
+
+.page-header {
+  &__content {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @bp-larger-than-phablet) {
+  :root {
+    --page-header-height: 55px;
+  }
+  .page-header {
+    &__content {
+      flex-direction: row;
+    }
+  }
+}
