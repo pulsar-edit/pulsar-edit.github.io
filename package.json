@@ -13,7 +13,6 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.0-beta.1",
-    "@11ty/font-awesome": "^1.0.0-beta.1",
     "11ty-config": "github:confused-Techie/11ty-config-pulsar",
     "cross-env": "^7.0.3"
   }
