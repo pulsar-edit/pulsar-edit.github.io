@@ -1,0 +1,12 @@
+<aside class="info alert">
+  <div class="alert__title">Alert</div>
+  <ul class="alert__content">
+    <% for (const alert of locals.alerts) { %>
+      <li class="list-item__alert">
+        <%- helpers.renderMarkdown(
+          helpers.dereference(alert, locals.includes)
+        ) %>
+      </li>
+    <% } %>
+  </ul>
+</aside>

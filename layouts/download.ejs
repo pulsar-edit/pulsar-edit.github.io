@@ -1,17 +1,34 @@
+<%
+  let used_slugs = new Set();
+%>
 <%- include("header") %>
-  <body>
-    <%- include("page_header") %>
+  <body class="page--download">
+    <%- include("page_header", { platform_switcher: true }) %>
     <div class="content">
+      <section class="sidebar">
+        <div class="sidebar__contents">
+          <ul class="sidebar__breadcrumbs">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__toc"></div>
+      </section>
+
       <main class="container">
         <section class="header">
           <h1 class="title" id="title"><%= title %></h1>
         </section>
 
+        <aside class="alert info">
+          <div class="alert__title">Choose a platform</div>
+          <p class="alert__content">
+            We’re showing you links for <strong class="platform-mac icon-macos"><i class="fa-brands fa-apple"></i> macOS</strong><strong class="platform-win"><i class="fa-brands fa-microsoft"></i> Windows</strong><strong class="platform-linux"><i class="fa-brands fa-linux"></i> Linux</strong>. To choose another platform, use the selector in the corner.
+          </p>
+        </aside>
+
         <%- content %>
 
-        <ul class="list">
-          <%- include("download_list", { options: methods, item_key: "", heading_lvl: "h3" }) %>
-        </ul>
+        <%- include("download_list", { options: methods, item_key: "", heading_lvl: 2, used_slugs }) %>
 
       </main>
     </div>
