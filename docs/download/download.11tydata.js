@@ -1,45 +1,45 @@
 const globalData = require("../global.json");
 
+const strings = {
+  "appImage": {
+    "noSandbox": "AppImage may require `--no-sandbox` as an argument to run correctly on some systems.",
+    "libfuse2": "Some distributions no longer ship with `libfuse2` which AppImage requires to run. You may need to install this manually — e.g., `apt install libfuse2` on Ubuntu >=22.04."
+  },
+  "packageManagers": {
+    "official": {
+      "title": "Officially supported package managers",
+      "description": "Pulsar installs available on package managers that are directly maintained by the Pulsar Team."
+    },
+    "community": {
+      "title": "Community-supported package managers",
+      "description": "Pulsar installs available on package managers that are maintained by our wonderful community."
+    }
+  },
+  "macOS": {
+    "appleSilicon": "For Apple Silicon (M1/M2/M3/M4) Macs.",
+    "intel": "For Intel Macs.",
+    "dmg": "DMG installer",
+    "zip": "ZIP archive"
+  },
+  "linux": {
+    "x86": "For most desktops and laptops with Intel or AMD processors.",
+    "arm": "For ARM based devices — Raspberry Pi, Pinebook, etc.",
+    "deb": "Debian/Ubuntu, etc. (deb)",
+    "rpm": "Fedora/RHEL, etc. (rpm)",
+    "appImage": "All distributions (AppImage)",
+    "tar": "All distributions (tar.gz)"
+  },
+  "windows": {
+    "unsigned": "Windows binaries are not signed, so they will produce an error with Windows Smartscreen. You can bypass this by clicking 'More info' then 'Run anyway'.",
+    "installer": "Installer",
+    "portable": "Portable (no install)"
+  }
+};
+
 function data () {
   let version = globalData.latest_version;
 
   return {
-    "includes": {
-      "appImage": {
-        "noSandbox": "AppImage may require `--no-sandbox` as an argument to run correctly on some systems.",
-        "libfuse2": "Some distributions no longer ship with `libfuse2` which AppImage requires to run. You may need to install this manually — e.g., `apt install libfuse2` on Ubuntu >=22.04."
-      },
-      "packageManagers": {
-        "official": {
-          "title": "Officially supported package managers",
-          "description": "Pulsar installs available on package managers that are directly maintained by the Pulsar Team."
-        },
-        "community": {
-          "title": "Community-supported package managers",
-          "description": "Pulsar installs available on package managers that are maintained by our wonderful community."
-        }
-      },
-      "macOS": {
-        "appleSilicon": "For Apple Silicon (M1/M2/M3/M4) Macs.",
-        "intel": "For Intel Macs.",
-        "dmg": "DMG installer",
-        "zip": "ZIP archive"
-      },
-      "linux": {
-        "x86": "For most desktops and laptops with Intel or AMD processors.",
-        "arm": "For ARM based devices — Raspberry Pi, Pinebook, etc.",
-        "deb": "Debian/Ubuntu, etc. (deb)",
-        "rpm": "Fedora/RHEL, etc. (rpm)",
-        "appImage": "All distributions (AppImage)",
-        "tar": "All distributions (tar.gz)"
-      },
-      "windows": {
-        "unsigned": "Windows binaries are not signed, so they will produce an error with Windows Smartscreen. You can bypass this by clicking 'More info' then 'Run anyway'.",
-        "installer": "Installer",
-        "portable": "Portable (no install)"
-      }
-    },
-
     "methods": {
       "manual": {
         "title": "Manual download",
@@ -55,52 +55,52 @@ function data () {
                 "options": {
                   "x86_64": {
                     "title": "x86_64",
-                    "description": "%linux.x86%",
+                    "description": strings.linux.x86,
                     "options": {
                       "deb": {
-                        "title": "%linux.deb%",
+                        "title": strings.linux.deb,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Linux.pulsar_${version}_amd64.deb`
                       },
                       "rpm": {
-                        "title": "%linux.rpm%",
+                        "title": strings.linux.rpm,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Linux.pulsar-${version}.x86_64.rpm`
                       },
                       "appimage": {
-                        "title": "%linux.appImage%",
+                        "title": strings.linux.appImage,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Linux.Pulsar-${version}.AppImage`,
                         "alerts": [
-                          "%appImage.noSandbox%",
-                          "%appImage.libfuse2%"
+                          strings.appImage.noSandbox,
+                          strings.appImage.libfuse2
                         ]
                       },
                       "targz": {
-                        "title": "%linux.tar%",
+                        "title": strings.linux.tar,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Linux.pulsar-${version}.tar.gz`
                       }
                     }
                   },
                   "arm": {
                     "title": "ARM_64",
-                    "description": "%linux.arm%",
+                    "description": strings.linux.arm,
                     "options": {
                       "deb": {
-                        "title": "%linux.deb%",
+                        "title": strings.linux.deb,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/ARM.Linux.pulsar_${version}_arm64.deb`
                       },
                       "rpm": {
-                        "title": "%linux.rpm%",
+                        "title": strings.linux.rpm,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/ARM.Linux.pulsar-${version}.aarch64.rpm`
                       },
                       "appimage": {
-                        "title": "%linux.appImage%",
+                        "title": strings.linux.appImage,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/ARM.Linux.Pulsar-${version}-arm64.AppImage`,
                         "alerts": [
-                          "%appImage.noSandbox%",
-                          "%appImage.libfuse2%"
+                          strings.appImage.noSandbox,
+                          strings.appImage.libfuse2
                         ]
                       },
                       "targz": {
-                        "title": "%linux.tar%",
+                        "title": strings.linux.tar,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/ARM.Linux.pulsar-${version}-arm64.tar.gz`
                       }
                     }
@@ -111,15 +111,15 @@ function data () {
                 "slug": "win",
                 "title": "Windows",
                 "alerts": [
-                  "%windows.unsigned%"
+                  strings.windows.unsigned
                 ],
                 "options": {
                   "setup": {
-                    "title": "%windows.installer%",
+                    "title": strings.windows.installer,
                     "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Windows.Pulsar.Setup.${version}.exe`
                   },
                   "portable": {
-                    "title": "%windows.portable%",
+                    "title": strings.windows.portable,
                     "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Windows.Pulsar-${version}-win.zip`
                   }
                 }
@@ -130,28 +130,28 @@ function data () {
                 "options": {
                   "silicon": {
                     "title": "Silicon",
-                    "description": "%macOS.appleSilicon%",
+                    "description": strings.macOS.appleSilicon,
                     "options": {
                       "dmg": {
-                        "title": "%macOS.dmg%",
+                        "title": strings.macOS.dmg,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Silicon.Mac.Pulsar-${version}-arm64.dmg`
                       },
                       "zip": {
-                        "title": "%macOS.zip%",
+                        "title": strings.macOS.zip,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Silicon.Mac.Pulsar-${version}-arm64-mac.zip`
                       }
                     }
                   },
                   "intel": {
                     "title": "Intel",
-                    "description": "%macOS.intel%",
+                    "description": strings.macOS.intel,
                     "options": {
                       "dmg": {
-                        "title": "%macOS.dmg%",
+                        "title": strings.macOS.dmg,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Intel.Mac.Pulsar-${version}.dmg`
                       },
                       "zip": {
-                        "title": "%macOS.zip%",
+                        "title": strings.macOS.zip,
                         "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Intel.Mac.Pulsar-${version}-mac.zip`
                       }
                     }
@@ -170,52 +170,52 @@ function data () {
                 "options": {
                   "x86_64": {
                     "title": "x86_64",
-                    "description": "%linux.x86%",
+                    "description": strings.linux.x86,
                     "options": {
                       "deb": {
-                        "title": "%linux.deb%",
+                        "title": strings.linux.deb,
                         "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_deb"
                       },
                       "rpm": {
-                        "title": "%linux.rpm%",
+                        "title": strings.linux.rpm,
                         "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_rpm"
                       },
                       "appimage": {
-                        "title": "%linux.appImage%",
+                        "title": strings.linux.appImage,
                         "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_appimage",
                         "alerts": [
-                          "%appImage.noSandbox%",
-                          "%appImage.libfuse2%"
+                          strings.appImage.noSandbox,
+                          strings.appImage.libfuse2
                         ]
                       },
                       "targz": {
-                        "title": "%linux.tar%",
+                        "title": strings.linux.tar,
                         "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_tar"
                       }
                     }
                   },
                   "arm": {
                     "title": "ARM_64",
-                    "description": "%linux.arm%",
+                    "description": strings.linux.arm,
                     "options": {
                       "deb": {
-                        "title": "%linux.deb%",
+                        "title": strings.linux.deb,
                         "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_deb"
                       },
                       "rpm": {
-                        "title": "%linux.rpm%",
+                        "title": strings.linux.rpm,
                         "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_rpm"
                       },
                       "appimage": {
-                        "title": "%linux.appImage%",
+                        "title": strings.linux.appImage,
                         "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_appimage",
                         "alerts": [
-                          "%appImage.noSandbox%",
-                          "%appImage.libfuse2%"
+                          strings.appImage.noSandbox,
+                          strings.appImage.libfuse2
                         ]
                       },
                       "targz": {
-                        "title": "%linux.tar%",
+                        "title": strings.linux.tar,
                         "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar"
                       }
                     }
@@ -226,15 +226,15 @@ function data () {
                 "slug": "win",
                 "title": "Windows",
                 "alerts": [
-                  "%windows.unsigned%"
+                  strings.windows.unsigned
                 ],
                 "options": {
                   "setup": {
-                    "title": "%windows.installer%",
+                    "title": strings.windows.installer,
                     "url": "https://download.pulsar-edit.dev/?os=windows&type=windows_setup"
                   },
                   "portable": {
-                    "title": "%windows.portable%",
+                    "title": strings.windows.portable,
                     "url": "https://download.pulsar-edit.dev/?os=windows&type=windows_portable"
                   }
                 }
@@ -245,14 +245,14 @@ function data () {
                 "options": {
                   "silicon": {
                     "title": "Silicon",
-                    "description": "%macOS.appleSilicon%",
+                    "description": strings.macOS.appleSilicon,
                     "options": {
                       "dmg": {
-                        "title": "%macOS.dmg%",
+                        "title": strings.macOS.dmg,
                         "url": "https://download.pulsar-edit.dev/?os=silicon_mac&type=mac_dmg"
                       },
                       "zip": {
-                        "title": "%macOS.zip%",
+                        "title": strings.macOS.zip,
                         "url": "https://download.pulsar-edit.dev/?os=silicon_mac&type=mac_zip"
                       }
                     }
@@ -262,11 +262,11 @@ function data () {
                     "description": "For Intel macs.",
                     "options": {
                       "dmg": {
-                        "title": "%macOS.dmg%",
+                        "title": strings.macOS.dmg,
                         "url": "https://download.pulsar-edit.dev/?os=intel_mac&type=mac_dmg"
                       },
                       "zip": {
-                        "title": "%macOS.zip%",
+                        "title": strings.macOS.zip,
                         "url": "https://download.pulsar-edit.dev/?os=intel_mac&type=mac_zip"
                       }
                     }
@@ -286,8 +286,8 @@ function data () {
             "title": "Linux",
             "options": {
               "official": {
-                "title": "%packageManagers.official.title%",
-                "description": "%packageManagers.official.description%",
+                "title": strings.packageManagers.official.title,
+                "description": strings.packageManagers.official.description,
                 "options": {
                   "debget": {
                     "title": "deb-get",
@@ -296,8 +296,8 @@ function data () {
                 }
               },
               "community": {
-                "title": "%packageManagers.community.title%",
-                "description": "%packageManagers.community.description%",
+                "title": strings.packageManagers.community.title,
+                "description": strings.packageManagers.community.description,
                 "options": {
                   "aur": {
                     "title": "AUR",
@@ -336,8 +336,8 @@ function data () {
             "title": "Windows",
             "options": {
               "official": {
-                "title": "%packageManagers.official.title%",
-                "description": "%packageManagers.official.description%",
+                "title": strings.packageManagers.official.title,
+                "description": strings.packageManagers.official.description,
                 "options": {
                   "chocolatey": {
                     "title": "Chocolatey",
@@ -346,8 +346,8 @@ function data () {
                 }
               },
               "community": {
-                "title": "%packageManagers.community.title%",
-                "description": "%packageManagers.community.description%",
+                "title": strings.packageManagers.community.title,
+                "description": strings.packageManagers.community.description,
                 "options": {
                   "winget": {
                     "title": "winget",
@@ -362,8 +362,8 @@ function data () {
             "title": "macOS",
             "options": {
               "community": {
-                "title": "%packageManagers.community.title%",
-                "description": "%packageManagers.community.description%",
+                "title": strings.packageManagers.community.title,
+                "description": strings.packageManagers.community.description,
                 "options": {
                   "homebrew": {
                     "title": "Homebrew",
