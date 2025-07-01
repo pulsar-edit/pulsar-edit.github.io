@@ -118,13 +118,15 @@ Several ways. Let me arrange them in order of increasing likelihood:
 
 ### Be the exact thing we need right now
 
-If you’re a unicorn that loves Pulsar, has free time to contribute, and knows a lot about C++ and Node bindings …please reach out!
+If you’re a unicorn that loves Pulsar, has free time to contribute, and knows a lot about C++ and Node bindings… please [reach out to us on Discord](https://discord.gg/7aEbB9dGRT)!
 
 ### Contribute according to your expertise
 
 More seriously, even if you don’t have that specific skillset, we can always use more contributors. If you know stuff about the web platform, you’d be useful, even if you don’t have specific experience with Electron. An eagerness to learn and participate is worth far more to us.
 
 We could also use more redundancy on the **devops** side of the project. Pulsar requires a complicated CI workflow for automated testing and automated releases — three platforms, two processor architectures, and at least two “flavors” of release on each OS. If we had at least two people who were familiar enough with the CI flows to troubleshoot any issues that may arise during release, it’d be a lot easier for us to rotate into and out of the project as time permits.
+
+If this sounds like your cup of tea, feel free to jump into the [issue tracker](https://github.com/pulsar-edit/pulsar/issues) or the [list of open pull requests](https://github.com/pulsar-edit/pulsar/pulls)… or else [ask on Discord](https://discord.gg/7aEbB9dGRT) if you’re eager to help but not sure exactly where to start.
 
 ### Help us test PulsarNext
 
@@ -133,6 +135,8 @@ But we know even that’s a lot to ask. Lots of you already stare at screens all
 Atom used to have a “nightly” release channel that could be installed alongside the regular version of Atom. In that spirit, we’ve got a “Pulsar on Electron 30” channel that you can install today; it’s called **PulsarNext**.
 
 PulsarNext has been my “daily driver” for months and has been getting easier and easier to use over that time. But we need more beta testers on various platforms so that we can find and fix any remaining issues. The best way you can help us ship this new version of Pulsar is to be a diligent beta tester and file bug reports whenever you encounter bugs.
+
+If this sounds interesting to you, keep reading!
 
 ## How do I set up PulsarNext?
 
