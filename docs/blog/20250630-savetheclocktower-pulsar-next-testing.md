@@ -8,7 +8,7 @@ tag:
   - modernization
 ---
 
-You might’ve noticed that the releases around here have been getting sparser and sparser. We haven’t even had a release since April. Is this the dreaded death spiral?
+You might’ve noticed that the releases around here have been getting sparser and sparser. We haven’t even had a release since May. Is this the dreaded death spiral?
 
 No, it isn’t; we’ve just entered the cocoon and are preparing to emerge as a more modern and performant butterfly. And you can help us _test_ that butterfly!
 
@@ -42,7 +42,7 @@ Electron also bundles [Node](https://nodejs.org/), so each release includes what
 
 Atom literally _invented_ Electron; and, as we learned with Tree-sitter, it’s sometimes expensive to be the first implementer of a major new thing.
 
-[We’ve written before](/blog/20240124-mauricioszabo-the-quest-for-electron-lts/) about our goal to get Pulsar onto a modern version of Electron. We’re on version **12.2.3** right now — positively _ancient_ considering that the stable version at publish time is **36.4.0**. Version 12.2.3 dates back to November of 2021.
+[We’ve written before](/blog/20240124-mauricioszabo-the-quest-for-electron-lts.html) about our goal to get Pulsar onto a modern version of Electron. We’re on version **12.2.3** right now — positively _ancient_ considering that the stable version at publish time is **36.4.0**. Version 12.2.3 dates back to November of 2021.
 
 Atom was on an _even older_ version of Electron, and one of the early goals of the Pulsar team was to modernize the editor in all respects, including its Electron version. When it was upgraded to 12.2.3, though, that wasn’t even the newest version of Electron at the time — it was just as far as it could be upgraded without major changes to the codebase.
 
@@ -102,7 +102,7 @@ Hardly any packages are affected by this, because it only matters for packages t
 
 One such example is [`x-terminal-reloaded`](https://web.pulsar-edit.dev/packages/x-terminal-reloaded), the most widely-used terminal package in Pulsar. Luckily, `x-terminal-reloaded` is maintained and has a straightforward upgrade path. We’ve been working hard to make a version of `x-terminal-reloaded` that works identically in both current Pulsar and future Pulsar so that you can upgrade without hassle.
 
-Another example is [`hydrogen`](https://web.pulsar-edit.dev/packages/hydrogen). In that case, the solution is more complicated, since `hydrogen` isn’t maintained anymore. But [@mauricioszabo](https://github.com/mauricioszabo/)’s got a fork of `hydrogen` called `hydron` that uses newer libraries and aims to be a drop-in replacement. (I’m not a `hydrogen` user myself, but I’ve heard good things about `hydron` from others!)
+Another example is [`hydrogen`](https://web.pulsar-edit.dev/packages/hydrogen). In that case, the solution is more complicated, since `hydrogen` isn’t maintained anymore. But [@asiloisad](https://github.com/asiloisad)’s got a fork of `hydrogen` called [`hydrogen-next`](https://web.pulsar-edit.dev/packages/hydrogen-next) that uses newer libraries and ought to be a drop-in replacement.
 
 Those are the major packages that are on our radar as needing updates. I’m sure there are others out there, and even if they’re obscure, I’d love to hear about them if they stop working. I’m quite confident we can guide you toward either a fix for the issue or a new package that does the same thing.
 
