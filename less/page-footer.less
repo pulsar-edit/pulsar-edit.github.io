@@ -55,10 +55,11 @@
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: @bp-larger-than-phablet) {
   .page-footer {
     &__sections {
       flex-direction: row;
+      align-items: flex-start;
     }
 
     &__section {
