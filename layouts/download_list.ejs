@@ -18,8 +18,7 @@
   <% } else if (!helpers.isLeaf(item)) { %>
     <%# We're skipping leaf nodes here because there's nothing to do with them; we'll only render sections that have children. %>
     <section class="download__section download__section--<%= heading_lvl %>  <%= platformSlug %>">
-      <%# Don't slugify the headings for platforms because then they'll show up in the AutoTOC even when they're hidden! %>
-      <h<%= heading_lvl %> <%= platformSlug ? '' : `id=${helpers.slugify(item.title, locals.used_slugs)}` %>><%= item.title %></h<%= heading_lvl %>>
+      <h<%= heading_lvl %> id="<%= helpers.slugify(item.title, locals.used_slugs) %>"><%= item.title %></h<%= heading_lvl %>>
       <% if (item.description) { %>
         <p class="list-item__summary"><%= item.description %></p>
       <% } %>
