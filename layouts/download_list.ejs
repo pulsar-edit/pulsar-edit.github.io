@@ -1,42 +1,36 @@
-<% for (const item in options) { %>
-  <% if (options[item].hasOwnProperty("url")) { %>
-  <li class="list-item">
-    <div class="list-item__inner">
-      <div class="list-item__icon"></div>
-      <<%=heading_lvl%> class="list-item__name">
-        <a href="<%=options[item].url%>"><%=options[item].title%></a>
-      </<%=heading_lvl%>>
-      <% if (options[item].hasOwnProperty("alerts")) { %>
-        <% for (const alert of options[item].alerts) { %>
-          <div class="list-item__alert icon-alert">
-            <%=alert%>
-          </div>
-        <% } %>
-      <% } %>
-    </div>
-  </li>
-  <% } else { %>
-  <li class="list-item list-item__dropdown">
-    <div class="list-item__inner">
-      <div class="list-item__icon"></div>
-      <<%=heading_lvl%> class="list-item__name"><%= options[item].title %></<%=heading_lvl%>>
-      <div class="list-item__summary"><%= options[item].description %></div>
+<%
+  let isDownloadList = Object.keys(options).every(opt => ('url' in options[opt]))
+%>
 
-      <% if (options[item].hasOwnProperty("alerts")) { %>
-        <% for (const alert of options[item].alerts) { %>
-          <div class="list-item__alert icon-alert">
-            <%=alert%>
-          </div>
-        <% } %>
+<% if (isDownloadList) {%>
+<ul>
+<% } %>
+<% for (const item of Object.values(options)) { %>
+  <% let platformSlug = ('slug' in item) ? `platform-${item.slug}` : '' %>
+  <% if (isDownloadList) { %>
+    <%# Since each of these leaf nodes has a URL, we'll render this list. %>
+    <li class="<%= platformSlug %>">
+      <a href="<%= item.url %>"><%= item.title %></a>
+      <% if (item.hasOwnProperty("alerts")) { %>
+        <%- include("download_alerts", { alerts: item.alerts }) %>
+      <% } %>
+    </li>
+  <% } else if (!helpers.isLeaf(item)) { %>
+    <%# We're skipping leaf nodes here because there's nothing to do with them; we'll only render sections that have children. %>
+    <section class="download__section download__section--<%= heading_lvl %>  <%= platformSlug %>">
+      <h<%= heading_lvl %> id="<%= helpers.slugify(item.title, locals.used_slugs) %>"><%= item.title %></h<%= heading_lvl %>>
+      <% if (item.description) { %>
+        <p class="list-item__summary"><%= item.description %></p>
       <% } %>
 
-      <ul class="list-item__expandable hide" id="expandable-<%= item_key.concat("-",item) %>" data-status="closed">
-        <%- include("download_list", { options: options[item].options, item_key: item_key.concat("-",item), heading_lvl: "h2" }) %>
-      </ul>
-    </div>
-    <div class="list-item__dropdown-btn">
-      <button id="expandable-<%= item_key.concat("-",item) %>-btn" class="icon-chevron-down" onclick="expandOrCollapseDownloadSection('expandable-<%=item_key.concat("-",item)%>-btn')"></button>
-    </div>
-  </li>
+      <% if (item.hasOwnProperty("alerts")) { %>
+        <%- include("download_alerts", { alerts: item.alerts, includes: locals.includes }) %>
+      <% } %>
+
+      <%- include("download_list", { options: item.options, item_key: item_key.concat("-", item), heading_lvl: Math.min(heading_lvl + 1, 6) }) %>
+    </section>
   <% } %>
+<% } %>
+<% if (isDownloadList) {%>
+</ul>
 <% } %>

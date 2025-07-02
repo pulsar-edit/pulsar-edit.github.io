@@ -1,0 +1,129 @@
+// Overrides for the page header.
+
+@import "variables.less";
+
+.page-header__community-links {
+  li {
+    margin: 0;
+  }
+  a {
+    padding: 0.5rem 0;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .card-shadow();
+  border-radius: var(--global-radius);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: max-content;
+  opacity: 0;
+  visibility: hidden;
+  background: var(--body-color);
+  padding: 0.5rem 1rem;
+  transform: scale(0.95);
+  transition-property: transform, opacity, visibility;
+  transition-duration: 0.3s;
+}
+
+.page-header__link {
+  flex-shrink: 0;
+}
+
+.page-header__link-wrapper:hover {
+  .page-header__community-links {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    transform: scale(1);
+  }
+}
+
+.page-header__community-links {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--page-header-color-link);
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      display: block;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-header {
+  .icon-fixed {
+    display: inline-block;
+    margin-right: 0.25rem;
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+    a {
+      color: var(--font-color);
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &__link-wrapper {
+    position: relative;
+  }
+
+  &__link--community {
+    contain: initial !important;
+    cursor: pointer;
+  }
+}
+
+.page-header .page-header {
+  &__items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link {
+    text-align: center;
+  }
+
+  &__content {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @bp-larger-than-mobile) {
+  .page-header .page-header {
+    &__items {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: @bp-larger-than-tablet) {
+  :root {
+    --page-header-height: 55px;
+  }
+  .page-header {
+    &__content {
+      flex-direction: row !important;
+    }
+
+    &__actions {
+      margin-bottom: 0;
+    }
+  }
+}
