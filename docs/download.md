@@ -143,6 +143,7 @@ Current version is [v1.128.0](https://github.com/pulsar-edit/pulsar/releases/tag
 |                  Package Manager                   |    Distribution    |         Command          |
 | :------------------------------------------------: | :----------------: | :----------------------: |
 | [deb-get](https://github.com/wimpysworld/deb-get/) | Debian/Ubuntu etc. | `deb-get install pulsar` |
+| [Pacstall](https://github.com/pacstall/pacstall/) | Debian/Ubuntu etc. | `pacstall -I pulsar-deb` |
 
 :::
 
