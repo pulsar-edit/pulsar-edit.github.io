@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f6458faa","path":"/tag/tree-sitter/","title":"tree-sitter Tag","lang":"en-US","frontmatter":{"title":"tree-sitter Tag","blog":{"type":"category","name":"tree-sitter","key":"tag"},"layout":"Blog"},"excerpt":"","headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null}');export{e as data};

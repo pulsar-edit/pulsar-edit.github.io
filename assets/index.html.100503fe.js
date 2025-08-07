@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4a89825a","path":"/tag/windows/","title":"windows Tag","lang":"en-US","frontmatter":{"title":"windows Tag","blog":{"type":"category","name":"windows","key":"tag"},"layout":"Blog"},"excerpt":"","headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null}');export{e as data};

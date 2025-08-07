@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-31f54a17","path":"/tag/package-manager/","title":"package manager Tag","lang":"en-US","frontmatter":{"title":"package manager Tag","blog":{"type":"category","name":"package manager","key":"tag"},"layout":"Blog"},"excerpt":"","headers":[],"git":{},"readingTime":{"minutes":0,"words":0},"filePathRelative":null}');export{a as data};
