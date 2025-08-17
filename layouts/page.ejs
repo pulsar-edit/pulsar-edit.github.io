@@ -1,15 +1,31 @@
 <%- include("header") %>
-  <body>
-    <%- include("page_header") %>
-    <div class="content">
-      <main class="container">
-        <section class="header">
-          <h1 class="title" id="title"><%= title %></h1>
-        </section>
 
-        <%- content %>
+<body>
+  <%- include("page_header") %>
 
-      </main>
-    </div>
-  </body>
+  <div class="content">
+    <section class="sidebar">
+      <div class="sidebar__inner">
+        <div class="sidebar__contents">
+          <ul class="sidebar__breadcrumbs">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__toc"></div>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="header">
+        <h1 class="title" id="title"><%= title %></h1>
+      </section>
+
+      <%- content %>
+
+    </main>
+  </div>
+
+  <%- include("page_footer") %>
+</body>
+
 <%- include("footer") %>

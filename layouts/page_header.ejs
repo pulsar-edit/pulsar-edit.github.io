@@ -5,18 +5,57 @@
     </a>
 
     <nav class="page-header__items">
-      <a class="page-header__link" href="/api/pulsar">
-        <span>Pulsar API</span>
+      <a class="page-header__link" href="/download">
+        <i class="fa-solid fa-download icon-fixed"></i>
+        <span>Download</span>
       </a>
-      <a class="page-header__link" href="https://api.pulsar-edit.dev/swagger-ui/">
-        <span>Package Registry API</span>
+      <a class="page-header__link" href="https://docs.pulsar-edit.dev/">
+        <i class="fa-solid fa-file-lines icon-fixed"></i>
+        <span>Docs</span>
       </a>
-      <a class="page-header__link" href="https://pulsar-edit.dev">
-        <span>Homepage</span>
+      <a class="page-header__link" href="https://blog.pulsar-edit.dev/">
+        <i class="fa-solid fa-blog icon-fixed"></i>
+        <span>Blog</span>
+      </a>
+      <a class="page-header__link" href="/about">
+        <i class="fa-solid fa-sun icon-fixed"></i>
+        <span>About Us</span>
+      </a>
+      <div class="page-header__link-wrapper">
+        <a class="page-header__link page-header__link--community" href="/community">
+          <i class="fa-solid fa-user-group icon-fixed"></i>
+          <span>Community</span>
+        </a>
+        <div class="page-header__community-links">
+          <ul>
+            <li><a target="_blank" href="https://github.com/orgs/pulsar-edit/discussions">
+              <i class="fa-brands fa-github icon-fixed"></i>
+              GitHub Discussions</a></li>
+            <li><a href="https://discord.com/invite/7aEbB9dGRT" target="_blank">
+              <i class="fa-brands fa-discord icon-fixed"></i>
+              Discord</a></li>
+            <li><a href="https://www.reddit.com/r/pulsaredit/" target="_blank">
+              <i class="fa-brands fa-reddit icon-fixed"></i>
+              Reddit</a></li>
+            <li><a href="https://fosstodon.org/@pulsaredit" target="_blank">
+              <i class="fa-brands fa-mastodon icon-fixed"></i>
+              Mastodon</a></li>
+            <li><a href="https://lemmy.ml/c/pulsaredit" target="_blank">
+              <i class="fa-solid fa-users icon-fixed"></i>
+              Lemmy</a></li>
+          </ul>
+        </div>
+      </div>
+      <a class="page-header__link" href="https://web.pulsar-edit.dev/">
+        <i class="fa-solid fa-box-open icon-fixed"></i>
+        <span>Packages</span>
       </a>
     </nav>
 
     <nav class="page-header__actions">
+      <a href="https://github.com/pulsar-edit/pulsar">
+        <i class="fa-brands fa-github icon-fixed"></i>
+      </a>
       <div class="theme-switcher-menu">
         <button type="button" id="theme-switcher">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="auto icon">
@@ -33,3 +72,14 @@
     </nav>
   </div>
 </header>
+
+<% if (locals.platform_switcher) { %>
+<div class="platform-switcher">
+  <div class="platform-switcher__inner">
+    <span>Platform:</span>
+    <button data-platform="linux" type="button">Linux</button>
+    <button data-platform="mac" type="button">Mac</button>
+    <button data-platform="win" type="button">Windows</button>
+  </div>
+</div>
+<% } %>
