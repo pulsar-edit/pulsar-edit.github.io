@@ -1,0 +1,9 @@
+ 
+  <script src="/main.js"></script>
+
+  <% if (typeof jsonld === "object") { %>
+    <script type="application/ld+json">
+      <%- JSON.stringify(jsonld, null, 4).replace(/"context"/g, '"@context"').replace(/"type"/g, '"@type"') %>
+    </script>
+  <% } %>
+</html>

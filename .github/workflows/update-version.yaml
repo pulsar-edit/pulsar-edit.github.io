@@ -1,0 +1,44 @@
+name: Update Pulsar Version
+
+on:
+  issues:
+    types: [ labeled ]
+
+jobs:
+  update_docs:
+    if: contains(github.event.issue.labels.*.name, 'update-version')
+    runs-on: ubuntu
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+    - name: Checkout Latest Code
+      uses: actions/checkout@v3
+
+    - name: Install NodeJS
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Update Latest Pulsar Version
+      run: node ./update-latest-version.js ${{ github.event.issue.title }}
+
+    - name: Create Pull Request with Changes
+      uses: peter-evans/create-pull-request@v4
+      with:
+        # If we ever start running tests on PRs we will need to provide a custom
+        # PAT token here to ensure additional workflows are allowed to run.
+        # https://github.com/pulsar-edit/pulsar-chocolatey/blob/main/.github/workflows/draft_publish.yml
+        # token: ${{ secrets.<TOKEN_NAME_TO_ADD> }}
+        commit-message: Auto update source code documentation
+        branch: docs-update-${{ github.event.issue.title }}
+        delete-branch: true
+        title: '[${{ github.event.issue.title }}] Documentation Update'
+        body: |
+          Automated update of Source Code documentation.
+          Will close #${{ github.event.issue.number }}
+        draft: false

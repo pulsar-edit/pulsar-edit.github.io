@@ -1,1 +1,0 @@
-<!-- multi theme view -->
