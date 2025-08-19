@@ -1,5 +1,5 @@
 ---
-permalink: /docs/packages
+permalink: /docs/packages/
 to: /
 layout: redirect
 comment: "This page no longer exists in any form."
