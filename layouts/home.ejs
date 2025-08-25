@@ -96,16 +96,20 @@
 
   <%- content %>
 
-  <hr>
-  <div class="sponsors">
-    <h1>Our Sponsors</h1>
-    <h3>Thank you to the following organizations for sponsoring our project!</h3>
-    <div class="sponsors_link">
-      <a href="https://tutanota.com/" target="_blank">
-        <img src="/static/tutanota-logo.webp" alt="tutanota.com">
-      </a>
+  <section class="sponsors">
+    <div class="sponsors__inner">
+      <header>
+        <h2>Thank you to the following organizations for sponsoring our project!</h2>
+      </header>
+      <div class="sponsors__content">
+        <div class="sponsors__link">
+          <a href="https://tutanota.com/" target="_blank">
+            <img src="/static/tutanota-logo.webp" alt="tutanota.com" class="sponsors__logo">
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <%- include("page_footer") %>
 </body>
