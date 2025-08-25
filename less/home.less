@@ -100,5 +100,16 @@
 }
 
 .sponsors {
-  text-align: center;
+  .top-level-element();
+
+  &__inner {
+    text-align: center;
+    border-top: 1px solid var(--thematic-break-color);
+    padding-top: 3rem;
+    margin: 0 0 3rem;
+  }
+
+  &__logo {
+    max-width: 80vw;
+  }
 }
