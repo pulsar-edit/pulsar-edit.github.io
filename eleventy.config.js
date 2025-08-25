@@ -12,11 +12,6 @@ module.exports = async (eleventyConfig) => {
     require("markdown-it-anchor")
   );
 
-  eleventyConfig.addPassthroughCopy({
-    // Copy `favicon.ico` and `favicon.svg` to the root.
-    "static/favicon": "/"
-  });
-
   // const fontAwesomePlugin = await import("@11ty/font-awesome").then(fa => fa.default); // ESM export only
   // eleventyConfig.addPlugin(fontAwesomePlugin);
 
