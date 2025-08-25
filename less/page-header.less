@@ -109,14 +109,18 @@
   .page-header .page-header {
     &__items {
       flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 }
 
+:root {
+  // Allow the page header to grow to accommodate navigation items when they
+  // wrap to a second row.
+  --page-header-height: auto !important;
+}
+
 @media (min-width: @bp-larger-than-tablet) {
-  :root {
-    --page-header-height: 55px;
-  }
   .page-header {
     &__content {
       flex-direction: row !important;
