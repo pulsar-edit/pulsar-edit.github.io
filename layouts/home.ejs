@@ -1,0 +1,117 @@
+<%- include("header") %>
+
+<body>
+  <%- include("page_header") %>
+
+  <div class="hero-section">
+    <div class="hero-section__starfield starfield" id="starfield" aria-hidden="true">
+      <div class="starfield__stars"></div>
+    </div>
+    <div class="hero-section__content">
+      <div class="hero-section__logo-container">
+        <img src="/static/logo-only-light.svg" class="hero-section__logo" alt="Pulsar logo">
+        <img src="/static/text-only-light.svg" class="hero-section__wordmark" alt="Pulsar wordmark">
+      </div>
+      <h1 class="hero-section__headline"><span class="off-screen">Pulsar:</span> A community-led, hyper-hackable text editor</h1>
+      <h2 class="hero-section__subheadline">Pulsar is a fork of the discontinued Atom editor — assuming its mission of being a zero-compromise combination of hackability and usability.</h2>
+    </div>
+    <div class="hero-section__screenshot-container">
+      <img src="/static/pulsar-screenshot.png" class="hero-section__screenshot" alt="Pulsar screenshot">
+    </div>
+  </div>
+
+  <div class="home-buttons">
+    <div class="home-buttons__content">
+      <a class="home-buttons__button icon icon-desktop-download" href="/download">Download</a>
+      <a class="home-buttons__button icon icon-book" href="https://docs.pulsar-edit.dev">Documentation</a>
+      <a class="home-buttons__button icon icon-gift" href="/donate">Donate</a>
+    </div>
+  </div>
+
+  <div class="home-features">
+    <section class="feature">
+      <header class="feature__title">Cross-platform editing</header>
+      <div class="feature__description">
+        Pulsar works across operating systems. Use it on macOS, Windows, or Linux.
+      </div>
+    </section>
+
+    <section class="feature">
+      <header class="feature__title">Built-in package manager</header>
+      <div class="feature__description">
+        Search for and install new packages within Pulsar — or create your own.
+      </div>
+    </section>
+
+    <section class="feature">
+      <header class="feature__title">IDE features</header>
+      <div class="feature__description">
+        Integrates with language servers to give you autocompletion, smart navigation, and other IDE features.
+      </div>
+    </section>
+
+    <section class="feature">
+      <header class="feature__title">Filesystem browser</header>
+      <div class="feature__description">
+        Easily browse and open a single file, a whole project, or multiple projects in one window.
+      </div>
+    </section>
+
+    <section class="feature">
+      <header class="feature__title">Multiple panes</header>
+      <div class="feature__description">
+        Split your Pulsar interface into multiple panes to compare and edit code across files.
+      </div>
+    </section>
+
+    <section class="feature">
+      <header class="feature__title">Built on web technologies</header>
+      <div class="feature__description">
+        If you can write JavaScript or CSS, you can customize your Pulsar experience.
+      </div>
+    </section>
+
+    <section class="feature">
+      <header class="feature__title">Sophisticated editing techniques</header>
+      <div class="feature__description">
+        Multiple cursors, snippets, and semantic selections make text editing feel effortless.
+      </div>
+    </section>
+
+    <section class="feature">
+      <header class="feature__title">Git integration</header>
+      <div class="feature__description">
+        Switch branches, stage code, and resolve merge conflicts directly within Pulsar — even view open GitHub pull requests.
+      </div>
+    </section>
+
+
+    <section class="feature">
+      <header class="feature__title">Endless customization</header>
+      <div class="feature__description">
+        Customize nearly anything about Pulsar’s appearance or behavior within your own configuration files.
+      </div>
+    </section>
+  </div>
+
+  <%- content %>
+
+  <section class="sponsors">
+    <div class="sponsors__inner">
+      <header>
+        <h2>Thank you to the following organizations for sponsoring our project!</h2>
+      </header>
+      <div class="sponsors__content">
+        <div class="sponsors__link">
+          <a href="https://tutanota.com/" target="_blank">
+            <img src="/static/tutanota-logo.webp" alt="tutanota.com" class="sponsors__logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include("page_footer") %>
+</body>
+
+<%- include("footer") %>

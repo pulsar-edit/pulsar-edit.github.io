@@ -1,0 +1,119 @@
+// Homepage elements.
+
+@import "variables.less";
+
+.home-buttons {
+  .top-level-element();
+  padding: 4rem 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--link-color);
+    border-radius: var(--global-radius);
+    border: 1px solid var(--link-color);
+    transition: background-color 0.3s;
+    transition-property: transform, background-color;
+    transform: scale(1.0);
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background-color: var(--link-color-hover);
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: @bp-larger-than-phablet) {
+  .home-buttons {
+    &__content {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+
+.home-features {
+  --feature-columns: 1;
+  .top-level-element();
+  display: grid;
+  grid-template-columns: repeat(var(--feature-columns), 1fr);
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  perspective: 300px;
+}
+
+.feature {
+  --feature-basis: 25%;
+  max-width: 60vw;
+  min-width: 150px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 1rem 0;
+  border-radius: var(--global-radius);
+  border: 1px solid transparent;
+
+  text-align: center;
+
+  &__title {
+    .h4();
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    font-size: 16px;
+    color: var(--font-color-subtle);
+  }
+
+}
+
+@media (min-width: @bp-larger-than-phablet) {
+  .home-features {
+    --feature-columns: 2;
+    margin: 0 auto 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @bp-larger-than-tablet) {
+  .home-features {
+    --feature-columns: 3;
+    margin: 0 auto 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.sponsors {
+  .top-level-element();
+
+  &__heading {
+    text-wrap: balance;
+  }
+
+  &__inner {
+    text-align: center;
+    border-top: 1px solid var(--thematic-break-color);
+    padding-top: 3rem;
+    margin: 0 0 3rem;
+  }
+
+  &__logo {
+    max-width: 80vw;
+  }
+}

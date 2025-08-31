@@ -1,37 +1,26 @@
 ---
-title: About Us
-path: /about/
-sitemap:
-  priority: 0.8
-  changefreq: "weekly"
+title: About us
+layout: page
 ---
-
-# About us
 
 ## The team
 
-The team behind Pulsar is a community that came about naturally after the
-announcement of [Atom's Sunset](https://github.blog/2022-06-08-sunsetting-atom/)
-and decided that they needed to do something about it to keep their favorite
-editor alive.
+The team behind Pulsar is a community that came about organically after the announcement of [Atom’s sunset](https://github.blog/2022-06-08-sunsetting-atom/). We decided that we needed to do something to keep our favorite editor alive.
 
-This is a true community-led project to modernize, update and improve the
-original Atom project into a contemporary, hackable and fully open editor.
+Pulsar is a community-led project to modernize, update, and improve the original Atom project into a contemporary, hackable and fully open editor.
 
-Pulsar is all of us, feel free to contribute, discuss, answer questions and
-suggest ideas in any of our [community areas](./community.md).
+Pulsar is all of us! Feel free to contribute, discuss, answer questions and suggest ideas in any of our [community areas](/community).
 
 ## The goals <!--See: https://github.com/orgs/pulsar-edit/discussions/50-->
 
-- Community developed, led and focused
-  - Pulsar is being made by a community who came together from the stellar
-    remnants of Atom. A community that wants to build upon the huge legacy that
-    was left and make a uniquely hackable editor.
-- To continue and build upon the legacy of the Atom text editor which has been [sunset](https://github.blog/2022-06-08-sunsetting-atom/).
-  - This means not only supporting the editor itself but also the package
-    repository with its thousands of community contributions.
-- Update core technologies to bring the editor up to date.
-  - Core technologies such as Node.js, Electron etc., keeping them up to date so
-    new features and libraries can be used and added without hacky workarounds.
-- Emphasize the elements that make the editor great to really make Pulsar stand
-  out from the crowd, not only for ex-Atom users but for everyone.
+### Remain community-developed, -led, and -focused
+
+The Pulsar community has the collective goal of building upon Atom’s sizable legacy. Decisions are made by those who participate and contribute; everyone helps decide how Pulsar evolves, not just a select few.
+
+### Keep the things that make it unique
+
+Atom’s design choices set it apart among editors. It is important to maintain those design choices as much as possible — especially since it helps us maintain compatibility with the thousands of community-contributed packages that already exist.
+
+### Bring the editor’s core technologies up to date
+
+Both Electron and Pulsar’s core modules need periodic updating to take advantage of new features in Node and Chromium.

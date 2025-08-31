@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <%
+    // Allow a template to override the standard title.
+    let title = locals?.customTitle ?? locals.title;
+    // Include "Pulsar -> " before the title unless a template opts out via
+    // `titlePrefix: false`.
+    let resolvedTitlePrefix = (locals.titlePrefix ?? true) ? "Pulsar &rarr; " : "";
+  %>
+  <head>
+    <meta charset="utf-8">
+    <title><%- resolvedTitlePrefix %><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" id="meta-scheme" content="">
+    <meta property="og:title" content="<%= title %>">
+    <link rel="icon" href="/static/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="/static/favicon/favicon.svg" type="image/svg+xml">
+    <script type="text/javascript">
+      {
+        // Populate the theme as early as possible to prevent a flash on load.
+        let themeSetting = localStorage.getItem("preferred-theme");
+        let theme = themeSetting;
+        if (!themeSetting || themeSetting === "auto") {
+          theme = (window.matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark";
+        }
+        document.getElementById("meta-scheme").setAttribute("content", theme);
+        document.documentElement.dataset.themeSetting = themeSetting ?? theme;
+        document.documentElement.dataset.theme = theme;
+      }
+    </script>
+
+    <link rel="stylesheet" href="https://docs.pulsar-edit.dev/main.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/static/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/static/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="/static/fontawesome/css/solid.min.css">
+  </head>

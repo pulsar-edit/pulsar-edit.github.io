@@ -1,0 +1,83 @@
+@starfield-stars: 200;
+@star-size: 1px;
+:root {
+  --starfield-stars: @starfield-stars;
+  --starfield-depth: 300px;
+  --starfield-speed: 3s;
+  --starfield-height: 50vh;
+  --starfield-width: 100vw;
+  --star-size: @star-size;
+}
+
+// This helper generates a number of random box shadows to act as stars in a
+// starfield. This could be done once and then just live in the repo
+// forevermore, but it's an ugly long line of CSS and this works just fine,
+// too.
+.box-shadow-helper(@stars, @size) {
+  @plugin "./less/starfield-helper.js";
+  @box-shadow: makeBoxShadow(@stars, @size);
+  box-shadow: @box-shadow;
+}
+
+.starfield {
+  perspective: 340px;
+  overflow: clip;
+
+  &__stars {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--star-size);
+    height: var(--star-size);
+    animation: starfield-fly var(--starfield-speed) linear infinite;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+
+    .box-shadow-helper(@starfield-stars, @star-size);
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      box-shadow: inherit;
+      border-radius: inherit;
+    }
+
+    &:before {
+      transform: translateZ(calc(var(--starfield-depth) * -1));
+      animation: starfield-fade1 var(--starfield-speed) linear infinite;
+    }
+
+    &:after {
+      transform: translateZ(calc(var(--starfield-depth) * -2));
+      animation: starfield-fade2 var(--starfield-speed) linear infinite;
+    }
+  }
+}
+
+@keyframes starfield-fly {
+  from {
+    transform: translateZ(0px);
+  }
+  to {
+    transform: translateZ(var(--starfield-depth));
+  }
+}
+
+@keyframes starfield-fade1 {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes starfield-fade2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .5;
+  }
+}

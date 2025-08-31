@@ -1,0 +1,36 @@
+<%
+  let isDownloadList = Object.keys(options).every(opt => ('url' in options[opt]))
+%>
+
+<% if (isDownloadList) {%>
+<ul>
+<% } %>
+<% for (const item of Object.values(options)) { %>
+  <% let platformSlug = ('slug' in item) ? `platform-${item.slug}` : '' %>
+  <% if (isDownloadList) { %>
+    <%# Since each of these leaf nodes has a URL, we'll render this list. %>
+    <li class="<%= platformSlug %>">
+      <a href="<%= item.url %>"><%= item.title %></a>
+      <% if (item.hasOwnProperty("alerts")) { %>
+        <%- include("download_alerts", { alerts: item.alerts }) %>
+      <% } %>
+    </li>
+  <% } else if (!helpers.isLeaf(item)) { %>
+    <%# We're skipping leaf nodes here because there's nothing to do with them; we'll only render sections that have children. %>
+    <section class="download__section download__section--<%= heading_lvl %>  <%= platformSlug %>">
+      <h<%= heading_lvl %> id="<%= helpers.slugify(item.title, locals.used_slugs) %>"><%= item.title %></h<%= heading_lvl %>>
+      <% if (item.description) { %>
+        <p class="list-item__summary"><%= item.description %></p>
+      <% } %>
+
+      <% if (item.hasOwnProperty("alerts")) { %>
+        <%- include("download_alerts", { alerts: item.alerts, includes: locals.includes }) %>
+      <% } %>
+
+      <%- include("download_list", { options: item.options, item_key: item_key.concat("-", item), heading_lvl: Math.min(heading_lvl + 1, 6) }) %>
+    </section>
+  <% } %>
+<% } %>
+<% if (isDownloadList) {%>
+</ul>
+<% } %>
