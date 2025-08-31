@@ -25,7 +25,7 @@ jobs:
       run: npm install
 
     - name: Update Latest Pulsar Version
-      run: node ./update-latest-version.js ${{ github.event.issue.title }}
+      run: node ./update-latest-version-script.js ${{ github.event.issue.title }}
 
     - name: Create Pull Request with Changes
       uses: peter-evans/create-pull-request@v4
