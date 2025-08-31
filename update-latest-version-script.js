@@ -3,7 +3,12 @@
 const fs = require("fs");
 const path = require("path");
 
-const newVer = process.argv.slice(2)[0]; // takes first argument
+let newVer = process.argv.slice(2)[0]; // takes first argument
+
+if (newVer.startsWith("v")) {
+  newVer = newVer.replace("v", "");
+}
+
 const verFile = JSON.parse(fs.readFileSync(path.join(__dirname, "./docs/global.json"), { encoding: "utf8" }));
 
 verFile.latest_version = newVer;
