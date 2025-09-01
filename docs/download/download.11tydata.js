@@ -326,6 +326,10 @@ function data () {
                   "pacstall": {
                     "title": "Pacstall",
                     "url": "https://pacstall.dev/packages/pulsar-deb"
+                  },
+                  "gentoo": {
+                    "title": "Gentoo",
+                    "url": "https://gpo.zugaina.org/Overlays/guru/app-editors/pulsar-bin"
                   }
                 }
               }
