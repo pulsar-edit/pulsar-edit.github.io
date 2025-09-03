@@ -105,6 +105,21 @@
   }
 }
 
+// Page header should be static at narrow widths so it doesn't take up half the
+// screen…
+.page-header {
+  position: static !important;
+}
+
+@media (min-width: @bp-larger-than-phablet) {
+  // …but once we have enough room for it not to be so tall, we can afford to
+  // make it sticky.
+  .page-header {
+    position: sticky !important;
+  }
+
+}
+
 @media (min-width: @bp-larger-than-mobile) {
   .page-header .page-header {
     &__items {
