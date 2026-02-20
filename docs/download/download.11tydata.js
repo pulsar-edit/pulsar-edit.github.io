@@ -33,6 +33,9 @@ const strings = {
     "unsigned": "Windows binaries are not signed, so they will produce an error with Windows Smartscreen. You can bypass this by clicking 'More info' then 'Run anyway'.",
     "installer": "Installer",
     "portable": "Portable (no install)"
+  },
+  "targz": {
+    "startScript": "After downloading, launch Pulsar via `resources/pulsar.sh` rather than by directly invoking the `pulsar` binary. The documentation can help you [set up a symlink for `pulsar`](https://docs.pulsar-edit.dev/getting-started/terminal-commands/#.tar.gz-installation)."
   }
 };
 
@@ -75,7 +78,10 @@ function data () {
                       },
                       "targz": {
                         "title": strings.linux.tar,
-                        "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Linux.pulsar-${version}.tar.gz`
+                        "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Linux.pulsar-${version}.tar.gz`,
+                        "alerts": [
+                          strings.targz.startScript
+                        ]
                       }
                     }
                   },
@@ -101,7 +107,10 @@ function data () {
                       },
                       "targz": {
                         "title": strings.linux.tar,
-                        "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/ARM.Linux.pulsar-${version}-arm64.tar.gz`
+                        "url": `https://github.com/pulsar-edit/pulsar/releases/download/v${version}/ARM.Linux.pulsar-${version}-arm64.tar.gz`,
+                        "alerts": [
+                          strings.targz.startScript
+                        ]
                       }
                     }
                   }
@@ -190,7 +199,10 @@ function data () {
                       },
                       "targz": {
                         "title": strings.linux.tar,
-                        "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_tar"
+                        "url": "https://download.pulsar-edit.dev/?os=linux&type=linux_tar",
+                        "alerts": [
+                          strings.targz.startScript
+                        ]
                       }
                     }
                   },
@@ -216,7 +228,10 @@ function data () {
                       },
                       "targz": {
                         "title": strings.linux.tar,
-                        "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar"
+                        "url": "https://download.pulsar-edit.dev/?os=arm_linux&type=linux_tar",
+                        "alerts": [
+                          strings.targz.startScript
+                        ]
                       }
                     }
                   }
