@@ -28,11 +28,13 @@
 
         <%- content %>
 
+        <%- include("download_support", locals); %>
+
         <%- include("download_list", { options: methods, item_key: "", heading_lvl: 2, used_slugs }) %>
 
       </main>
     </div>
-    
+
     <%- include("page_footer") %>
   </body>
 <%- include("footer") %>
