@@ -43,6 +43,7 @@ function data () {
   let version = globalData.latest_version;
 
   return {
+    "currentVersion": version,
     "methods": {
       "manual": {
         "title": "Manual download",
