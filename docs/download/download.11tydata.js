@@ -368,6 +368,10 @@ function data () {
                   "winget": {
                     "title": "winget",
                     "url": "https://winstall.app/apps/Pulsar-Edit.Pulsar"
+                  },
+                  "scoop": {
+                    "title": "scoop",
+                    "url": "https://scoop.sh/#/apps?q=pulsar&id=b73e2993681c0efcdf8f5eb26582458e106e7d05"
                   }
                 }
               }
