@@ -223,7 +223,7 @@ class HeadingObserver {
     this.resizeObserver = new ResizeObserver((entries) => {
       let [entry] = entries;
       let rect = entry.contentRect;
-      this.sidebar?.style.setProperty('--actual-page-header-height', `${rect.height}px`);
+      document.documentElement.style.setProperty('--actual-page-header-height', `${rect.height}px`);
     });
 
     if (this.header) {
