@@ -209,6 +209,27 @@ class HeadingObserver {
     this.manageHistoryEntries = manageHistoryEntries;
     this.visibleOnly = visibleOnly;
 
+    // While we're here, spy on the page header height. The sidebar is
+    // `position: sticky` but requires `--page-header-height` to be a specific
+    // pixel value. Since `--page-header-height` can sometimes be `auto`, this
+    // doesn't work.
+    //
+    // The fix is to let `--page-header-height` be the source of truth for, uh,
+    // the page header's height… but derive a different property from its
+    // actual height measurement in pixels. That way we can do arithmetic
+    // against it in CSS elsewhere — like when determining the correct
+    // top-offset for a `position: sticky` sidebar.
+    this.header = document.querySelector('header');
+    this.resizeObserver = new ResizeObserver((entries) => {
+      let [entry] = entries;
+      let rect = entry.contentRect;
+      document.documentElement.style.setProperty('--actual-page-header-height', `${rect.height}px`);
+    });
+
+    if (this.header) {
+      this.resizeObserver.observe(this.header);
+    }
+
     let threshold = [];
     for (let i = 0; i <= 20; i++) {
       threshold.push(i * 0.05);

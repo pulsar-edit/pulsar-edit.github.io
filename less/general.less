@@ -11,3 +11,16 @@
   text-align: center;
   width: 20px;
 }
+
+// TODO: This should be universal.
+@media (min-width: @bp-larger-than-tablet) {
+  .sidebar {
+    // `--actual-page-header-height` is set through JavaScript and is
+    // guaranteed to be a concrete value. `--page-header-height` only
+    // guarantees it's a valid `height` value — hence could be `auto`.
+    //
+    // So we prefer the first and reluctantly fall back to the second.
+    top: calc(var(--actual-page-header-height, var(--page-header-height, 0)) + 1.5rem);
+    max-height: calc(95vh - var(--actual-page-header-height, var(--page-header-height, 0)));
+  }
+}
